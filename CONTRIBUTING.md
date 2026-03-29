@@ -49,11 +49,12 @@ The body contains the instructions the agent follows when the skill is activated
 ### Directory Layout
 
 ```
-<domain>/
-  <skill-name>/
-    SKILL.md          # Required: the skill itself
-    references/       # Optional: deep-dive docs, tables, extended examples
-    scripts/          # Optional: reusable shell/Python scripts
+skills/
+  <domain>/
+    <skill-name>/
+      SKILL.md          # Required: the skill itself
+      references/       # Optional: deep-dive docs, tables, extended examples
+      scripts/          # Optional: reusable shell/Python scripts
     assets/           # Optional: templates, config files
 ```
 

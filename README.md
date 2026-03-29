@@ -42,7 +42,7 @@ gemini skills install https://github.com/bookforge-ai/bookforge-skills.git
 
 ```bash
 git clone https://github.com/bookforge-ai/bookforge-skills.git
-# Copy desired skill directories into your agent's skills folder
+# Copy desired skill directories from skills/ into your agent's skills folder
 ```
 
 ## Skills
