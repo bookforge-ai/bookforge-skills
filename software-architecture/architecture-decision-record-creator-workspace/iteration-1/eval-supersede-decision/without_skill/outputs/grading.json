@@ -1,0 +1,43 @@
+{
+  "test": "eval-supersede-decision",
+  "run": "without_skill",
+  "assertions": {
+    "has-7-section-adr": {
+      "passed": false,
+      "evidence": "Missing Compliance and Notes sections. Has: Title, Status, Date, Context, Decision, Consequences, Alternatives Considered, Relationship to ADR-12, References, Signatories. No dedicated Compliance or Notes section."
+    },
+    "has-significance-assessment": {
+      "passed": false,
+      "evidence": "No explicit assessment of architectural significance."
+    },
+    "has-both-positive-and-negative-consequences": {
+      "passed": true,
+      "evidence": "Clear '### Positive' (5 items) and '### Negative' (5 items) subsections, plus a Risks and Mitigations table."
+    },
+    "has-compliance-mechanism": {
+      "passed": false,
+      "evidence": "Has 'Compliance Validation Gates' within the Decision section, but these are HIPAA migration phase gates, not mechanisms for enforcing the architectural decision itself. No dedicated Compliance section for ADR enforcement."
+    },
+    "uses-active-voice-with-why": {
+      "passed": false,
+      "evidence": "'We will incrementally decompose...' uses active voice. However, the Decision section focuses on WHAT (service boundaries, migration phases, HIPAA architecture details) without explicit WHY reasoning for choosing this approach over alternatives. The WHY appears only in the Alternatives section."
+    },
+    "detects-anti-patterns": {
+      "passed": false,
+      "evidence": "Notes 'the specific reasoning behind that decision was not sufficiently documented' about ADR-12, but does not name any anti-pattern or explicitly diagnose it as a recurring dysfunction pattern."
+    },
+    "has-status-with-lifecycle": {
+      "passed": false,
+      "evidence": "Status is 'Accepted'. This is a cross-team decision requiring compliance, security, and leadership approval. Should be 'Proposed' given the scenario. The Signatories section even lists empty reviewer/approver fields, contradicting the 'Accepted' status."
+    },
+    "applies-significance-dimensions": {
+      "passed": false,
+      "evidence": "No reference to the 5 significance dimensions."
+    },
+    "specifies-enforcement": {
+      "passed": false,
+      "evidence": "No dedicated Compliance section for enforcing the architectural decision. The compliance gates in the Decision section are about HIPAA migration validation, not about enforcing the ADR itself."
+    }
+  },
+  "score": "1/9"
+}

@@ -1,0 +1,98 @@
+{
+  "test_case": "monolith-vs-microservices",
+  "run_type": "with_skill",
+  "iteration": 1,
+  "grading_version": 2,
+  "assertions": {
+    "structural": [
+      {
+        "id": 1,
+        "name": "has-trade-off-matrix",
+        "passed": true,
+        "evidence": "Explicit 'Trade-off Matrix' section with a table showing +/- scoring across 8 quality attributes for all 3 options."
+      },
+      {
+        "id": 2,
+        "name": "has-multiple-options",
+        "passed": true,
+        "evidence": "3 options analyzed: Full Microservices Extraction, Modular Monolith with Targeted Scaling, Strangler Fig (Extract Order Hot Path Only)."
+      },
+      {
+        "id": 3,
+        "name": "has-recommendation",
+        "passed": true,
+        "evidence": "Clear recommendation: 'Option 3: Strangler Fig (Extract Order Hot Path Only) — the least worst choice for this context.' Followed by detailed justification."
+      },
+      {
+        "id": 4,
+        "name": "follows-standard-template",
+        "passed": true,
+        "evidence": "Consistent structure: Decision > Options Considered > Driving Quality Attributes > Advantages > Disadvantages > Trade-off Matrix > Synergies and Conflicts > Recommendation > Risks > Implementation Roadmap > ADR."
+      },
+      {
+        "id": 5,
+        "name": "has-adr",
+        "passed": true,
+        "evidence": "Formal ADR with Status (Proposed), Context, Decision, and Consequences (Positive/Negative) sections."
+      }
+    ],
+    "value": [
+      {
+        "id": 6,
+        "name": "uses-least-worst-framing",
+        "passed": true,
+        "evidence": "Recommendation explicitly says: 'the least worst choice for this context'."
+      },
+      {
+        "id": 7,
+        "name": "hunts-hidden-negatives",
+        "passed": true,
+        "evidence": "Multiple non-obvious negatives: Option 2 has 'False sense of security — We refactored the modules does not solve the scaling problem'; Option 3 has 'Temporary architecture — this is explicitly transitional... accumulates its own technical debt'; Option 1 has 'Debugging difficulty — During a Black Friday outage, this complexity directly increases mean time to recovery (MTTR)'."
+      },
+      {
+        "id": 8,
+        "name": "has-synergy-conflict-analysis",
+        "passed": true,
+        "evidence": "Dedicated 'Synergies and Conflicts' section analyzing within-option attribute interactions. E.g., Option 1: 'Elasticity and deployability gains are directly opposed by the team's lack of operational simplicity.' Option 2: 'The synergy of this option's strengths creates a dangerous false confidence.' Option 3: 'Simplicity takes a hit — two systems are always harder than one. But the hit is bounded and proportional.'"
+      },
+      {
+        "id": 9,
+        "name": "applies-top-3-rule",
+        "passed": true,
+        "evidence": "Explicit 'Driving Quality Attributes' section identifying top 3: Elasticity, Simplicity (Operational), Time-to-market. States 'Based on the stated constraints... the top 3 driving quality attributes are.'"
+      },
+      {
+        "id": 10,
+        "name": "introduces-non-obvious-option",
+        "passed": true,
+        "evidence": "Introduces 'Strangler Fig: Extract Only the Order Processing Hot Path' as a third option not in the user's prompt (which only asked about monolith vs microservices). This option becomes the recommendation."
+      },
+      {
+        "id": 11,
+        "name": "acknowledges-context-dependency",
+        "passed": false,
+        "evidence": "The recommendation is framed 'for this context' but does not explicitly state how the recommendation would change under different constraints. No conditional reasoning like 'if the team had microservices experience, we would recommend X' or 'if the deadline were 18 months, Y would be better.' The ADR mentions constraints but does not articulate alternative-context recommendations."
+      },
+      {
+        "id": 12,
+        "name": "names-anti-patterns",
+        "passed": true,
+        "evidence": "Names the 'distributed monolith' anti-pattern explicitly: 'Attempting it guarantees a half-finished migration that is worse than the original monolith (the \"distributed monolith\" anti-pattern).'"
+      },
+      {
+        "id": 13,
+        "name": "has-risk-mitigation-table",
+        "passed": true,
+        "evidence": "Structured risk table with columns: Risk, Likelihood (High/Medium/Low), Impact (High/Medium), and detailed Mitigation. 5 specific risks identified with concrete mitigations."
+      }
+    ]
+  },
+  "summary": {
+    "structural_passed": 5,
+    "structural_total": 5,
+    "value_passed": 7,
+    "value_total": 8,
+    "total_passed": 12,
+    "total_assertions": 13
+  }
+}

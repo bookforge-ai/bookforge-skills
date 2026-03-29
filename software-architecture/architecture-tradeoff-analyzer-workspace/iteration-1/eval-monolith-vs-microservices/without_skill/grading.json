@@ -1,0 +1,45 @@
+{
+  "run_id": "eval-monolith-vs-microservices-without_skill",
+  "expectations": [
+    {
+      "text": "has-trade-off-matrix",
+      "passed": true,
+      "evidence": "Formatted 'Head-to-Head Comparison' table with 10 dimensions as rows and 2 options (Microservice Extraction, Scaled Modular Monolith) as columns."
+    },
+    {
+      "text": "has-multiple-options",
+      "passed": true,
+      "evidence": "2 options analyzed: (1) Extract Order Processing as a Microservice, (2) Scale the Monolith Strategically (Modular Monolith Path)."
+    },
+    {
+      "text": "has-quality-attributes",
+      "passed": true,
+      "evidence": "Comparison table explicitly names quality dimensions: Timeline risk, Operational complexity added, Team skill gap, Data consistency risk, Debugging difficulty, Long-term scaling ceiling, Cost, Reversibility."
+    },
+    {
+      "text": "has-recommendation",
+      "passed": true,
+      "evidence": "Clear recommendation: 'Go with Option 2 (Scaled Modular Monolith) for this Black Friday' with 4-point reasoning and detailed execution plan."
+    },
+    {
+      "text": "has-negatives-for-recommended",
+      "passed": true,
+      "evidence": "Option 2 'Costs and Risks' lists 4 negatives: scaling ceiling, organizational scaling limits, perceived as not ambitious enough, async processing UX changes."
+    },
+    {
+      "text": "uses-least-worst-framing",
+      "passed": false,
+      "evidence": "Recommendation uses positive framing: 'the safest path to surviving Black Friday is the one with the most margin for error.' No 'least worst' or equivalent explicit framing. Presented as the clearly better choice, not as the option with the most acceptable trade-offs."
+    },
+    {
+      "text": "context-dependent",
+      "passed": true,
+      "evidence": "Directly references: 12 developers, no microservices experience, 8-9 month deadline, 30x traffic spike on Black Friday, 200k LOC Django monolith, CEO mandate."
+    },
+    {
+      "text": "hunts-negatives",
+      "passed": true,
+      "evidence": "Option 1 (Microservice) has 6 detailed disadvantages. Option 2 (Modular Monolith) has 4 disadvantages. Both exceed the 2-minimum threshold."
+    }
+  ]
+}

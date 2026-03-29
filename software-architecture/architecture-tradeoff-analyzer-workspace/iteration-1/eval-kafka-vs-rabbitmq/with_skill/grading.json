@@ -1,0 +1,45 @@
+{
+  "run_id": "eval-kafka-vs-rabbitmq-with_skill",
+  "expectations": [
+    {
+      "text": "has-trade-off-matrix",
+      "passed": true,
+      "evidence": "Formatted '## Trade-off Matrix' table with 6 quality attributes as rows and 3 options (Kafka MSK, RabbitMQ, Kinesis) as columns, with +/-/= notation per cell."
+    },
+    {
+      "text": "has-multiple-options",
+      "passed": true,
+      "evidence": "3 options analyzed: (1) Apache Kafka via Amazon MSK, (2) RabbitMQ self-managed or Amazon MQ, (3) Amazon Kinesis Data Streams."
+    },
+    {
+      "text": "has-quality-attributes",
+      "passed": true,
+      "evidence": "Explicitly names driving quality attributes: Scalability/Throughput, Simplicity/Operability, Cost. Matrix adds: Event replay/Reprocessing, Ecosystem/Extensibility, Team velocity (short-term)."
+    },
+    {
+      "text": "has-recommendation",
+      "passed": true,
+      "evidence": "Clear recommendation: 'Apache Kafka via Amazon MSK Serverless' with 4-point justification covering throughput, replay, operability, and team knowledge gap analysis."
+    },
+    {
+      "text": "has-negatives-for-recommended",
+      "passed": true,
+      "evidence": "Section 'Acknowledged downsides and why they are acceptable' lists 3 explicit negatives: slower team velocity for first month, higher cost than self-managed RabbitMQ, more complex consumer model."
+    },
+    {
+      "text": "uses-least-worst-framing",
+      "passed": true,
+      "evidence": "Recommendation explicitly states: 'Apache Kafka via Amazon MSK Serverless -- the least worst choice for this context because:'"
+    },
+    {
+      "text": "context-dependent",
+      "passed": true,
+      "evidence": "Analysis directly references: 4 engineers, 50k events/sec peak, startup-level budget, AWS infrastructure, team's existing RabbitMQ experience, mobile app analytics use case."
+    },
+    {
+      "text": "hunts-negatives",
+      "passed": true,
+      "evidence": "Kafka has 5 disadvantages listed. RabbitMQ has 5 disadvantages. Kinesis has 5 disadvantages. All well above the 2-minimum threshold."
+    }
+  ]
+}

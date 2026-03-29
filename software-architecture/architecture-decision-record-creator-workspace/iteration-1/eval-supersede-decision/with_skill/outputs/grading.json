@@ -1,0 +1,43 @@
+{
+  "test": "eval-supersede-decision",
+  "run": "with_skill",
+  "assertions": {
+    "has-7-section-adr": {
+      "passed": true,
+      "evidence": "All 7 sections present: Title (H1), Status, Context, Decision, Consequences, Compliance, Notes."
+    },
+    "has-significance-assessment": {
+      "passed": false,
+      "evidence": "No explicit pre-ADR assessment of whether the decision is architecturally significant using significance dimensions or formal evaluation criteria."
+    },
+    "has-both-positive-and-negative-consequences": {
+      "passed": true,
+      "evidence": "Clear '### Positive' (6 items) and '### Negative' (6 items) subsections under Consequences."
+    },
+    "has-compliance-mechanism": {
+      "passed": true,
+      "evidence": "Extensive Compliance section with both 'Architectural Compliance' and 'HIPAA Compliance' subsections, each specifying automated and manual mechanisms."
+    },
+    "uses-active-voice-with-why": {
+      "passed": true,
+      "evidence": "'We will decompose the monolith into domain-aligned services...' followed by 4 numbered WHY sections with detailed reasoning: developer productivity, HIPAA compliance strengthened, deployment coupling as liability, domain-aligned vs fine-grained justification."
+    },
+    "detects-anti-patterns": {
+      "passed": true,
+      "evidence": "Explicitly diagnoses the dysfunction: 'the authoring architect has left the organization and ADR-12 lacks sufficient justification in its Decision section (a cautionary example of why the WHY matters more than the HOW in architecture decision records).' This is an explicit diagnosis of the Groundhog Day problem (repeating discussions because nobody recorded why)."
+    },
+    "has-status-with-lifecycle": {
+      "passed": true,
+      "evidence": "Status is 'Proposed (supersedes ADR-12)' with note requiring approval from Chief Architect, Compliance Officer, HIPAA Security Officer, and Engineering Leadership. Appropriate for a cross-team, security-sensitive decision."
+    },
+    "applies-significance-dimensions": {
+      "passed": false,
+      "evidence": "Does not explicitly name or evaluate against the 5 significance dimensions (structure, characteristics, dependencies, interfaces, construction techniques) as a formal framework."
+    },
+    "specifies-enforcement": {
+      "passed": true,
+      "evidence": "Compliance section clearly distinguishes: Automated (PHI boundary CI scan, service dependency direction check, contract testing) vs Manual (quarterly architecture review). Each mechanism has rationale and frequency specified."
+    }
+  },
+  "score": "7/9"
+}

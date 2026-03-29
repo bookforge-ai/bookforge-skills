@@ -1,0 +1,43 @@
+{
+  "test": "eval-rfc-decision",
+  "run": "with_skill",
+  "assertions": {
+    "has-7-section-adr": {
+      "passed": true,
+      "evidence": "All 7 sections present: Title (H1), Status, Context, Decision, Consequences, Compliance, Notes."
+    },
+    "has-significance-assessment": {
+      "passed": false,
+      "evidence": "No explicit pre-ADR assessment of whether the decision is architecturally significant."
+    },
+    "has-both-positive-and-negative-consequences": {
+      "passed": true,
+      "evidence": "Clear '### Positive' (4 items) and '### Negative' (4 items) subsections under Consequences."
+    },
+    "has-compliance-mechanism": {
+      "passed": true,
+      "evidence": "Compliance section specifies manual review initially and automated fitness functions once implemented."
+    },
+    "uses-active-voice-with-why": {
+      "passed": true,
+      "evidence": "'We will adopt event sourcing...' followed by extensive 'WHY - Technical justification' and 'WHY - Business justification' sections with detailed reasoning."
+    },
+    "detects-anti-patterns": {
+      "passed": false,
+      "evidence": "No named anti-patterns or explicit diagnosis of decision-making dysfunction in the scenario."
+    },
+    "has-status-with-lifecycle": {
+      "passed": true,
+      "evidence": "Status is 'RFC, Deadline 2026-04-02' with explanation that the architecture review board will discuss at the meeting. Exactly appropriate for a team-discussion scenario with a specific deadline."
+    },
+    "applies-significance-dimensions": {
+      "passed": false,
+      "evidence": "Does not explicitly evaluate against the 5 significance dimensions."
+    },
+    "specifies-enforcement": {
+      "passed": true,
+      "evidence": "Compliance section distinguishes: Manual (code reviews verifying event emission, no direct state mutations) vs Automated fitness functions (integration test verifying command handlers produce events, static analysis rule preventing direct DB writes). Explicitly notes manual first, automated once implemented, with rationale."
+    }
+  },
+  "score": "6/9"
+}

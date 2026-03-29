@@ -1,0 +1,53 @@
+{
+  "skill_name": "architecture-tradeoff-analyzer",
+  "evals": [
+    {
+      "id": 1,
+      "eval_name": "monolith-vs-microservices",
+      "prompt": "We have a 3-year-old Django monolith for our e-commerce platform. About 200k lines of code, 12 developers. The order processing module needs to scale independently during flash sales (Black Friday we had 30x normal traffic and the whole site went down). But our team has never operated microservices before. CEO wants this fixed before next Black Friday. Help me analyze the trade-offs.",
+      "expected_output": "A structured trade-off analysis comparing at least monolith improvements vs microservices extraction, with quality attributes matrix, negatives for each option, and context-dependent recommendation",
+      "assertions": [
+        {"id": "has-trade-off-matrix", "text": "Output contains a comparison table/matrix with options as columns and quality attributes as rows", "type": "structural"},
+        {"id": "has-multiple-options", "text": "At least 2 architectural options are analyzed, not just one recommendation", "type": "structural"},
+        {"id": "has-quality-attributes", "text": "Explicitly identifies and names quality attributes being evaluated (e.g., scalability, simplicity, cost)", "type": "structural"},
+        {"id": "has-recommendation", "text": "Provides a clear recommendation with justification", "type": "structural"},
+        {"id": "has-negatives-for-recommended", "text": "The recommended option has explicitly stated downsides, not just positives", "type": "quality"},
+        {"id": "uses-least-worst-framing", "text": "Recommendation is framed as least worst or most acceptable trade-offs, not the best", "type": "quality"},
+        {"id": "context-dependent", "text": "Analysis acknowledges that the recommendation depends on specific constraints (team experience, timeline, budget)", "type": "quality"},
+        {"id": "hunts-negatives", "text": "Each option has at least 2 disadvantages listed, not just advantages", "type": "quality"}
+      ]
+    },
+    {
+      "id": 2,
+      "eval_name": "kafka-vs-rabbitmq",
+      "prompt": "I'm building a real-time analytics pipeline. Events come from our mobile app (~50k events/sec peak). I need to decide between Kafka and RabbitMQ. My team knows RabbitMQ well but Kafka seems better for our scale. We're on AWS, team of 4, startup budget.",
+      "expected_output": "Structured trade-off analysis of Kafka vs RabbitMQ with quality attributes matrix, acknowledging team familiarity as a real trade-off dimension",
+      "assertions": [
+        {"id": "has-trade-off-matrix", "text": "Output contains a comparison table/matrix with options as columns and quality attributes as rows", "type": "structural"},
+        {"id": "has-multiple-options", "text": "At least 2 architectural options are analyzed, not just one recommendation", "type": "structural"},
+        {"id": "has-quality-attributes", "text": "Explicitly identifies and names quality attributes being evaluated", "type": "structural"},
+        {"id": "has-recommendation", "text": "Provides a clear recommendation with justification", "type": "structural"},
+        {"id": "has-negatives-for-recommended", "text": "The recommended option has explicitly stated downsides", "type": "quality"},
+        {"id": "uses-least-worst-framing", "text": "Recommendation is framed as least worst or most acceptable trade-offs, not the best", "type": "quality"},
+        {"id": "context-dependent", "text": "Analysis factors in team familiarity with RabbitMQ, startup budget, and team size as real constraints", "type": "quality"},
+        {"id": "hunts-negatives", "text": "Each option has at least 2 disadvantages listed", "type": "quality"}
+      ]
+    },
+    {
+      "id": 3,
+      "eval_name": "healthcare-saas",
+      "prompt": "Starting a new SaaS project for healthcare appointment scheduling. The CTO wants microservices 'because that's what Netflix uses.' The lead dev wants a simple monolith because we're only 3 developers. The compliance officer says HIPAA compliance is non-negotiable. I need to present a trade-off analysis to the team by Friday.",
+      "expected_output": "Structured trade-off analysis that addresses competing stakeholder views, treats compliance as a constraint not a trade-off, and provides a presentable report",
+      "assertions": [
+        {"id": "has-trade-off-matrix", "text": "Output contains a comparison table/matrix with options as columns and quality attributes as rows", "type": "structural"},
+        {"id": "has-multiple-options", "text": "At least 2 architectural options are analyzed", "type": "structural"},
+        {"id": "has-quality-attributes", "text": "Explicitly identifies and names quality attributes including compliance/security", "type": "structural"},
+        {"id": "has-recommendation", "text": "Provides a clear recommendation with justification", "type": "structural"},
+        {"id": "has-negatives-for-recommended", "text": "The recommended option has explicitly stated downsides", "type": "quality"},
+        {"id": "uses-least-worst-framing", "text": "Recommendation framed as least worst, not the best — addresses CTO's Netflix argument", "type": "quality"},
+        {"id": "context-dependent", "text": "Analysis factors in 3-person team size, HIPAA requirement, and competing stakeholder priorities", "type": "quality"},
+        {"id": "hunts-negatives", "text": "Each option has at least 2 disadvantages listed", "type": "quality"}
+      ]
+    }
+  ]
+}

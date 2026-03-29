@@ -1,0 +1,51 @@
+{
+  "test": "auction-codebase",
+  "variant": "without_skill",
+  "assertions": {
+    "structural": {
+      "identifies-deployable-units": {
+        "pass": true,
+        "evidence": "Identifies 4 services with evidence from code (bidder_service, auction_service, payment_service, notification_service) including Docker details."
+      },
+      "produces-quantum-map": {
+        "pass": true,
+        "evidence": "Section 5 Summary Table maps 3 quanta with services, coupling style, dominant characteristics, and deploy strategy."
+      },
+      "has-monolith-vs-distributed-recommendation": {
+        "pass": true,
+        "evidence": "Section 4: 'You already are, and it is the correct choice for this system.' Explicitly recommends distributed."
+      },
+      "analyzes-communication-patterns": {
+        "pass": true,
+        "evidence": "Section 2 Communication Map shows sync REST within Bidding quantum and async RabbitMQ across quanta. Identifies events.py as the async boundary."
+      }
+    },
+    "value": {
+      "applies-3-criteria-definition": {
+        "pass": true,
+        "evidence": "Quantum 1 section mentions 'synchronous connascence (connascence of timing and execution),' 'independently deployable,' and functional cohesion. Definition at top mentions 'high functional cohesion' and 'independently deployable.' All three terms present."
+      },
+      "identifies-different-characteristics-per-quantum": {
+        "pass": true,
+        "evidence": "Section 3 comparison table shows divergent characteristics across all 3 quanta. 'Each quantum has a clearly different top characteristic.'"
+      },
+      "uses-connascence-for-boundaries": {
+        "pass": true,
+        "evidence": "Uses 'synchronous connascence (connascence of timing and execution)' for Bidding quantum grouping. Async boundary via RabbitMQ used to separate Payment and Notification."
+      },
+      "warns-uniform-characteristics": {
+        "pass": true,
+        "evidence": "'Each quantum has a clearly different top characteristic, which is a strong signal that they belong in separate quanta. Forcing them into a single deployable unit would require every component to meet the strictest requirement.'"
+      },
+      "quantum-count-drives-style": {
+        "pass": false,
+        "evidence": "Never explicitly states that the quantum COUNT drives the architecture style decision. Says 'three distinct architecture quanta' and that distributed is appropriate, but the reasoning is about conflicting characteristics, scaling profiles, and deployment cadence rather than the formula: count > 1 = distributed."
+      }
+    }
+  },
+  "score": {
+    "structural": "4/4",
+    "value": "4/5",
+    "total": "8/9"
+  }
+}

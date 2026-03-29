@@ -1,0 +1,62 @@
+{
+  "skill_name": "microservice-granularity-optimizer",
+  "version": 1,
+  "source_book": "fundamentals-of-software-architecture",
+  "source_chapters": [17],
+  "value_contributions": [
+    {
+      "id": "VC-1",
+      "category": "framework",
+      "name": "Disintegrator/Integrator Analysis",
+      "description": "Provides a structured 6-disintegrator + 4-integrator framework for evaluating whether services should be split or merged, replacing gut-feel decisions with evidence-based analysis.",
+      "without_skill_behavior": "Architects split services based on entity names or arbitrary size rules ('each service should be <500 LOC'). No systematic evaluation of splitting vs. combining forces.",
+      "with_skill_behavior": "Each service is evaluated against 6 disintegrators (scope, volatility, scalability, fault tolerance, security, extensibility) and each service pair against 4 integrators (transactions, workflow coupling, shared code, data relationships). Decisions are evidence-based with clear thresholds.",
+      "measurable_impact": "Prevents over-splitting (reduces 15+ service architectures to 5-8 right-sized services) and under-splitting (identifies monolithic services that should be decomposed)."
+    },
+    {
+      "id": "VC-2",
+      "category": "anti-pattern-prevention",
+      "name": "Transaction Boundary Detection",
+      "description": "Identifies distributed transaction anti-patterns early by applying the rule 'Don't do transactions in microservices -- fix granularity instead.' Services that need ACID transactions between them are flagged for merging.",
+      "without_skill_behavior": "Architects split services and then discover they need distributed transactions. They implement SAGA patterns for operations that should be simple ACID transactions, adding massive complexity.",
+      "with_skill_behavior": "Transaction requirements are evaluated as the strongest integrator before splitting. Services that transact together are kept together. SAGAs are used only when genuinely necessary (different security/scalability requirements force separation).",
+      "measurable_impact": "Eliminates unnecessary SAGA implementations. In testing, without-skill outputs proposed SAGAs for workflows that with-skill outputs handled as single-service ACID transactions."
+    },
+    {
+      "id": "VC-3",
+      "category": "decision-framework",
+      "name": "Choreography vs. Orchestration Selection",
+      "description": "Provides structured criteria for choosing between choreography (broker-style, decoupled) and orchestration (mediator-style, coordinated) for each inter-service workflow, based on workflow complexity, error handling needs, and decoupling priority.",
+      "without_skill_behavior": "Architects default to one pattern for all workflows (usually orchestration via API gateway), or mix patterns inconsistently without reasoning about trade-offs.",
+      "with_skill_behavior": "Each workflow is evaluated: simple 2-3 service interactions use choreography (preserves decoupling), complex 4+ service workflows with compensating transactions use orchestration (centralizes error handling). The front controller anti-pattern is detected and corrected.",
+      "measurable_impact": "Produces architectures with appropriate communication patterns per workflow rather than one-size-fits-all, reducing unnecessary coupling while managing complexity."
+    },
+    {
+      "id": "VC-4",
+      "category": "anti-pattern-prevention",
+      "name": "Distributed Monolith Detection",
+      "description": "Detects the distributed monolith anti-pattern: services that share databases, deploy together, or cannot function independently -- giving all the complexity of microservices with none of the benefits.",
+      "without_skill_behavior": "Architects create services that share databases or have tight runtime coupling, resulting in coordinated deployments and cascading failures. The architecture is a monolith with network hops added.",
+      "with_skill_behavior": "Data isolation is enforced as non-negotiable. Each service owns its data exclusively. Shared database dependencies are flagged. Services are validated for independent deployability and fault isolation.",
+      "measurable_impact": "Prevents the most common and costly microservices anti-pattern. Ensures the architecture actually delivers on the promised benefits of microservices."
+    },
+    {
+      "id": "VC-5",
+      "category": "framework",
+      "name": "Saga Pattern Design with Compensating Transactions",
+      "description": "When distributed transactions are genuinely unavoidable, provides a structured approach to designing saga patterns with do/undo operations, pending state management, and error handling for failed compensations.",
+      "without_skill_behavior": "SAGAs are designed ad-hoc, often missing compensating operations for edge cases, lacking pending state management, and having no plan for when undo operations themselves fail.",
+      "with_skill_behavior": "Each saga is designed with explicit do/undo operations per service, a coordination choice (choreographed vs orchestrated), pending state tracking, and error escalation for failed compensations. Includes the critical warning: if >30% of workflows need sagas, the granularity is wrong.",
+      "measurable_impact": "Produces complete, production-ready saga designs rather than hand-wavy 'use saga pattern' recommendations."
+    },
+    {
+      "id": "VC-6",
+      "category": "quality-validation",
+      "name": "Microservices Characteristic Ratings Validation",
+      "description": "Validates the final architecture against the known microservices characteristic ratings (Deploy=4, Elast=5, Evol=5, FaultTol=4, Mod=5, Cost=1, Perf=2, Rel=4, Scale=5, Simple=1, Test=4) to ensure the design leverages strengths and doesn't fight weaknesses.",
+      "without_skill_behavior": "No validation against architectural style ratings. Architectures may attempt to optimize for characteristics where microservices is structurally weak (e.g., performance, simplicity, cost).",
+      "with_skill_behavior": "Design is scored against all 11 characteristics. If the system needs high performance (rating: 2 stars) or simplicity (1 star), the architect is warned that microservices structurally cannot deliver this and should consider alternative styles.",
+      "measurable_impact": "Prevents selection of microservices for systems where its structural weaknesses conflict with requirements."
+    }
+  ]
+}

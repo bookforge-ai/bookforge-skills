@@ -1,0 +1,98 @@
+{
+  "test_case": "healthcare-saas",
+  "run_type": "without_skill",
+  "iteration": 1,
+  "grading_version": 2,
+  "assertions": {
+    "structural": [
+      {
+        "id": 1,
+        "name": "has-trade-off-matrix",
+        "passed": true,
+        "evidence": "'Decision Matrix' table with weighted 1-5 scoring across 6 criteria for 3 options. Also has 'Architecture Impact on HIPAA' comparison table."
+      },
+      {
+        "id": 2,
+        "name": "has-multiple-options",
+        "passed": true,
+        "evidence": "3 options analyzed: Microservices Architecture, Simple Monolith, Modular Monolith."
+      },
+      {
+        "id": 3,
+        "name": "has-recommendation",
+        "passed": true,
+        "evidence": "Clear recommendation: 'the recommendation is to start with a modular monolith.'"
+      },
+      {
+        "id": 4,
+        "name": "follows-standard-template",
+        "passed": true,
+        "evidence": "Well-structured with numbered sections (1-11): Executive Summary, Positions, Option A/B/C analysis, HIPAA Requirements, Decision Matrix, Migration Path, Netflix Argument, Next Steps, Risks."
+      },
+      {
+        "id": 5,
+        "name": "has-adr",
+        "passed": false,
+        "evidence": "No formal Architecture Decision Record. Has analysis and recommendation sections but no ADR with Status/Context/Decision/Consequences format."
+      }
+    ],
+    "value": [
+      {
+        "id": 6,
+        "name": "uses-least-worst-framing",
+        "passed": false,
+        "evidence": "Recommendation is framed positively: 'the recommendation is to start with a modular monolith' and 'Neither the CTO nor the lead developer is entirely wrong.' No least-worst or acceptable-trade-offs framing."
+      },
+      {
+        "id": 7,
+        "name": "hunts-hidden-negatives",
+        "passed": true,
+        "evidence": "For the monolith: 'Perceived as not modern — this is a political risk, not a technical one, but it is real.' For microservices: hidden negative about HIPAA audit multiplication. These are non-obvious considerations beyond standard pro/con analysis."
+      },
+      {
+        "id": 8,
+        "name": "has-synergy-conflict-analysis",
+        "passed": false,
+        "evidence": "No explicit synergy/conflict analysis between quality attributes within options. The 'Why This Works' table explains how the modular monolith addresses concerns, but does not analyze how attributes interact (reinforce or conflict) within each option."
+      },
+      {
+        "id": 9,
+        "name": "applies-top-3-rule",
+        "passed": false,
+        "evidence": "No explicit prioritization of top 3 driving quality attributes. The decision matrix lists 6 criteria with different weights, but does not identify a top-3 priority hierarchy upfront to guide the analysis."
+      },
+      {
+        "id": 10,
+        "name": "introduces-non-obvious-option",
+        "passed": true,
+        "evidence": "Introduces 'Modular Monolith' as a distinct third option beyond the two stakeholder positions (CTO's microservices vs Lead Dev's simple monolith). Explicitly positioned as a compromise: 'The CTO is right that service boundaries matter; the lead dev is right that microservices will overwhelm a 3-person team.'"
+      },
+      {
+        "id": 11,
+        "name": "acknowledges-context-dependency",
+        "passed": false,
+        "evidence": "No explicit conditional reasoning about how the recommendation changes under different constraints. The 'extraction criteria' discussion mentions when to evolve but does not frame as 'if X were different, we would recommend Y instead.'"
+      },
+      {
+        "id": 12,
+        "name": "names-anti-patterns",
+        "passed": false,
+        "evidence": "No named architectural decision anti-patterns. References Netflix but does not name specific anti-patterns (no 'cargo-culting', 'Covering Your Assets', etc.)."
+      },
+      {
+        "id": 13,
+        "name": "has-risk-mitigation-table",
+        "passed": false,
+        "evidence": "Has a Risk | Mitigation table in Section 11, but missing likelihood and impact columns. Only 2 columns (Risk, Mitigation), not the full structured risk assessment required."
+      }
+    ]
+  },
+  "summary": {
+    "structural_passed": 4,
+    "structural_total": 5,
+    "value_passed": 2,
+    "value_total": 8,
+    "total_passed": 6,
+    "total_assertions": 13
+  }
+}

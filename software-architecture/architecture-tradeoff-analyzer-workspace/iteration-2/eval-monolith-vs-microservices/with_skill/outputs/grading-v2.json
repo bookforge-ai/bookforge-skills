@@ -1,0 +1,98 @@
+{
+  "test_case": "monolith-vs-microservices",
+  "run_type": "with_skill",
+  "iteration": 3,
+  "grading_version": 2,
+  "assertions": {
+    "structural": [
+      {
+        "id": 1,
+        "name": "has-trade-off-matrix",
+        "passed": true,
+        "evidence": "Explicit 'Trade-off Matrix' section with a table showing +/- scoring across 10 quality attributes (Elasticity, Time-to-market, Simplicity, Availability, Cost, Reliability, Maintainability, Deployability, Observability, Fault Isolation) for all 3 options."
+      },
+      {
+        "id": 2,
+        "name": "has-multiple-options",
+        "passed": true,
+        "evidence": "3 options analyzed: Full Microservices Extraction, Modular Monolith with Selective Scaling, Strangler Fig with Order Processing Service."
+      },
+      {
+        "id": 3,
+        "name": "has-recommendation",
+        "passed": true,
+        "evidence": "Clear recommendation: 'Option 3: Strangler Fig — Extract Order Processing Service — the least worst choice for this context because:' followed by 4 numbered justification points."
+      },
+      {
+        "id": 4,
+        "name": "follows-standard-template",
+        "passed": true,
+        "evidence": "Consistent structure: Decision > Options Considered > Driving Quality Attributes > Analysis of Each Option (Advantages/Disadvantages) > Trade-off Matrix > Synergies and Conflicts > Recommendation > Risks of This Choice > Context Sensitivity > ADR."
+      },
+      {
+        "id": 5,
+        "name": "has-adr",
+        "passed": true,
+        "evidence": "Formal ADR with Status (Proposed), Context (detailed problem statement), Decision (with rationale for rejecting alternatives), Consequences (Positive and Negative)."
+      }
+    ],
+    "value": [
+      {
+        "id": 6,
+        "name": "uses-least-worst-framing",
+        "passed": true,
+        "evidence": "Recommendation explicitly says: 'the least worst choice for this context'."
+      },
+      {
+        "id": 7,
+        "name": "hunts-hidden-negatives",
+        "passed": true,
+        "evidence": "Multiple non-obvious negatives per option: Option 2 (Modular Monolith): 'you cannot scale ONLY order processing independently... This is wasteful and may hit database connection limits' — identifies that horizontal monolith scaling has a database ceiling, not just a compute ceiling. Option 3: 'The order-to-payment-to-inventory flow now crosses a service boundary. If the order service places an order but the monolith fails to decrement inventory, you have an inconsistency' — highlights distributed consistency risk specific to this extraction. Option 1: 'Observability (-) — Debugging a failed order now requires correlating logs across 4-5 services instead of reading one Django traceback' — counterintuitive that better architecture makes debugging harder."
+      },
+      {
+        "id": 8,
+        "name": "has-synergy-conflict-analysis",
+        "passed": true,
+        "evidence": "Dedicated 'Synergies and Conflicts' section with per-option analysis. Option 1: 'Elasticity CONFLICTS with Simplicity and Time-to-market. The very thing that gives you perfect scaling (many independent services) is what makes this impossible to deliver safely in 9 months.' Option 2: 'Simplicity CONFLICTS with Elasticity. The single deployment unit that keeps things simple is exactly what prevents independent scaling. This is the core tension: the option that's fastest to deliver doesn't solve the actual problem.' Option 3: 'Elasticity CONFLICTS with Reliability at the service boundary.'"
+      },
+      {
+        "id": 9,
+        "name": "applies-top-3-rule",
+        "passed": true,
+        "evidence": "Explicit 'Driving Quality Attributes' section identifying top 3 with clear rationale: 1. Elasticity ('The core problem: 30x traffic spikes'), 2. Time-to-market ('Hard deadline of next Black Friday'), 3. Simplicity (Operational) ('The team has never operated microservices')."
+      },
+      {
+        "id": 10,
+        "name": "introduces-non-obvious-option",
+        "passed": true,
+        "evidence": "Introduces 'Strangler Fig with Order Processing Service' as Option 3 and 'Modular Monolith with Selective Scaling' as Option 2. The user's prompt framed the decision as monolith vs microservices. The Strangler Fig hybrid becomes the recommendation."
+      },
+      {
+        "id": 11,
+        "name": "acknowledges-context-dependency",
+        "passed": true,
+        "evidence": "Extensive 'Context Sensitivity' section with 6 conditional statements: 'If the team had 2+ years of microservices operational experience → Option 1 becomes viable'; 'If the deadline were 18-24 months → Option 1 would be the stronger choice'; 'If the traffic spike were 3-5x instead of 30x → Option 2 would likely suffice'; 'If the team were 4-5 developers instead of 12 → Option 2 recommended regardless'; 'If budget were severely constrained → Option 2 with aggressive caching'; 'If the monolith's order processing module is deeply entangled → Option 2 may be the only realistic choice.'"
+      },
+      {
+        "id": 12,
+        "name": "names-anti-patterns",
+        "passed": true,
+        "evidence": "Names 'distributed monolith anti-pattern' explicitly: 'that path leads to a half-migrated system that's WORSE than the current monolith (distributed monolith anti-pattern).'"
+      },
+      {
+        "id": 13,
+        "name": "has-risk-mitigation-table",
+        "passed": true,
+        "evidence": "Structured 'Risks of This Choice' table with 4 columns: Risk, Likelihood (High/Medium/Low), Impact (High/Medium), Mitigation. 5 specific risks identified with detailed, actionable mitigations."
+      }
+    ]
+  },
+  "summary": {
+    "structural_passed": 5,
+    "structural_total": 5,
+    "value_passed": 8,
+    "value_total": 8,
+    "total_passed": 13,
+    "total_assertions": 13
+  }
+}

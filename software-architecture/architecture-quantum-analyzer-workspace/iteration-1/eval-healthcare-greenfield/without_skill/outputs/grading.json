@@ -1,0 +1,51 @@
+{
+  "test": "healthcare-greenfield",
+  "variant": "without_skill",
+  "assertions": {
+    "structural": {
+      "identifies-deployable-units": {
+        "pass": true,
+        "evidence": "Identifies 4 features and proposes 2-3 deployment units in recommendation tables."
+      },
+      "produces-quantum-map": {
+        "pass": true,
+        "evidence": "Option A and Option B tables show deployment unit groupings with rationale. Summary table maps features to recommendations."
+      },
+      "has-monolith-vs-distributed-recommendation": {
+        "pass": true,
+        "evidence": "Recommends 2-3 deployment units (distributed). 'Microservices for everything is overkill here. You likely need 2-3 deployment units.'"
+      },
+      "analyzes-communication-patterns": {
+        "pass": false,
+        "evidence": "No systematic analysis of sync vs async communication between components. Only a brief mention of 'Async events (patient admitted -> billing notified)' in a diagram caption. No communication map or pattern analysis."
+      }
+    },
+    "value": {
+      "applies-3-criteria-definition": {
+        "pass": false,
+        "evidence": "Never mentions the 3 quantum criteria. No use of 'connascence,' 'functional cohesion,' or the formal 3-criteria quantum definition. Uses ad-hoc reasoning: compliance boundaries, team size, operational overhead."
+      },
+      "identifies-different-characteristics-per-quantum": {
+        "pass": false,
+        "evidence": "Notes different requirements per feature in prose (availability for scheduling, compliance for billing) but never produces a structured comparison showing non-uniformity. No characteristic matrix."
+      },
+      "uses-connascence-for-boundaries": {
+        "pass": false,
+        "evidence": "Never uses sync/async connascence as a boundary criterion. Boundaries drawn based on compliance needs, team size, and operational overhead. The word 'connascence' never appears."
+      },
+      "warns-uniform-characteristics": {
+        "pass": false,
+        "evidence": "Never warns about or analyzes uniform vs non-uniform characteristics. No characteristic analysis framework applied."
+      },
+      "quantum-count-drives-style": {
+        "pass": false,
+        "evidence": "Never connects quantum count to architecture style. Uses pragmatic reasoning (team size, operational overhead, data consistency) rather than the quantum-count-to-style formula. The word 'quantum' never appears."
+      }
+    }
+  },
+  "score": {
+    "structural": "3/4",
+    "value": "0/5",
+    "total": "3/9"
+  }
+}

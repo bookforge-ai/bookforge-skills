@@ -1,0 +1,10 @@
+# Copyrighted books (defense-in-depth — NEVER commit to public repo)
+*.pdf
+*.epub
+
+# Internal pipeline artifacts
+.meta/
+
+# OS
+.DS_Store
+Thumbs.db

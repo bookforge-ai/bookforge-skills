@@ -1,0 +1,98 @@
+{
+  "test_case": "monolith-vs-microservices",
+  "run_type": "without_skill",
+  "iteration": 1,
+  "grading_version": 2,
+  "assertions": {
+    "structural": [
+      {
+        "id": 1,
+        "name": "has-trade-off-matrix",
+        "passed": true,
+        "evidence": "Has 'Head-to-Head Comparison' table comparing Microservice Extraction vs Scaled Modular Monolith across 10 dimensions."
+      },
+      {
+        "id": 2,
+        "name": "has-multiple-options",
+        "passed": true,
+        "evidence": "2 options analyzed: Extract Order Processing as a Microservice, Scale the Monolith Strategically (Modular Monolith)."
+      },
+      {
+        "id": 3,
+        "name": "has-recommendation",
+        "passed": true,
+        "evidence": "Clear recommendation: 'Go with Option 2 (Scaled Modular Monolith) for this Black Friday.'"
+      },
+      {
+        "id": 4,
+        "name": "follows-standard-template",
+        "passed": true,
+        "evidence": "Structured format with Context Summary, Option analysis (How It Works, Benefits, Costs and Risks, Estimated Effort), Comparison table, Recommendation, Execution Plan, Risk Mitigation."
+      },
+      {
+        "id": 5,
+        "name": "has-adr",
+        "passed": false,
+        "evidence": "No formal Architecture Decision Record section. No Status/Context/Decision/Consequences structure."
+      }
+    ],
+    "value": [
+      {
+        "id": 6,
+        "name": "uses-least-worst-framing",
+        "passed": false,
+        "evidence": "Recommendation is framed as 'Go with Option 2' — a positive endorsement, not a least-worst framing. No acknowledgment that all options have significant downsides."
+      },
+      {
+        "id": 7,
+        "name": "hunts-hidden-negatives",
+        "passed": true,
+        "evidence": "For the monolith option: 'Perceived as not ambitious enough — The CEO asked for a fix. We scaled the monolith may not sound as impressive as we built a microservice. This is a stakeholder management challenge, not a technical one.' This is a non-obvious, counterintuitive negative (political rather than technical)."
+      },
+      {
+        "id": 8,
+        "name": "has-synergy-conflict-analysis",
+        "passed": false,
+        "evidence": "No explicit analysis of how quality attributes interact within each option. The analysis discusses trade-offs between options but does not examine synergies or conflicts between attributes within a single option."
+      },
+      {
+        "id": 9,
+        "name": "applies-top-3-rule",
+        "passed": false,
+        "evidence": "No explicit prioritization of top 3 driving quality attributes. The comparison table lists 10 dimensions with equal weight. No hierarchy of what matters most."
+      },
+      {
+        "id": 10,
+        "name": "introduces-non-obvious-option",
+        "passed": false,
+        "evidence": "Only analyzes the two options directly implied by the prompt (microservice extraction vs scaling the monolith). No third option introduced."
+      },
+      {
+        "id": 11,
+        "name": "acknowledges-context-dependency",
+        "passed": true,
+        "evidence": "Explicit 'What Could Change This Recommendation' section with 4 conditional statements: 'If the team had microservices experience, Option 1 becomes viable'; 'If the deadline were 18 months, Option 1 would be the better long-term investment'; 'If the scaling need were 100x+ sustained'; 'If order processing has fundamentally different compute characteristics'."
+      },
+      {
+        "id": 12,
+        "name": "names-anti-patterns",
+        "passed": false,
+        "evidence": "No named architectural decision anti-patterns. Discusses risks but does not reference anti-patterns by name (no mention of Covering Your Assets, analysis paralysis, Groundhog Day, distributed monolith, or similar)."
+      },
+      {
+        "id": 13,
+        "name": "has-risk-mitigation-table",
+        "passed": false,
+        "evidence": "Has a 'Risk Mitigation for the CEO Conversation' section but it is prose-based talking points, not a structured risk table. No likelihood/impact assessment. No systematic risk identification."
+      }
+    ]
+  },
+  "summary": {
+    "structural_passed": 4,
+    "structural_total": 5,
+    "value_passed": 2,
+    "value_total": 8,
+    "total_passed": 6,
+    "total_assertions": 13
+  }
+}

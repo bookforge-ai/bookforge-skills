@@ -1,0 +1,98 @@
+{
+  "test_case": "healthcare-saas",
+  "run_type": "with_skill",
+  "iteration": 3,
+  "grading_version": 2,
+  "assertions": {
+    "structural": [
+      {
+        "id": 1,
+        "name": "has-trade-off-matrix",
+        "passed": true,
+        "evidence": "Explicit 'Trade-off Matrix' table with +/-/= scoring across 9 quality attributes (Security/HIPAA, Simplicity, Time-to-market, Scalability, Deployability, Maintainability, Fault Isolation, Cost, Observability) for all 3 options."
+      },
+      {
+        "id": 2,
+        "name": "has-multiple-options",
+        "passed": true,
+        "evidence": "3 options analyzed: Microservices Architecture, Simple Monolith, Modular Monolith."
+      },
+      {
+        "id": 3,
+        "name": "has-recommendation",
+        "passed": true,
+        "evidence": "Clear recommendation: 'Modular Monolith — the least worst choice for this context because:' followed by 4 numbered justification points."
+      },
+      {
+        "id": 4,
+        "name": "follows-standard-template",
+        "passed": true,
+        "evidence": "Consistent structure: Decision > Options Considered > Driving Quality Attributes > Analysis of Each Option (Advantages/Disadvantages per option) > Trade-off Matrix > Synergies and Conflicts > Recommendation > Risks > Context Sensitivity > ADR."
+      },
+      {
+        "id": 5,
+        "name": "has-adr",
+        "passed": true,
+        "evidence": "Formal ADR with Status (Proposed), Context (detailed problem with three-way tension), Decision (with explicit rationale for rejecting microservices and revisit criteria), Consequences (Positive and Negative)."
+      }
+    ],
+    "value": [
+      {
+        "id": 6,
+        "name": "uses-least-worst-framing",
+        "passed": true,
+        "evidence": "Recommendation explicitly says: 'the least worst choice for this context'."
+      },
+      {
+        "id": 7,
+        "name": "hunts-hidden-negatives",
+        "passed": true,
+        "evidence": "Microservices: 'HIPAA compliance surface area explodes. Every service-to-service communication channel is a potential PHI exposure point. Each service needs its own encryption, auth token validation, audit logging, and access control.' This connects architecture choice to regulatory risk in a non-obvious way. Simple Monolith: 'Coupling risk. Without discipline, a simple monolith becomes a big ball of mud — internal modules become tangled, changes in one area break others.' Modular Monolith: 'Requires design discipline. Module boundaries don't enforce themselves. The team needs to agree on and enforce interface contracts.'"
+      },
+      {
+        "id": 8,
+        "name": "has-synergy-conflict-analysis",
+        "passed": true,
+        "evidence": "Dedicated 'Synergies and Conflicts' section. Microservices: 'scalability fundamentally conflicts with simplicity and cost — you get scalability by adding massive complexity'; 'Security/compliance conflicts with the distributed nature.' Simple Monolith: 'Simplicity and security reinforce each other'; 'simplicity conflicts with long-term maintainability.' Modular Monolith: 'Maintainability reinforces the simplicity/security synergy (boundaries prevent the decay that would eventually make the system harder to secure).'"
+      },
+      {
+        "id": 9,
+        "name": "applies-top-3-rule",
+        "passed": true,
+        "evidence": "Explicit 'Driving Quality Attributes' section with top 3: 1. Security/Compliance ('HIPAA is non-negotiable... regulatory requirement, not a preference'), 2. Simplicity ('A team of 3 developers cannot absorb the operational complexity'), 3. Time-to-market ('getting to market and iterating based on real user feedback is critical')."
+      },
+      {
+        "id": 10,
+        "name": "introduces-non-obvious-option",
+        "passed": true,
+        "evidence": "Introduces 'Modular Monolith' as a third option not directly from either stakeholder. The prompt had CTO advocating microservices and lead dev advocating simple monolith. The modular monolith is positioned as a synthesis: 'Combines the deployment simplicity of a monolith with the structural discipline of microservices.'"
+      },
+      {
+        "id": 11,
+        "name": "acknowledges-context-dependency",
+        "passed": true,
+        "evidence": "Extensive 'Context Sensitivity' section with 5 conditional statements: 'If the team had 10+ developers and a dedicated DevOps/platform team → we'd recommend microservices'; 'If HIPAA compliance were not required → the modular monolith would still be recommended... but the security argument would be weaker'; 'If the product were already proven with 100K+ users and the team were growing to 15+ → we'd recommend extracting the highest-load module'; 'If the CTO's concern is really about future scalability → the modular monolith directly addresses this'; 'If the team had deep Kubernetes/microservices operational experience → the operational complexity argument weakens. But the HIPAA compliance surface area argument remains strong.'"
+      },
+      {
+        "id": 12,
+        "name": "names-anti-patterns",
+        "passed": true,
+        "evidence": "Explicitly names two anti-patterns: 'Architecture by Buzzword' and 'Covering Your Assets.' States: 'The CTO's appeal to Netflix is a variant of Covering Your Assets — choosing a well-known architecture to avoid blame if things go wrong.'"
+      },
+      {
+        "id": 13,
+        "name": "has-risk-mitigation-table",
+        "passed": true,
+        "evidence": "Structured 'Risks of This Choice' table with 4 columns: Risk, Likelihood (Medium/Low), Impact (High/Medium), Mitigation. 5 specific risks with actionable mitigations."
+      }
+    ]
+  },
+  "summary": {
+    "structural_passed": 5,
+    "structural_total": 5,
+    "value_passed": 8,
+    "value_total": 8,
+    "total_passed": 13,
+    "total_assertions": 13
+  }
+}

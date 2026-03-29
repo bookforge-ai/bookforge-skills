@@ -1,0 +1,51 @@
+{
+  "test": "simple-monolith",
+  "variant": "with_skill",
+  "assertions": {
+    "structural": {
+      "identifies-deployable-units": {
+        "pass": true,
+        "evidence": "Step 1 table identifies 5 components (Task Tracking, Time Logging, Reporting, User/Auth, PostgreSQL DB) all in the same Django monolith deployment unit."
+      },
+      "produces-quantum-map": {
+        "pass": true,
+        "evidence": "Step 4 table maps 1 quantum ('the only one') with all components, driving characteristics, and communication type."
+      },
+      "has-monolith-vs-distributed-recommendation": {
+        "pass": true,
+        "evidence": "Step 6: 'Quantum count: 1 ... Recommendation: Monolith.'"
+      },
+      "analyzes-communication-patterns": {
+        "pass": true,
+        "evidence": "Step 2 maps all communication paths as synchronous via Django ORM. 'Every single communication path is synchronous. All components talk through the Django ORM to the same PostgreSQL database.'"
+      }
+    },
+    "value": {
+      "applies-3-criteria-definition": {
+        "pass": true,
+        "evidence": "Step 4 applies all 3: '1. Deploy together? Yes ... 2. High functional cohesion? Yes ... 3. Synchronous connascence? Yes — all communication is synchronous via Django ORM and a shared PostgreSQL database.'"
+      },
+      "identifies-different-characteristics-per-quantum": {
+        "pass": true,
+        "evidence": "Step 3 produces full characteristic table and correctly shows all are uniform. 'Every characteristic is uniform across all components.' This is the correct analysis for a monolith test case."
+      },
+      "uses-connascence-for-boundaries": {
+        "pass": true,
+        "evidence": "'This is textbook synchronous connascence — all components share fate.' Uses shared DB as synchronous connascence evidence. 'A shared database means shared deployment.'"
+      },
+      "warns-uniform-characteristics": {
+        "pass": true,
+        "evidence": "Step 3: 'Every characteristic is uniform across all components.' Correctly identifies the uniform case and warns against unnecessary distribution."
+      },
+      "quantum-count-drives-style": {
+        "pass": true,
+        "evidence": "Step 6: 'Quantum count: 1 ... Single quantum = monolith. With one quantum, there is no architectural justification for distribution.'"
+      }
+    }
+  },
+  "score": {
+    "structural": "4/4",
+    "value": "5/5",
+    "total": "9/9"
+  }
+}

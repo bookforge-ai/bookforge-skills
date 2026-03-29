@@ -1,0 +1,55 @@
+{
+  "test": "sandwich-shop",
+  "run": "without_skill",
+  "assertions": {
+    "has-categorized-characteristics": {
+      "passed": false,
+      "evidence": "No categorization into operational/structural/cross-cutting. Characteristics are listed as a flat numbered list (1-10) with priority labels (High/Medium) but no category grouping."
+    },
+    "has-prioritized-top-3": {
+      "passed": false,
+      "evidence": "Section 'Top 3 Priorities Summary' lists priorities but bundles characteristics together: '#2 Scalability + Customizability', '#3 Security + Availability'. This is 5 characteristics, not 3. Fails the 'exactly 3' requirement."
+    },
+    "has-characteristic-table": {
+      "passed": true,
+      "evidence": "The 'Top 3 Priorities Summary' section has a table with Priority/Characteristic/Why columns. However, the main characteristics list is not in table format — it uses numbered headings with prose."
+    },
+    "has-explicit-and-implicit": {
+      "passed": false,
+      "evidence": "No distinction between explicit and implicit characteristics. All characteristics are presented in a single flat list without labeling which come from requirements vs. domain knowledge."
+    },
+    "has-validation": {
+      "passed": false,
+      "evidence": "No validation step. Characteristics are listed and described but never tested against criteria before inclusion. No characteristic is excluded or demoted based on a validation process."
+    },
+    "applies-three-criteria-test": {
+      "passed": false,
+      "evidence": "No three-criteria test applied. No characteristic is demoted or excluded because it fails a specific criterion. The 'What NOT to Over-Optimize For' section mentions deprioritizing things but without a structured validation framework."
+    },
+    "maps-domain-concerns": {
+      "passed": false,
+      "evidence": "No domain concern mapping table. The report jumps directly to listing architecture characteristics without a structured translation step from business language to technical characteristics."
+    },
+    "hunts-implicit-characteristics": {
+      "passed": false,
+      "evidence": "No characteristics are labeled as 'implicit' or identified as unstated-but-necessary. All characteristics appear to flow directly from the stated requirements without distinguishing which are derived from domain knowledge vs. explicit requirements."
+    },
+    "enforces-top-3-limit": {
+      "passed": false,
+      "evidence": "Lists 10 characteristics as 'Key Architecture Characteristics to Optimize For' plus 3 'Secondary Considerations'. The 'Top 3' section bundles 5 characteristics into 3 rows. No pushback against having too many, no explanation of why limiting matters."
+    },
+    "warns-characteristic-overload": {
+      "passed": false,
+      "evidence": "No warning about the danger of supporting too many characteristics. No mention of Vasa, helicopter, or any principle about over-specification. Lists 10 characteristics without noting this is too many."
+    },
+    "uses-domain-mapping-table": {
+      "passed": false,
+      "evidence": "No domain mapping table. No structured translation from domain concerns to characteristics. The report goes directly to listing characteristics."
+    }
+  },
+  "score": {
+    "passed": 1,
+    "failed": 10,
+    "total": 11
+  }
+}

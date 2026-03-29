@@ -1,0 +1,98 @@
+{
+  "test_case": "healthcare-saas",
+  "run_type": "with_skill",
+  "iteration": 1,
+  "grading_version": 2,
+  "assertions": {
+    "structural": [
+      {
+        "id": 1,
+        "name": "has-trade-off-matrix",
+        "passed": true,
+        "evidence": "Explicit 'Trade-off Matrix' table with +/- scoring across 8 quality attributes for all 3 options (Microservices, Modular Monolith, Service-Based)."
+      },
+      {
+        "id": 2,
+        "name": "has-multiple-options",
+        "passed": true,
+        "evidence": "3 options analyzed: Microservices, Modular Monolith, Service-Based Architecture."
+      },
+      {
+        "id": 3,
+        "name": "has-recommendation",
+        "passed": true,
+        "evidence": "Clear recommendation: 'Modular Monolith — the least worst choice for this context.'"
+      },
+      {
+        "id": 4,
+        "name": "follows-standard-template",
+        "passed": true,
+        "evidence": "Consistent structure: Decision > Options > Driving Quality Attributes > Advantages > Disadvantages > Trade-off Matrix > Synergies and Conflicts > Recommendation > Risks > ADR."
+      },
+      {
+        "id": 5,
+        "name": "has-adr",
+        "passed": true,
+        "evidence": "Formal ADR with Status (Proposed), Context, Decision, and Consequences (Positive/Negative)."
+      }
+    ],
+    "value": [
+      {
+        "id": 6,
+        "name": "uses-least-worst-framing",
+        "passed": true,
+        "evidence": "Recommendation explicitly says: 'the least worst choice for this context'."
+      },
+      {
+        "id": 7,
+        "name": "hunts-hidden-negatives",
+        "passed": true,
+        "evidence": "Non-obvious negatives: Microservices — 'Premature optimization. Netflix has thousands of engineers. They arrived at microservices after years as a monolith... Starting with microservices for a 3-person team with zero users is cargo-culting.' Service-Based — 'Worst of both worlds risk. If services are poorly bounded, you get the complexity of distribution without the benefits of independence.' These go beyond standard pro/con lists."
+      },
+      {
+        "id": 8,
+        "name": "has-synergy-conflict-analysis",
+        "passed": true,
+        "evidence": "Dedicated 'Synergies and Conflicts' section per option. E.g., Monolith: 'Simplicity reinforces Security. With one deployment boundary, HIPAA compliance is scoped to a single system.' Microservices: 'Scalability conflicts with Security. More network boundaries = more attack surface = more HIPAA compliance work. The very thing that makes microservices scalable (distribution) makes them harder to secure.'"
+      },
+      {
+        "id": 9,
+        "name": "applies-top-3-rule",
+        "passed": true,
+        "evidence": "Explicit 'Driving Quality Attributes' section with exactly 3: Security/Compliance, Simplicity/Time-to-Market, Scalability."
+      },
+      {
+        "id": 10,
+        "name": "introduces-non-obvious-option",
+        "passed": true,
+        "evidence": "Introduces 'Service-Based Architecture' as a third option: 'Not yet proposed by the team, but a viable compromise.' The prompt only mentioned microservices vs monolith."
+      },
+      {
+        "id": 11,
+        "name": "acknowledges-context-dependency",
+        "passed": false,
+        "evidence": "No explicit conditional reasoning about how the recommendation changes. The recommendation says 'for this context' but does not state 'if the team grew to 15, we would recommend X' or similar conditionals. The 'Risks' section discusses future extraction triggers but as mitigations, not as context-dependent recommendation changes."
+      },
+      {
+        "id": 12,
+        "name": "names-anti-patterns",
+        "passed": true,
+        "evidence": "Explicitly names 'cargo-culting' as an anti-pattern: 'Starting with microservices for a 3-person team with zero users is cargo-culting — copying the visible practices without the context that made them necessary.'"
+      },
+      {
+        "id": 13,
+        "name": "has-risk-mitigation-table",
+        "passed": false,
+        "evidence": "Has a risk section with bullet points listing risks and mitigations, but no structured table with likelihood/impact columns. Missing systematic risk assessment."
+      }
+    ]
+  },
+  "summary": {
+    "structural_passed": 5,
+    "structural_total": 5,
+    "value_passed": 5,
+    "value_total": 8,
+    "total_passed": 10,
+    "total_assertions": 13
+  }
+}

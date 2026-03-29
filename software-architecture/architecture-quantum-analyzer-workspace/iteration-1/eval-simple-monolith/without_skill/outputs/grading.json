@@ -1,0 +1,51 @@
+{
+  "test": "simple-monolith",
+  "variant": "without_skill",
+  "assertions": {
+    "structural": {
+      "identifies-deployable-units": {
+        "pass": true,
+        "evidence": "Identifies 1 Django application as the single deployable unit with 1 PostgreSQL database."
+      },
+      "produces-quantum-map": {
+        "pass": true,
+        "evidence": "Summary table maps quantum count (1), recommended architecture (Monolith), and key assessment."
+      },
+      "has-monolith-vs-distributed-recommendation": {
+        "pass": true,
+        "evidence": "'Recommended architecture: Monolith (Django).' Clear recommendation with reasoning."
+      },
+      "analyzes-communication-patterns": {
+        "pass": false,
+        "evidence": "No systematic analysis of sync vs async communication patterns. Mentions 'Synchronous dependencies: None external' but never maps internal communication paths or analyzes sync/async patterns between components."
+      }
+    },
+    "value": {
+      "applies-3-criteria-definition": {
+        "pass": false,
+        "evidence": "Defines quantum loosely ('smallest independently deployable unit... structural elements') and mentions 'synchronous connascence' once in the definition. But never applies the 3-criteria test formally. 'High functional cohesion' is never explicitly named as a criterion. The 3 criteria are not presented as a unified framework."
+      },
+      "identifies-different-characteristics-per-quantum": {
+        "pass": false,
+        "evidence": "No structured characteristic comparison. Notes that features do not have different scaling/deployment needs but through ad-hoc driver analysis (independent deployment, scaling, team autonomy) rather than characteristic-per-component analysis."
+      },
+      "uses-connascence-for-boundaries": {
+        "pass": false,
+        "evidence": "Mentions 'synchronous connascence' once in the quantum definition but never uses it as a technical criterion for boundary analysis. Boundaries determined by shared database and practical deployment concerns, not connascence analysis."
+      },
+      "warns-uniform-characteristics": {
+        "pass": false,
+        "evidence": "Never explicitly warns about or identifies uniform characteristics. Implies uniformity through practical arguments (same scaling needs, same team, shared data) but never frames it in terms of architecture characteristic uniformity."
+      },
+      "quantum-count-drives-style": {
+        "pass": true,
+        "evidence": "'Number of architecture quanta: 1' and 'Microservices are justified when you have (or need) multiple independent quanta.' Connects quantum count to the style decision."
+      }
+    }
+  },
+  "score": {
+    "structural": "3/4",
+    "value": "1/5",
+    "total": "4/9"
+  }
+}

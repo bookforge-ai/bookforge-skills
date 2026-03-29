@@ -1,0 +1,40 @@
+# Architecture characteristics per service.
+# A quantum analyzer should detect that services with DIFFERENT top characteristics
+# and ASYNC boundaries between them belong to different quanta.
+
+services:
+  bidder_service:
+    characteristics:
+      elasticity: 5        # burst traffic during live auctions
+      performance: 5        # sub-100ms bid latency required
+      scalability: 4        # horizontal scaling for auction peaks
+      availability: 3
+      reliability: 2
+      security: 2
+
+  auction_service:
+    characteristics:
+      elasticity: 4         # inherits from bidder coupling
+      performance: 4         # must keep up with bid throughput
+      scalability: 4
+      availability: 3
+      reliability: 3
+      security: 2
+
+  payment_service:
+    characteristics:
+      reliability: 5         # payments must never be lost
+      security: 5            # PCI compliance, encryption
+      availability: 3
+      performance: 2          # batch is fine
+      elasticity: 1
+      scalability: 1
+
+  notification_service:
+    characteristics:
+      availability: 5        # always reachable
+      reliability: 3
+      performance: 1          # latency is not critical
+      elasticity: 1
+      scalability: 2
+      security: 1

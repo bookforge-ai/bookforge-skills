@@ -1,0 +1,98 @@
+{
+  "test_case": "kafka-vs-rabbitmq",
+  "run_type": "with_skill",
+  "iteration": 3,
+  "grading_version": 2,
+  "assertions": {
+    "structural": [
+      {
+        "id": 1,
+        "name": "has-trade-off-matrix",
+        "passed": true,
+        "evidence": "Explicit 'Trade-off Matrix' table with +/=/- scoring across 8 quality attributes (Scalability, Cost, Simplicity, Reliability, Performance, Extensibility, Recoverability, Time-to-market) for both options."
+      },
+      {
+        "id": 2,
+        "name": "has-multiple-options",
+        "passed": true,
+        "evidence": "2 options analyzed: Apache Kafka (via Amazon MSK or self-managed) and RabbitMQ (via Amazon MQ or self-managed)."
+      },
+      {
+        "id": 3,
+        "name": "has-recommendation",
+        "passed": true,
+        "evidence": "Clear recommendation: 'Apache Kafka (via Amazon MSK Serverless) — the least worst choice for this context, with a phased adoption strategy to mitigate the team expertise gap.'"
+      },
+      {
+        "id": 4,
+        "name": "follows-standard-template",
+        "passed": true,
+        "evidence": "Consistent structure: Decision > Options Considered > Driving Quality Attributes > Analysis (Advantages per option, then 'Hunting the Negatives' per option) > Trade-off Matrix > Synergies and Conflicts > Recommendation > Risks > Context Sensitivity > ADR."
+      },
+      {
+        "id": 5,
+        "name": "has-adr",
+        "passed": true,
+        "evidence": "Formal ADR with Status (Proposed), Context (detailed including team, scale, constraints), Decision (with rationale citing 3 numbered reasons and explicit least-worst framing), Consequences (Positive and Negative)."
+      }
+    ],
+    "value": [
+      {
+        "id": 6,
+        "name": "uses-least-worst-framing",
+        "passed": true,
+        "evidence": "Recommendation explicitly says: 'the least worst choice for this context.' ADR Decision also uses 'the least worst set of trade-offs.'"
+      },
+      {
+        "id": 7,
+        "name": "hunts-hidden-negatives",
+        "passed": true,
+        "evidence": "Kafka: 'Over-provisioned for current scale. 50k events/sec is achievable with RabbitMQ. Kafka's advantages fully materialize at 500k+ events/sec. At current scale, you're paying for headroom you may not need for 6-12 months.' RabbitMQ: 'Memory pressure under load. RabbitMQ queues hold messages in memory before flushing to disk. At 50k/sec with slow consumers, memory pressure can cause the broker to trigger flow control (throttling producers), which introduces backpressure to the mobile event ingestion layer — exactly where you cannot afford drops.' Both go beyond standard pro/con analysis."
+      },
+      {
+        "id": 8,
+        "name": "has-synergy-conflict-analysis",
+        "passed": true,
+        "evidence": "Dedicated 'Synergies and Conflicts' section with per-option analysis. Kafka: 'Scalability reinforces extensibility'; 'Reliability conflicts with cost — replication across brokers is what makes it durable, but it also means paying for 3x storage.' RabbitMQ: 'Cost reinforces simplicity — lower infrastructure means fewer things to monitor'; 'Time-to-market conflicts with recoverability — shipping fast with RabbitMQ means no replay, and adding replay later is retrofitting.'"
+      },
+      {
+        "id": 9,
+        "name": "applies-top-3-rule",
+        "passed": true,
+        "evidence": "Explicit 'Driving Quality Attributes' section with top 3: 1. Scalability, 2. Cost, 3. Simplicity (Operational). Each includes contextual rationale."
+      },
+      {
+        "id": 10,
+        "name": "introduces-non-obvious-option",
+        "passed": false,
+        "evidence": "Only 2 options are analyzed as full options: Kafka and RabbitMQ, exactly as stated in the prompt. Amazon Kinesis Data Streams is mentioned in the cost mitigation paragraph and context sensitivity section as an alternative to consider, but it is NOT analyzed as a full third option with its own advantages/disadvantages section and matrix row. In iteration 1 this was a PASS because Kinesis was elevated to a full third option. Here it is relegated to a side suggestion."
+      },
+      {
+        "id": 11,
+        "name": "acknowledges-context-dependency",
+        "passed": true,
+        "evidence": "Extensive 'Context Sensitivity' section with 5 conditional statements: 'If the app's growth is uncertain or expected to plateau → RabbitMQ becomes the better choice'; 'If the team cannot afford 2-4 weeks of learning curve → Start with RabbitMQ now'; 'If the budget is truly minimal (under $500/month) → RabbitMQ on Amazon MQ is the only viable option'; 'If the team is open to AWS-native alternatives → Amazon Kinesis Data Streams deserves evaluation'; 'If the use case expands beyond analytics to include transactional messaging → A hybrid approach becomes relevant.'"
+      },
+      {
+        "id": 12,
+        "name": "names-anti-patterns",
+        "passed": false,
+        "evidence": "No named architectural decision anti-patterns. The report discusses risks and trade-offs but does not reference any anti-patterns by name (no Covering Your Assets, Groundhog Day, Analysis Paralysis, etc.)."
+      },
+      {
+        "id": 13,
+        "name": "has-risk-mitigation-table",
+        "passed": true,
+        "evidence": "Structured 'Risks of This Choice' table with 4 columns: Risk, Likelihood (High/Medium/Low), Impact (Medium/Low), Mitigation. 5 specific risks with concrete mitigations."
+      }
+    ]
+  },
+  "summary": {
+    "structural_passed": 5,
+    "structural_total": 5,
+    "value_passed": 6,
+    "value_total": 8,
+    "total_passed": 11,
+    "total_assertions": 13
+  }
+}

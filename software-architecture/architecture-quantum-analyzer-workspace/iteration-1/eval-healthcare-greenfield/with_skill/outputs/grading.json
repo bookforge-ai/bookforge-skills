@@ -1,0 +1,51 @@
+{
+  "test": "healthcare-greenfield",
+  "variant": "with_skill",
+  "assertions": {
+    "structural": {
+      "identifies-deployable-units": {
+        "pass": true,
+        "evidence": "Step 1 table identifies 4 components with responsibilities and deployment status (TBD greenfield)."
+      },
+      "produces-quantum-map": {
+        "pass": true,
+        "evidence": "Step 4 maps 4 quanta with components, cohesion, connascence, and database ownership. Step 5 produces characteristic comparison table."
+      },
+      "has-monolith-vs-distributed-recommendation": {
+        "pass": true,
+        "evidence": "Step 6: 'Quantum count: 4 ... Recommendation: Distributed architecture required.'"
+      },
+      "analyzes-communication-patterns": {
+        "pass": true,
+        "evidence": "Step 2 maps all inter-component communication as async (message queue events). Key observation: 'None of these four features require synchronous, real-time request-response communication.'"
+      }
+    },
+    "value": {
+      "applies-3-criteria-definition": {
+        "pass": true,
+        "evidence": "Step 4: 'Applying the three-criteria test (deploy together + high functional cohesion + synchronous connascence).' All three criteria explicitly named and applied per quantum."
+      },
+      "identifies-different-characteristics-per-quantum": {
+        "pass": true,
+        "evidence": "Step 5 comparison table shows all 6 characteristics non-uniform across 4 quanta. 'Every single characteristic is non-uniform across quanta.'"
+      },
+      "uses-connascence-for-boundaries": {
+        "pass": true,
+        "evidence": "Step 2: 'synchronous connascence = shared fate (the quantum rule). The absence of synchronous cross-component communication means these components do NOT share operational fate.' Sync/async used as the technical criterion."
+      },
+      "warns-uniform-characteristics": {
+        "pass": true,
+        "evidence": "Step 3: 'The characteristics are clearly non-uniform.' Includes explicit 'Caution check (uniform characteristics anti-pattern)' paragraph."
+      },
+      "quantum-count-drives-style": {
+        "pass": true,
+        "evidence": "Step 6: 'Quantum count: 4 ... Recommendation: Distributed architecture required.' Also: 'you need exactly 4 deployment units, not more' and 'you need exactly 4 deployment units, not 40.'"
+      }
+    }
+  },
+  "score": {
+    "structural": "4/4",
+    "value": "5/5",
+    "total": "9/9"
+  }
+}

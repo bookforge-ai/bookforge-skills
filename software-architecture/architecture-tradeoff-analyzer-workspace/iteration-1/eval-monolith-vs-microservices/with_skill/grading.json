@@ -1,0 +1,45 @@
+{
+  "run_id": "eval-monolith-vs-microservices-with_skill",
+  "expectations": [
+    {
+      "text": "has-trade-off-matrix",
+      "passed": true,
+      "evidence": "Formatted table in '## Trade-off Matrix' section with 8 quality attributes as rows and 3 options as columns, using +/- notation for each cell."
+    },
+    {
+      "text": "has-multiple-options",
+      "passed": true,
+      "evidence": "3 options analyzed: (1) Full Microservices Extraction, (2) Modular Monolith with Targeted Scaling, (3) Strangler Fig: Extract Only the Order Processing Hot Path."
+    },
+    {
+      "text": "has-quality-attributes",
+      "passed": true,
+      "evidence": "Explicitly names 8 quality attributes: Elasticity, Simplicity (Operational), Time-to-market, Cost, Fault isolation, Maintainability, Reliability, Testability. Top 3 driving attributes identified with rationale."
+    },
+    {
+      "text": "has-recommendation",
+      "passed": true,
+      "evidence": "Clear recommendation: 'Option 3: Strangler Fig (Extract Order Hot Path Only)' with primary justification (Elasticity), secondary justification (Operational simplicity + Time-to-market), and detailed reasoning."
+    },
+    {
+      "text": "has-negatives-for-recommended",
+      "passed": true,
+      "evidence": "Section 'Acknowledged downsides and why they're acceptable' lists 3 explicit negatives for Option 3: data synchronization complexity, two systems to maintain, and temporary architecture."
+    },
+    {
+      "text": "uses-least-worst-framing",
+      "passed": true,
+      "evidence": "Recommendation explicitly states: 'Option 3: Strangler Fig (Extract Order Hot Path Only) -- the least worst choice for this context.'"
+    },
+    {
+      "text": "context-dependent",
+      "passed": true,
+      "evidence": "Analysis directly references user constraints: 12 developers, zero microservices experience, 9-month hard deadline (next Black Friday), 30x traffic spikes, 200k LOC Django monolith, 3 years old."
+    },
+    {
+      "text": "hunts-negatives",
+      "passed": true,
+      "evidence": "Option 1 (Full Microservices) has 6 disadvantages. Option 2 (Modular Monolith) has 5 disadvantages. Option 3 (Strangler Fig) has 5 disadvantages. All well above the 2-minimum threshold."
+    }
+  ]
+}

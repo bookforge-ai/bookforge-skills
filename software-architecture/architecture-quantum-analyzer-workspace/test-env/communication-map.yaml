@@ -1,0 +1,42 @@
+# Communication map — the key input for quantum boundary detection.
+# Synchronous (REST) coupling = same quantum.
+# Asynchronous (message queue) = different quanta.
+
+communications:
+  - from: bidder_service
+    to: auction_service
+    style: synchronous
+    protocol: REST/HTTP
+    latency_requirement: "<100ms"
+    notes: "Bidder calls Auction to validate and record bids. Tight coupling."
+
+  - from: auction_service
+    to: payment_service
+    style: asynchronous
+    protocol: AMQP/RabbitMQ
+    queue: payment_queue
+    notes: "Auction publishes 'auction_closed' event. Payment consumes independently."
+
+  - from: auction_service
+    to: notification_service
+    style: asynchronous
+    protocol: AMQP/RabbitMQ
+    queue: notification_queue
+    notes: "Auction publishes 'auction_closed' event. Notification consumes independently."
+
+deployment_boundaries:
+  bidding_quantum:
+    services: [bidder_service, auction_service]
+    shared_network: bidding_net
+    scales_together: true
+    reason: "Synchronous connascence — must deploy and scale as a unit"
+
+  payment_quantum:
+    services: [payment_service]
+    independent_deploy: true
+    reason: "Async boundary — different characteristics (reliability, security)"
+
+  notification_quantum:
+    services: [notification_service]
+    independent_deploy: true
+    reason: "Async boundary — different characteristics (availability)"
