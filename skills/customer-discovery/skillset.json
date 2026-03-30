@@ -1,0 +1,213 @@
+{
+  "name": "customer-discovery",
+  "version": "1.0.0",
+  "description": "9 skills for systematic customer discovery, extracted from The Mom Test by Rob Fitzpatrick",
+  "domain": "customer-discovery",
+  "book": {
+    "title": "The Mom Test",
+    "author": "Rob Fitzpatrick",
+    "isbn": null
+  },
+  "skills": [
+    {
+      "name": "conversation-question-designer",
+      "path": "conversation-question-designer/SKILL.md",
+      "description": "Write, rewrite, or audit customer interview questions so they extract honest behavioral data instead of false validation.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": { "with_skill": 100, "baseline": 18, "delta": 82 }
+    },
+    {
+      "name": "conversation-data-quality-analyzer",
+      "path": "conversation-data-quality-analyzer/SKILL.md",
+      "description": "Analyze customer conversation notes or transcripts after a meeting to classify every statement as fact, compliment, fluff, or idea — separating real signal from noise.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": ["conversation-question-designer"],
+      "quality": { "with_skill": 97, "baseline": 35, "delta": 62 }
+    },
+    {
+      "name": "question-importance-prioritizer",
+      "path": "question-importance-prioritizer/SKILL.md",
+      "description": "Prioritize which assumptions to validate first and produce focused learning goals before customer conversations — classifying risks as product risk versus market risk.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": { "with_skill": 100, "baseline": 18, "delta": 82 }
+    },
+    {
+      "name": "conversation-format-selector",
+      "path": "conversation-format-selector/SKILL.md",
+      "description": "Choose the right conversation format — casual chat, scheduled meeting, or phone/video call — for a customer discovery interaction.",
+      "tier": 1,
+      "mode": "plan-only",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": { "with_skill": 100, "baseline": 9, "delta": 91 }
+    },
+    {
+      "name": "commitment-signal-evaluator",
+      "path": "commitment-signal-evaluator/SKILL.md",
+      "description": "Evaluate whether a customer meeting produced real interest or just polite enthusiasm by classifying commitment signals into time, reputation, and money currencies.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": { "with_skill": 100, "baseline": 18, "delta": 82 }
+    },
+    {
+      "name": "conversation-sourcing-planner",
+      "path": "conversation-sourcing-planner/SKILL.md",
+      "description": "Create a plan for finding and reaching people to have customer discovery conversations with, including channel selection, outreach messages, and warm intro strategies.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": ["customer-segment-slicer"],
+      "quality": { "with_skill": 93, "baseline": 28, "delta": 65 }
+    },
+    {
+      "name": "customer-segment-slicer",
+      "path": "customer-segment-slicer/SKILL.md",
+      "description": "Iteratively narrow broad customer segments into specific, findable sub-segments with who-where pairs.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": { "with_skill": 100, "baseline": 27, "delta": 73 }
+    },
+    {
+      "name": "conversation-learning-process",
+      "path": "conversation-learning-process/SKILL.md",
+      "description": "Structure the before-and-after process around customer conversations so learning actually reaches the whole team.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": { "with_skill": 100, "baseline": 17, "delta": 83 }
+    },
+    {
+      "name": "customer-discovery-process",
+      "path": "customer-discovery-process/SKILL.md",
+      "description": "Orchestrate the full customer discovery process — before, during, and after customer conversations — to systematically validate a business idea.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 2,
+      "depends_on": [
+        "conversation-question-designer",
+        "conversation-data-quality-analyzer",
+        "commitment-signal-evaluator",
+        "customer-segment-slicer",
+        "conversation-learning-process",
+        "conversation-sourcing-planner",
+        "conversation-format-selector",
+        "question-importance-prioritizer"
+      ],
+      "quality": { "with_skill": 97, "baseline": 30, "delta": 67 }
+    }
+  ],
+  "dependency_graph": {
+    "nodes": [
+      "conversation-question-designer",
+      "conversation-data-quality-analyzer",
+      "question-importance-prioritizer",
+      "conversation-format-selector",
+      "commitment-signal-evaluator",
+      "conversation-sourcing-planner",
+      "customer-segment-slicer",
+      "conversation-learning-process",
+      "customer-discovery-process"
+    ],
+    "edges": [
+      {
+        "from": "conversation-question-designer",
+        "to": "conversation-data-quality-analyzer",
+        "type": "knowledge",
+        "reason": "Understanding good vs bad questions is prerequisite to recognizing bad data patterns"
+      },
+      {
+        "from": "customer-segment-slicer",
+        "to": "conversation-sourcing-planner",
+        "type": "input",
+        "reason": "Need to know WHO you're targeting before planning HOW to reach them"
+      },
+      {
+        "from": "conversation-question-designer",
+        "to": "customer-discovery-process",
+        "type": "knowledge",
+        "reason": "Hub references question design rules"
+      },
+      {
+        "from": "conversation-data-quality-analyzer",
+        "to": "customer-discovery-process",
+        "type": "knowledge",
+        "reason": "Hub references bad data patterns"
+      },
+      {
+        "from": "commitment-signal-evaluator",
+        "to": "customer-discovery-process",
+        "type": "knowledge",
+        "reason": "Hub references commitment currencies"
+      },
+      {
+        "from": "customer-segment-slicer",
+        "to": "customer-discovery-process",
+        "type": "knowledge",
+        "reason": "Hub references segment selection"
+      },
+      {
+        "from": "conversation-learning-process",
+        "to": "customer-discovery-process",
+        "type": "knowledge",
+        "reason": "Hub references team process"
+      }
+    ],
+    "levels": {
+      "0": ["conversation-question-designer", "question-importance-prioritizer", "conversation-format-selector", "commitment-signal-evaluator", "customer-segment-slicer", "conversation-learning-process"],
+      "1": ["conversation-data-quality-analyzer", "conversation-sourcing-planner"],
+      "2": ["customer-discovery-process"]
+    },
+    "is_dag": true,
+    "max_depth": 2
+  },
+  "quality_summary": {
+    "avg_with_skill": 98.6,
+    "avg_baseline": 22.2,
+    "avg_delta": 76.3,
+    "all_passed": true
+  },
+  "install_profiles": {
+    "full": {
+      "skills": [
+        "conversation-question-designer",
+        "conversation-data-quality-analyzer",
+        "question-importance-prioritizer",
+        "conversation-format-selector",
+        "commitment-signal-evaluator",
+        "conversation-sourcing-planner",
+        "customer-segment-slicer",
+        "conversation-learning-process",
+        "customer-discovery-process"
+      ],
+      "description": "Complete customer discovery toolkit"
+    },
+    "essentials": {
+      "skills": [
+        "conversation-question-designer",
+        "conversation-data-quality-analyzer",
+        "commitment-signal-evaluator",
+        "customer-segment-slicer"
+      ],
+      "description": "Core 4 skills for question design, data analysis, commitment evaluation, and segmentation"
+    },
+    "minimal": {
+      "skills": [
+        "customer-discovery-process"
+      ],
+      "description": "Hub skill only — orchestrates the full process, references specialized skills"
+    }
+  }
+}
