@@ -1,12 +1,15 @@
 {
-  "name": "customer-discovery",
+  "name": "the-mom-test",
+  "display_name": "The Mom Test",
   "version": "1.0.0",
   "description": "9 skills for systematic customer discovery, extracted from The Mom Test by Rob Fitzpatrick",
   "domain": "customer-discovery",
-  "book": {
+  "skill_count": 9,
+  "source_book": {
     "title": "The Mom Test",
-    "author": "Rob Fitzpatrick",
-    "isbn": null
+    "authors": ["Rob Fitzpatrick"],
+    "isbn": null,
+    "year": 2013
   },
   "skills": [
     {
@@ -170,6 +173,7 @@
       "1": ["conversation-data-quality-analyzer", "conversation-sourcing-planner"],
       "2": ["customer-discovery-process"]
     },
+    "hub": "customer-discovery-process",
     "is_dag": true,
     "max_depth": 2
   },

@@ -193,6 +193,12 @@
       "skills": ["design-pattern-selector", "oo-design-principle-evaluator", "oo-design-smell-detector", "creational-pattern-selector", "structural-pattern-selector", "behavioral-pattern-selector", "observer-pattern-implementor", "strategy-pattern-implementor", "command-pattern-implementor", "composite-pattern-implementor"]
     }
   },
+  "quality_summary": {
+    "avg_with_skill": 96,
+    "avg_baseline": 63,
+    "avg_delta": 33,
+    "all_passed": true
+  },
   "stats": {
     "total_skill_lines": 6164,
     "total_reference_lines": "~4500",
