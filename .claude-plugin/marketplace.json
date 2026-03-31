@@ -1,0 +1,40 @@
+{
+  "name": "bookforge-skills",
+  "owner": {
+    "name": "BookForge",
+    "email": "bookforge-ai@users.noreply.github.com"
+  },
+  "metadata": {
+    "description": "Agent skills distilled from non-fiction books. Each book is an installable plugin.",
+    "pluginRoot": "./books"
+  },
+  "plugins": [
+    {
+      "name": "fundamentals-of-software-architecture",
+      "source": "./books/fundamentals-of-software-architecture",
+      "description": "19 architecture skills from Fundamentals of Software Architecture by Mark Richards & Neal Ford",
+      "version": "1.0.0",
+      "category": "software-architecture",
+      "tags": ["software-architecture", "system-design", "distributed-systems"],
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "name": "design-patterns-gof",
+      "source": "./books/design-patterns-gof",
+      "description": "15 design pattern skills from Design Patterns: Elements of Reusable Object-Oriented Software",
+      "version": "1.0.0",
+      "category": "software-engineering",
+      "tags": ["design-patterns", "object-oriented", "software-engineering"],
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "name": "the-mom-test",
+      "source": "./books/the-mom-test",
+      "description": "9 customer discovery skills from The Mom Test by Rob Fitzpatrick",
+      "version": "1.0.0",
+      "category": "customer-discovery",
+      "tags": ["customer-discovery", "product-management", "startups"],
+      "license": "CC-BY-SA-4.0"
+    }
+  ]
+}
