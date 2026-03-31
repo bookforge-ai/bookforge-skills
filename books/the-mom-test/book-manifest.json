@@ -5,6 +5,8 @@
   "author": "Rob Fitzpatrick",
   "pages": 122,
   "domain": "customer-discovery",
+  "domains": ["customer-discovery", "product-management", "startups"],
+  "skill_count": 9,
   "audience": {
     "primary_roles": ["founder", "entrepreneur", "product-manager"],
     "secondary_roles": ["sales-professional", "startup-mentor", "investor", "business-developer"],

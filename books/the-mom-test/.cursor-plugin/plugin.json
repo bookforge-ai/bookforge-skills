@@ -1,0 +1,13 @@
+{
+  "name": "the-mom-test",
+  "displayName": "the-mom-test",
+  "description": "9 skills for systematic customer discovery, extracted from The Mom Test by Rob Fitzpatrick",
+  "version": "1.0.0",
+  "author": { "name": "BookForge", "email": "bookforge-ai@users.noreply.github.com" },
+  "homepage": "https://github.com/bookforge-ai/bookforge-skills",
+  "repository": "https://github.com/bookforge-ai/bookforge-skills",
+  "license": "MIT",
+  "skills": "./skills/",
+  "agents": "./agents/",
+  "hooks": "./hooks/hooks-cursor.json"
+}

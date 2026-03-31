@@ -1,0 +1,6 @@
+{
+  "name": "design-patterns-gof",
+  "description": "15 skills for GoF design pattern selection and implementation, extracted from Design Patterns by Gamma, Helm, Johnson, Vlissides",
+  "version": "1.0.0",
+  "contextFileName": "GEMINI.md"
+}
