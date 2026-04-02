@@ -1,0 +1,10 @@
+{
+  "name": "influence-psychology-of-persuasion",
+  "version": "1.0.0",
+  "description": "10 skills for ethical persuasion strategy, influence defense, and content optimization, extracted from Influence: The Psychology of Persuasion by Robert B. Cialdini",
+  "author": "BookForge <bookforge-ai@users.noreply.github.com>",
+  "license": "CC-BY-SA-4.0",
+  "homepage": "https://github.com/bookforge-ai/bookforge-skills",
+  "repository": "https://github.com/bookforge-ai/bookforge-skills",
+  "keywords": ["persuasion", "influence", "cialdini", "marketing", "sales-psychology", "copywriting"]
+}

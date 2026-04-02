@@ -1,0 +1,250 @@
+{
+  "name": "influence-psychology-of-persuasion",
+  "display_name": "Influence: The Psychology of Persuasion",
+  "version": "1.0.0",
+  "description": "10 skills for ethical persuasion strategy, influence defense, and content optimization, extracted from Influence: The Psychology of Persuasion by Robert B. Cialdini",
+  "domain": "persuasion",
+  "skill_count": 10,
+  "source_book": {
+    "title": "Influence: The Psychology of Persuasion",
+    "authors": ["Robert B. Cialdini"],
+    "isbn": null,
+    "year": 1984
+  },
+  "skills": [
+    {
+      "name": "influence-principle-selector",
+      "path": "influence-principle-selector/SKILL.md",
+      "description": "Identify which of Cialdini's 6 influence principles to apply for a persuasion scenario — scoring each principle against the situation, flagging ethical boundaries, and producing a rationale-backed recommendation.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": { "with_skill": 95, "baseline": 55, "delta": 40 }
+    },
+    {
+      "name": "persuasion-content-auditor",
+      "path": "persuasion-content-auditor/SKILL.md",
+      "description": "Audit any persuasive content against the 6 principles of influence and produce a scored report with per-principle ratings, evidence citations, and specific rewrite recommendations.",
+      "tier": 1,
+      "mode": "full",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": { "with_skill": 98, "baseline": 50, "delta": 48 }
+    },
+    {
+      "name": "reciprocity-strategy-designer",
+      "path": "reciprocity-strategy-designer/SKILL.md",
+      "description": "Design reciprocity-based persuasion strategies and detect when reciprocity is being used against you — covering give-first campaigns, rejection-then-retreat sequences, and concession-based selling.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": { "with_skill": 95, "baseline": 45, "delta": 50 }
+    },
+    {
+      "name": "commitment-escalation-architect",
+      "path": "commitment-escalation-architect/SKILL.md",
+      "description": "Design commitment escalation sequences and detect consistency pressure — covering onboarding flows, foot-in-the-door campaigns, progressive commitment ladders, and defense against manufactured consistency traps.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": { "with_skill": 98, "baseline": 40, "delta": 58 }
+    },
+    {
+      "name": "social-proof-optimizer",
+      "path": "social-proof-optimizer/SKILL.md",
+      "description": "Optimize social proof strategy using uncertainty and similarity conditions — covering testimonials, user counts, trust badges, FOMO messaging, and defense against manipulated social evidence.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": { "with_skill": 95, "baseline": 50, "delta": 45 }
+    },
+    {
+      "name": "liking-factor-engineer",
+      "path": "liking-factor-engineer/SKILL.md",
+      "description": "Analyze and engineer liking to increase rapport, persuasion, and compliance in marketing, sales, and communication contexts — covering similarity, familiarity, association, and defense against liking exploitation.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": { "with_skill": 92, "baseline": 55, "delta": 37 }
+    },
+    {
+      "name": "authority-signal-designer",
+      "path": "authority-signal-designer/SKILL.md",
+      "description": "Design and audit authority signals in content, credentials, bios, and landing pages — covering the three authority symbol types, strategic self-deprecation, and the two-question defense framework.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": { "with_skill": 93, "baseline": 60, "delta": 33 }
+    },
+    {
+      "name": "scarcity-framing-strategist",
+      "path": "scarcity-framing-strategist/SKILL.md",
+      "description": "Design and evaluate scarcity framing for offers, products, and campaigns using psychological research on loss aversion and reactance — covering time limits, quantity limits, and defense against fake scarcity.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": { "with_skill": 96, "baseline": 50, "delta": 46 }
+    },
+    {
+      "name": "influence-defense-analyzer",
+      "path": "influence-defense-analyzer/SKILL.md",
+      "description": "Detect and counter manipulation attempts using Cialdini's 6 influence principles — classifying each tactic as ethical or exploitative and prescribing a principle-specific response strategy.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": ["influence-principle-selector"],
+      "quality": { "with_skill": 95, "baseline": 55, "delta": 40 }
+    },
+    {
+      "name": "multi-principle-stacking-planner",
+      "path": "multi-principle-stacking-planner/SKILL.md",
+      "description": "Design a layered persuasion campaign by combining 2–4 Cialdini influence principles in the right sequence — covering stacking patterns, principle interaction rules, contrast amplification, and ethical stacking thresholds.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": [
+        "influence-principle-selector",
+        "reciprocity-strategy-designer",
+        "commitment-escalation-architect",
+        "social-proof-optimizer",
+        "liking-factor-engineer",
+        "authority-signal-designer",
+        "scarcity-framing-strategist"
+      ],
+      "quality": { "with_skill": 92, "baseline": 55, "delta": 37 }
+    }
+  ],
+  "dependency_graph": {
+    "nodes": [
+      "influence-principle-selector",
+      "persuasion-content-auditor",
+      "reciprocity-strategy-designer",
+      "commitment-escalation-architect",
+      "social-proof-optimizer",
+      "liking-factor-engineer",
+      "authority-signal-designer",
+      "scarcity-framing-strategist",
+      "influence-defense-analyzer",
+      "multi-principle-stacking-planner"
+    ],
+    "edges": [
+      {
+        "from": "influence-principle-selector",
+        "to": "influence-defense-analyzer",
+        "type": "knowledge",
+        "reason": "Defense analysis requires knowing which principle is being activated and its ethical classification"
+      },
+      {
+        "from": "influence-principle-selector",
+        "to": "multi-principle-stacking-planner",
+        "type": "input",
+        "reason": "Stacking planner needs principle scores and rationale before designing the combination sequence"
+      },
+      {
+        "from": "reciprocity-strategy-designer",
+        "to": "multi-principle-stacking-planner",
+        "type": "knowledge",
+        "reason": "Stacking planner references reciprocity implementation rules for sequencing decisions"
+      },
+      {
+        "from": "commitment-escalation-architect",
+        "to": "multi-principle-stacking-planner",
+        "type": "knowledge",
+        "reason": "Stacking planner references commitment escalation patterns for sequencing decisions"
+      },
+      {
+        "from": "social-proof-optimizer",
+        "to": "multi-principle-stacking-planner",
+        "type": "knowledge",
+        "reason": "Stacking planner references social proof conditions for sequencing decisions"
+      },
+      {
+        "from": "liking-factor-engineer",
+        "to": "multi-principle-stacking-planner",
+        "type": "knowledge",
+        "reason": "Stacking planner references liking factors for sequencing decisions"
+      },
+      {
+        "from": "authority-signal-designer",
+        "to": "multi-principle-stacking-planner",
+        "type": "knowledge",
+        "reason": "Stacking planner references authority signal types for sequencing decisions"
+      },
+      {
+        "from": "scarcity-framing-strategist",
+        "to": "multi-principle-stacking-planner",
+        "type": "knowledge",
+        "reason": "Stacking planner references scarcity framing rules for sequencing decisions"
+      }
+    ],
+    "levels": {
+      "0": [
+        "influence-principle-selector",
+        "persuasion-content-auditor",
+        "reciprocity-strategy-designer",
+        "commitment-escalation-architect",
+        "social-proof-optimizer",
+        "liking-factor-engineer",
+        "authority-signal-designer",
+        "scarcity-framing-strategist"
+      ],
+      "1": [
+        "influence-defense-analyzer",
+        "multi-principle-stacking-planner"
+      ]
+    },
+    "hub": "influence-principle-selector",
+    "is_dag": true,
+    "max_depth": 1
+  },
+  "quality_summary": {
+    "avg_with_skill": 95,
+    "avg_baseline": 52,
+    "avg_delta": 43,
+    "all_passed": true
+  },
+  "install_profiles": {
+    "minimal": {
+      "skills": [
+        "influence-principle-selector",
+        "persuasion-content-auditor"
+      ],
+      "description": "Entry point — principle selector and content auditor for quick persuasion analysis"
+    },
+    "core": {
+      "skills": [
+        "influence-principle-selector",
+        "persuasion-content-auditor",
+        "reciprocity-strategy-designer",
+        "commitment-escalation-architect",
+        "social-proof-optimizer",
+        "liking-factor-engineer",
+        "authority-signal-designer",
+        "scarcity-framing-strategist"
+      ],
+      "description": "All 6 principle skills plus selector and auditor — full coverage for designing and evaluating persuasion"
+    },
+    "full": {
+      "skills": [
+        "influence-principle-selector",
+        "persuasion-content-auditor",
+        "reciprocity-strategy-designer",
+        "commitment-escalation-architect",
+        "social-proof-optimizer",
+        "liking-factor-engineer",
+        "authority-signal-designer",
+        "scarcity-framing-strategist",
+        "influence-defense-analyzer",
+        "multi-principle-stacking-planner"
+      ],
+      "description": "Complete persuasion toolkit including defense analysis and multi-principle stacking"
+    }
+  }
+}

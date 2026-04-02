@@ -1,0 +1,15 @@
+{
+  "book_id": "influence-psychology-of-persuasion",
+  "title": "Influence: The Psychology of Persuasion",
+  "subtitle": null,
+  "author": "Robert B. Cialdini",
+  "authors": ["Robert B. Cialdini"],
+  "isbn": null,
+  "year": 1984,
+  "pages": 279,
+  "domain": "persuasion",
+  "domains": ["persuasion", "marketing", "sales", "psychology", "negotiation"],
+  "skill_count": 10,
+  "source_book": "Influent - The psychology of Persuasion - Robert B.Cialdini.pdf",
+  "pipeline_version": "0.1.0"
+}

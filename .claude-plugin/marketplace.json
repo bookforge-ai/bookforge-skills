@@ -35,6 +35,15 @@
       "category": "customer-discovery",
       "tags": ["customer-discovery", "product-management", "startups"],
       "license": "CC-BY-SA-4.0"
+    },
+    {
+      "name": "influence-psychology-of-persuasion",
+      "source": "./books/influence-psychology-of-persuasion",
+      "description": "10 persuasion skills from Influence: The Psychology of Persuasion by Robert B. Cialdini",
+      "version": "1.0.0",
+      "category": "persuasion",
+      "tags": ["persuasion", "influence", "cialdini", "marketing", "sales-psychology", "copywriting"],
+      "license": "CC-BY-SA-4.0"
     }
   ]
 }
