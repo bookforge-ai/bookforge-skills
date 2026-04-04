@@ -3,11 +3,12 @@
   "display_name": "Influence: The Psychology of Persuasion",
   "version": "1.0.0",
   "description": "10 skills for ethical persuasion strategy, influence defense, and content optimization, extracted from Influence: The Psychology of Persuasion by Robert B. Cialdini",
-  "domain": "persuasion",
   "skill_count": 10,
   "source_book": {
     "title": "Influence: The Psychology of Persuasion",
-    "authors": ["Robert B. Cialdini"],
+    "authors": [
+      "Robert B. Cialdini"
+    ],
     "isbn": null,
     "year": 1984
   },
@@ -20,7 +21,11 @@
       "mode": "hybrid",
       "build_level": 0,
       "depends_on": [],
-      "quality": { "with_skill": 95, "baseline": 55, "delta": 40 }
+      "quality": {
+        "with_skill": 95,
+        "baseline": 55,
+        "delta": 40
+      }
     },
     {
       "name": "persuasion-content-auditor",
@@ -30,7 +35,11 @@
       "mode": "full",
       "build_level": 0,
       "depends_on": [],
-      "quality": { "with_skill": 98, "baseline": 50, "delta": 48 }
+      "quality": {
+        "with_skill": 98,
+        "baseline": 50,
+        "delta": 48
+      }
     },
     {
       "name": "reciprocity-strategy-designer",
@@ -40,7 +49,11 @@
       "mode": "hybrid",
       "build_level": 0,
       "depends_on": [],
-      "quality": { "with_skill": 95, "baseline": 45, "delta": 50 }
+      "quality": {
+        "with_skill": 95,
+        "baseline": 45,
+        "delta": 50
+      }
     },
     {
       "name": "commitment-escalation-architect",
@@ -50,7 +63,11 @@
       "mode": "hybrid",
       "build_level": 0,
       "depends_on": [],
-      "quality": { "with_skill": 98, "baseline": 40, "delta": 58 }
+      "quality": {
+        "with_skill": 98,
+        "baseline": 40,
+        "delta": 58
+      }
     },
     {
       "name": "social-proof-optimizer",
@@ -60,7 +77,11 @@
       "mode": "hybrid",
       "build_level": 0,
       "depends_on": [],
-      "quality": { "with_skill": 95, "baseline": 50, "delta": 45 }
+      "quality": {
+        "with_skill": 95,
+        "baseline": 50,
+        "delta": 45
+      }
     },
     {
       "name": "liking-factor-engineer",
@@ -70,7 +91,11 @@
       "mode": "hybrid",
       "build_level": 0,
       "depends_on": [],
-      "quality": { "with_skill": 92, "baseline": 55, "delta": 37 }
+      "quality": {
+        "with_skill": 92,
+        "baseline": 55,
+        "delta": 37
+      }
     },
     {
       "name": "authority-signal-designer",
@@ -80,7 +105,11 @@
       "mode": "hybrid",
       "build_level": 0,
       "depends_on": [],
-      "quality": { "with_skill": 93, "baseline": 60, "delta": 33 }
+      "quality": {
+        "with_skill": 93,
+        "baseline": 60,
+        "delta": 33
+      }
     },
     {
       "name": "scarcity-framing-strategist",
@@ -90,7 +119,11 @@
       "mode": "hybrid",
       "build_level": 0,
       "depends_on": [],
-      "quality": { "with_skill": 96, "baseline": 50, "delta": 46 }
+      "quality": {
+        "with_skill": 96,
+        "baseline": 50,
+        "delta": 46
+      }
     },
     {
       "name": "influence-defense-analyzer",
@@ -99,8 +132,14 @@
       "tier": 1,
       "mode": "hybrid",
       "build_level": 1,
-      "depends_on": ["influence-principle-selector"],
-      "quality": { "with_skill": 95, "baseline": 55, "delta": 40 }
+      "depends_on": [
+        "influence-principle-selector"
+      ],
+      "quality": {
+        "with_skill": 95,
+        "baseline": 55,
+        "delta": 40
+      }
     },
     {
       "name": "multi-principle-stacking-planner",
@@ -118,7 +157,11 @@
         "authority-signal-designer",
         "scarcity-framing-strategist"
       ],
-      "quality": { "with_skill": 92, "baseline": 55, "delta": 37 }
+      "quality": {
+        "with_skill": 92,
+        "baseline": 55,
+        "delta": 37
+      }
     }
   ],
   "dependency_graph": {
@@ -246,5 +289,8 @@
       ],
       "description": "Complete persuasion toolkit including defense analysis and multi-principle stacking"
     }
-  }
+  },
+  "tags": [
+    "persuasion"
+  ]
 }

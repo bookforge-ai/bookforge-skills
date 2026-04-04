@@ -3,11 +3,13 @@
   "display_name": "Never Split the Difference",
   "version": "1.0.0",
   "description": "8 skills for high-stakes negotiation, extracted from Never Split the Difference by Chris Voss",
-  "domain": "negotiation",
   "skill_count": 8,
   "source_book": {
     "title": "Never Split the Difference",
-    "authors": ["Chris Voss", "Tahl Raz"],
+    "authors": [
+      "Chris Voss",
+      "Tahl Raz"
+    ],
     "isbn": null,
     "year": 2016
   },
@@ -20,7 +22,11 @@
       "mode": "hybrid",
       "build_level": 0,
       "depends_on": [],
-      "quality": { "with_skill": 86, "baseline": 7, "delta": 79 }
+      "quality": {
+        "with_skill": 86,
+        "baseline": 7,
+        "delta": 79
+      }
     },
     {
       "name": "accusation-audit-generator",
@@ -30,7 +36,11 @@
       "mode": "hybrid",
       "build_level": 0,
       "depends_on": [],
-      "quality": { "with_skill": 92, "baseline": 25, "delta": 67 }
+      "quality": {
+        "with_skill": 92,
+        "baseline": 25,
+        "delta": 67
+      }
     },
     {
       "name": "calibrated-questions-planner",
@@ -40,7 +50,11 @@
       "mode": "hybrid",
       "build_level": 0,
       "depends_on": [],
-      "quality": { "with_skill": 83, "baseline": 33, "delta": 50 }
+      "quality": {
+        "with_skill": 83,
+        "baseline": 33,
+        "delta": 50
+      }
     },
     {
       "name": "empathic-summary-planner",
@@ -50,7 +64,11 @@
       "mode": "hybrid",
       "build_level": 0,
       "depends_on": [],
-      "quality": { "with_skill": 92, "baseline": 8, "delta": 84 }
+      "quality": {
+        "with_skill": 92,
+        "baseline": 8,
+        "delta": 84
+      }
     },
     {
       "name": "commitment-verifier",
@@ -60,7 +78,11 @@
       "mode": "hybrid",
       "build_level": 0,
       "depends_on": [],
-      "quality": { "with_skill": 100, "baseline": 17, "delta": 83 }
+      "quality": {
+        "with_skill": 100,
+        "baseline": 17,
+        "delta": 83
+      }
     },
     {
       "name": "ackerman-bargaining-planner",
@@ -70,7 +92,11 @@
       "mode": "hybrid",
       "build_level": 0,
       "depends_on": [],
-      "quality": { "with_skill": 100, "baseline": 15, "delta": 85 }
+      "quality": {
+        "with_skill": 100,
+        "baseline": 15,
+        "delta": 85
+      }
     },
     {
       "name": "black-swan-discovery",
@@ -80,7 +106,11 @@
       "mode": "hybrid",
       "build_level": 0,
       "depends_on": [],
-      "quality": { "with_skill": 83, "baseline": 17, "delta": 66 }
+      "quality": {
+        "with_skill": 83,
+        "baseline": 17,
+        "delta": 66
+      }
     },
     {
       "name": "negotiation-one-sheet-generator",
@@ -98,7 +128,11 @@
         "black-swan-discovery",
         "commitment-verifier"
       ],
-      "quality": { "with_skill": 77, "baseline": 8, "delta": 69 }
+      "quality": {
+        "with_skill": 77,
+        "baseline": 8,
+        "delta": 69
+      }
     }
   ],
   "dependency_graph": {
@@ -113,13 +147,41 @@
       "negotiation-one-sheet-generator"
     ],
     "edges": [
-      {"from": "counterpart-style-profiler", "to": "negotiation-one-sheet-generator", "type": "knowledge"},
-      {"from": "accusation-audit-generator", "to": "negotiation-one-sheet-generator", "type": "input"},
-      {"from": "calibrated-questions-planner", "to": "negotiation-one-sheet-generator", "type": "input"},
-      {"from": "empathic-summary-planner", "to": "negotiation-one-sheet-generator", "type": "knowledge"},
-      {"from": "commitment-verifier", "to": "negotiation-one-sheet-generator", "type": "knowledge"},
-      {"from": "ackerman-bargaining-planner", "to": "negotiation-one-sheet-generator", "type": "knowledge"},
-      {"from": "black-swan-discovery", "to": "negotiation-one-sheet-generator", "type": "knowledge"}
+      {
+        "from": "counterpart-style-profiler",
+        "to": "negotiation-one-sheet-generator",
+        "type": "knowledge"
+      },
+      {
+        "from": "accusation-audit-generator",
+        "to": "negotiation-one-sheet-generator",
+        "type": "input"
+      },
+      {
+        "from": "calibrated-questions-planner",
+        "to": "negotiation-one-sheet-generator",
+        "type": "input"
+      },
+      {
+        "from": "empathic-summary-planner",
+        "to": "negotiation-one-sheet-generator",
+        "type": "knowledge"
+      },
+      {
+        "from": "commitment-verifier",
+        "to": "negotiation-one-sheet-generator",
+        "type": "knowledge"
+      },
+      {
+        "from": "ackerman-bargaining-planner",
+        "to": "negotiation-one-sheet-generator",
+        "type": "knowledge"
+      },
+      {
+        "from": "black-swan-discovery",
+        "to": "negotiation-one-sheet-generator",
+        "type": "knowledge"
+      }
     ],
     "topology": "star",
     "max_depth": 1,
@@ -130,5 +192,8 @@
     "avg_baseline": 16.3,
     "avg_delta": 72.9,
     "all_passed": false
-  }
+  },
+  "tags": [
+    "negotiation"
+  ]
 }

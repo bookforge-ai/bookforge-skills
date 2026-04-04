@@ -5,15 +5,25 @@
   "description": "19 agent skills distilled from 'Fundamentals of Software Architecture: An Engineering Approach' by Mark Richards and Neal Ford. Covers the full architecture lifecycle: role definition, quality attributes, modularity, style selection, governance, risk, and communication.",
   "source_book": {
     "title": "Fundamentals of Software Architecture: An Engineering Approach",
-    "authors": ["Mark Richards", "Neal Ford"],
+    "authors": [
+      "Mark Richards",
+      "Neal Ford"
+    ],
     "isbn": "978-1-492-04345-4",
     "year": 2020,
     "pages": 448
   },
-  "domain": "software-architecture",
   "audience": {
-    "primary": ["software-architect", "senior-developer", "tech-lead"],
-    "secondary": ["engineering-manager", "solution-architect", "staff-engineer"],
+    "primary": [
+      "software-architect",
+      "senior-developer",
+      "tech-lead"
+    ],
+    "secondary": [
+      "engineering-manager",
+      "solution-architect",
+      "staff-engineer"
+    ],
     "experience_level": "intermediate-to-advanced"
   },
   "skill_count": 19,
@@ -26,7 +36,10 @@
       "build_level": 0,
       "role": "foundation",
       "depends_on": [],
-      "chapters": [1, 2]
+      "chapters": [
+        1,
+        2
+      ]
     },
     {
       "name": "architecture-characteristics-identifier",
@@ -36,7 +49,10 @@
       "build_level": 0,
       "role": "foundation",
       "depends_on": [],
-      "chapters": [4, 5]
+      "chapters": [
+        4,
+        5
+      ]
     },
     {
       "name": "architecture-tradeoff-analyzer",
@@ -46,7 +62,14 @@
       "build_level": 0,
       "role": "foundation",
       "depends_on": [],
-      "chapters": [1, 2, 4, 5, 18, 19]
+      "chapters": [
+        1,
+        2,
+        4,
+        5,
+        18,
+        19
+      ]
     },
     {
       "name": "modularity-health-evaluator",
@@ -56,7 +79,9 @@
       "build_level": 0,
       "role": "analysis",
       "depends_on": [],
-      "chapters": [3]
+      "chapters": [
+        3
+      ]
     },
     {
       "name": "architecture-risk-assessor",
@@ -66,7 +91,9 @@
       "build_level": 0,
       "role": "governance",
       "depends_on": [],
-      "chapters": [20]
+      "chapters": [
+        20
+      ]
     },
     {
       "name": "distributed-feasibility-checker",
@@ -76,7 +103,11 @@
       "build_level": 0,
       "role": "decision",
       "depends_on": [],
-      "chapters": [9, 17, 18]
+      "chapters": [
+        9,
+        17,
+        18
+      ]
     },
     {
       "name": "event-driven-topology-selector",
@@ -86,7 +117,9 @@
       "build_level": 0,
       "role": "style-specific",
       "depends_on": [],
-      "chapters": [14]
+      "chapters": [
+        14
+      ]
     },
     {
       "name": "architecture-diagram-creator",
@@ -96,7 +129,9 @@
       "build_level": 0,
       "role": "communication",
       "depends_on": [],
-      "chapters": [21]
+      "chapters": [
+        21
+      ]
     },
     {
       "name": "architect-control-calibrator",
@@ -106,7 +141,9 @@
       "build_level": 0,
       "role": "leadership",
       "depends_on": [],
-      "chapters": [22]
+      "chapters": [
+        22
+      ]
     },
     {
       "name": "development-checklist-generator",
@@ -116,7 +153,9 @@
       "build_level": 0,
       "role": "governance",
       "depends_on": [],
-      "chapters": [22]
+      "chapters": [
+        22
+      ]
     },
     {
       "name": "stakeholder-negotiation-planner",
@@ -126,7 +165,9 @@
       "build_level": 0,
       "role": "communication",
       "depends_on": [],
-      "chapters": [23]
+      "chapters": [
+        23
+      ]
     },
     {
       "name": "architecture-decision-record-creator",
@@ -135,8 +176,12 @@
       "mode": "full",
       "build_level": 1,
       "role": "governance",
-      "depends_on": ["architecture-tradeoff-analyzer"],
-      "chapters": [19]
+      "depends_on": [
+        "architecture-tradeoff-analyzer"
+      ],
+      "chapters": [
+        19
+      ]
     },
     {
       "name": "architecture-quantum-analyzer",
@@ -145,8 +190,14 @@
       "mode": "hybrid",
       "build_level": 1,
       "role": "analysis",
-      "depends_on": ["architecture-characteristics-identifier"],
-      "chapters": [3, 7, 8]
+      "depends_on": [
+        "architecture-characteristics-identifier"
+      ],
+      "chapters": [
+        3,
+        7,
+        8
+      ]
     },
     {
       "name": "component-identifier",
@@ -155,8 +206,12 @@
       "mode": "full",
       "build_level": 1,
       "role": "design",
-      "depends_on": ["architecture-characteristics-identifier"],
-      "chapters": [8]
+      "depends_on": [
+        "architecture-characteristics-identifier"
+      ],
+      "chapters": [
+        8
+      ]
     },
     {
       "name": "risk-storming-facilitator",
@@ -165,8 +220,12 @@
       "mode": "plan-only",
       "build_level": 1,
       "role": "governance",
-      "depends_on": ["architecture-risk-assessor"],
-      "chapters": [20]
+      "depends_on": [
+        "architecture-risk-assessor"
+      ],
+      "chapters": [
+        20
+      ]
     },
     {
       "name": "service-based-architecture-designer",
@@ -175,8 +234,12 @@
       "mode": "full",
       "build_level": 1,
       "role": "style-specific",
-      "depends_on": ["architecture-characteristics-identifier"],
-      "chapters": [13]
+      "depends_on": [
+        "architecture-characteristics-identifier"
+      ],
+      "chapters": [
+        13
+      ]
     },
     {
       "name": "architecture-fitness-function-designer",
@@ -185,8 +248,13 @@
       "mode": "hybrid",
       "build_level": 1,
       "role": "governance",
-      "depends_on": ["architecture-characteristics-identifier", "modularity-health-evaluator"],
-      "chapters": [6]
+      "depends_on": [
+        "architecture-characteristics-identifier",
+        "modularity-health-evaluator"
+      ],
+      "chapters": [
+        6
+      ]
     },
     {
       "name": "architecture-style-selector",
@@ -195,8 +263,22 @@
       "mode": "full",
       "build_level": 2,
       "role": "hub",
-      "depends_on": ["architecture-characteristics-identifier", "architecture-quantum-analyzer"],
-      "chapters": [9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+      "depends_on": [
+        "architecture-characteristics-identifier",
+        "architecture-quantum-analyzer"
+      ],
+      "chapters": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
     },
     {
       "name": "microservice-granularity-optimizer",
@@ -205,8 +287,12 @@
       "mode": "hybrid",
       "build_level": 2,
       "role": "style-specific",
-      "depends_on": ["component-identifier"],
-      "chapters": [17]
+      "depends_on": [
+        "component-identifier"
+      ],
+      "chapters": [
+        17
+      ]
     }
   ],
   "dependency_graph": {
@@ -280,5 +366,8 @@
     "avg_baseline": 25,
     "avg_delta": 72,
     "note": "Phase 1 manual evaluation — aggregate scores from CLAUDE.md"
-  }
+  },
+  "tags": [
+    "software-architecture"
+  ]
 }

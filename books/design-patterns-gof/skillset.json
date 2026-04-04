@@ -5,17 +5,28 @@
   "description": "15 agent skills distilled from 'Design Patterns: Elements of Reusable Object-Oriented Software' (Gamma, Helm, Johnson, Vlissides). Covers pattern selection, OO design principles, design smell detection, and implementation guides for the 8 richest GoF patterns.",
   "source_book": {
     "title": "Design Patterns: Elements of Reusable Object-Oriented Software",
-    "authors": ["Erich Gamma", "Richard Helm", "Ralph Johnson", "John Vlissides"],
+    "authors": [
+      "Erich Gamma",
+      "Richard Helm",
+      "Ralph Johnson",
+      "John Vlissides"
+    ],
     "commonly_known_as": "Gang of Four (GoF)",
     "isbn": "0-201-63361-2",
     "year": 1994,
     "pages": 354,
     "patterns": 23
   },
-  "domain": "design-patterns",
   "audience": {
-    "primary": ["software-developer", "software-engineer"],
-    "secondary": ["tech-lead", "software-architect", "code-reviewer"],
+    "primary": [
+      "software-developer",
+      "software-engineer"
+    ],
+    "secondary": [
+      "tech-lead",
+      "software-architect",
+      "code-reviewer"
+    ],
     "experience_level": "intermediate"
   },
   "skill_count": 15,
@@ -58,7 +69,9 @@
       "build_level": 0,
       "density_score": 4,
       "role": "category-selector",
-      "depends_on": ["design-pattern-selector"]
+      "depends_on": [
+        "design-pattern-selector"
+      ]
     },
     {
       "name": "structural-pattern-selector",
@@ -68,7 +81,9 @@
       "build_level": 0,
       "density_score": 4,
       "role": "category-selector",
-      "depends_on": ["design-pattern-selector"]
+      "depends_on": [
+        "design-pattern-selector"
+      ]
     },
     {
       "name": "behavioral-pattern-selector",
@@ -78,7 +93,9 @@
       "build_level": 0,
       "density_score": 5,
       "role": "category-selector",
-      "depends_on": ["design-pattern-selector"]
+      "depends_on": [
+        "design-pattern-selector"
+      ]
     },
     {
       "name": "observer-pattern-implementor",
@@ -88,7 +105,9 @@
       "build_level": 1,
       "density_score": 5,
       "role": "pattern-implementor",
-      "depends_on": ["behavioral-pattern-selector"]
+      "depends_on": [
+        "behavioral-pattern-selector"
+      ]
     },
     {
       "name": "strategy-pattern-implementor",
@@ -98,7 +117,9 @@
       "build_level": 1,
       "density_score": 4,
       "role": "pattern-implementor",
-      "depends_on": ["behavioral-pattern-selector"]
+      "depends_on": [
+        "behavioral-pattern-selector"
+      ]
     },
     {
       "name": "command-pattern-implementor",
@@ -108,7 +129,9 @@
       "build_level": 1,
       "density_score": 5,
       "role": "pattern-implementor",
-      "depends_on": ["behavioral-pattern-selector"]
+      "depends_on": [
+        "behavioral-pattern-selector"
+      ]
     },
     {
       "name": "composite-pattern-implementor",
@@ -118,7 +141,9 @@
       "build_level": 1,
       "density_score": 4,
       "role": "pattern-implementor",
-      "depends_on": ["structural-pattern-selector"]
+      "depends_on": [
+        "structural-pattern-selector"
+      ]
     },
     {
       "name": "visitor-pattern-implementor",
@@ -128,7 +153,9 @@
       "build_level": 1,
       "density_score": 4,
       "role": "pattern-implementor",
-      "depends_on": ["behavioral-pattern-selector"]
+      "depends_on": [
+        "behavioral-pattern-selector"
+      ]
     },
     {
       "name": "abstract-factory-implementor",
@@ -138,7 +165,9 @@
       "build_level": 1,
       "density_score": 4,
       "role": "pattern-implementor",
-      "depends_on": ["creational-pattern-selector"]
+      "depends_on": [
+        "creational-pattern-selector"
+      ]
     },
     {
       "name": "decorator-pattern-implementor",
@@ -148,7 +177,9 @@
       "build_level": 1,
       "density_score": 4,
       "role": "pattern-implementor",
-      "depends_on": ["structural-pattern-selector"]
+      "depends_on": [
+        "structural-pattern-selector"
+      ]
     },
     {
       "name": "bridge-pattern-implementor",
@@ -158,7 +189,9 @@
       "build_level": 1,
       "density_score": 4,
       "role": "pattern-implementor",
-      "depends_on": ["structural-pattern-selector"]
+      "depends_on": [
+        "structural-pattern-selector"
+      ]
     },
     {
       "name": "multi-pattern-system-designer",
@@ -168,14 +201,37 @@
       "build_level": 2,
       "density_score": 5,
       "role": "capstone",
-      "depends_on": ["design-pattern-selector", "creational-pattern-selector", "structural-pattern-selector", "behavioral-pattern-selector"]
+      "depends_on": [
+        "design-pattern-selector",
+        "creational-pattern-selector",
+        "structural-pattern-selector",
+        "behavioral-pattern-selector"
+      ]
     }
   ],
   "dependency_graph": {
     "levels": {
-      "0": ["design-pattern-selector", "oo-design-principle-evaluator", "oo-design-smell-detector", "creational-pattern-selector", "structural-pattern-selector", "behavioral-pattern-selector"],
-      "1": ["observer-pattern-implementor", "strategy-pattern-implementor", "command-pattern-implementor", "composite-pattern-implementor", "visitor-pattern-implementor", "abstract-factory-implementor", "decorator-pattern-implementor", "bridge-pattern-implementor"],
-      "2": ["multi-pattern-system-designer"]
+      "0": [
+        "design-pattern-selector",
+        "oo-design-principle-evaluator",
+        "oo-design-smell-detector",
+        "creational-pattern-selector",
+        "structural-pattern-selector",
+        "behavioral-pattern-selector"
+      ],
+      "1": [
+        "observer-pattern-implementor",
+        "strategy-pattern-implementor",
+        "command-pattern-implementor",
+        "composite-pattern-implementor",
+        "visitor-pattern-implementor",
+        "abstract-factory-implementor",
+        "decorator-pattern-implementor",
+        "bridge-pattern-implementor"
+      ],
+      "2": [
+        "multi-pattern-system-designer"
+      ]
     },
     "hub": "design-pattern-selector"
   },
@@ -186,11 +242,29 @@
     },
     "selector-only": {
       "description": "Pattern selection skills only (6 skills) — for choosing patterns, not implementing them",
-      "skills": ["design-pattern-selector", "oo-design-principle-evaluator", "oo-design-smell-detector", "creational-pattern-selector", "structural-pattern-selector", "behavioral-pattern-selector"]
+      "skills": [
+        "design-pattern-selector",
+        "oo-design-principle-evaluator",
+        "oo-design-smell-detector",
+        "creational-pattern-selector",
+        "structural-pattern-selector",
+        "behavioral-pattern-selector"
+      ]
     },
     "essentials": {
       "description": "Hub skill + 3 most impactful implementors (10 skills)",
-      "skills": ["design-pattern-selector", "oo-design-principle-evaluator", "oo-design-smell-detector", "creational-pattern-selector", "structural-pattern-selector", "behavioral-pattern-selector", "observer-pattern-implementor", "strategy-pattern-implementor", "command-pattern-implementor", "composite-pattern-implementor"]
+      "skills": [
+        "design-pattern-selector",
+        "oo-design-principle-evaluator",
+        "oo-design-smell-detector",
+        "creational-pattern-selector",
+        "structural-pattern-selector",
+        "behavioral-pattern-selector",
+        "observer-pattern-implementor",
+        "strategy-pattern-implementor",
+        "command-pattern-implementor",
+        "composite-pattern-implementor"
+      ]
     }
   },
   "quality_summary": {
@@ -207,5 +281,8 @@
     "findings_consumed": 100,
     "findings_total": 105,
     "pipeline_version": "bookforge-pipeline-1.0.0"
-  }
+  },
+  "tags": [
+    "design-patterns"
+  ]
 }

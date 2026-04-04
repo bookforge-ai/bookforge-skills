@@ -3,11 +3,12 @@
   "display_name": "The Mom Test",
   "version": "1.0.0",
   "description": "9 skills for systematic customer discovery, extracted from The Mom Test by Rob Fitzpatrick",
-  "domain": "customer-discovery",
   "skill_count": 9,
   "source_book": {
     "title": "The Mom Test",
-    "authors": ["Rob Fitzpatrick"],
+    "authors": [
+      "Rob Fitzpatrick"
+    ],
     "isbn": null,
     "year": 2013
   },
@@ -20,7 +21,11 @@
       "mode": "hybrid",
       "build_level": 0,
       "depends_on": [],
-      "quality": { "with_skill": 100, "baseline": 18, "delta": 82 }
+      "quality": {
+        "with_skill": 100,
+        "baseline": 18,
+        "delta": 82
+      }
     },
     {
       "name": "conversation-data-quality-analyzer",
@@ -29,8 +34,14 @@
       "tier": 1,
       "mode": "hybrid",
       "build_level": 1,
-      "depends_on": ["conversation-question-designer"],
-      "quality": { "with_skill": 97, "baseline": 35, "delta": 62 }
+      "depends_on": [
+        "conversation-question-designer"
+      ],
+      "quality": {
+        "with_skill": 97,
+        "baseline": 35,
+        "delta": 62
+      }
     },
     {
       "name": "question-importance-prioritizer",
@@ -40,7 +51,11 @@
       "mode": "hybrid",
       "build_level": 0,
       "depends_on": [],
-      "quality": { "with_skill": 100, "baseline": 18, "delta": 82 }
+      "quality": {
+        "with_skill": 100,
+        "baseline": 18,
+        "delta": 82
+      }
     },
     {
       "name": "conversation-format-selector",
@@ -50,7 +65,11 @@
       "mode": "plan-only",
       "build_level": 0,
       "depends_on": [],
-      "quality": { "with_skill": 100, "baseline": 9, "delta": 91 }
+      "quality": {
+        "with_skill": 100,
+        "baseline": 9,
+        "delta": 91
+      }
     },
     {
       "name": "commitment-signal-evaluator",
@@ -60,7 +79,11 @@
       "mode": "hybrid",
       "build_level": 0,
       "depends_on": [],
-      "quality": { "with_skill": 100, "baseline": 18, "delta": 82 }
+      "quality": {
+        "with_skill": 100,
+        "baseline": 18,
+        "delta": 82
+      }
     },
     {
       "name": "conversation-sourcing-planner",
@@ -69,8 +92,14 @@
       "tier": 1,
       "mode": "hybrid",
       "build_level": 1,
-      "depends_on": ["customer-segment-slicer"],
-      "quality": { "with_skill": 93, "baseline": 28, "delta": 65 }
+      "depends_on": [
+        "customer-segment-slicer"
+      ],
+      "quality": {
+        "with_skill": 93,
+        "baseline": 28,
+        "delta": 65
+      }
     },
     {
       "name": "customer-segment-slicer",
@@ -80,7 +109,11 @@
       "mode": "hybrid",
       "build_level": 0,
       "depends_on": [],
-      "quality": { "with_skill": 100, "baseline": 27, "delta": 73 }
+      "quality": {
+        "with_skill": 100,
+        "baseline": 27,
+        "delta": 73
+      }
     },
     {
       "name": "conversation-learning-process",
@@ -90,7 +123,11 @@
       "mode": "hybrid",
       "build_level": 0,
       "depends_on": [],
-      "quality": { "with_skill": 100, "baseline": 17, "delta": 83 }
+      "quality": {
+        "with_skill": 100,
+        "baseline": 17,
+        "delta": 83
+      }
     },
     {
       "name": "customer-discovery-process",
@@ -109,7 +146,11 @@
         "conversation-format-selector",
         "question-importance-prioritizer"
       ],
-      "quality": { "with_skill": 97, "baseline": 30, "delta": 67 }
+      "quality": {
+        "with_skill": 97,
+        "baseline": 30,
+        "delta": 67
+      }
     }
   ],
   "dependency_graph": {
@@ -169,9 +210,21 @@
       }
     ],
     "levels": {
-      "0": ["conversation-question-designer", "question-importance-prioritizer", "conversation-format-selector", "commitment-signal-evaluator", "customer-segment-slicer", "conversation-learning-process"],
-      "1": ["conversation-data-quality-analyzer", "conversation-sourcing-planner"],
-      "2": ["customer-discovery-process"]
+      "0": [
+        "conversation-question-designer",
+        "question-importance-prioritizer",
+        "conversation-format-selector",
+        "commitment-signal-evaluator",
+        "customer-segment-slicer",
+        "conversation-learning-process"
+      ],
+      "1": [
+        "conversation-data-quality-analyzer",
+        "conversation-sourcing-planner"
+      ],
+      "2": [
+        "customer-discovery-process"
+      ]
     },
     "hub": "customer-discovery-process",
     "is_dag": true,
@@ -213,5 +266,8 @@
       ],
       "description": "Hub skill only — orchestrates the full process, references specialized skills"
     }
-  }
+  },
+  "tags": [
+    "customer-discovery"
+  ]
 }
