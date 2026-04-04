@@ -44,6 +44,15 @@
       "category": "persuasion",
       "tags": ["persuasion", "influence", "cialdini", "marketing", "sales-psychology", "copywriting"],
       "license": "CC-BY-SA-4.0"
+    },
+    {
+      "name": "designing-data-intensive-applications",
+      "source": "./books/designing-data-intensive-applications",
+      "description": "14 data systems skills from Designing Data-Intensive Applications by Martin Kleppmann",
+      "version": "1.0.0",
+      "category": "data-systems",
+      "tags": ["data-systems", "distributed-systems", "databases", "replication", "transactions", "batch-processing", "stream-processing"],
+      "license": "CC-BY-SA-4.0"
     }
   ]
 }

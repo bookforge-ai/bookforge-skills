@@ -1,0 +1,255 @@
+{
+  "name": "designing-data-intensive-applications",
+  "display_name": "Designing Data-Intensive Applications",
+  "title": "Designing Data-Intensive Applications",
+  "author": "Martin Kleppmann",
+  "version": "1.0.0",
+  "description": "14 agent skills for designing data-intensive systems — covering data models, storage engines, replication, partitioning, transactions, distributed failures, consistency, batch processing, stream processing, and data integration architecture.",
+  "skill_count": 14,
+  "reference_count": 45,
+  "license": "CC-BY-SA-4.0",
+  "tags": ["data-systems", "distributed-systems", "databases", "replication", "transactions", "batch-processing", "stream-processing", "consistency", "partitioning", "storage-engines"],
+  "source_book": {
+    "title": "Designing Data-Intensive Applications",
+    "authors": ["Martin Kleppmann"],
+    "isbn": "978-1-4493-7332-0",
+    "year": 2017,
+    "pages": 613
+  },
+  "quality_summary": {
+    "avg_with_skill": 92.9,
+    "avg_baseline": 25.0,
+    "avg_delta": 67.9,
+    "avg_content_score": 92.9,
+    "avg_actionability_score": 92.5,
+    "all_passed": true
+  },
+
+  "audience": {
+    "primary": ["backend-engineer", "software-architect", "data-engineer"],
+    "secondary": ["tech-lead", "site-reliability-engineer"],
+    "experience_level": "intermediate-to-advanced"
+  },
+
+  "build_levels": {
+    "0": {
+      "label": "Foundation",
+      "skills": [
+        "data-model-selector",
+        "storage-engine-selector",
+        "oltp-olap-workload-classifier",
+        "encoding-format-advisor",
+        "replication-strategy-selector",
+        "transaction-isolation-selector",
+        "distributed-failure-analyzer"
+      ]
+    },
+    "1": {
+      "label": "Core",
+      "skills": [
+        "replication-failure-analyzer",
+        "partitioning-strategy-advisor",
+        "concurrency-anomaly-detector",
+        "consistency-model-selector",
+        "batch-pipeline-designer",
+        "stream-processing-designer"
+      ]
+    },
+    "2": {
+      "label": "Capstone",
+      "skills": [
+        "data-integration-architect"
+      ]
+    }
+  },
+
+  "install_profiles": {
+    "minimal": {
+      "description": "Foundation skills only — data models, storage, encoding, replication, transactions, distributed failures",
+      "skills": [
+        "data-model-selector",
+        "storage-engine-selector",
+        "oltp-olap-workload-classifier",
+        "encoding-format-advisor",
+        "replication-strategy-selector",
+        "transaction-isolation-selector",
+        "distributed-failure-analyzer"
+      ],
+      "count": 7
+    },
+    "core": {
+      "description": "Foundation + diagnostic and processing skills",
+      "skills": [
+        "data-model-selector",
+        "storage-engine-selector",
+        "oltp-olap-workload-classifier",
+        "encoding-format-advisor",
+        "replication-strategy-selector",
+        "transaction-isolation-selector",
+        "distributed-failure-analyzer",
+        "replication-failure-analyzer",
+        "partitioning-strategy-advisor",
+        "concurrency-anomaly-detector",
+        "consistency-model-selector",
+        "batch-pipeline-designer",
+        "stream-processing-designer"
+      ],
+      "count": 13
+    },
+    "full": {
+      "description": "All 14 skills including the capstone data integration architect",
+      "skills": [
+        "data-model-selector",
+        "storage-engine-selector",
+        "oltp-olap-workload-classifier",
+        "encoding-format-advisor",
+        "replication-strategy-selector",
+        "transaction-isolation-selector",
+        "distributed-failure-analyzer",
+        "replication-failure-analyzer",
+        "partitioning-strategy-advisor",
+        "concurrency-anomaly-detector",
+        "consistency-model-selector",
+        "batch-pipeline-designer",
+        "stream-processing-designer",
+        "data-integration-architect"
+      ],
+      "count": 14
+    }
+  },
+
+  "hub_skill": "replication-strategy-selector",
+
+  "dependency_graph": {
+    "hub": "replication-strategy-selector",
+    "data-model-selector": [],
+    "storage-engine-selector": [],
+    "oltp-olap-workload-classifier": [],
+    "encoding-format-advisor": [],
+    "replication-strategy-selector": [],
+    "transaction-isolation-selector": [],
+    "distributed-failure-analyzer": [],
+    "replication-failure-analyzer": ["replication-strategy-selector"],
+    "partitioning-strategy-advisor": ["data-model-selector"],
+    "concurrency-anomaly-detector": ["transaction-isolation-selector"],
+    "consistency-model-selector": ["replication-strategy-selector", "distributed-failure-analyzer"],
+    "batch-pipeline-designer": ["oltp-olap-workload-classifier"],
+    "stream-processing-designer": ["encoding-format-advisor"],
+    "data-integration-architect": ["batch-pipeline-designer", "stream-processing-designer", "consistency-model-selector"]
+  },
+
+  "skills": [
+    {
+      "name": "data-model-selector",
+      "level": 0,
+      "tier": 1,
+      "mode": "hybrid",
+      "chapter": 2,
+      "pages": "49-87"
+    },
+    {
+      "name": "storage-engine-selector",
+      "level": 0,
+      "tier": 2,
+      "mode": "hybrid",
+      "chapter": 3,
+      "pages": "91-111"
+    },
+    {
+      "name": "oltp-olap-workload-classifier",
+      "level": 0,
+      "tier": 1,
+      "mode": "hybrid",
+      "chapter": 3,
+      "pages": "112-130"
+    },
+    {
+      "name": "encoding-format-advisor",
+      "level": 0,
+      "tier": 1,
+      "mode": "hybrid",
+      "chapter": 4,
+      "pages": "133-165"
+    },
+    {
+      "name": "replication-strategy-selector",
+      "level": 0,
+      "tier": 2,
+      "mode": "hybrid",
+      "chapter": 5,
+      "pages": "173-215"
+    },
+    {
+      "name": "transaction-isolation-selector",
+      "level": 0,
+      "tier": 2,
+      "mode": "hybrid",
+      "chapter": 7,
+      "pages": "244-290"
+    },
+    {
+      "name": "distributed-failure-analyzer",
+      "level": 0,
+      "tier": 2,
+      "mode": "hybrid",
+      "chapter": 8,
+      "pages": "295-340"
+    },
+    {
+      "name": "replication-failure-analyzer",
+      "level": 1,
+      "tier": 2,
+      "mode": "full",
+      "chapter": 5,
+      "pages": "178-215"
+    },
+    {
+      "name": "partitioning-strategy-advisor",
+      "level": 1,
+      "tier": 2,
+      "mode": "hybrid",
+      "chapter": 6,
+      "pages": "221-240"
+    },
+    {
+      "name": "concurrency-anomaly-detector",
+      "level": 1,
+      "tier": 2,
+      "mode": "full",
+      "chapter": 7,
+      "pages": "255-275"
+    },
+    {
+      "name": "consistency-model-selector",
+      "level": 1,
+      "tier": 1,
+      "mode": "hybrid",
+      "chapter": 9,
+      "pages": "343-397"
+    },
+    {
+      "name": "batch-pipeline-designer",
+      "level": 1,
+      "tier": 2,
+      "mode": "hybrid",
+      "chapter": 10,
+      "pages": "411-455"
+    },
+    {
+      "name": "stream-processing-designer",
+      "level": 1,
+      "tier": 2,
+      "mode": "hybrid",
+      "chapter": 11,
+      "pages": "461-505"
+    },
+    {
+      "name": "data-integration-architect",
+      "level": 2,
+      "tier": 1,
+      "mode": "hybrid",
+      "chapter": 12,
+      "pages": "511-570"
+    }
+  ]
+}

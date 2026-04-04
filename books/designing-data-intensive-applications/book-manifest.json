@@ -1,0 +1,79 @@
+{
+  "book_id": "designing-data-intensive-applications",
+  "title": "Designing Data-Intensive Applications",
+  "book_title": "Designing Data-Intensive Applications",
+  "book_subtitle": "The Big Ideas Behind Reliable, Scalable, and Maintainable Systems",
+  "author": "Martin Kleppmann",
+  "authors": ["Martin Kleppmann"],
+  "publisher": "O'Reilly Media",
+  "year": 2017,
+  "isbn": "978-1-4493-7332-0",
+  "pages": 613,
+  "tags": ["data-systems", "distributed-systems", "databases", "replication", "transactions", "batch-processing", "stream-processing", "consistency", "partitioning", "storage-engines"],
+  "skill_count": 14,
+  "source_book": "Designing Data Intensive Applications.pdf",
+  "pipeline_version": "1.0.0",
+
+  "pipeline_run": {
+    "date": "2026-04-04",
+    "pipeline_version": "1.0.0",
+    "stages_completed": ["index", "profile", "research", "plan", "build", "verify", "optimize", "package"],
+    "total_skills": 14,
+    "total_references": 45,
+    "build_levels": 3,
+    "hub_skill": "replication-strategy-selector"
+  },
+
+  "quality_metrics": {
+    "avg_content_score": 92.9,
+    "avg_actionability_score": 92.5,
+    "avg_delta_estimate": "high",
+    "skills_passing_verification": 14,
+    "skills_failing_verification": 0,
+    "critical_issues": 0,
+    "moderate_issues": 12,
+    "minor_issues": 46
+  },
+
+  "research_stats": {
+    "hunters_dispatched": 6,
+    "total_raw_findings": 81,
+    "findings_score_5": 33,
+    "findings_score_4": 34,
+    "findings_score_3": 14,
+    "findings_below_threshold": 0,
+    "unique_findings_after_dedup": 50
+  },
+
+  "coverage": {
+    "chapters_covered": "2-12 (all substantive chapters)",
+    "chapters_excluded": "1 (foundational vocabulary folded into individual skills)",
+    "coverage_percent": 100,
+    "chapter_map": {
+      "2": ["data-model-selector"],
+      "3": ["storage-engine-selector", "oltp-olap-workload-classifier"],
+      "4": ["encoding-format-advisor"],
+      "5": ["replication-strategy-selector", "replication-failure-analyzer"],
+      "6": ["partitioning-strategy-advisor"],
+      "7": ["transaction-isolation-selector", "concurrency-anomaly-detector"],
+      "8": ["distributed-failure-analyzer"],
+      "9": ["consistency-model-selector"],
+      "10": ["batch-pipeline-designer"],
+      "11": ["stream-processing-designer"],
+      "12": ["data-integration-architect"]
+    }
+  },
+
+  "skill_types": {
+    "selectors": 6,
+    "analyzers_detectors": 4,
+    "designers": 3,
+    "architects": 1
+  },
+
+  "execution_modes": {
+    "hybrid": 12,
+    "full": 2,
+    "plan_only": 0
+  }
+}

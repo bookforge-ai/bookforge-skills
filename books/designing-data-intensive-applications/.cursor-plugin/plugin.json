@@ -1,0 +1,12 @@
+{
+  "name": "designing-data-intensive-applications",
+  "displayName": "designing-data-intensive-applications",
+  "description": "14 agent skills for designing data-intensive systems — data models, storage engines, replication, partitioning, transactions, distributed failures, consistency, batch/stream processing, and data integration architecture. From Designing Data-Intensive Applications by Martin Kleppmann.",
+  "version": "1.0.0",
+  "author": { "name": "BookForge", "email": "hello@bookforgeai.dev" },
+  "homepage": "https://github.com/bookforge-ai/bookforge-skills",
+  "repository": "https://github.com/bookforge-ai/bookforge-skills",
+  "license": "CC-BY-SA-4.0",
+  "skills": "./skills/",
+  "hooks": "./hooks/hooks-cursor.json"
+}

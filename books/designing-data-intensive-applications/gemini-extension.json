@@ -1,0 +1,6 @@
+{
+  "name": "designing-data-intensive-applications",
+  "description": "14 agent skills for designing data-intensive systems — data models, storage engines, replication, partitioning, transactions, distributed failures, consistency, batch/stream processing, and data integration architecture. From Designing Data-Intensive Applications by Martin Kleppmann.",
+  "version": "1.0.0",
+  "contextFileName": "GEMINI.md"
+}
