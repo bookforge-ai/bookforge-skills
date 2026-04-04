@@ -1,0 +1,11 @@
+{
+  "name": "never-split-the-difference",
+  "version": "1.0.0",
+  "description": "8 skills for high-stakes negotiation, extracted from Never Split the Difference by Chris Voss",
+  "author": {
+    "name": "BookForge",
+    "email": "bookforge-ai@users.noreply.github.com"
+  },
+  "repository": "https://github.com/bookforge-ai/bookforge-skills",
+  "license": "CC-BY-SA-4.0"
+}

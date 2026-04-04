@@ -1,0 +1,134 @@
+{
+  "name": "never-split-the-difference",
+  "display_name": "Never Split the Difference",
+  "version": "1.0.0",
+  "description": "8 skills for high-stakes negotiation, extracted from Never Split the Difference by Chris Voss",
+  "domain": "negotiation",
+  "skill_count": 8,
+  "source_book": {
+    "title": "Never Split the Difference",
+    "authors": ["Chris Voss", "Tahl Raz"],
+    "isbn": null,
+    "year": 2016
+  },
+  "skills": [
+    {
+      "name": "counterpart-style-profiler",
+      "path": "counterpart-style-profiler/SKILL.md",
+      "description": "Profile a negotiation counterpart's communication style (Analyst, Accommodator, or Assertive) and generate a tailored adaptation strategy.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": { "with_skill": 86, "baseline": 7, "delta": 79 }
+    },
+    {
+      "name": "accusation-audit-generator",
+      "path": "accusation-audit-generator/SKILL.md",
+      "description": "Generate a preemptive objection audit and emotion-label bank before any high-stakes negotiation or difficult conversation.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": { "with_skill": 92, "baseline": 25, "delta": 67 }
+    },
+    {
+      "name": "calibrated-questions-planner",
+      "path": "calibrated-questions-planner/SKILL.md",
+      "description": "Generate a bank of open-ended strategic questions (how/what questions) organized by category for negotiations, sales, or difficult conversations.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": { "with_skill": 83, "baseline": 33, "delta": 50 }
+    },
+    {
+      "name": "empathic-summary-planner",
+      "path": "empathic-summary-planner/SKILL.md",
+      "description": "Build an active listening summary and emotional validation script using the 6-technique arsenal to trigger genuine agreement.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": { "with_skill": 92, "baseline": 8, "delta": 84 }
+    },
+    {
+      "name": "commitment-verifier",
+      "path": "commitment-verifier/SKILL.md",
+      "description": "Verify whether a counterpart's agreement is a real commitment or a polite escape, using yes-type classification, deception detection, and the Rule of Three.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": { "with_skill": 100, "baseline": 17, "delta": 83 }
+    },
+    {
+      "name": "ackerman-bargaining-planner",
+      "path": "ackerman-bargaining-planner/SKILL.md",
+      "description": "Build a complete price-negotiation offer schedule using the Ackerman model (65/85/95/100% decreasing-increment formula) with scripted phrases and fairness responses.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": { "with_skill": 100, "baseline": 15, "delta": 85 }
+    },
+    {
+      "name": "black-swan-discovery",
+      "path": "black-swan-discovery/SKILL.md",
+      "description": "Identify hidden unknowns (Black Swans) and leverage points that determine whether a negotiation succeeds or fails.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": { "with_skill": 83, "baseline": 17, "delta": 66 }
+    },
+    {
+      "name": "negotiation-one-sheet-generator",
+      "path": "negotiation-one-sheet-generator/SKILL.md",
+      "description": "Build a complete Negotiation One Sheet — a five-section preparation document covering goal, summary, labels, questions, and noncash offers — before any negotiation.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": [
+        "counterpart-style-profiler",
+        "accusation-audit-generator",
+        "calibrated-questions-planner",
+        "empathic-summary-planner",
+        "ackerman-bargaining-planner",
+        "black-swan-discovery",
+        "commitment-verifier"
+      ],
+      "quality": { "with_skill": 77, "baseline": 8, "delta": 69 }
+    }
+  ],
+  "dependency_graph": {
+    "nodes": [
+      "counterpart-style-profiler",
+      "accusation-audit-generator",
+      "calibrated-questions-planner",
+      "empathic-summary-planner",
+      "commitment-verifier",
+      "ackerman-bargaining-planner",
+      "black-swan-discovery",
+      "negotiation-one-sheet-generator"
+    ],
+    "edges": [
+      {"from": "counterpart-style-profiler", "to": "negotiation-one-sheet-generator", "type": "knowledge"},
+      {"from": "accusation-audit-generator", "to": "negotiation-one-sheet-generator", "type": "input"},
+      {"from": "calibrated-questions-planner", "to": "negotiation-one-sheet-generator", "type": "input"},
+      {"from": "empathic-summary-planner", "to": "negotiation-one-sheet-generator", "type": "knowledge"},
+      {"from": "commitment-verifier", "to": "negotiation-one-sheet-generator", "type": "knowledge"},
+      {"from": "ackerman-bargaining-planner", "to": "negotiation-one-sheet-generator", "type": "knowledge"},
+      {"from": "black-swan-discovery", "to": "negotiation-one-sheet-generator", "type": "knowledge"}
+    ],
+    "topology": "star",
+    "max_depth": 1,
+    "hub": "negotiation-one-sheet-generator"
+  },
+  "quality_summary": {
+    "avg_with_skill": 89.1,
+    "avg_baseline": 16.3,
+    "avg_delta": 72.9,
+    "all_passed": false
+  }
+}
