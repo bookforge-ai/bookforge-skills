@@ -12,7 +12,7 @@ aider --read $(aider-skills tmpfile ./skills)
 Add to your `.aider.conf.yml`:
 
 ```yaml
-read: [replication-strategy-selector/SKILL.md]
+read: [skills/replication-strategy-selector/SKILL.md]
 ```
 
 ## More information

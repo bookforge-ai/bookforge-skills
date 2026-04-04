@@ -1,6 +1,6 @@
 #!/bin/bash
 PLUGIN_ROOT="${CLAUDE_PLUGIN_ROOT:-${CURSOR_PLUGIN_ROOT:-$(dirname "$(dirname "$0")")}}"
-SKILL_FILE="$PLUGIN_ROOT/replication-strategy-selector/SKILL.md"
+SKILL_FILE="$PLUGIN_ROOT/skills/replication-strategy-selector/SKILL.md"
 
 if [ ! -f "$SKILL_FILE" ]; then exit 0; fi
 
