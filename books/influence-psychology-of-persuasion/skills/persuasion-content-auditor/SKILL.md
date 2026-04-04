@@ -13,7 +13,6 @@ execution:
   tools-required: [Read]
   tools-optional: [Write]
   environment: "Works from any context; content can be pasted inline or read from file"
-domain: persuasion
 tags: [persuasion]
 
 ---
