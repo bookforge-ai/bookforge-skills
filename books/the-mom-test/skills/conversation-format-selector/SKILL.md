@@ -8,7 +8,6 @@ source-books:
     title: "The Mom Test"
     authors: ["Rob Fitzpatrick"]
     chapters: [4, 6]
-domain: customer-discovery
 tags: [customer-discovery, conversation-format, meeting-planning, casual-conversations, customer-interviews]
 depends-on:
   - conversation-sourcing-planner

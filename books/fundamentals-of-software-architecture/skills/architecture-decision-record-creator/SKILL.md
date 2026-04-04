@@ -10,8 +10,7 @@ source-books:
     title: "Fundamentals of Software Architecture"
     authors: ["Mark Richards", "Neal Ford"]
     chapters: [19]
-domain: software-architecture
-tags: [architecture, decisions, documentation, adr, governance]
+tags: [software-architecture, architecture, decisions, documentation, adr, governance]
 execution:
   tier: 1
   mode: full

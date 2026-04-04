@@ -14,7 +14,6 @@ source-books:
     authors: ["Erich Gamma", "Richard Helm", "Ralph Johnson", "John Vlissides"]
     chapters: [4]
     pages: [51-54, 166-174]
-domain: design-patterns
 tags: [design-patterns, structural, gof, decorator, composition, wrapper, embellishment, middleware]
 execution:
   tier: 2

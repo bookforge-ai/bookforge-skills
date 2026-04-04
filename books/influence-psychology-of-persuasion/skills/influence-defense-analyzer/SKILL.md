@@ -11,8 +11,7 @@ source-books:
     title: "Influence: The Psychology of Persuasion"
     authors: ["Robert B. Cialdini"]
     chapters: [2, 3, 4, 5, 6, 7, "Epilogue"]
-domain: persuasion
-tags: [defense, protect, manipulation, detect, recognize, resist, compliance, persuasion-tactics, sales-pressure, say-no, ethical-boundary, exploitation, reciprocity, commitment, social-proof, liking, authority, scarcity, cialdini, consumer-protection, negotiation-defense]
+tags: [persuasion, defense, protect, manipulation, detect, recognize, resist, compliance, persuasion-tactics, sales-pressure, say-no, ethical-boundary, exploitation, reciprocity, commitment, social-proof, liking, authority, scarcity, cialdini, consumer-protection, negotiation-defense]
 execution:
   tier: 1
   mode: hybrid

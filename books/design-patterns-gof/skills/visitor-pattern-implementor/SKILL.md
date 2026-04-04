@@ -12,7 +12,6 @@ source-books:
     authors: ["Erich Gamma", "Richard Helm", "Ralph Johnson", "John Vlissides"]
     chapters: [5]
     pages: [70-80, 306-318]
-domain: design-patterns
 tags: [design-patterns, behavioral, gof, visitor, double-dispatch, iterator, traversal, object-structure]
 execution:
   tier: 2

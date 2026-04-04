@@ -11,7 +11,6 @@ source-books:
     title: "Design Patterns: Elements of Reusable Object-Oriented Software"
     authors: ["Erich Gamma", "Richard Helm", "Ralph Johnson", "John Vlissides"]
     chapters: [4]
-domain: design-patterns
 tags: [design-patterns, structural-patterns, adapter, bridge, composite, decorator, facade, flyweight, proxy, object-oriented, gof, disambiguation]
 execution:
   tier: 1

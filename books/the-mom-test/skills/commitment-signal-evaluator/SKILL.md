@@ -8,7 +8,6 @@ source-books:
     title: "The Mom Test"
     authors: ["Rob Fitzpatrick"]
     chapters: [5]
-domain: customer-discovery
 tags: [customer-discovery, commitment, sales-signals, meeting-evaluation, zombie-leads, earlyvangelists]
 depends-on: []
 execution:

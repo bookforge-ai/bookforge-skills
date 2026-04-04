@@ -8,8 +8,7 @@ source-books:
     title: "Fundamentals of Software Architecture"
     authors: ["Mark Richards", "Neal Ford"]
     chapters: [20]
-domain: software-architecture
-tags: [architecture, risk, risk-matrix, risk-assessment, governance]
+tags: [software-architecture, architecture, risk, risk-matrix, risk-assessment, governance]
 depends-on: []
 execution:
   tier: 1

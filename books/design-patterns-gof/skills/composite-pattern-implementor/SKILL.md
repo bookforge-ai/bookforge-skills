@@ -12,7 +12,6 @@ source-books:
     authors: ["Erich Gamma", "Richard Helm", "Ralph Johnson", "John Vlissides"]
     chapters: [4]
     pages: [156-165, 43-48]
-domain: design-patterns
 tags: [design-patterns, structural, gof, composite, tree, hierarchy, recursion, refactoring]
 execution:
   tier: 2

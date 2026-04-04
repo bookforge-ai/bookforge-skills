@@ -8,8 +8,7 @@ source-books:
     title: "Fundamentals of Software Architecture"
     authors: ["Mark Richards", "Neal Ford"]
     chapters: [21]
-domain: software-architecture
-tags: [architecture, diagrams, presentation, UML, C4, ArchiMate, communication, visual]
+tags: [software-architecture, architecture, diagrams, presentation, UML, C4, ArchiMate, communication, visual]
 depends-on: []
 execution:
   tier: 1

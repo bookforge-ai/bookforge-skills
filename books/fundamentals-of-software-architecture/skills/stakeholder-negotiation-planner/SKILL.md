@@ -8,8 +8,7 @@ source-books:
     title: "Fundamentals of Software Architecture"
     authors: ["Mark Richards", "Neal Ford"]
     chapters: [23]
-domain: software-architecture
-tags: [architecture, negotiation, leadership, stakeholders, communication, soft-skills]
+tags: [software-architecture, architecture, negotiation, leadership, stakeholders, communication, soft-skills]
 depends-on: []
 execution:
   tier: 1

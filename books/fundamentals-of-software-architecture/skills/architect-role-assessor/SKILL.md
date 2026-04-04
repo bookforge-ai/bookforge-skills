@@ -8,8 +8,7 @@ source-books:
     title: "Fundamentals of Software Architecture"
     authors: ["Mark Richards", "Neal Ford"]
     chapters: [1, 2]
-domain: software-architecture
-tags: [architecture, role-definition, career, leadership, technical-breadth, self-assessment]
+tags: [software-architecture, architecture, role-definition, career, leadership, technical-breadth, self-assessment]
 depends-on: []
 execution:
   tier: 1

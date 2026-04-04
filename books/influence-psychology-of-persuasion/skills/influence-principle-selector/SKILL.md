@@ -10,7 +10,6 @@ source-books:
     title: "Influence: The Psychology of Persuasion"
     authors: ["Robert B. Cialdini"]
     chapters: [1]
-domain: persuasion
 tags: [persuasion, influence, cialdini, reciprocity, commitment, consistency, social-proof, liking, authority, scarcity, marketing-psychology, sales-psychology, compliance, persuasion-audit, influence-tactics, ethical-persuasion, contrast-principle]
 execution:
   tier: 1

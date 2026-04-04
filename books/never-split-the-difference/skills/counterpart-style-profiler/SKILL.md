@@ -10,7 +10,6 @@ source-books:
     title: "Never Split the Difference: Negotiating as if Your Life Depended on It"
     authors: ["Chris Voss"]
     chapters: [9]
-domain: negotiation
 tags: [negotiation, counterpart-profiling, communication-style, negotiator-types, analyst, accommodator, assertive, personality-assessment, adaptation-strategy, bargaining, conflict-resolution, sales, stakeholder-management]
 execution:
   tier: 1

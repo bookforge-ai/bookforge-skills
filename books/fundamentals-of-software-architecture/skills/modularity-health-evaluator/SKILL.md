@@ -8,8 +8,7 @@ source-books:
     title: "Fundamentals of Software Architecture"
     authors: ["Mark Richards", "Neal Ford"]
     chapters: [3]
-domain: software-architecture
-tags: [modularity, cohesion, coupling, connascence, LCOM, metrics, refactoring]
+tags: [software-architecture, modularity, cohesion, coupling, connascence, LCOM, metrics, refactoring]
 depends-on: []
 execution:
   tier: 2

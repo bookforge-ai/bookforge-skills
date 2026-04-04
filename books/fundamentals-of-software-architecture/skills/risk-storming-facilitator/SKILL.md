@@ -8,8 +8,7 @@ source-books:
     title: "Fundamentals of Software Architecture"
     authors: ["Mark Richards", "Neal Ford"]
     chapters: [20]
-domain: software-architecture
-tags: [architecture, risk, risk-storming, facilitation, collaboration, governance]
+tags: [software-architecture, architecture, risk, risk-storming, facilitation, collaboration, governance]
 depends-on:
   - architecture-risk-assessor
 execution:

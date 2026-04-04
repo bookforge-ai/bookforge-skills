@@ -8,7 +8,6 @@ source-books:
     title: "The Mom Test"
     authors: ["Rob Fitzpatrick"]
     chapters: [12]
-domain: customer-discovery
 tags: [customer-discovery, validation-process, orchestration, discovery-dashboard, before-during-after]
 depends-on:
   - conversation-question-designer

@@ -8,7 +8,6 @@ source-books:
     title: "The Mom Test"
     authors: ["Rob Fitzpatrick"]
     chapters: [8]
-domain: customer-discovery
 tags: [customer-discovery, conversation-process, note-taking, team-learning, learning-goals, post-mortem, meeting-prep]
 depends-on: []
 execution:

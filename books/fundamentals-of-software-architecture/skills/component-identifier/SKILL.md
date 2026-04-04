@@ -10,8 +10,7 @@ source-books:
     title: "Fundamentals of Software Architecture"
     authors: ["Mark Richards", "Neal Ford"]
     chapters: [8]
-domain: software-architecture
-tags: [architecture, components, decomposition, modularity, domain-driven-design]
+tags: [software-architecture, architecture, components, decomposition, modularity, domain-driven-design]
 execution:
   tier: 1
   mode: full

@@ -16,8 +16,7 @@ source-books:
     authors: ["Robert B. Cialdini"]
     chapters: [5]
     pages: "126-156"
-domain: persuasion-psychology
-tags: [liking, rapport, persuasion, marketing, sales, brand, halo-effect, similarity, association, endorsement, compliance, defense]
+tags: [persuasion-psychology, liking, rapport, persuasion, marketing, sales, brand, halo-effect, similarity, association, endorsement, compliance, defense]
 depends-on: []
 execution:
   tier: 1

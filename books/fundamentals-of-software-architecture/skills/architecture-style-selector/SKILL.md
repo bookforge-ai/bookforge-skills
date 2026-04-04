@@ -11,8 +11,7 @@ source-books:
     title: "Fundamentals of Software Architecture"
     authors: ["Mark Richards", "Neal Ford"]
     chapters: [9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
-domain: software-architecture
-tags: [architecture, style-selection, monolith, distributed, microservices, event-driven, decision-making]
+tags: [software-architecture, architecture, style-selection, monolith, distributed, microservices, event-driven, decision-making]
 execution:
   tier: 1
   mode: full

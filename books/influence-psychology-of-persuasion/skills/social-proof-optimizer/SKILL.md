@@ -8,8 +8,7 @@ source-books:
     title: "Influence: The Psychology of Persuasion"
     authors: ["Robert B. Cialdini"]
     chapters: [4]
-domain: persuasion
-tags: [social-proof, testimonials, reviews, trust-signals, landing-page, FOMO, herd-behavior, peer-influence, social-validation, bystander-effect, manufactured-proof, persuasion, copywriting, conversion]
+tags: [persuasion, social-proof, testimonials, reviews, trust-signals, landing-page, FOMO, herd-behavior, peer-influence, social-validation, bystander-effect, manufactured-proof, copywriting, conversion]
 depends-on: []
 execution:
   tier: 1

@@ -10,7 +10,6 @@ source-books:
     title: "Never Split the Difference: Negotiating as if Your Life Depended on It"
     authors: ["Chris Voss"]
     chapters: [7, 8, 23]
-domain: negotiation
 tags: [negotiation, questions, open-ended-questions, stakeholder-discovery, deal-killers, how-what-questions, active-listening, information-gathering, sales, conflict-resolution, strategic-questions, decision-makers, hidden-constraints]
 execution:
   tier: 1

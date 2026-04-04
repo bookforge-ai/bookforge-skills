@@ -10,8 +10,7 @@ source-books:
     authors: ["Erich Gamma", "Richard Helm", "Ralph Johnson", "John Vlissides"]
     chapters: [1]
     pages: [29-31, 34-36, 41]
-domain: design-patterns
-tags: [design-smells, code-review, oo-design, refactoring, gof-patterns, inheritance, coupling, anti-patterns]
+tags: [design-patterns, design-smells, code-review, oo-design, refactoring, gof-patterns, inheritance, coupling, anti-patterns]
 depends-on: []
 execution:
   tier: 2

@@ -13,7 +13,6 @@ source-books:
     authors: ["Erich Gamma", "Richard Helm", "Ralph Johnson", "John Vlissides"]
     chapters: [5]
     pages: [273, 282]
-domain: design-patterns
 tags: [design-patterns, behavioral, gof, observer, publish-subscribe, event-system, mvc, change-manager, mediator, singleton]
 execution:
   tier: 2

@@ -12,7 +12,6 @@ source-books:
     authors: ["Erich Gamma", "Richard Helm", "Ralph Johnson", "John Vlissides"]
     chapters: [2, 5]
     pages: [64-69, 219-228]
-domain: design-patterns
 tags: [design-patterns, behavioral, gof, command, undo, redo, macro, history, transaction, invoker, receiver]
 execution:
   tier: 2

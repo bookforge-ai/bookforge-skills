@@ -8,7 +8,6 @@ source-books:
     title: "The Mom Test"
     authors: ["Rob Fitzpatrick"]
     chapters: [10]
-domain: customer-discovery
 tags: [customer-discovery, segmentation, targeting, customer-slicing, who-where-pair]
 depends-on: []
 execution:

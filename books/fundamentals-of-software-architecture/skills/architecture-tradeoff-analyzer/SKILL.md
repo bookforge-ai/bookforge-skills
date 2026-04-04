@@ -8,8 +8,7 @@ source-books:
     title: "Fundamentals of Software Architecture"
     authors: ["Mark Richards", "Neal Ford"]
     chapters: [1, 2, 4, 5, 18, 19]
-domain: software-architecture
-tags: [architecture, trade-offs, decision-making, quality-attributes]
+tags: [software-architecture, architecture, trade-offs, decision-making, quality-attributes]
 depends-on: []  # Foundation skill — no dependencies
 execution:
   tier: 1

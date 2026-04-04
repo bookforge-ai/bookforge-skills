@@ -10,7 +10,6 @@ source-books:
     title: "Never Split the Difference: Negotiating as if Your Life Depended on It"
     authors: ["Chris Voss"]
     chapters: [4, 5, 8]
-domain: negotiation
 tags: [negotiation, commitment, verification, deception-detection, yes-types, rule-of-three, pinocchio-effect, body-language, tone, baseline-deviation, closing, sales, agreement-quality, counterpart-analysis]
 execution:
   tier: 1

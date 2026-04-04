@@ -11,8 +11,7 @@ source-books:
     title: "Fundamentals of Software Architecture"
     authors: ["Mark Richards", "Neal Ford"]
     chapters: [17]
-domain: software-architecture
-tags: [architecture, microservices, granularity, bounded-context, disintegrators, integrators, choreography, orchestration, saga, distributed-transactions]
+tags: [software-architecture, architecture, microservices, granularity, bounded-context, disintegrators, integrators, choreography, orchestration, saga, distributed-transactions]
 execution:
   tier: 2
   mode: hybrid

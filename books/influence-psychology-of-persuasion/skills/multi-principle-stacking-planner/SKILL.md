@@ -17,8 +17,7 @@ source-books:
     title: "Influence: The Psychology of Persuasion"
     authors: ["Robert B. Cialdini"]
     chapters: [2, 3, 4, 5, 6, 7]
-domain: persuasion
-tags: [multi-principle, stacking, combining, campaign-strategy, sales-funnel, multi-touch, persuasion-sequence, layered-influence, campaign-architecture, influence-principles, reciprocity, commitment, social-proof, liking, authority, scarcity, contrast, cialdini, compliance-architecture]
+tags: [persuasion, multi-principle, stacking, combining, campaign-strategy, sales-funnel, multi-touch, persuasion-sequence, layered-influence, campaign-architecture, influence-principles, reciprocity, commitment, social-proof, liking, authority, scarcity, contrast, cialdini, compliance-architecture]
 execution:
   tier: 1
   mode: hybrid

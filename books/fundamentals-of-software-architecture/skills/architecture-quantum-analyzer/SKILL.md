@@ -10,8 +10,7 @@ source-books:
     title: "Fundamentals of Software Architecture"
     authors: ["Mark Richards", "Neal Ford"]
     chapters: [3, 7, 8]
-domain: software-architecture
-tags: [architecture, quantum, deployment, monolith-vs-distributed, coupling, connascence]
+tags: [software-architecture, architecture, quantum, deployment, monolith-vs-distributed, coupling, connascence]
 execution:
   tier: 2
   mode: hybrid

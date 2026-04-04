@@ -8,7 +8,6 @@ source-books:
     title: "The Mom Test"
     authors: ["Rob Fitzpatrick"]
     chapters: [2]
-domain: customer-discovery
 tags: [customer-discovery, conversation-analysis, bad-data, data-quality, compliments, fluff, false-positives]
 depends-on:
   - conversation-question-designer

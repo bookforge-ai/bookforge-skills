@@ -9,7 +9,6 @@ source-books:
     title: "Never Split the Difference: Negotiating as if Your Life Depended on It"
     authors: ["Chris Voss"]
     chapters: [23]
-domain: negotiation
 tags: [negotiation, preparation, one-sheet, goal-setting, accusation-audit, calibrated-questions, noncash-offers, tactical-empathy, ackerman, bargaining, sales, salary-negotiation, hub-skill]
 depends-on:
   - counterpart-style-profiler

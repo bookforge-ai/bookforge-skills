@@ -8,8 +8,7 @@ source-books:
     title: "Fundamentals of Software Architecture"
     authors: ["Mark Richards", "Neal Ford"]
     chapters: [22]
-domain: software-architecture
-tags: [architecture, checklists, quality, process, team-effectiveness, deployment]
+tags: [software-architecture, architecture, checklists, quality, process, team-effectiveness, deployment]
 depends-on: []
 execution:
   tier: 2

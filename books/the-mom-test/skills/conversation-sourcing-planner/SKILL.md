@@ -8,7 +8,6 @@ source-books:
     title: "The Mom Test"
     authors: ["Rob Fitzpatrick"]
     chapters: [9]
-domain: customer-discovery
 tags: [customer-discovery, outreach, conversation-sourcing, cold-outreach, warm-intros, meeting-framing, advisory-flip]
 depends-on:
   - customer-segment-slicer

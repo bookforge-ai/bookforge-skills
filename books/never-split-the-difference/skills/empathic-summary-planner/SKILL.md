@@ -8,7 +8,6 @@ source-books:
     title: "Never Split the Difference: Negotiating as if Your Life Depended on It"
     authors: ["Chris Voss"]
     chapters: [2, 5]
-domain: negotiation
 tags: [negotiation, active-listening, emotional-validation, mirroring, labeling, summarizing, rapport, influence, tactical-empathy, that's-right]
 depends-on: []
 execution:

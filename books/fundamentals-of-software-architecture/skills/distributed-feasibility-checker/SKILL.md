@@ -9,8 +9,7 @@ source-books:
     title: "Fundamentals of Software Architecture"
     authors: ["Mark Richards", "Neal Ford"]
     chapters: [9, 17, 18]
-domain: software-architecture
-tags: [architecture, distributed-systems, microservices, monolith, fallacies, feasibility]
+tags: [software-architecture, architecture, distributed-systems, microservices, monolith, fallacies, feasibility]
 execution:
   tier: 1
   mode: full

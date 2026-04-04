@@ -8,7 +8,6 @@ source-books:
     title: "The Mom Test"
     authors: ["Rob Fitzpatrick"]
     chapters: [3]
-domain: customer-discovery
 tags: [customer-discovery, question-prioritization, learning-goals, risk-classification, pre-conversation-planning]
 depends-on: []
 execution:

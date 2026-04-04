@@ -12,7 +12,6 @@ source-books:
     authors: ["Erich Gamma", "Richard Helm", "Ralph Johnson", "John Vlissides"]
     chapters: [3]
     pages: [54-58, 88-96]
-domain: design-patterns
 tags: [design-patterns, creational, gof, abstract-factory, product-families, portability, refactoring]
 execution:
   tier: 2

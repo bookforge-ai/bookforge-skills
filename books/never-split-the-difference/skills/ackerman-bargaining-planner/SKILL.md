@@ -10,7 +10,6 @@ source-books:
     title: "Never Split the Difference: Negotiating as if Your Life Depended on It"
     authors: ["Chris Voss"]
     chapters: [6, 9, 23]
-domain: negotiation
 tags: [negotiation, price-negotiation, ackerman-model, offer-sequence, anchoring, loss-aversion, fairness-framing, concession-strategy, salary-negotiation, procurement, bargaining, noncash-offers, anti-patterns]
 execution:
   tier: 1

@@ -11,7 +11,6 @@ source-books:
     title: "Design Patterns: Elements of Reusable Object-Oriented Software"
     authors: ["Erich Gamma", "Richard Helm", "Ralph Johnson", "John Vlissides"]
     chapters: [3]
-domain: design-patterns
 tags: [design-patterns, object-oriented, gof, creational, abstract-factory, builder, factory-method, prototype, singleton]
 execution:
   tier: 1

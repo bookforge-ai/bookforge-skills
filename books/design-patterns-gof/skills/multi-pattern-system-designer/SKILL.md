@@ -15,7 +15,6 @@ source-books:
     title: "Design Patterns: Elements of Reusable Object-Oriented Software"
     authors: ["Erich Gamma", "Richard Helm", "Ralph Johnson", "John Vlissides"]
     chapters: [2]
-domain: design-patterns
 tags: [design-patterns, object-oriented, gof, system-design, pattern-composition, capstone, lexi, multi-pattern]
 execution:
   tier: 2

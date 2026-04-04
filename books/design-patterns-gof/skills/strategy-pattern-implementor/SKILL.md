@@ -12,7 +12,6 @@ source-books:
     authors: ["Erich Gamma", "Richard Helm", "Ralph Johnson", "John Vlissides"]
     chapters: [5]
     pages: [48-50, 292-300]
-domain: design-patterns
 tags: [design-patterns, behavioral, gof, strategy, refactoring, algorithms, composition]
 execution:
   tier: 2

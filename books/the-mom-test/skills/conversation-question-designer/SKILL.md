@@ -8,7 +8,6 @@ source-books:
     title: "The Mom Test"
     authors: ["Rob Fitzpatrick"]
     chapters: [1]
-domain: customer-discovery
 tags: [customer-discovery, interview-questions, customer-conversations, validation, question-design]
 depends-on: []
 execution:

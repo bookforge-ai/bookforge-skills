@@ -9,7 +9,6 @@ source-books:
     title: "Never Split the Difference: Negotiating as if Your Life Depended on It"
     authors: ["Chris Voss"]
     chapters: [5, 10]
-domain: negotiation
 tags: [negotiation, black-swan, unknown-unknowns, leverage, hidden-constraints, hidden-agendas, worldview, loss-aversion, irrational-behavior, discovery, deal-diagnosis, pre-negotiation]
 depends-on: []
 execution:

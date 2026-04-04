@@ -8,8 +8,7 @@ source-books:
     title: "Influence: The Psychology of Persuasion"
     authors: ["Robert B. Cialdini"]
     chapters: [3]
-domain: persuasion
-tags: [commitment, consistency, foot-in-the-door, lowball, escalation, onboarding, activation, habit-formation, user-engagement, conversion-funnel, behavioral-change, self-image, written-commitment, inner-choice]
+tags: [persuasion, commitment, consistency, foot-in-the-door, lowball, escalation, onboarding, activation, habit-formation, user-engagement, conversion-funnel, behavioral-change, self-image, written-commitment, inner-choice]
 depends-on: []
 execution:
   tier: 1

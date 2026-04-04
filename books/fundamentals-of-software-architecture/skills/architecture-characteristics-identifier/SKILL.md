@@ -9,8 +9,7 @@ source-books:
     title: "Fundamentals of Software Architecture"
     authors: ["Mark Richards", "Neal Ford"]
     chapters: [4, 5]
-domain: software-architecture
-tags: [architecture, quality-attributes, requirements, nonfunctional-requirements, ilities]
+tags: [software-architecture, architecture, quality-attributes, requirements, nonfunctional-requirements, ilities]
 execution:
   tier: 1
   mode: full

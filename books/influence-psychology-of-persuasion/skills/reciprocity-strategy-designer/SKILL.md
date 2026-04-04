@@ -8,8 +8,7 @@ source-books:
     title: "Influence: The Psychology of Persuasion"
     authors: ["Robert B. Cialdini"]
     chapters: [2]
-domain: persuasion
-tags: [reciprocity, persuasion, negotiation, marketing, sales, influence, lead-magnet, door-in-the-face]
+tags: [persuasion, reciprocity, negotiation, marketing, sales, influence, lead-magnet, door-in-the-face]
 depends-on: []
 execution:
   tier: 1

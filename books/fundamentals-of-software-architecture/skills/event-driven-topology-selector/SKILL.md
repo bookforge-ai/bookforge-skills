@@ -9,8 +9,7 @@ source-books:
     title: "Fundamentals of Software Architecture"
     authors: ["Mark Richards", "Neal Ford"]
     chapters: [14]
-domain: software-architecture
-tags: [architecture, event-driven, broker, mediator, choreography, orchestration, async, messaging, error-handling]
+tags: [software-architecture, architecture, event-driven, broker, mediator, choreography, orchestration, async, messaging, error-handling]
 execution:
   tier: 1
   mode: full

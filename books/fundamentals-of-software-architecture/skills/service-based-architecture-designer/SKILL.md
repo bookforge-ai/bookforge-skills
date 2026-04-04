@@ -10,8 +10,7 @@ source-books:
     title: "Fundamentals of Software Architecture"
     authors: ["Mark Richards", "Neal Ford"]
     chapters: [13]
-domain: software-architecture
-tags: [architecture, service-based, distributed, domain-services, database-partitioning, ACID, coarse-grained]
+tags: [software-architecture, architecture, service-based, distributed, domain-services, database-partitioning, ACID, coarse-grained]
 execution:
   tier: 1
   mode: full

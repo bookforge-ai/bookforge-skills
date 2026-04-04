@@ -8,8 +8,7 @@ source-books:
     title: "Fundamentals of Software Architecture"
     authors: ["Mark Richards", "Neal Ford"]
     chapters: [6]
-domain: software-architecture
-tags: [fitness-functions, governance, metrics, architecture-erosion, ArchUnit, CI-CD, cyclomatic-complexity, chaos-engineering]
+tags: [software-architecture, fitness-functions, governance, metrics, architecture-erosion, ArchUnit, CI-CD, cyclomatic-complexity, chaos-engineering]
 depends-on:
   - architecture-characteristics-identifier
   - modularity-health-evaluator

@@ -11,7 +11,6 @@ source-books:
     title: "Design Patterns: Elements of Reusable Object-Oriented Software"
     authors: ["Erich Gamma", "Richard Helm", "Ralph Johnson", "John Vlissides"]
     chapters: [5]
-domain: design-patterns
 tags: [design-patterns, behavioral, gof, strategy, state, observer, command, chain-of-responsibility, mediator, template-method, iterator, visitor, interpreter, memento]
 execution:
   tier: 1

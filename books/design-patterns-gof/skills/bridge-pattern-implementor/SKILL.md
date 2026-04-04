@@ -10,8 +10,7 @@ source-books:
     authors: ["Erich Gamma", "Richard Helm", "Ralph Johnson", "John Vlissimos"]
     chapters: [2, 4]
     pages: [58-64, 146-155]
-domain: design-patterns
-tags: [bridge, structural-pattern, decoupling, abstraction, implementation, cross-platform]
+tags: [design-patterns, bridge, structural-pattern, decoupling, abstraction, implementation, cross-platform]
 depends-on: []
 execution:
   tier: 2

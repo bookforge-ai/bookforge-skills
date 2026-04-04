@@ -18,7 +18,6 @@ source-books:
     authors: ["Robert B. Cialdini"]
     chapters: [7]
     pages: "178-203"
-domain: marketing-psychology
 tags:
   - scarcity
   - urgency
@@ -47,6 +46,8 @@ execution:
   tools-optional: []
   mcps-required: []
   environment: "Any agent environment. Works with document context (pricing pages, ad copy, promotional materials) or direct user description."
+tags: [marketing-psychology]
+
 ---
 
 # Scarcity Framing Strategist

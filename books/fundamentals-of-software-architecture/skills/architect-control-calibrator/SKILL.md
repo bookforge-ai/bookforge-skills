@@ -8,8 +8,7 @@ source-books:
     title: "Fundamentals of Software Architecture"
     authors: ["Mark Richards", "Neal Ford"]
     chapters: [22]
-domain: software-architecture
-tags: [architecture, leadership, team-management, control, elastic-leadership]
+tags: [software-architecture, architecture, leadership, team-management, control, elastic-leadership]
 depends-on: []
 execution:
   tier: 1
