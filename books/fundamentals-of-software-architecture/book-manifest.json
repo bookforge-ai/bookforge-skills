@@ -3,16 +3,25 @@
   "title": "Fundamentals of Software Architecture",
   "subtitle": "An Engineering Approach",
   "author": "Mark Richards, Neal Ford",
-  "authors": ["Mark Richards", "Neal Ford"],
+  "authors": [
+    "Mark Richards",
+    "Neal Ford"
+  ],
   "isbn": "978-1-492-04345-4",
   "year": 2020,
   "pages": 448,
-  "domain": "software-architecture",
-  "domains": ["software-architecture", "system-design", "distributed-systems"],
   "skill_count": 19,
   "audience": {
-    "primary_roles": ["software-architect", "senior-developer", "tech-lead"],
-    "secondary_roles": ["engineering-manager", "solution-architect", "staff-engineer"],
+    "primary_roles": [
+      "software-architect",
+      "senior-developer",
+      "tech-lead"
+    ],
+    "secondary_roles": [
+      "engineering-manager",
+      "solution-architect",
+      "staff-engineer"
+    ],
     "experience_level": "intermediate-to-advanced",
     "domain_familiarity": "assumes programming proficiency and familiarity with distributed systems concepts",
     "self_description": "architects, senior developers, tech leads making structural decisions about software systems"
@@ -27,5 +36,10 @@
     "avg_quality_with_skill": 97,
     "avg_quality_baseline": 25,
     "avg_quality_delta": 72
-  }
+  },
+  "tags": [
+    "software-architecture",
+    "system-design",
+    "distributed-systems"
+  ]
 }

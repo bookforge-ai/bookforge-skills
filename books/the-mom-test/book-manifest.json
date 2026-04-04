@@ -3,16 +3,25 @@
   "title": "The Mom Test",
   "subtitle": "how to talk to customers and learn if your business is a good idea when everybody is lying to you",
   "author": "Rob Fitzpatrick",
-  "authors": ["Rob Fitzpatrick"],
+  "authors": [
+    "Rob Fitzpatrick"
+  ],
   "isbn": null,
   "year": 2013,
   "pages": 122,
-  "domain": "customer-discovery",
-  "domains": ["customer-discovery", "product-management", "startups"],
   "skill_count": 9,
   "audience": {
-    "primary_roles": ["founder", "entrepreneur", "product-manager"],
-    "secondary_roles": ["sales-professional", "startup-mentor", "investor", "business-developer"],
+    "primary_roles": [
+      "founder",
+      "entrepreneur",
+      "product-manager"
+    ],
+    "secondary_roles": [
+      "sales-professional",
+      "startup-mentor",
+      "investor",
+      "business-developer"
+    ],
     "experience_level": "beginner-to-intermediate",
     "domain_familiarity": "assumes familiarity with startup concepts (Customer Development, Lean Startup) but not expertise",
     "self_description": "founders, entrepreneurs, product people, anyone validating a business idea"
@@ -31,5 +40,10 @@
     "total_reference_files": 8,
     "hunter_findings": 90,
     "avg_quality_delta": 76.3
-  }
+  },
+  "tags": [
+    "customer-discovery",
+    "product-management",
+    "startups"
+  ]
 }

@@ -3,17 +3,27 @@
   "title": "Design Patterns",
   "subtitle": "Elements of Reusable Object-Oriented Software",
   "author": "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides",
-  "authors": ["Erich Gamma", "Richard Helm", "Ralph Johnson", "John Vlissides"],
+  "authors": [
+    "Erich Gamma",
+    "Richard Helm",
+    "Ralph Johnson",
+    "John Vlissides"
+  ],
   "commonly_known_as": "Gang of Four (GoF)",
   "isbn": "0-201-63361-2",
   "year": 1994,
   "pages": 354,
-  "domain": "design-patterns",
-  "domains": ["design-patterns", "object-oriented", "software-engineering"],
   "skill_count": 15,
   "audience": {
-    "primary_roles": ["software-developer", "software-engineer"],
-    "secondary_roles": ["tech-lead", "software-architect", "code-reviewer"],
+    "primary_roles": [
+      "software-developer",
+      "software-engineer"
+    ],
+    "secondary_roles": [
+      "tech-lead",
+      "software-architect",
+      "code-reviewer"
+    ],
     "experience_level": "intermediate",
     "domain_familiarity": "assumes proficiency in at least one OO language and some experience in OO design",
     "self_description": "developers, engineers, tech leads working on OO codebases"
@@ -36,5 +46,10 @@
     "avg_quality_delta": 33,
     "findings_consumed": 100,
     "findings_total": 105
-  }
+  },
+  "tags": [
+    "design-patterns",
+    "object-oriented",
+    "software-engineering"
+  ]
 }

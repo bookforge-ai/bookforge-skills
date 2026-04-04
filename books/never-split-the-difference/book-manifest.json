@@ -3,16 +3,28 @@
   "title": "Never Split the Difference",
   "subtitle": "Negotiating as if Your Life Depended on It",
   "author": "Chris Voss",
-  "authors": ["Chris Voss", "Tahl Raz"],
+  "authors": [
+    "Chris Voss",
+    "Tahl Raz"
+  ],
   "isbn": null,
   "year": 2016,
   "pages": null,
-  "domain": "negotiation",
-  "domains": ["negotiation", "sales", "communication", "leadership"],
   "skill_count": 8,
   "audience": {
-    "primary_roles": ["sales-professional", "business-owner", "consultant", "manager"],
-    "secondary_roles": ["freelancer", "lawyer", "recruiter", "project-manager", "anyone-who-negotiates"],
+    "primary_roles": [
+      "sales-professional",
+      "business-owner",
+      "consultant",
+      "manager"
+    ],
+    "secondary_roles": [
+      "freelancer",
+      "lawyer",
+      "recruiter",
+      "project-manager",
+      "anyone-who-negotiates"
+    ],
     "experience_level": "beginner-to-intermediate",
     "domain_familiarity": "assumes no formal negotiation training; explains concepts from scratch through stories",
     "self_description": "salespeople, founders, managers, consultants, anyone preparing for a difficult conversation or deal"
@@ -31,5 +43,11 @@
     "total_reference_files": 0,
     "hunter_findings": 49,
     "avg_quality_delta": 67
-  }
+  },
+  "tags": [
+    "negotiation",
+    "sales",
+    "communication",
+    "leadership"
+  ]
 }
