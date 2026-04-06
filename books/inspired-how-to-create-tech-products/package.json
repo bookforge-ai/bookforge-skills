@@ -1,0 +1,14 @@
+{
+  "name": "@bookforge/inspired-how-to-create-tech-products",
+  "version": "1.0.0",
+  "description": "12 product management skills from INSPIRED by Marty Cagan. Covers product discovery, team health, OKRs, stakeholder management, and customer development.",
+  "claude_plugin": {
+    "skills_dir": "skills",
+    "hooks_dir": "hooks"
+  },
+  "license": "CC-BY-SA-4.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bookforge-ai/bookforge-skills"
+  }
+}

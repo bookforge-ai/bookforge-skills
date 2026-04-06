@@ -1,0 +1,234 @@
+{
+  "name": "inspired-how-to-create-tech-products",
+  "display_name": "INSPIRED: How to Create Tech Products Customers Love",
+  "title": "INSPIRED: How to Create Tech Products Customers Love",
+  "author": "Marty Cagan",
+  "version": "1.0.0",
+  "description": "12 product management skills from INSPIRED by Marty Cagan. Covers product discovery risk assessment, team health diagnostics, OKR implementation, process dysfunction diagnosis, vision and strategy assessment, PM competency evaluation, and a complete discovery technique toolkit (framing, prototyping, value testing, customer development, and stakeholder viability testing).",
+  "skill_count": 12,
+  "reference_count": 0,
+  "license": "CC-BY-SA-4.0",
+  "tags": ["product-management", "product-discovery", "product-teams", "product-strategy", "okrs", "user-research"],
+  "source_book": {
+    "title": "INSPIRED: How to Create Tech Products Customers Love",
+    "authors": ["Marty Cagan"],
+    "isbn": "978-1119387503",
+    "year": 2018,
+    "pages": 370
+  },
+  "quality_summary": {
+    "avg_with_skill": 96,
+    "avg_baseline": 45,
+    "avg_delta": 51,
+    "all_passed": true
+  },
+  "audience": {
+    "primary": ["product-manager", "product-leader"],
+    "secondary": ["product-designer", "tech-lead", "engineering-manager", "startup-founder"],
+    "experience_level": "beginner-to-advanced"
+  },
+  "build_levels": {
+    "0": {
+      "label": "Foundation",
+      "skills": [
+        "product-discovery-risk-assessment",
+        "product-okr-implementation",
+        "product-team-health-diagnostic",
+        "product-culture-assessment",
+        "product-process-dysfunction-diagnosis",
+        "product-manager-competency-assessment",
+        "product-vision-strategy-assessment"
+      ]
+    },
+    "1": {
+      "label": "Discovery Techniques",
+      "skills": [
+        "discovery-framing-technique-selection",
+        "discovery-prototype-selection",
+        "value-testing-technique-selection",
+        "customer-discovery-program",
+        "business-viability-stakeholder-testing"
+      ]
+    }
+  },
+  "dependency_graph": {
+    "levels": 2,
+    "hub": "product-discovery-risk-assessment",
+    "edges": [
+      { "from": "discovery-framing-technique-selection", "to": "product-discovery-risk-assessment", "type": "knowledge" },
+      { "from": "discovery-prototype-selection", "to": "product-discovery-risk-assessment", "type": "knowledge" },
+      { "from": "value-testing-technique-selection", "to": "product-discovery-risk-assessment", "type": "knowledge" },
+      { "from": "value-testing-technique-selection", "to": "discovery-prototype-selection", "type": "knowledge" },
+      { "from": "customer-discovery-program", "to": "product-discovery-risk-assessment", "type": "knowledge" },
+      { "from": "business-viability-stakeholder-testing", "to": "product-discovery-risk-assessment", "type": "knowledge" }
+    ],
+    "is_dag": true,
+    "max_depth": 1
+  },
+  "install_profiles": {
+    "minimal": {
+      "description": "Assessment skills only — diagnose team health, culture, process dysfunction, PM competency, and vision/strategy",
+      "skills": [
+        "product-team-health-diagnostic",
+        "product-culture-assessment",
+        "product-process-dysfunction-diagnosis",
+        "product-manager-competency-assessment",
+        "product-vision-strategy-assessment"
+      ],
+      "count": 5
+    },
+    "core": {
+      "description": "Foundation hub + all assessment skills + OKR implementation",
+      "skills": [
+        "product-discovery-risk-assessment",
+        "product-okr-implementation",
+        "product-team-health-diagnostic",
+        "product-culture-assessment",
+        "product-process-dysfunction-diagnosis",
+        "product-manager-competency-assessment",
+        "product-vision-strategy-assessment"
+      ],
+      "count": 7
+    },
+    "full": {
+      "description": "All 12 skills including the complete discovery technique toolkit",
+      "skills": [
+        "product-discovery-risk-assessment",
+        "product-okr-implementation",
+        "product-team-health-diagnostic",
+        "product-culture-assessment",
+        "product-process-dysfunction-diagnosis",
+        "product-manager-competency-assessment",
+        "product-vision-strategy-assessment",
+        "discovery-framing-technique-selection",
+        "discovery-prototype-selection",
+        "value-testing-technique-selection",
+        "customer-discovery-program",
+        "business-viability-stakeholder-testing"
+      ],
+      "count": 12
+    }
+  },
+  "skills": [
+    {
+      "name": "product-discovery-risk-assessment",
+      "path": "skills/product-discovery-risk-assessment/SKILL.md",
+      "tier": 1,
+      "mode": "full",
+      "tags": ["product-management", "product-discovery", "risk-assessment"],
+      "depends_on": [],
+      "build_level": 0,
+      "density_score": 5
+    },
+    {
+      "name": "product-okr-implementation",
+      "path": "skills/product-okr-implementation/SKILL.md",
+      "tier": 1,
+      "mode": "full",
+      "tags": ["product-management", "okrs", "product-strategy", "roadmaps", "business-objectives", "team-alignment", "scaling"],
+      "depends_on": [],
+      "build_level": 0,
+      "density_score": 5
+    },
+    {
+      "name": "product-team-health-diagnostic",
+      "path": "skills/product-team-health-diagnostic/SKILL.md",
+      "tier": 1,
+      "mode": "full",
+      "tags": ["product-management", "team-assessment", "product-teams"],
+      "depends_on": [],
+      "build_level": 0,
+      "density_score": 5
+    },
+    {
+      "name": "product-culture-assessment",
+      "path": "skills/product-culture-assessment/SKILL.md",
+      "tier": 1,
+      "mode": "full",
+      "tags": ["product-management", "organizational-culture", "product-culture"],
+      "depends_on": [],
+      "build_level": 0,
+      "density_score": 5
+    },
+    {
+      "name": "product-process-dysfunction-diagnosis",
+      "path": "skills/product-process-dysfunction-diagnosis/SKILL.md",
+      "tier": 1,
+      "mode": "full",
+      "tags": ["product-management", "process-assessment", "agile"],
+      "depends_on": [],
+      "build_level": 0,
+      "density_score": 5
+    },
+    {
+      "name": "product-manager-competency-assessment",
+      "path": "skills/product-manager-competency-assessment/SKILL.md",
+      "tier": 1,
+      "mode": "full",
+      "tags": ["product-management", "hiring", "career-development"],
+      "depends_on": [],
+      "build_level": 0,
+      "density_score": 5
+    },
+    {
+      "name": "product-vision-strategy-assessment",
+      "path": "skills/product-vision-strategy-assessment/SKILL.md",
+      "tier": 1,
+      "mode": "full",
+      "tags": ["product-management", "product-strategy", "product-vision"],
+      "depends_on": [],
+      "build_level": 0,
+      "density_score": 4
+    },
+    {
+      "name": "discovery-framing-technique-selection",
+      "path": "skills/discovery-framing-technique-selection/SKILL.md",
+      "tier": 1,
+      "mode": "full",
+      "tags": ["product-management", "product-discovery", "discovery-framing"],
+      "depends_on": ["product-discovery-risk-assessment"],
+      "build_level": 1,
+      "density_score": 5
+    },
+    {
+      "name": "discovery-prototype-selection",
+      "path": "skills/discovery-prototype-selection/SKILL.md",
+      "tier": 1,
+      "mode": "hybrid",
+      "tags": ["product-management", "product-discovery", "prototyping"],
+      "depends_on": ["product-discovery-risk-assessment"],
+      "build_level": 1,
+      "density_score": 5
+    },
+    {
+      "name": "value-testing-technique-selection",
+      "path": "skills/value-testing-technique-selection/SKILL.md",
+      "tier": 1,
+      "mode": "hybrid",
+      "tags": ["product-management", "product-discovery", "user-research", "testing"],
+      "depends_on": ["product-discovery-risk-assessment", "discovery-prototype-selection"],
+      "build_level": 1,
+      "density_score": 5
+    },
+    {
+      "name": "customer-discovery-program",
+      "path": "skills/customer-discovery-program/SKILL.md",
+      "tier": 1,
+      "mode": "plan-only",
+      "tags": ["product-management", "product-market-fit", "customer-development"],
+      "depends_on": ["product-discovery-risk-assessment"],
+      "build_level": 1,
+      "density_score": 5
+    },
+    {
+      "name": "business-viability-stakeholder-testing",
+      "path": "skills/business-viability-stakeholder-testing/SKILL.md",
+      "tier": 1,
+      "mode": "full",
+      "tags": ["product-management", "stakeholder-management", "business-viability"],
+      "depends_on": ["product-discovery-risk-assessment"],
+      "build_level": 1,
+      "density_score": 5
+    }
+  ]
+}

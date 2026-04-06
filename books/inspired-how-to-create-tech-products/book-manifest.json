@@ -1,0 +1,38 @@
+{
+  "book_id": "inspired-how-to-create-tech-products",
+  "title": "INSPIRED: How to Create Tech Products Customers Love",
+  "book_title": "INSPIRED: How to Create Tech Products Customers Love",
+  "book_subtitle": "How to Create Tech Products Customers Love",
+  "subtitle": "How to Create Tech Products Customers Love",
+  "author": "Marty Cagan",
+  "authors": ["Marty Cagan"],
+  "publisher": "Wiley",
+  "year": 2018,
+  "isbn": "978-1119387503",
+  "pages": 370,
+  "tags": ["product-management", "product-discovery", "product-teams", "product-strategy", "okrs", "user-research"],
+  "skill_count": 12,
+  "source_book": "INSPIRED How to Create Tech Products Customers Love.pdf",
+  "pipeline_version": "1.0.0",
+  "pipeline_run": {
+    "date": "2026-04-06",
+    "pipeline_version": "1.0.0",
+    "stages_completed": ["index", "profile", "research", "plan", "build", "test", "optimize", "package"],
+    "total_skills": 12,
+    "total_references": 0,
+    "build_levels": 2,
+    "hub_skill": "product-discovery-risk-assessment"
+  },
+  "quality_metrics": {
+    "avg_with_skill": 96,
+    "avg_baseline": 45,
+    "avg_delta": 51,
+    "skills_passing": 12,
+    "skills_total": 12
+  },
+  "audience": {
+    "primary_roles": ["product-manager", "product-leader"],
+    "secondary_roles": ["product-designer", "tech-lead", "engineering-manager", "startup-founder"],
+    "experience_level": "beginner-to-advanced"
+  }
+}
