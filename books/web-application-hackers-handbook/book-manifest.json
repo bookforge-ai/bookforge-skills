@@ -1,0 +1,43 @@
+{
+  "book_id": "web-application-hackers-handbook",
+  "title": "The Web Application Hacker's Handbook",
+  "subtitle": "Finding and Exploiting Security Flaws (2nd edition)",
+  "author": "Dafydd Stuttard and Marcus Pinto",
+  "authors": ["Dafydd Stuttard", "Marcus Pinto"],
+  "isbn": "978-1118026472",
+  "publisher": "Wiley",
+  "year": 2011,
+  "pages": 914,
+  "source_book": {
+    "title": "The Web Application Hacker's Handbook: Finding and Exploiting Security Flaws (2nd edition)",
+    "authors": ["Dafydd Stuttard", "Marcus Pinto"],
+    "isbn": "978-1118026472",
+    "year": 2011,
+    "pages": 914
+  },
+  "domain": "web-security",
+  "tags": ["web-security", "penetration-testing", "appsec", "owasp", "vulnerability-assessment", "code-review", "defensive-security"],
+  "audience": {
+    "primary": ["penetration-tester", "security-engineer", "application-security-analyst"],
+    "secondary": ["web-developer", "devops-engineer", "security-architect", "bug-bounty-researcher"],
+    "experience_level": "intermediate-to-advanced",
+    "self_description": "pentesters, appsec engineers, security-minded developers, bug bounty hunters"
+  },
+  "skill_count": 13,
+  "hub_skill": "web-application-penetration-testing-methodology",
+  "build_levels": 2,
+  "quality": {
+    "avg_with_skill": 100,
+    "avg_baseline": 52,
+    "avg_delta": 48,
+    "all_passed": true,
+    "tested_at": "2026-04-06"
+  },
+  "value_proposition": {
+    "before": "Security assessments rely on running automated scanners and checking generic vulnerability lists. Code reviews miss subtle injection patterns and logic flaws.",
+    "after": "Systematic, methodology-driven security assessments that follow structured test procedures for each vulnerability category with specific findings and targeted remediation.",
+    "key_differentiator": "Structured per-vulnerability-class detection methodologies with specific test steps, filter bypass techniques, language-specific dangerous API catalogs, and the comprehensive 13-area testing methodology."
+  },
+  "processed_at": "2026-04-06",
+  "pipeline_version": "bookforge-pipeline 1.0"
+}

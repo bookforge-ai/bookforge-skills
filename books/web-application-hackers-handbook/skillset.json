@@ -1,0 +1,70 @@
+{
+  "name": "web-application-hackers-handbook",
+  "display_name": "The Web Application Hacker's Handbook",
+  "version": "1.0.0",
+  "description": "13 web application security testing skills covering the complete penetration testing methodology — from reconnaissance through exploitation and hardening.",
+  "tags": ["web-security", "penetration-testing", "appsec", "owasp", "vulnerability-assessment", "code-review", "defensive-security"],
+  "skill_count": 13,
+  "source_book": {
+    "title": "The Web Application Hacker's Handbook: Finding and Exploiting Security Flaws (2nd edition)",
+    "authors": ["Dafydd Stuttard", "Marcus Pinto"],
+    "isbn": "978-1118026472",
+    "year": 2011,
+    "pages": 914
+  },
+  "skills": [
+    {"name": "web-application-attack-surface-mapping", "path": "skills/web-application-attack-surface-mapping", "tier": 2, "mode": "hybrid", "build_level": 0, "depends_on": []},
+    {"name": "authentication-security-assessment", "path": "skills/authentication-security-assessment", "tier": 2, "mode": "hybrid", "build_level": 0, "depends_on": []},
+    {"name": "session-management-security-assessment", "path": "skills/session-management-security-assessment", "tier": 2, "mode": "hybrid", "build_level": 0, "depends_on": []},
+    {"name": "access-control-vulnerability-testing", "path": "skills/access-control-vulnerability-testing", "tier": 2, "mode": "hybrid", "build_level": 0, "depends_on": []},
+    {"name": "sql-injection-detection-and-exploitation", "path": "skills/sql-injection-detection-and-exploitation", "tier": 2, "mode": "hybrid", "build_level": 0, "depends_on": []},
+    {"name": "server-side-injection-testing", "path": "skills/server-side-injection-testing", "tier": 2, "mode": "hybrid", "build_level": 0, "depends_on": []},
+    {"name": "application-logic-flaw-testing", "path": "skills/application-logic-flaw-testing", "tier": 2, "mode": "plan-only", "build_level": 0, "depends_on": []},
+    {"name": "xss-detection-and-exploitation", "path": "skills/xss-detection-and-exploitation", "tier": 2, "mode": "hybrid", "build_level": 0, "depends_on": []},
+    {"name": "client-side-attack-testing", "path": "skills/client-side-attack-testing", "tier": 2, "mode": "hybrid", "build_level": 0, "depends_on": []},
+    {"name": "web-application-fuzzing-automation", "path": "skills/web-application-fuzzing-automation", "tier": 2, "mode": "hybrid", "build_level": 0, "depends_on": []},
+    {"name": "source-code-security-review", "path": "skills/source-code-security-review", "tier": 2, "mode": "full", "build_level": 0, "depends_on": []},
+    {"name": "web-application-hardening-assessment", "path": "skills/web-application-hardening-assessment", "tier": 2, "mode": "hybrid", "build_level": 0, "depends_on": []},
+    {"name": "web-application-penetration-testing-methodology", "path": "skills/web-application-penetration-testing-methodology", "tier": 2, "mode": "hybrid", "build_level": 1, "depends_on": ["web-application-attack-surface-mapping", "authentication-security-assessment", "session-management-security-assessment", "access-control-vulnerability-testing", "sql-injection-detection-and-exploitation", "server-side-injection-testing", "application-logic-flaw-testing", "xss-detection-and-exploitation", "client-side-attack-testing", "web-application-fuzzing-automation", "source-code-security-review", "web-application-hardening-assessment"]}
+  ],
+  "dependency_graph": {
+    "levels": 2,
+    "hub": "web-application-penetration-testing-methodology",
+    "edges": [
+      {"from": "web-application-attack-surface-mapping", "to": "web-application-penetration-testing-methodology", "type": "knowledge"},
+      {"from": "authentication-security-assessment", "to": "web-application-penetration-testing-methodology", "type": "knowledge"},
+      {"from": "session-management-security-assessment", "to": "web-application-penetration-testing-methodology", "type": "knowledge"},
+      {"from": "access-control-vulnerability-testing", "to": "web-application-penetration-testing-methodology", "type": "knowledge"},
+      {"from": "sql-injection-detection-and-exploitation", "to": "web-application-penetration-testing-methodology", "type": "knowledge"},
+      {"from": "server-side-injection-testing", "to": "web-application-penetration-testing-methodology", "type": "knowledge"},
+      {"from": "application-logic-flaw-testing", "to": "web-application-penetration-testing-methodology", "type": "knowledge"},
+      {"from": "xss-detection-and-exploitation", "to": "web-application-penetration-testing-methodology", "type": "knowledge"},
+      {"from": "client-side-attack-testing", "to": "web-application-penetration-testing-methodology", "type": "knowledge"},
+      {"from": "web-application-fuzzing-automation", "to": "web-application-penetration-testing-methodology", "type": "knowledge"},
+      {"from": "source-code-security-review", "to": "web-application-penetration-testing-methodology", "type": "knowledge"},
+      {"from": "web-application-hardening-assessment", "to": "web-application-penetration-testing-methodology", "type": "knowledge"}
+    ],
+    "is_dag": true,
+    "max_depth": 1
+  },
+  "quality_summary": {
+    "avg_with_skill": 100,
+    "avg_baseline": 52,
+    "avg_delta": 48,
+    "all_passed": true
+  },
+  "install_profiles": {
+    "full": {
+      "description": "Complete web application security testing skill set — all 13 skills",
+      "skills": ["web-application-attack-surface-mapping", "authentication-security-assessment", "session-management-security-assessment", "access-control-vulnerability-testing", "sql-injection-detection-and-exploitation", "server-side-injection-testing", "application-logic-flaw-testing", "xss-detection-and-exploitation", "client-side-attack-testing", "web-application-fuzzing-automation", "source-code-security-review", "web-application-hardening-assessment", "web-application-penetration-testing-methodology"]
+    },
+    "core": {
+      "description": "Core attack skills — reconnaissance + top vulnerability classes",
+      "skills": ["web-application-attack-surface-mapping", "authentication-security-assessment", "session-management-security-assessment", "access-control-vulnerability-testing", "sql-injection-detection-and-exploitation", "xss-detection-and-exploitation", "web-application-penetration-testing-methodology"]
+    },
+    "minimal": {
+      "description": "Methodology hub + reconnaissance only",
+      "skills": ["web-application-attack-surface-mapping", "web-application-penetration-testing-methodology"]
+    }
+  }
+}

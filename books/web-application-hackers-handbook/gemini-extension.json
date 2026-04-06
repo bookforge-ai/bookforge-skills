@@ -1,0 +1,6 @@
+{
+  "name": "web-application-hackers-handbook",
+  "description": "13 web application security testing skills covering the complete penetration testing methodology, extracted from The Web Application Hacker's Handbook by Dafydd Stuttard, Marcus Pinto",
+  "version": "1.0.0",
+  "contextFileName": "GEMINI.md"
+}

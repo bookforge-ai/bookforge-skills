@@ -1,0 +1,11 @@
+{
+  "name": "web-application-hackers-handbook",
+  "version": "1.0.0",
+  "description": "13 web application security testing skills covering the complete penetration testing methodology, extracted from The Web Application Hacker's Handbook by Dafydd Stuttard, Marcus Pinto",
+  "author": {
+    "name": "BookForge",
+    "email": "bookforge-ai@users.noreply.github.com"
+  },
+  "repository": "https://github.com/bookforge-ai/bookforge-skills",
+  "license": "CC-BY-SA-4.0"
+}
