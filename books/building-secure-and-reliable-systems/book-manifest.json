@@ -1,0 +1,36 @@
+{
+  "book_id": "building-secure-and-reliable-systems",
+  "title": "Building Secure and Reliable Systems",
+  "subtitle": "Best Practices for Designing, Implementing, and Maintaining Systems",
+  "author": "Heather Adkins, Betsy Beyer, Paul Blankinship, Piotr Lewandowski, Ana Oprea, Adam Stubblefield",
+  "authors": ["Heather Adkins", "Betsy Beyer", "Paul Blankinship", "Piotr Lewandowski", "Ana Oprea", "Adam Stubblefield"],
+  "isbn": "978-1492083122",
+  "publisher": "O'Reilly Media",
+  "year": 2020,
+  "pages": 558,
+  "source_book": {
+    "title": "Building Secure and Reliable Systems: Best Practices for Designing, Implementing, and Maintaining Systems",
+    "authors": ["Heather Adkins", "Betsy Beyer", "Paul Blankinship", "Piotr Lewandowski", "Ana Oprea", "Adam Stubblefield"],
+    "isbn": "978-1492083122",
+    "year": 2020,
+    "pages": 558
+  },
+  "tags": ["security", "reliability", "site-reliability-engineering", "incident-response", "secure-design"],
+  "audience": {
+    "primary": ["software-engineer", "site-reliability-engineer", "security-engineer"],
+    "secondary": ["software-architect", "tech-lead", "devops-engineer"],
+    "experience_level": "intermediate-to-advanced"
+  },
+  "skill_count": 14,
+  "hub_skill": "disaster-risk-assessment",
+  "build_levels": 3,
+  "quality": {
+    "avg_with_skill": 95,
+    "avg_baseline": 42,
+    "avg_delta": 49,
+    "all_passed": true,
+    "tested_at": "2026-04-07"
+  },
+  "processed_at": "2026-04-07",
+  "pipeline_version": "bookforge-pipeline 1.0"
+}

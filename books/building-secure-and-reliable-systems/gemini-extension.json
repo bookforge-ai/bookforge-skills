@@ -1,0 +1,6 @@
+{
+  "name": "building-secure-and-reliable-systems",
+  "description": "14 agent skills for building secure and reliable systems — threat modeling, secure design, least-privilege access, blast radius containment, code review, deployment pipelines, incident response, and disaster recovery. From Building Secure and Reliable Systems by Adkins, Beyer, Blankinship, Lewandowski, Oprea, Stubblefield.",
+  "version": "1.0.0",
+  "contextFileName": "GEMINI.md"
+}

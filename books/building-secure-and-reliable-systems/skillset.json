@@ -1,0 +1,66 @@
+{
+  "name": "building-secure-and-reliable-systems",
+  "display_name": "Building Secure and Reliable Systems",
+  "version": "1.0.0",
+  "description": "14 agent skills for building secure and reliable systems — covering threat modeling, secure design reviews, least-privilege access, blast radius containment, disaster risk assessment, secure code review, change rollout planning, recovery mechanisms, denial-of-service defense, security testing, deployment pipelines, and incident response.",
+  "tags": ["security", "reliability", "site-reliability-engineering", "incident-response", "secure-design"],
+  "skill_count": 14,
+  "source_book": {
+    "title": "Building Secure and Reliable Systems: Best Practices for Designing, Implementing, and Maintaining Systems",
+    "authors": ["Heather Adkins", "Betsy Beyer", "Paul Blankinship", "Piotr Lewandowski", "Ana Oprea", "Adam Stubblefield"],
+    "isbn": "978-1492083122",
+    "year": 2020,
+    "pages": 558
+  },
+  "skills": [
+    {"name": "adversary-profiling-and-threat-modeling", "path": "skills/adversary-profiling-and-threat-modeling", "tier": 1, "mode": "hybrid", "build_level": 0, "depends_on": []},
+    {"name": "security-reliability-design-review", "path": "skills/security-reliability-design-review", "tier": 2, "mode": "full", "build_level": 0, "depends_on": []},
+    {"name": "least-privilege-access-design", "path": "skills/least-privilege-access-design", "tier": 2, "mode": "full", "build_level": 0, "depends_on": []},
+    {"name": "resilience-and-blast-radius-design", "path": "skills/resilience-and-blast-radius-design", "tier": 2, "mode": "full", "build_level": 0, "depends_on": []},
+    {"name": "disaster-risk-assessment", "path": "skills/disaster-risk-assessment", "tier": 1, "mode": "hybrid", "build_level": 0, "depends_on": []},
+    {"name": "secure-code-review", "path": "skills/secure-code-review", "tier": 2, "mode": "full", "build_level": 0, "depends_on": []},
+    {"name": "security-change-rollout-planning", "path": "skills/security-change-rollout-planning", "tier": 1, "mode": "hybrid", "build_level": 0, "depends_on": []},
+    {"name": "recovery-mechanism-design", "path": "skills/recovery-mechanism-design", "tier": 2, "mode": "full", "build_level": 1, "depends_on": ["resilience-and-blast-radius-design"]},
+    {"name": "dos-defense-and-mitigation", "path": "skills/dos-defense-and-mitigation", "tier": 2, "mode": "full", "build_level": 1, "depends_on": ["resilience-and-blast-radius-design"]},
+    {"name": "security-testing-strategy", "path": "skills/security-testing-strategy", "tier": 3, "mode": "full", "build_level": 1, "depends_on": ["secure-code-review"]},
+    {"name": "secure-deployment-pipeline", "path": "skills/secure-deployment-pipeline", "tier": 3, "mode": "full", "build_level": 1, "depends_on": ["secure-code-review"]},
+    {"name": "incident-response-team-setup", "path": "skills/incident-response-team-setup", "tier": 1, "mode": "plan-only", "build_level": 1, "depends_on": ["disaster-risk-assessment"]},
+    {"name": "security-incident-command", "path": "skills/security-incident-command", "tier": 1, "mode": "hybrid", "build_level": 2, "depends_on": ["incident-response-team-setup"]},
+    {"name": "security-incident-recovery", "path": "skills/security-incident-recovery", "tier": 2, "mode": "hybrid", "build_level": 2, "depends_on": ["security-incident-command"]}
+  ],
+  "dependency_graph": {
+    "levels": 3,
+    "hub": "disaster-risk-assessment",
+    "edges": [
+      {"from": "resilience-and-blast-radius-design", "to": "recovery-mechanism-design", "type": "knowledge"},
+      {"from": "resilience-and-blast-radius-design", "to": "dos-defense-and-mitigation", "type": "knowledge"},
+      {"from": "secure-code-review", "to": "security-testing-strategy", "type": "knowledge"},
+      {"from": "secure-code-review", "to": "secure-deployment-pipeline", "type": "knowledge"},
+      {"from": "disaster-risk-assessment", "to": "incident-response-team-setup", "type": "input"},
+      {"from": "incident-response-team-setup", "to": "security-incident-command", "type": "input"},
+      {"from": "security-incident-command", "to": "security-incident-recovery", "type": "input"}
+    ],
+    "is_dag": true,
+    "max_depth": 3
+  },
+  "quality_summary": {
+    "avg_with_skill": 95,
+    "avg_baseline": 42,
+    "avg_delta": 49,
+    "all_passed": true
+  },
+  "install_profiles": {
+    "full": {
+      "description": "All 14 skills including capstone incident command and recovery",
+      "skills": ["adversary-profiling-and-threat-modeling", "security-reliability-design-review", "least-privilege-access-design", "resilience-and-blast-radius-design", "disaster-risk-assessment", "secure-code-review", "security-change-rollout-planning", "recovery-mechanism-design", "dos-defense-and-mitigation", "security-testing-strategy", "secure-deployment-pipeline", "incident-response-team-setup", "security-incident-command", "security-incident-recovery"]
+    },
+    "core": {
+      "description": "Foundation + recovery, defense, testing, deployment, and incident response setup",
+      "skills": ["adversary-profiling-and-threat-modeling", "security-reliability-design-review", "least-privilege-access-design", "resilience-and-blast-radius-design", "disaster-risk-assessment", "secure-code-review", "security-change-rollout-planning", "recovery-mechanism-design", "dos-defense-and-mitigation", "security-testing-strategy", "secure-deployment-pipeline", "incident-response-team-setup"]
+    },
+    "minimal": {
+      "description": "Foundation skills only — threat modeling, design reviews, least privilege, blast radius, disaster risk, code review, change rollout",
+      "skills": ["adversary-profiling-and-threat-modeling", "security-reliability-design-review", "least-privilege-access-design", "resilience-and-blast-radius-design", "disaster-risk-assessment", "secure-code-review", "security-change-rollout-planning"]
+    }
+  }
+}
