@@ -1,0 +1,15 @@
+#!/bin/bash
+PLUGIN_ROOT="${CLAUDE_PLUGIN_ROOT:-${CURSOR_PLUGIN_ROOT:-$(dirname "$(dirname "$0")")}}"
+SKILL_FILE="$PLUGIN_ROOT/skills/research-question-formulator/SKILL.md"
+
+if [ ! -f "$SKILL_FILE" ]; then exit 0; fi
+
+# JSON-encode the skill content. Requires python3; skip gracefully if missing.
+if ! command -v python3 &>/dev/null; then exit 0; fi
+CONTENT=$(cat "$SKILL_FILE" | python3 -c "import sys,json; print(json.dumps(sys.stdin.read()))")
+
+if [ -n "$CLAUDE_PLUGIN_ROOT" ]; then
+  echo "{\"hookSpecificOutput\":{\"additionalContext\":$CONTENT}}"
+elif [ -n "$CURSOR_PLUGIN_ROOT" ]; then
+  echo "{\"additional_context\":$CONTENT}"
+fi

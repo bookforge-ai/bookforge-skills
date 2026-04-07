@@ -1,0 +1,337 @@
+{
+  "name": "the-craft-of-research",
+  "display_name": "The Craft of Research, Fourth Edition",
+  "version": "1.0.0",
+  "description": "12 skills for research methodology, argumentation, and academic writing, extracted from The Craft of Research, Fourth Edition by Wayne C. Booth, Gregory G. Colomb, Joseph M. Williams, Joseph Bizup, and William T. FitzGerald",
+  "skill_count": 12,
+  "source_book": {
+    "title": "The Craft of Research, Fourth Edition",
+    "authors": [
+      "Wayne C. Booth",
+      "Gregory G. Colomb",
+      "Joseph M. Williams",
+      "Joseph Bizup",
+      "William T. FitzGerald"
+    ],
+    "isbn": "978-0-226-23973-6",
+    "year": 2016,
+    "pages": 364
+  },
+  "skills": [
+    {
+      "name": "research-question-formulator",
+      "path": "research-question-formulator/SKILL.md",
+      "description": "Transform a broad topic into a focused, answerable research question with built-in significance using the 3-step sentence-completion formula (topic → direct question → So What?).",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 93,
+        "baseline": 48,
+        "delta": 45
+      }
+    },
+    {
+      "name": "source-evaluator",
+      "path": "source-evaluator/SKILL.md",
+      "description": "Evaluate, triage, and actively read a set of research sources — books, articles, and online materials — by applying a dual-axis relevance-and-reliability screen, source-type skim protocols, and a two-pass active reading method.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 93,
+        "baseline": 48,
+        "delta": 45
+      }
+    },
+    {
+      "name": "source-incorporator",
+      "path": "source-incorporator/SKILL.md",
+      "description": "Incorporate quoted, paraphrased, and summarized sources into research writing by applying a 3-branch selection decision tree, 3 integration methods for quotations, and a 5-mechanism inadvertent plagiarism prevention checklist.",
+      "tier": 1,
+      "mode": "full",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 93,
+        "baseline": 48,
+        "delta": 45
+      }
+    },
+    {
+      "name": "data-visualization-selector",
+      "path": "data-visualization-selector/SKILL.md",
+      "description": "Select the correct graphic type (table, bar chart, line graph) for a dataset and rhetorical goal, then design and frame it to communicate evidence clearly and honestly.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 93,
+        "baseline": 48,
+        "delta": 45
+      }
+    },
+    {
+      "name": "prose-clarity-reviser",
+      "path": "prose-clarity-reviser/SKILL.md",
+      "description": "Revise dense, unclear prose into clear, readable sentences by applying four diagnostic principles — characters-as-subjects, actions-as-verbs, old-before-new information flow, and complexity-last sentence endings.",
+      "tier": 1,
+      "mode": "full",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 93,
+        "baseline": 48,
+        "delta": 45
+      }
+    },
+    {
+      "name": "research-problem-framer",
+      "path": "research-problem-framer/SKILL.md",
+      "description": "Transform a research question into a fully framed research problem that readers recognize as worth solving, using the condition+consequence structure and the So What? cascade test.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": [
+        "research-question-formulator"
+      ],
+      "quality": {
+        "with_skill": 93,
+        "baseline": 48,
+        "delta": 45
+      }
+    },
+    {
+      "name": "research-argument-builder",
+      "path": "research-argument-builder/SKILL.md",
+      "description": "Build a complete, structured research argument from a framed problem — assembling all five elements (claim, reasons, evidence, acknowledgment/response, warrant) using the Claim→Reason→Evidence chain.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 2,
+      "depends_on": [
+        "research-problem-framer"
+      ],
+      "quality": {
+        "with_skill": 93,
+        "baseline": 48,
+        "delta": 45
+      }
+    },
+    {
+      "name": "counterargument-handler",
+      "path": "counterargument-handler/SKILL.md",
+      "description": "Anticipate, acknowledge, and respond to reader objections and alternative views in a research argument — covering objection anticipation protocol, three predictable disagreement types, and calibrated vocabulary for acknowledgment.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 2,
+      "depends_on": [
+        "research-argument-builder"
+      ],
+      "quality": {
+        "with_skill": 93,
+        "baseline": 48,
+        "delta": 45
+      }
+    },
+    {
+      "name": "warrant-tester",
+      "path": "warrant-tester/SKILL.md",
+      "description": "Test the warrants in a research argument — the general principles that connect reasons to claims — identifying which type is being used and whether it survives challenge or needs qualification.",
+      "tier": 1,
+      "mode": "full",
+      "build_level": 2,
+      "depends_on": [
+        "research-argument-builder"
+      ],
+      "quality": {
+        "with_skill": 93,
+        "baseline": 48,
+        "delta": 45
+      }
+    },
+    {
+      "name": "research-paper-planner",
+      "path": "research-paper-planner/SKILL.md",
+      "description": "Build a storyboard-based plan for a research paper and turn it into a first draft — organizing a completed argument into a coherent, reader-ready structure before writing.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 2,
+      "depends_on": [
+        "research-argument-builder"
+      ],
+      "quality": {
+        "with_skill": 93,
+        "baseline": 48,
+        "delta": 45
+      }
+    },
+    {
+      "name": "argument-organization-reviser",
+      "path": "argument-organization-reviser/SKILL.md",
+      "description": "Revise the structural organization of a research paper draft by applying a four-level top-down procedure — Frame, Argument, Paper Organization, and Paragraphs.",
+      "tier": 1,
+      "mode": "full",
+      "build_level": 2,
+      "depends_on": [
+        "research-paper-planner"
+      ],
+      "quality": {
+        "with_skill": 93,
+        "baseline": 48,
+        "delta": 45
+      }
+    },
+    {
+      "name": "research-introduction-architect",
+      "path": "research-introduction-architect/SKILL.md",
+      "description": "Draft a complete research introduction and matching conclusion using the Context→Problem→Response architecture.",
+      "tier": 1,
+      "mode": "full",
+      "build_level": 2,
+      "depends_on": [
+        "research-problem-framer"
+      ],
+      "quality": {
+        "with_skill": 93,
+        "baseline": 48,
+        "delta": 45
+      }
+    }
+  ],
+  "dependency_graph": {
+    "nodes": [
+      "research-question-formulator",
+      "source-evaluator",
+      "source-incorporator",
+      "data-visualization-selector",
+      "prose-clarity-reviser",
+      "research-problem-framer",
+      "research-argument-builder",
+      "counterargument-handler",
+      "warrant-tester",
+      "research-paper-planner",
+      "argument-organization-reviser",
+      "research-introduction-architect"
+    ],
+    "edges": [
+      {
+        "from": "research-question-formulator",
+        "to": "research-problem-framer",
+        "type": "input",
+        "reason": "Problem framer requires a focused research question before articulating condition+consequence structure"
+      },
+      {
+        "from": "research-problem-framer",
+        "to": "research-argument-builder",
+        "type": "input",
+        "reason": "Argument builder requires a framed research problem with explicit stakes before assembling claim-reason-evidence-warrant chain"
+      },
+      {
+        "from": "research-problem-framer",
+        "to": "research-introduction-architect",
+        "type": "input",
+        "reason": "Introduction architect requires a framed problem (condition+consequence) to build the Context→Problem→Response structure"
+      },
+      {
+        "from": "research-argument-builder",
+        "to": "counterargument-handler",
+        "type": "knowledge",
+        "reason": "Counterargument handler operates on an assembled argument structure to identify and map objection slots"
+      },
+      {
+        "from": "research-argument-builder",
+        "to": "warrant-tester",
+        "type": "knowledge",
+        "reason": "Warrant tester requires identified claim-reason pairs from the argument structure to surface and test implicit warrants"
+      },
+      {
+        "from": "research-argument-builder",
+        "to": "research-paper-planner",
+        "type": "input",
+        "reason": "Paper planner requires a completed argument (claim + reasons + evidence + acknowledgments) before building a storyboard"
+      },
+      {
+        "from": "research-paper-planner",
+        "to": "argument-organization-reviser",
+        "type": "input",
+        "reason": "Organization reviser applies top-down structural review to a paper draft produced from the storyboard plan"
+      }
+    ],
+    "levels": {
+      "0": [
+        "research-question-formulator",
+        "source-evaluator",
+        "source-incorporator",
+        "data-visualization-selector",
+        "prose-clarity-reviser"
+      ],
+      "1": [
+        "research-problem-framer"
+      ],
+      "2": [
+        "research-argument-builder",
+        "counterargument-handler",
+        "warrant-tester",
+        "research-paper-planner",
+        "argument-organization-reviser",
+        "research-introduction-architect"
+      ]
+    },
+    "hub": "research-argument-builder",
+    "is_dag": true,
+    "max_depth": 3
+  },
+  "quality_summary": {
+    "avg_with_skill": 93,
+    "avg_baseline": 48,
+    "avg_delta": 45,
+    "all_passed": true
+  },
+  "install_profiles": {
+    "minimal": {
+      "skills": [
+        "research-question-formulator",
+        "research-problem-framer",
+        "research-argument-builder"
+      ],
+      "description": "Core research pipeline — question formulation, problem framing, and argument construction"
+    },
+    "core": {
+      "skills": [
+        "research-question-formulator",
+        "research-problem-framer",
+        "source-evaluator",
+        "research-argument-builder",
+        "research-paper-planner",
+        "prose-clarity-reviser"
+      ],
+      "description": "Full research workflow — question to argument to structured paper with clear prose"
+    },
+    "full": {
+      "skills": [
+        "research-question-formulator",
+        "source-evaluator",
+        "source-incorporator",
+        "data-visualization-selector",
+        "prose-clarity-reviser",
+        "research-problem-framer",
+        "research-argument-builder",
+        "counterargument-handler",
+        "warrant-tester",
+        "research-paper-planner",
+        "argument-organization-reviser",
+        "research-introduction-architect"
+      ],
+      "description": "Complete research and writing toolkit — all 12 skills covering the full research-to-publication workflow"
+    }
+  },
+  "tags": [
+    "research-methodology",
+    "academic-writing",
+    "argumentation",
+    "critical-thinking"
+  ]
+}

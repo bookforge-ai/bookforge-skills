@@ -1,0 +1,10 @@
+{
+  "name": "the-craft-of-research",
+  "version": "1.0.0",
+  "description": "12 skills for research methodology, argumentation, and academic writing, extracted from The Craft of Research, Fourth Edition by Wayne C. Booth, Gregory G. Colomb, Joseph M. Williams, Joseph Bizup, and William T. FitzGerald",
+  "author": "BookForge <bookforge-ai@users.noreply.github.com>",
+  "license": "CC-BY-SA-4.0",
+  "homepage": "https://github.com/bookforge-ai/bookforge-skills",
+  "repository": "https://github.com/bookforge-ai/bookforge-skills",
+  "keywords": ["research-methodology", "academic-writing", "argumentation", "critical-thinking", "research", "writing", "booth-colomb-williams"]
+}

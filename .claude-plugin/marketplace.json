@@ -53,6 +53,15 @@
       "category": "data-systems",
       "tags": ["data-systems", "distributed-systems", "databases", "replication", "transactions", "batch-processing", "stream-processing"],
       "license": "CC-BY-SA-4.0"
+    },
+    {
+      "name": "the-craft-of-research",
+      "source": "./books/the-craft-of-research",
+      "description": "12 research methodology skills from The Craft of Research, Fourth Edition by Wayne C. Booth, Gregory G. Colomb, Joseph M. Williams, Joseph Bizup, and William T. FitzGerald",
+      "version": "1.0.0",
+      "category": "research-methodology",
+      "tags": ["research-methodology", "academic-writing", "argumentation", "critical-thinking"],
+      "license": "CC-BY-SA-4.0"
     }
   ]
 }

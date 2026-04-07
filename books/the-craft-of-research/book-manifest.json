@@ -1,0 +1,25 @@
+{
+  "book_id": "the-craft-of-research",
+  "title": "The Craft of Research, Fourth Edition",
+  "subtitle": null,
+  "author": "Wayne C. Booth, Gregory G. Colomb, Joseph M. Williams, Joseph Bizup, and William T. FitzGerald",
+  "authors": [
+    "Wayne C. Booth",
+    "Gregory G. Colomb",
+    "Joseph M. Williams",
+    "Joseph Bizup",
+    "William T. FitzGerald"
+  ],
+  "isbn": "978-0-226-23973-6",
+  "year": 2016,
+  "pages": 364,
+  "skill_count": 12,
+  "source_book": "The Craft of Research, Fourth Edition - Booth, Colomb, Williams, Bizup, FitzGerald.pdf",
+  "pipeline_version": "0.1.0",
+  "tags": [
+    "research-methodology",
+    "academic-writing",
+    "argumentation",
+    "critical-thinking"
+  ]
+}
