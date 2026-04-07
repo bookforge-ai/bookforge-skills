@@ -1,0 +1,256 @@
+{
+  "name": "100m-offers",
+  "display_name": "$100M Offers",
+  "version": "1.0.0",
+  "description": "8 skills for creating irresistible offers, extracted from $100M Offers by Alex Hormozi",
+  "skill_count": 8,
+  "source_book": {
+    "title": "$100M Offers",
+    "authors": [
+      "Alex Hormozi"
+    ],
+    "isbn": null,
+    "year": 2021,
+    "pages": 205
+  },
+  "skills": [
+    {
+      "name": "value-equation-offer-audit",
+      "path": "value-equation-offer-audit/SKILL.md",
+      "description": "Audit an offer using the Value Equation (Dream Outcome x Perceived Likelihood / Time Delay x Effort & Sacrifice) and generate improvement recommendations.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 95,
+        "baseline": 55,
+        "delta": 40
+      }
+    },
+    {
+      "name": "target-market-selection",
+      "path": "target-market-selection/SKILL.md",
+      "description": "Select a target market using the four indicators (massive pain, purchasing power, easy to target, growing) and validate the starving crowd thesis.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 97,
+        "baseline": 65,
+        "delta": 32
+      }
+    },
+    {
+      "name": "premium-pricing-strategy",
+      "path": "premium-pricing-strategy/SKILL.md",
+      "description": "Design a premium pricing strategy that positions an offer as a category-of-one and justifies prices 3-10x above market rate.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": [
+        "target-market-selection"
+      ],
+      "quality": {
+        "with_skill": 95,
+        "baseline": 50,
+        "delta": 45
+      }
+    },
+    {
+      "name": "grand-slam-offer-creation",
+      "path": "grand-slam-offer-creation/SKILL.md",
+      "description": "Build a Grand Slam Offer by identifying all obstacles, mapping solutions to delivery vehicles, and bundling into an irresistible package.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": [
+        "value-equation-offer-audit",
+        "target-market-selection"
+      ],
+      "quality": {
+        "with_skill": 98,
+        "baseline": 60,
+        "delta": 38
+      }
+    },
+    {
+      "name": "guarantee-design-and-selection",
+      "path": "guarantee-design-and-selection/SKILL.md",
+      "description": "Design the optimal guarantee type (unconditional, conditional, anti-guarantee, or implied) to maximize conversions while managing risk.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 2,
+      "depends_on": [
+        "value-equation-offer-audit"
+      ],
+      "quality": {
+        "with_skill": 96,
+        "baseline": 60,
+        "delta": 36
+      }
+    },
+    {
+      "name": "bonus-stacking-system",
+      "path": "bonus-stacking-system/SKILL.md",
+      "description": "Stack bonuses that individually exceed the core offer's value, using the bonus checklist to maximize perceived value and urgency.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 2,
+      "depends_on": [
+        "grand-slam-offer-creation",
+        "value-equation-offer-audit"
+      ],
+      "quality": {
+        "with_skill": 93,
+        "baseline": 55,
+        "delta": 38
+      }
+    },
+    {
+      "name": "scarcity-and-urgency-tactics",
+      "path": "scarcity-and-urgency-tactics/SKILL.md",
+      "description": "Apply ethical scarcity and urgency tactics (cohort-based, rolling, seasonal, or capacity-based) to accelerate buying decisions.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 2,
+      "depends_on": [
+        "grand-slam-offer-creation"
+      ],
+      "quality": {
+        "with_skill": 94,
+        "baseline": 55,
+        "delta": 39
+      }
+    },
+    {
+      "name": "offer-naming-magic-formula",
+      "path": "offer-naming-magic-formula/SKILL.md",
+      "description": "Create a compelling offer name using the MAGIC formula (Make a Magnetic reason, Announce the Avatar, Give a Goal, Indicate a Container, Create a timeline).",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 2,
+      "depends_on": [
+        "grand-slam-offer-creation"
+      ],
+      "quality": {
+        "with_skill": 95,
+        "baseline": 60,
+        "delta": 35
+      }
+    }
+  ],
+  "dependency_graph": {
+    "nodes": [
+      "value-equation-offer-audit",
+      "target-market-selection",
+      "premium-pricing-strategy",
+      "grand-slam-offer-creation",
+      "guarantee-design-and-selection",
+      "bonus-stacking-system",
+      "scarcity-and-urgency-tactics",
+      "offer-naming-magic-formula"
+    ],
+    "edges": [
+      {
+        "from": "target-market-selection",
+        "to": "premium-pricing-strategy",
+        "type": "input"
+      },
+      {
+        "from": "value-equation-offer-audit",
+        "to": "grand-slam-offer-creation",
+        "type": "input"
+      },
+      {
+        "from": "target-market-selection",
+        "to": "grand-slam-offer-creation",
+        "type": "input"
+      },
+      {
+        "from": "value-equation-offer-audit",
+        "to": "guarantee-design-and-selection",
+        "type": "knowledge"
+      },
+      {
+        "from": "grand-slam-offer-creation",
+        "to": "bonus-stacking-system",
+        "type": "input"
+      },
+      {
+        "from": "value-equation-offer-audit",
+        "to": "bonus-stacking-system",
+        "type": "knowledge"
+      },
+      {
+        "from": "grand-slam-offer-creation",
+        "to": "scarcity-and-urgency-tactics",
+        "type": "input"
+      },
+      {
+        "from": "grand-slam-offer-creation",
+        "to": "offer-naming-magic-formula",
+        "type": "input"
+      }
+    ],
+    "topology": "layered",
+    "max_depth": 2,
+    "hub": "grand-slam-offer-creation",
+    "levels": {
+      "0": ["value-equation-offer-audit", "target-market-selection"],
+      "1": ["premium-pricing-strategy", "grand-slam-offer-creation"],
+      "2": ["guarantee-design-and-selection", "bonus-stacking-system", "scarcity-and-urgency-tactics", "offer-naming-magic-formula"]
+    },
+    "is_dag": true
+  },
+  "quality_summary": {
+    "avg_with_skill": 95.4,
+    "avg_baseline": 57.5,
+    "avg_delta": 37.9,
+    "all_passed": true
+  },
+  "install_profiles": {
+    "minimal": {
+      "description": "Foundation skills only — Value Equation and market selection",
+      "skills": [
+        "value-equation-offer-audit",
+        "target-market-selection"
+      ],
+      "count": 2
+    },
+    "core": {
+      "description": "Foundation + offer creation and pricing strategy",
+      "skills": [
+        "value-equation-offer-audit",
+        "target-market-selection",
+        "premium-pricing-strategy",
+        "grand-slam-offer-creation"
+      ],
+      "count": 4
+    },
+    "full": {
+      "description": "Complete offer creation system with all enhancement skills",
+      "skills": [
+        "value-equation-offer-audit",
+        "target-market-selection",
+        "premium-pricing-strategy",
+        "grand-slam-offer-creation",
+        "guarantee-design-and-selection",
+        "bonus-stacking-system",
+        "scarcity-and-urgency-tactics",
+        "offer-naming-magic-formula"
+      ],
+      "count": 8
+    }
+  },
+  "tags": [
+    "offers",
+    "pricing",
+    "sales",
+    "marketing",
+    "entrepreneurship",
+    "value-creation",
+    "business-strategy"
+  ]
+}

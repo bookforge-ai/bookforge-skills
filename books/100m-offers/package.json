@@ -1,0 +1,11 @@
+{
+  "name": "100m-offers",
+  "version": "1.0.0",
+  "description": "8 skills for creating irresistible offers, extracted from $100M Offers by Alex Hormozi",
+  "author": {
+    "name": "BookForge",
+    "email": "bookforge-ai@users.noreply.github.com"
+  },
+  "repository": "https://github.com/bookforge-ai/bookforge-skills",
+  "license": "CC-BY-SA-4.0"
+}

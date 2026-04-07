@@ -1,0 +1,57 @@
+{
+  "book_id": "100m-offers",
+  "title": "$100M Offers",
+  "subtitle": "How To Make Offers So Good People Feel Stupid Saying No",
+  "author": "Alex Hormozi",
+  "authors": [
+    "Alex Hormozi"
+  ],
+  "isbn": null,
+  "year": 2021,
+  "pages": 205,
+  "source_book": "100M Offers How To Make Offers So Good People Feel Stupid Saying No (Alex Hormozi).pdf",
+  "pipeline_version": "1.0.0",
+  "skill_count": 8,
+  "audience": {
+    "primary_roles": [
+      "entrepreneur",
+      "business-owner",
+      "coach",
+      "consultant"
+    ],
+    "secondary_roles": [
+      "marketer",
+      "sales-professional",
+      "freelancer",
+      "agency-owner",
+      "course-creator"
+    ],
+    "experience_level": "beginner-to-intermediate",
+    "domain_familiarity": "assumes basic business experience; explains offer economics and pricing psychology from scratch",
+    "self_description": "entrepreneurs, business owners, coaches, consultants, anyone who sells a product or service and wants to charge premium prices"
+  },
+  "pipeline": {
+    "indexed_at": "2026-04-07T06:00:00Z",
+    "profiled_at": "2026-04-07T06:15:00Z",
+    "researched_at": "2026-04-07T06:45:00Z",
+    "planned_at": "2026-04-07T07:00:00Z",
+    "built_at": "2026-04-07",
+    "verified_at": "2026-04-07"
+  },
+  "stats": {
+    "total_skills": 8,
+    "total_lines": 2754,
+    "total_reference_files": 0,
+    "hunter_findings": 57,
+    "avg_quality_delta": 37.9
+  },
+  "tags": [
+    "offers",
+    "pricing",
+    "sales",
+    "marketing",
+    "entrepreneurship",
+    "value-creation",
+    "business-strategy"
+  ]
+}
