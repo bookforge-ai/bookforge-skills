@@ -1,0 +1,294 @@
+{
+  "name": "make-it-stick",
+  "display_name": "Make It Stick: The Science of Successful Learning",
+  "version": "1.0.0",
+  "description": "10 skills for evidence-based learning design, study system optimization, and training program auditing, extracted from Make It Stick: The Science of Successful Learning by Peter C. Brown, Henry L. Roediger III, and Mark A. McDaniel",
+  "skill_count": 10,
+  "source_book": {
+    "title": "Make It Stick: The Science of Successful Learning",
+    "authors": [
+      "Peter C. Brown",
+      "Henry L. Roediger III",
+      "Mark A. McDaniel"
+    ],
+    "isbn": null,
+    "year": 2014,
+    "pages": null
+  },
+  "skills": [
+    {
+      "name": "retrieval-practice-study-system",
+      "path": "retrieval-practice-study-system/SKILL.md",
+      "description": "Design a complete self-quizzing study system for any subject, course, or learning goal — covering quiz generation, Leitner box spacing, mastery signals, and anti-pattern comparisons.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 95,
+        "baseline": 55,
+        "delta": 40
+      }
+    },
+    {
+      "name": "practice-schedule-designer",
+      "path": "practice-schedule-designer/SKILL.md",
+      "description": "Design a concrete practice schedule that makes learning stick — diagnosing massed practice, selecting strategy by goal type, and producing day-by-day calendars with tier-based interval management.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 97,
+        "baseline": 60,
+        "delta": 37
+      }
+    },
+    {
+      "name": "learning-calibration-audit",
+      "path": "learning-calibration-audit/SKILL.md",
+      "description": "Diagnose and correct false confidence in learning mastery — identifying 7 cognitive distortions, prescribing matched calibration instruments, and designing dynamic testing cycles with gap classification.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 98,
+        "baseline": 50,
+        "delta": 48
+      }
+    },
+    {
+      "name": "desirable-difficulty-classifier",
+      "path": "desirable-difficulty-classifier/SKILL.md",
+      "description": "Classify any learning activity as a desirable difficulty (strengthens encoding) or undesirable difficulty (friction without benefit) — auditing for 6 named strategies and generating redesign recommendations.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 98,
+        "baseline": 55,
+        "delta": 43
+      }
+    },
+    {
+      "name": "structured-reflection-protocol",
+      "path": "structured-reflection-protocol/SKILL.md",
+      "description": "Run a structured reflection or debrief after any learning experience to turn raw experience into durable skill — using a 4-question protocol grounded in consolidation, retrieval, elaboration, and mental rehearsal.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 95,
+        "baseline": 55,
+        "delta": 40
+      }
+    },
+    {
+      "name": "growth-mindset-and-deliberate-practice",
+      "path": "growth-mindset-and-deliberate-practice/SKILL.md",
+      "description": "Diagnose fixed vs growth mindset patterns and design a deliberate practice protocol for expertise development — using Dweck's 4-quadrant model and Ericsson's 5 characteristics of deliberate practice.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 97,
+        "baseline": 50,
+        "delta": 47
+      }
+    },
+    {
+      "name": "mnemonic-device-selector-and-builder",
+      "path": "mnemonic-device-selector-and-builder/SKILL.md",
+      "description": "Build a complete mnemonic device or memory palace for anything the user needs to memorize — covering simple devices (acronyms, peg, chunking) and complex devices (memory palace, method of loci).",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 80,
+        "baseline": 65,
+        "delta": 15
+      }
+    },
+    {
+      "name": "evidence-based-classroom-designer",
+      "path": "evidence-based-classroom-designer/SKILL.md",
+      "description": "Design or redesign any course, class, or training session using evidence-based instructional principles — producing design audits, teacher protocols, quiz schedules, and syllabus inserts.",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": [
+        "retrieval-practice-study-system",
+        "practice-schedule-designer",
+        "desirable-difficulty-classifier"
+      ],
+      "quality": {
+        "with_skill": 98,
+        "baseline": 55,
+        "delta": 43
+      }
+    },
+    {
+      "name": "evidence-based-training-designer",
+      "path": "evidence-based-training-designer/SKILL.md",
+      "description": "Redesign a corporate training program so learning sticks past the session — applying Farmers Insurance, Jiffy Lube, and Andersen Windows models to convert massed-practice curricula into evidence-based architectures.",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": [
+        "practice-schedule-designer"
+      ],
+      "quality": {
+        "with_skill": 97,
+        "baseline": null,
+        "delta": null
+      }
+    },
+    {
+      "name": "learning-practice-auditor",
+      "path": "learning-practice-auditor/SKILL.md",
+      "description": "Audit any study habits, training program, or course design for ineffective learning practices — detecting 5 named anti-patterns with mechanism explanations, severity ratings, and routing to corrective skills.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": [
+        "retrieval-practice-study-system",
+        "desirable-difficulty-classifier",
+        "learning-calibration-audit"
+      ],
+      "quality": {
+        "with_skill": 97,
+        "baseline": null,
+        "delta": null
+      }
+    }
+  ],
+  "dependency_graph": {
+    "nodes": [
+      "retrieval-practice-study-system",
+      "practice-schedule-designer",
+      "learning-calibration-audit",
+      "desirable-difficulty-classifier",
+      "structured-reflection-protocol",
+      "growth-mindset-and-deliberate-practice",
+      "mnemonic-device-selector-and-builder",
+      "evidence-based-classroom-designer",
+      "evidence-based-training-designer",
+      "learning-practice-auditor"
+    ],
+    "edges": [
+      {
+        "from": "retrieval-practice-study-system",
+        "to": "evidence-based-classroom-designer",
+        "type": "knowledge",
+        "reason": "Classroom designer uses retrieval practice protocols for quiz schedule and active learning design"
+      },
+      {
+        "from": "practice-schedule-designer",
+        "to": "evidence-based-classroom-designer",
+        "type": "knowledge",
+        "reason": "Classroom designer uses practice scheduling for spacing and interleaving course content"
+      },
+      {
+        "from": "desirable-difficulty-classifier",
+        "to": "evidence-based-classroom-designer",
+        "type": "knowledge",
+        "reason": "Classroom designer audits activities against the 6 desirable difficulty strategies"
+      },
+      {
+        "from": "practice-schedule-designer",
+        "to": "evidence-based-training-designer",
+        "type": "knowledge",
+        "reason": "Training designer uses practice scheduling to convert massed-practice curricula to interleaved architectures"
+      },
+      {
+        "from": "retrieval-practice-study-system",
+        "to": "learning-practice-auditor",
+        "type": "knowledge",
+        "reason": "Auditor routes rereading trap and massed practice findings to retrieval practice as corrective skill"
+      },
+      {
+        "from": "desirable-difficulty-classifier",
+        "to": "learning-practice-auditor",
+        "type": "knowledge",
+        "reason": "Auditor routes difficulty-structure issues to desirable difficulty classifier for redesign"
+      },
+      {
+        "from": "learning-calibration-audit",
+        "to": "learning-practice-auditor",
+        "type": "knowledge",
+        "reason": "Auditor routes illusions of knowing findings to calibration audit for metacognitive correction"
+      }
+    ],
+    "levels": {
+      "0": [
+        "retrieval-practice-study-system",
+        "practice-schedule-designer",
+        "learning-calibration-audit",
+        "desirable-difficulty-classifier",
+        "structured-reflection-protocol",
+        "growth-mindset-and-deliberate-practice",
+        "mnemonic-device-selector-and-builder"
+      ],
+      "1": [
+        "evidence-based-classroom-designer",
+        "evidence-based-training-designer",
+        "learning-practice-auditor"
+      ]
+    },
+    "hub": "retrieval-practice-study-system",
+    "is_dag": true,
+    "max_depth": 1
+  },
+  "quality_summary": {
+    "avg_with_skill": 95.2,
+    "avg_baseline": 55.6,
+    "avg_delta": 39.1,
+    "all_passed": true
+  },
+  "install_profiles": {
+    "minimal": {
+      "skills": [
+        "retrieval-practice-study-system",
+        "learning-calibration-audit"
+      ],
+      "description": "Entry point — retrieval practice study system and calibration audit for effective self-study"
+    },
+    "core": {
+      "skills": [
+        "retrieval-practice-study-system",
+        "practice-schedule-designer",
+        "learning-calibration-audit",
+        "desirable-difficulty-classifier",
+        "structured-reflection-protocol",
+        "growth-mindset-and-deliberate-practice",
+        "mnemonic-device-selector-and-builder"
+      ],
+      "description": "All 7 independent learning skills — full coverage for students, educators, and self-directed learners"
+    },
+    "full": {
+      "skills": [
+        "retrieval-practice-study-system",
+        "practice-schedule-designer",
+        "learning-calibration-audit",
+        "desirable-difficulty-classifier",
+        "structured-reflection-protocol",
+        "growth-mindset-and-deliberate-practice",
+        "mnemonic-device-selector-and-builder",
+        "evidence-based-classroom-designer",
+        "evidence-based-training-designer",
+        "learning-practice-auditor"
+      ],
+      "description": "Complete learning science toolkit including classroom design, training design, and practice auditing"
+    }
+  },
+  "tags": [
+    "learning-science",
+    "cognitive-psychology",
+    "evidence-based-learning"
+  ]
+}

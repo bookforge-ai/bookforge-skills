@@ -1,0 +1,24 @@
+{
+  "book_id": "make-it-stick",
+  "title": "Make It Stick: The Science of Successful Learning",
+  "subtitle": null,
+  "author": "Peter C. Brown, Henry L. Roediger III, Mark A. McDaniel",
+  "authors": [
+    "Peter C. Brown",
+    "Henry L. Roediger III",
+    "Mark A. McDaniel"
+  ],
+  "isbn": null,
+  "year": 2014,
+  "pages": null,
+  "skill_count": 10,
+  "source_book": null,
+  "pipeline_version": "0.1.0",
+  "tags": [
+    "learning-science",
+    "cognitive-psychology",
+    "evidence-based-learning",
+    "education",
+    "training"
+  ]
+}

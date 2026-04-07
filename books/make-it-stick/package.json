@@ -1,0 +1,10 @@
+{
+  "name": "make-it-stick",
+  "version": "1.0.0",
+  "description": "10 skills for evidence-based learning design, study system optimization, and training program auditing, extracted from Make It Stick: The Science of Successful Learning by Peter C. Brown, Henry L. Roediger III, and Mark A. McDaniel",
+  "author": "BookForge <bookforge-ai@users.noreply.github.com>",
+  "license": "CC-BY-SA-4.0",
+  "homepage": "https://github.com/bookforge-ai/bookforge-skills",
+  "repository": "https://github.com/bookforge-ai/bookforge-skills",
+  "keywords": ["learning-science", "cognitive-psychology", "retrieval-practice", "spaced-repetition", "evidence-based-learning", "training-design"]
+}
