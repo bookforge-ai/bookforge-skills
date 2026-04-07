@@ -1,0 +1,41 @@
+{
+  "book_id": "the-art-of-strategy",
+  "title": "The Art of Strategy",
+  "subtitle": "A Game Theorist's Guide to Success in Business and Life",
+  "author": "Avinash K. Dixit & Barry J. Nalebuff",
+  "authors": ["Avinash K. Dixit", "Barry J. Nalebuff"],
+  "isbn": "978-0-393-06995-2",
+  "year": 2008,
+  "pages": 562,
+  "skill_count": 10,
+  "audience": {
+    "primary_roles": ["business-strategist", "negotiator", "manager", "consultant"],
+    "secondary_roles": ["product-manager", "entrepreneur", "policy-maker", "MBA-student"],
+    "experience_level": "beginner-to-intermediate",
+    "domain_familiarity": "assumes no prior game theory knowledge; business/professional experience helps but is not required",
+    "self_description": "strategists, managers, negotiators, business professionals, decision-makers"
+  },
+  "pipeline": {
+    "indexed_at": "2026-04-07T16:35:52Z",
+    "profiled_at": "2026-04-07T17:00:00Z",
+    "researched_at": "2026-04-07T18:00:00Z",
+    "planned_at": "2026-04-07T18:30:00Z",
+    "built_at": "2026-04-08",
+    "verified_at": "2026-04-08"
+  },
+  "stats": {
+    "total_skills": 10,
+    "total_lines": 3538,
+    "total_reference_files": 36,
+    "hunter_findings": 51,
+    "avg_quality_delta": 19
+  },
+  "tags": ["game-theory", "strategy", "decision-making", "negotiation", "competitive-analysis", "incentive-design"],
+  "source_book": {
+    "title": "The Art of Strategy",
+    "authors": ["Avinash K. Dixit", "Barry J. Nalebuff"],
+    "isbn": "978-0-393-06995-2",
+    "year": 2008
+  },
+  "pipeline_version": "1.0.0"
+}

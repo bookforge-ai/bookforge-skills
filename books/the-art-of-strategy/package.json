@@ -1,0 +1,18 @@
+{
+  "name": "@bookforge/the-art-of-strategy",
+  "version": "1.0.0",
+  "description": "10 game theory skills from The Art of Strategy by Dixit & Nalebuff. Covers backward reasoning, Nash equilibrium, prisoners' dilemma, signaling/screening, auctions, negotiation, commitment design, voting, and incentive design.",
+  "author": "BookForge <hello@bookforgeai.dev>",
+  "license": "CC-BY-SA-4.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bookforge-ai/bookforge-skills"
+  },
+  "keywords": ["game-theory", "strategy", "negotiation", "decision-making", "auctions", "incentive-design", "Nash-equilibrium", "backward-induction", "prisoners-dilemma", "signaling"],
+  "bookforge": {
+    "type": "book-skills",
+    "book_id": "the-art-of-strategy",
+    "skill_count": 10,
+    "platforms": ["claude-code", "cursor", "codex", "gemini-cli", "opencode", "windsurf", "cline", "aider"]
+  }
+}

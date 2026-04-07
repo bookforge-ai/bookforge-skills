@@ -1,0 +1,281 @@
+{
+  "name": "the-art-of-strategy",
+  "display_name": "The Art of Strategy",
+  "version": "1.0.0",
+  "description": "10 game theory skills from The Art of Strategy by Dixit & Nalebuff. Covers backward reasoning, Nash equilibrium, prisoners' dilemma, signaling/screening, auctions, negotiation, commitment design, voting, and incentive design.",
+  "skill_count": 10,
+  "source_book": {
+    "title": "The Art of Strategy",
+    "authors": [
+      "Avinash K. Dixit",
+      "Barry J. Nalebuff"
+    ],
+    "isbn": "978-0-393-06995-2",
+    "year": 2008,
+    "pages": 562
+  },
+  "skills": [
+    {
+      "name": "backward-reasoning-game-solver",
+      "description": "Solve sequential-move games using backward induction (Rule 1: Look forward, reason backward).",
+      "tier": 1,
+      "mode": "full",
+      "build_level": 0,
+      "depends_on": [],
+      "tags": [
+        "game-theory",
+        "sequential-games",
+        "backward-induction"
+      ],
+      "path": "backward-reasoning-game-solver/SKILL.md"
+    },
+    {
+      "name": "prisoners-dilemma-resolver",
+      "description": "Diagnose prisoners' dilemma situations and design cooperation mechanisms.",
+      "tier": 1,
+      "mode": "plan-only",
+      "build_level": 0,
+      "depends_on": [],
+      "tags": [
+        "game-theory",
+        "cooperation",
+        "collective-action"
+      ],
+      "path": "prisoners-dilemma-resolver/SKILL.md"
+    },
+    {
+      "name": "nash-equilibrium-analyzer",
+      "description": "Find Nash equilibria using dominant strategy elimination, best-response mapping, and mixed strategy calculation.",
+      "tier": 1,
+      "mode": "full",
+      "build_level": 0,
+      "depends_on": [],
+      "tags": [
+        "game-theory",
+        "equilibrium-analysis",
+        "competitive-strategy"
+      ],
+      "path": "nash-equilibrium-analyzer/SKILL.md"
+    },
+    {
+      "name": "information-asymmetry-strategist",
+      "description": "Manage information asymmetry through signaling, screening, and adverse selection prevention.",
+      "tier": 1,
+      "mode": "full",
+      "build_level": 0,
+      "depends_on": [],
+      "tags": [
+        "game-theory",
+        "signaling",
+        "screening",
+        "adverse-selection"
+      ],
+      "path": "information-asymmetry-strategist/SKILL.md"
+    },
+    {
+      "name": "auction-bidding-strategist",
+      "description": "Optimize bidding across 4 auction formats with winner's curse diagnostic.",
+      "tier": 1,
+      "mode": "full",
+      "build_level": 0,
+      "depends_on": [],
+      "tags": [
+        "game-theory",
+        "auctions",
+        "bidding"
+      ],
+      "path": "auction-bidding-strategist/SKILL.md"
+    },
+    {
+      "name": "voting-system-strategist",
+      "description": "Analyze voting systems for manipulation vulnerability and Condorcet cycles.",
+      "tier": 1,
+      "mode": "plan-only",
+      "build_level": 0,
+      "depends_on": [],
+      "tags": [
+        "game-theory",
+        "voting",
+        "social-choice"
+      ],
+      "path": "voting-system-strategist/SKILL.md"
+    },
+    {
+      "name": "strategic-commitment-designer",
+      "description": "Design credible strategic moves using the 3x2 taxonomy and Eightfold Path to Credibility.",
+      "tier": 1,
+      "mode": "plan-only",
+      "build_level": 1,
+      "depends_on": [
+        "backward-reasoning-game-solver"
+      ],
+      "tags": [
+        "game-theory",
+        "commitment",
+        "credibility"
+      ],
+      "path": "strategic-commitment-designer/SKILL.md"
+    },
+    {
+      "name": "negotiation-strategist",
+      "description": "Structure negotiations using BATNA analysis, pie measurement, and Rubinstein bargaining.",
+      "tier": 1,
+      "mode": "full",
+      "build_level": 1,
+      "depends_on": [
+        "backward-reasoning-game-solver"
+      ],
+      "tags": [
+        "game-theory",
+        "negotiation",
+        "bargaining",
+        "BATNA"
+      ],
+      "path": "negotiation-strategist/SKILL.md"
+    },
+    {
+      "name": "incentive-scheme-designer",
+      "description": "Design incentive contracts under moral hazard with bonus formulas and multi-task alignment.",
+      "tier": 1,
+      "mode": "full",
+      "build_level": 1,
+      "depends_on": [
+        "information-asymmetry-strategist"
+      ],
+      "tags": [
+        "game-theory",
+        "incentive-design",
+        "moral-hazard"
+      ],
+      "path": "incentive-scheme-designer/SKILL.md"
+    },
+    {
+      "name": "strategic-situation-analyzer",
+      "description": "Hub skill: classify strategic situations and route to specialized game theory skills.",
+      "tier": 1,
+      "mode": "full",
+      "build_level": 1,
+      "depends_on": [
+        "backward-reasoning-game-solver",
+        "nash-equilibrium-analyzer"
+      ],
+      "tags": [
+        "game-theory",
+        "strategy",
+        "strategic-analysis"
+      ],
+      "path": "strategic-situation-analyzer/SKILL.md"
+    }
+  ],
+  "dependency_graph": {
+    "nodes": [
+      "backward-reasoning-game-solver",
+      "prisoners-dilemma-resolver",
+      "nash-equilibrium-analyzer",
+      "information-asymmetry-strategist",
+      "auction-bidding-strategist",
+      "voting-system-strategist",
+      "strategic-commitment-designer",
+      "negotiation-strategist",
+      "incentive-scheme-designer",
+      "strategic-situation-analyzer"
+    ],
+    "edges": [
+      {
+        "from": "backward-reasoning-game-solver",
+        "to": "strategic-commitment-designer",
+        "type": "knowledge"
+      },
+      {
+        "from": "backward-reasoning-game-solver",
+        "to": "negotiation-strategist",
+        "type": "knowledge"
+      },
+      {
+        "from": "backward-reasoning-game-solver",
+        "to": "strategic-situation-analyzer",
+        "type": "input"
+      },
+      {
+        "from": "nash-equilibrium-analyzer",
+        "to": "strategic-situation-analyzer",
+        "type": "input"
+      },
+      {
+        "from": "information-asymmetry-strategist",
+        "to": "incentive-scheme-designer",
+        "type": "knowledge"
+      }
+    ],
+    "topology": "mixed",
+    "max_depth": 1,
+    "hub": "strategic-situation-analyzer",
+    "levels": {
+      "0": [
+        "backward-reasoning-game-solver",
+        "prisoners-dilemma-resolver",
+        "nash-equilibrium-analyzer",
+        "information-asymmetry-strategist",
+        "auction-bidding-strategist",
+        "voting-system-strategist"
+      ],
+      "1": [
+        "strategic-commitment-designer",
+        "negotiation-strategist",
+        "incentive-scheme-designer",
+        "strategic-situation-analyzer"
+      ]
+    },
+    "is_dag": true
+  },
+  "quality_summary": {
+    "avg_with_skill": 95.8,
+    "avg_baseline": 76.8,
+    "avg_delta": 19.0,
+    "all_passed": true
+  },
+  "tags": [
+    "game-theory",
+    "strategy",
+    "decision-making",
+    "negotiation",
+    "competitive-analysis",
+    "incentive-design"
+  ],
+  "install_profiles": {
+    "minimal": {
+      "description": "Foundation skills: backward reasoning, Nash equilibrium, prisoners' dilemma",
+      "skills": [
+        "backward-reasoning-game-solver",
+        "nash-equilibrium-analyzer",
+        "prisoners-dilemma-resolver"
+      ]
+    },
+    "core": {
+      "description": "Foundation + hub + negotiation + commitment",
+      "skills": [
+        "backward-reasoning-game-solver",
+        "nash-equilibrium-analyzer",
+        "prisoners-dilemma-resolver",
+        "strategic-situation-analyzer",
+        "negotiation-strategist",
+        "strategic-commitment-designer"
+      ]
+    },
+    "full": {
+      "description": "All 10 skills",
+      "skills": [
+        "backward-reasoning-game-solver",
+        "nash-equilibrium-analyzer",
+        "prisoners-dilemma-resolver",
+        "information-asymmetry-strategist",
+        "auction-bidding-strategist",
+        "voting-system-strategist",
+        "strategic-commitment-designer",
+        "negotiation-strategist",
+        "incentive-scheme-designer",
+        "strategic-situation-analyzer"
+      ]
+    }
+  }
+}
