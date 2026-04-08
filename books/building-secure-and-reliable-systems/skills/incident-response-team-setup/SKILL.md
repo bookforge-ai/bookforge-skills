@@ -227,3 +227,12 @@ Testing without feedback is entertainment. After every test and every live incid
     - "Google Examples" (pp. 383–385): disaster recovery test (DiRT) breakglass + security alerting combined test (p. 384)
   - Depends on: `disaster-risk-assessment` (risk register feeds severity model calibration)
   - Related: `incident-command` (IMAG framework, IC/OL/CL/RL role execution detail)
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Building Secure And Reliable Systems by Unknown.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

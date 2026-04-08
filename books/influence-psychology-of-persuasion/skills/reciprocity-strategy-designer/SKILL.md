@@ -1,7 +1,9 @@
 ---
 name: reciprocity-strategy-designer
 description: Design reciprocity-based persuasion strategies and detect when reciprocity is being used against you. Use this skill when planning give and take strategies, creating lead magnets or free value offers, designing favor-first or value-first outreach, building gift-based marketing campaigns, crafting free samples or free trials, writing content marketing that creates obligation, designing negotiation openings, planning door-in-the-face or rejection-then-retreat sequences, structuring concession-based selling, responding to unsolicited gifts or favors before a pitch, evaluating whether a gift creates obligation, planning reciprocal concessions in negotiation, or defending against manipulation through uninvited debts.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/influence-psychology-of-persuasion/skills/reciprocity-strategy-designer
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: influence-psychology-of-persuasion
@@ -341,3 +343,12 @@ For defense mode, produce a **Reciprocity Defense Assessment:**
 
 - [references/reciprocity-mechanics.md](references/reciprocity-mechanics.md) — Detailed mechanics, amplifier conditions, all quantified evidence
 - [references/defense-protocol.md](references/defense-protocol.md) — Full defense decision tree, detection signals, reframe tactics
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Influence: The Psychology of Persuasion by Robert B. Cialdini.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

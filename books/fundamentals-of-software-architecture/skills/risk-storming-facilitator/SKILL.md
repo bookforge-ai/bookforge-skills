@@ -1,7 +1,9 @@
 ---
 name: risk-storming-facilitator
 description: Plan and facilitate collaborative risk storming sessions for architecture teams. Use this skill whenever the user wants to run a risk identification workshop, organize a risk storming exercise, plan a collaborative risk assessment session, facilitate architecture risk discovery with a team, prepare a risk workshop agenda, coordinate group risk identification, or run a team-based architecture risk review. Also triggers when the user mentions "risk storming," "collaborative risk session," "team risk workshop," "group risk identification," wants to prepare pre-work materials for a risk meeting, or asks "how should I run a risk session with my team?" — even if they don't use the exact term "risk storming."
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/fundamentals-of-software-architecture/skills/risk-storming-facilitator
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: fundamentals-of-software-architecture
@@ -321,3 +323,15 @@ Output: Complete facilitation package for performance-focused session. Recommend
 
 - For the detailed three-phase facilitation protocol with timing, role assignments, and virtual session adaptations, see [references/facilitation-protocol.md](references/facilitation-protocol.md)
 - For risk matrix scoring details, invoke the `architecture-risk-assessor` skill
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Fundamentals of Software Architecture by Mark Richards, Neal Ford.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-architecture-risk-assessor`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

@@ -1,7 +1,9 @@
 ---
 name: auction-bidding-strategist
 description: "Apply the complete game-theoretic auction framework to determine the optimal bid in any auction format. Use this skill when a user is preparing to bid in an English (ascending) auction, a Japanese auction, a Vickrey (second-price sealed-bid) auction, a Dutch (descending-clock) auction, or a standard sealed-bid first-price auction, and wants the game-theoretically correct strategy rather than guesswork. Triggers include: user is deciding how much to bid in a competitive tender, procurement auction, real estate auction, eBay auction, spectrum license auction, or corporate acquisition; user is worried about overbidding and wants to know how to set a ceiling; user suspects they may be falling into the winner's curse — winning but regretting the price paid; user must classify whether the auction involves private values (each bidder's value is independent) or common values (the item has a single underlying value that all bidders are estimating), because the correct strategy differs sharply between the two; user is evaluating whether to participate in a dollar auction, bidding war, or war-of-attrition-style competitive spending contest and wants to know when to stop or avoid; user needs to shade a bid below their true value in a sealed-bid first-price format and wants the formula; user is designing an auction and wants to know which format will yield more seller revenue; user is bidding in multiple simultaneous auctions and needs to think across the games. This skill does NOT cover multi-round negotiation without a defined auction structure (use a negotiation skill instead), combinatorial auctions with complex package bids, or procurement auctions requiring cost estimation."
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/the-art-of-strategy/skills/auction-bidding-strategist
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: the-art-of-strategy
@@ -370,3 +372,12 @@ Structure your output:
 - `references/bid-shading-formula.md` — Derivation of V×(N-1)/N, worked examples across N, and adjustments for non-uniform value distributions
 - `references/winners-curse-worksheet.md` — Step-by-step presume-you've-won calculation template with ACME example fully worked
 - `references/dollar-auction-escalation.md` — Dollar auction mechanics, war-of-attrition model, BSB/Sky case, exit criteria
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — The Art of Strategy by Avinash K. Dixit, Barry J. Nalebuff.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

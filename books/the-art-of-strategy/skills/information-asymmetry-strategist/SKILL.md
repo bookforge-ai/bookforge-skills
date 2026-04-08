@@ -1,7 +1,9 @@
 ---
 name: information-asymmetry-strategist
 description: "Diagnose and resolve information asymmetry in strategic interactions using four mechanisms: signaling, screening, signal jamming, and countersignaling. Use this skill when a user needs to credibly communicate private information to an uninformed counterpart; when a user needs to elicit honest information from a better-informed counterpart without being able to verify their claims; when a user suspects they are on the receiving end of signal jamming or adverse selection and wants to see through it; when a user is designing a pricing scheme, contract structure, hiring process, or product menu and needs to induce self-selection among different customer or candidate types; when a user wants to know whether to signal their quality, countersignal by staying silent, or jam an opponent's signals; when a user needs to apply Bayes' rule to update beliefs after observing an opponent's action in a mixed-strategy game; when a user faces Akerlof-style market collapse risk and wants to identify signaling or screening remedies; when a user is designing a menu of options (e.g., airline fare classes, insurance deductibles, product tiers) and needs to check participation constraints and incentive compatibility constraints. This skill handles both directions of information asymmetry: the informed party communicating outward (signaling, countersignaling, jamming) and the uninformed party extracting information inward (screening, adverse selection management). It does NOT cover moral hazard or principal-agent problems after a contract is signed, nor does it handle simultaneous-move games without information asymmetry (use the Nash equilibrium skill for those)."
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/the-art-of-strategy/skills/information-asymmetry-strategist
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: the-art-of-strategy
@@ -415,3 +417,12 @@ Structure your output as:
 - `references/bayes-rule-inference.md` — Bayes' rule applied to type inference: worked poker example, generalized formula, updating in semi-separating equilibria
 - `references/adverse-selection-remedies.md` — Akerlof lemons mechanism, insurer adverse selection, Capital One case, bureaucratic delay as screening, in-kind benefits
 - `references/countersignaling-conditions.md` — Feltovich/Harbaugh/To three-type model, prenuptial example, voicemail study data, decision rule for when to countersignal
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — The Art of Strategy by Avinash K. Dixit, Barry J. Nalebuff.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

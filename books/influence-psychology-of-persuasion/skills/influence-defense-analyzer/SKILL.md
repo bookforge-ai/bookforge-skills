@@ -2,7 +2,9 @@
 name: influence-defense-analyzer
 description: |
   Detect and counter manipulation attempts using Cialdini's 6 influence principles. Use when you feel pressured to comply with a request, sense a sales tactic at work, want to audit a document for manipulation, or ask "is this legitimate or am I being played?" Also use for: analyzing a sales pitch, marketing email, negotiation transcript, or contract for exploitative influence tactics; identifying which compliance trigger is being activated and whether it's real or manufactured; deciding whether to comply with a request you feel uneasy about; auditing your own persuasive content for ethical compliance; training yourself to recognize manipulation in consumer, negotiation, or organizational contexts. Applies all 6 per-principle defense protocols (reciprocity, commitment/consistency, social proof, liking, authority, scarcity) plus the epilogue meta-framework to classify practitioners as fair (real evidence) or exploitative (manufactured triggers) and prescribe a principle-specific response strategy. Works on document sets — sales pitches, marketing claims, negotiation transcripts, contracts, advertising — as well as live compliance scenarios described in text.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/influence-psychology-of-persuasion/skills/influence-defense-analyzer
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on:
   - influence-principle-selector
@@ -377,3 +379,15 @@ Defense: Check direct. If available there, the platform manufactured urgency. Bo
 | File | Contents |
 |------|----------|
 | `references/defense-protocols.md` | Per-principle defense quick-reference: detection criteria, diagnostic questions, response steps, and classification tests for all 6 principles |
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Influence: The Psychology of Persuasion by Robert B. Cialdini.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-influence-principle-selector`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

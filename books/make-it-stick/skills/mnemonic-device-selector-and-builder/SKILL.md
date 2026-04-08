@@ -1,7 +1,9 @@
 ---
 name: mnemonic-device-selector-and-builder
 description: Build a complete mnemonic device or memory palace for anything the user needs to memorize, recall, or remember. Use this skill whenever someone wants to memorize a list, sequence, set of terms, vocabulary, historical dates, medical facts, or any body of material they struggle to recall. Activates on requests like "help me remember", "I can't recall", "memorize this", "make a mnemonic", "build a memory palace", "use method of loci", "create a flashcard structure", "remember in order", "recall under pressure", or "stop forgetting." Covers simple devices (acronyms, peg method, chunking, rhyme schemes) and complex devices (memory palace, method of loci, location-based recall). Does NOT teach the underlying subject matter — the learner must understand the content first; this skill organizes it for retrieval.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/make-it-stick/skills/mnemonic-device-selector-and-builder
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: make-it-stick
@@ -298,3 +300,12 @@ If the user does not yet understand the material:
 3. Return to this skill when they can explain the ideas in their own words.
 
 Mnemonics organize what you know. They cannot substitute for knowing it.
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Make It Stick: The Science of Successful Learning by Peter C. Brown, Henry L. Roediger III, Mark A. McDaniel.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

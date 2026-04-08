@@ -2,7 +2,9 @@
 name: replication-failure-analyzer
 description: |
   Diagnose active replication failures by mapping symptoms to leader failover pitfalls, replication lag anomalies, or quorum edge cases — and produce a structured remediation plan. Use when: data just written disappears or shows stale on re-read (read-after-write violation); records appear and vanish on refresh (monotonic reads violation); causally related events appear in impossible order (consistent prefix reads violation); a failover produces duplicate primary keys, write rejections, or incorrect routing; two replica nodes are both accepting writes (split brain in replication topology — for split brain via distributed locking, use distributed-failure-analyzer); quorum reads return stale values despite w + r > n; or a sloppy quorum with incomplete hinted handoff is serving old data. Applies to PostgreSQL, MySQL (single-leader), Cassandra, Riak, Voldemort, DynamoDB (leaderless). Use replication-strategy-selector first if the topology has not yet been chosen. Produces: symptom → failure class → mechanism → mitigation report, leader failover checklist, replication lag anomaly guide, and quorum edge case catalog (six ways w + r > n still fails).
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/designing-data-intensive-applications/skills/replication-failure-analyzer
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on:
   - replication-strategy-selector
@@ -405,3 +407,15 @@ A failed quorum write means fewer than w nodes acknowledged. But the nodes that 
 - `references/failover-checklist.md` — step-by-step leader failover checklist: pre-failover verification, the four failure modes and their per-mode checks, post-failover validation steps, and rollback procedure
 - `references/lag-anomaly-patterns.md` — complete replication lag anomaly reference: read-after-write, monotonic reads, and consistent prefix reads — each with formal definition, concrete example, implementation techniques, and cross-device complexity considerations
 - `references/quorum-edge-cases.md` — the six quorum edge cases in detail: conditions that trigger each, detection signals, mitigation options, and the distinction between sloppy quorums (durability guarantee) and strict quorums (freshness guarantee)
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Designing Data-Intensive Applications by Martin Kleppmann.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-replication-strategy-selector`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

@@ -3,7 +3,9 @@ name: replication-strategy-selector
 description: |
   Choose a replication topology (single-leader, multi-leader, or leaderless) and configure it correctly — including sync vs. async mode, quorum parameters (w + r > n), and consistency guarantees. Use when designing replication for a new system, configuring quorum values for Cassandra/Riak/DynamoDB, deciding how to handle multi-leader write conflicts, or comparing PostgreSQL/MySQL streaming replication vs. CouchDB multi-leader vs. Cassandra leaderless for your architecture. Also use for: selecting a conflict resolution strategy (last-write-wins vs. version vectors); designing multi-datacenter replication; choosing between WAL shipping, logical replication, and statement-based replication log formats.
   For diagnosing an existing replication failure (failover gone wrong, lag spike, quorum misconfiguration, split brain), use replication-failure-analyzer instead. For consistency model selection (eventual vs. causal vs. linearizable), use consistency-model-selector instead. For partitioning strategy, use partitioning-strategy-advisor instead.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/designing-data-intensive-applications/skills/replication-strategy-selector
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on:
   - consistency-model-selector
@@ -465,3 +467,16 @@ For topology-specific deep dives, failure mode details, and quorum calculators, 
 - Cross-reference: `replication-failure-analyzer` — for diagnosing active replication anomalies in production
 - Cross-reference: `consistency-model-selector` — for selecting the right consistency model before this skill
 - Cross-reference: `partitioning-strategy-advisor` — for sharding strategy after replication topology is decided
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Designing Data-Intensive Applications by Martin Kleppmann.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-consistency-model-selector`
+- `clawhub install bookforge-replication-failure-analyzer`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

@@ -2,7 +2,9 @@
 name: product-team-health-diagnostic
 description: |
   Diagnose why a product team or organization is slow, not innovative, or delivering poor outcomes. Use when a leader or team observes slow velocity, lack of innovation, poor product quality, feature factory behavior, or team dysfunction — and needs root causes and a prioritized fix list. Also use when a new product leader is assessing an organization, when a CEO or board says teams are too slow, or when someone says 'why are we not shipping faster?', 'engineering and design aren't collaborating', 'we ship but nothing moves the needle', or 'I need to assess team health before proposing changes.' Scores 42 diagnostic criteria across team behaviors, innovation capacity, velocity killers, and design integration. Produces a severity-ranked report with a composite health score and remediation priorities. For culture-level issues (innovation vs. execution quadrant), use product-culture-assessment. For process-level waterfall diagnosis, use product-process-dysfunction-diagnosis.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/inspired-how-to-create-tech-products/skills/product-team-health-diagnostic
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: published
 model: sonnet
 context: 200k
@@ -239,3 +241,12 @@ WHY: Diagnostic reports are only useful if they drive decisions. Vague findings 
 
 Full 42-criterion reference table with good/bad behavior descriptions:
 `references/diagnostic-criteria.md`
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Inspired How To Create Tech Products by Unknown.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

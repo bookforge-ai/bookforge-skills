@@ -307,3 +307,12 @@ Output: Verification recommendation with specific follow-up questions.
 - For detailed evidence tables and study citations for all three authority symbol types, see [authority-symbol-evidence.md](references/authority-symbol-evidence.md)
 - For the two-question defense protocol with extended examples across domains, see [two-question-defense.md](references/two-question-defense.md)
 - Source: *Influence: The Psychology of Persuasion*, Robert B. Cialdini, Chapter 6 "Authority: Directed Deference," pages 157–177
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Influence Psychology Of Persuasion by Unknown.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

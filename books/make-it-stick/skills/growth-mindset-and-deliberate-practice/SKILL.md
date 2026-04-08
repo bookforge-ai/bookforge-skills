@@ -2,7 +2,9 @@
 name: growth-mindset-and-deliberate-practice
 description: |
   Diagnose fixed vs growth mindset patterns and design a deliberate practice protocol for expertise development. Use when someone wants to develop expertise in a skill domain, is struggling to improve despite repeated practice, attributes their performance plateau to talent limits, praises or criticizes someone for being a "natural," says "I'm just not good at this," avoids challenges to protect their reputation, or asks how to get to 10000 hours effectively. Applies Dweck's 4-quadrant model (fixed/growth mindset × performance/learning goal orientation) to classify the learner's current stance, identifies fixed-mindset signals and attribution patterns, then designs a deliberate practice plan using Ericsson's 5 characteristics. Growth mindset is the prerequisite — without it, deliberate practice collapses into avoidance. Together they form a complete talent vs effort expertise-building pathway. Produces: mindset diagnostic report + deliberate practice plan with feedback loops, mental model targets, and practice structure.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/make-it-stick/skills/growth-mindset-and-deliberate-practice
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - make-it-stick
@@ -444,3 +446,12 @@ Practice guidance: Audit current practice against 5 characteristics. Likely gap:
 - For detailed evidence on the 4-quadrant model and Dweck's praise research, see [mindset-framework.md](references/mindset-framework.md)
 - For Ericsson's deliberate practice research, expert domain examples, and the 10,000-hour finding, see [deliberate-practice-reference.md](references/deliberate-practice-reference.md)
 - Source: *Make It Stick* by Brown, Roediger, and McDaniel, Chapters 4, 7, and 8
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Make It Stick by Unknown.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

@@ -527,3 +527,12 @@ Output: Critical G2 (time dependency + sequential counter) and Critical G4 (28-b
 - OWASP Session Management Cheat Sheet: https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html
 - CWE-330: Use of Insufficiently Random Values; CWE-384: Session Fixation; CWE-352: Cross-Site Request Forgery
 - Source: *The Web Application Hacker's Handbook*, 2nd ed., Stuttard & Pinto, Chapter 7, pp. 205–255
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Web Application Hackers Handbook by Unknown.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

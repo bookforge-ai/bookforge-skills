@@ -1,7 +1,9 @@
 ---
 name: architect-role-assessor
 description: Evaluate whether a software architect is fulfilling the 8 core expectations of the role and assess their technical breadth vs depth balance using the knowledge pyramid. Use this skill whenever the user asks what a software architect should be doing, questions whether they are performing the architect role correctly, wants to assess their own or someone else's architect performance, describes symptoms of role dysfunction (spending too much time coding, not attending stakeholder meetings, only recommending technologies they know, avoiding decisions), asks about transitioning from developer to architect, or encounters the Frozen Caveman anti-pattern where past experiences irrationally drive current decisions — even if they don't explicitly say "architect role" or "expectations."
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/fundamentals-of-software-architecture/skills/architect-role-assessor
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: fundamentals-of-software-architecture
@@ -247,3 +249,12 @@ Output: Assessment showing 3 of 8 expectations met, organizational-expectation g
 ## References
 
 - For detailed descriptions of each of the 8 expectations with self-assessment questions and improvement strategies, see [references/eight-expectations.md](references/eight-expectations.md)
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Fundamentals of Software Architecture by Mark Richards, Neal Ford.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

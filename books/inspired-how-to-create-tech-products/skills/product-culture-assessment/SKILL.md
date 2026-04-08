@@ -2,7 +2,9 @@
 name: product-culture-assessment
 description: |
   Assess the product culture of a company or team across innovation capacity and execution strength. Use when a leader, founder, or product manager wants to understand where the organization sits on the innovation-execution spectrum and which cultural gaps to address. Also use when someone asks 'do we have a strong innovation culture?', 'why does our team ship fast but feel uncreative?', 'how do we build a culture like Amazon or Netflix?', 'are we a feature factory?', or 'I need to assess our product culture before proposing changes.' Scores 14 culture attributes (7 innovation + 7 execution), places the organization in one of four quadrants (Dreamers, Factories, Elite, Stalled), and produces a prioritized 90-day improvement roadmap. For diagnosing specific team-level dysfunctions (velocity, design integration, behaviors), use product-team-health-diagnostic instead. For waterfall process issues, use product-process-dysfunction-diagnosis instead.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/inspired-how-to-create-tech-products/skills/product-culture-assessment
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: published
 model: sonnet
 context: 200k
@@ -433,3 +435,12 @@ See `references/culture-attribute-definitions.md` for the full definitions of al
 ## References
 
 - Cagan, Marty. *INSPIRED: How to Create Tech Products Customers Love*, 2nd ed. Wiley, 2018. Chapter 67.
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Inspired How To Create Tech Products by Unknown.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

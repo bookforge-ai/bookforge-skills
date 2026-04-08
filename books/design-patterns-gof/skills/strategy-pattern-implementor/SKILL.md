@@ -2,7 +2,9 @@
 name: strategy-pattern-implementor
 description: |
   Implement the Strategy pattern to encapsulate a family of interchangeable algorithms behind a common interface. Use when you have multiple conditional branches selecting between algorithm variants, when algorithms need different space-time trade-offs, when a class has multiple behaviors expressed as conditionals, or when you need to swap algorithms at runtime. Detects the key code smell — switch/if-else chains selecting behavior — and refactors to Strategy objects.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/design-patterns-gof/skills/strategy-pattern-implementor
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on:
   - behavioral-pattern-selector
@@ -411,3 +413,15 @@ Both patterns encapsulate algorithmic variation. The choice is **composition vs.
 | File | Contents |
 |------|----------|
 | `references/strategy-implementation-guide.md` | Participants, full consequences catalog, interface design decision tree, Flyweight optimization, language-specific notes |
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Design Patterns: Elements of Reusable Object-Oriented Software by Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-behavioral-pattern-selector`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

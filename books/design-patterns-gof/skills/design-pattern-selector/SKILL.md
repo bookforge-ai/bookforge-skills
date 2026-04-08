@@ -2,7 +2,9 @@
 name: design-pattern-selector
 description: |
   Select the right GoF design pattern for a specific object-oriented design problem. Use when facing any of these situations: object creation inflexibility (too many concrete class references), tight coupling between classes, subclass explosion from trying to extend behavior, inability to modify a class you don't own, need to vary an algorithm or behavior at runtime, want to add operations to a stable class hierarchy without modifying it, need to decouple a sender from its receivers, need undo/redo or event notification, or any time someone asks "which design pattern should I use?", "is there a pattern for this?", or "how do I design this more flexibly?" Analyzes the problem through 6 complementary selection approaches — intent scanning, purpose/scope classification, variability analysis, redesign cause diagnosis, pattern relationship navigation, and category comparison — to produce a scored pattern recommendation with trade-off analysis.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/design-patterns-gof/skills/design-pattern-selector
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on: []
 source-books:
@@ -342,3 +344,12 @@ implement IEventTracker.
 | `references/pattern-catalog.md` | Table 1.1: all 23 patterns by purpose × scope, one-line intents, pattern relationships |
 | `references/variability-table.md` | Table 1.2: what each pattern lets you vary independently |
 | `references/redesign-causes.md` | 8 causes of redesign with symptoms and mapped patterns |
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Design Patterns: Elements of Reusable Object-Oriented Software by Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

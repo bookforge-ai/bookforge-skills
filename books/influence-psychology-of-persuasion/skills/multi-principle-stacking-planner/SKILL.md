@@ -2,7 +2,9 @@
 name: multi-principle-stacking-planner
 description: |
   Design a layered persuasion campaign by combining 2–4 Cialdini influence principles in the right sequence. Use when someone asks "how do I combine influence principles?", "what's the best stacking order for my campaign?", "I want to use reciprocity AND scarcity — in what order?", or "how do I build a multi-touch persuasion sequence?" Also use for: designing a launch funnel that layers social proof onto scarcity, building a sales sequence that converts cold leads to committed buyers, creating an in-person event with maximum compliance architecture, auditing a multi-step campaign for principle interaction errors, planning a persuasion sequence for high-ticket or complex sales. Applies Cialdini's documented stacking patterns (Tupperware, Christmas toy tactic, Good Cop/Bad Cop, Regan override study) plus derived interaction rules — which principles amplify each other, which override each other, and which must be sequenced in a specific order. Covers: principle interaction rules, stacking sequences, contrast amplification, structural amplifiers, and ethical stacking thresholds. Outputs a sequenced campaign plan with WHY reasoning for each layer. Depends on influence-principle-selector (for principle scoring) and all 6 principle skills (for per-principle implementation). Best for experienced marketers, campaign strategists, and sales leaders working on multi-touch sequences, launch funnels, or complex sales architectures.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/influence-psychology-of-persuasion/skills/multi-principle-stacking-planner
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on:
   - influence-principle-selector
@@ -478,3 +480,21 @@ Free lesson is real. Testimonials are genuine. Discount deadline must be real
 | File | Contents |
 |------|----------|
 | `references/principle-interaction-matrix.md` | Full interaction rules for all 6 principles; documented case studies (Tupperware, Christmas toy, Good Cop/Bad Cop, Regan study); ethical stacking thresholds; 5 stacking sequence templates (cold outreach through full Tupperware-pattern event) |
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Influence: The Psychology of Persuasion by Robert B. Cialdini.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-influence-principle-selector`
+- `clawhub install bookforge-reciprocity-strategy-designer`
+- `clawhub install bookforge-commitment-escalation-architect`
+- `clawhub install bookforge-social-proof-optimizer`
+- `clawhub install bookforge-liking-factor-engineer`
+- `clawhub install bookforge-authority-signal-designer`
+- `clawhub install bookforge-scarcity-framing-strategist`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

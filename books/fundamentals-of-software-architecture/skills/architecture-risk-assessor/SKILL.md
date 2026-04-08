@@ -1,7 +1,9 @@
 ---
 name: architecture-risk-assessor
 description: Quantify architecture risk using a 2D risk matrix (impact x likelihood, scored 1-9) and produce structured risk assessment reports. Use this skill whenever the user asks about architecture risks, wants to evaluate risk across services or components, needs a risk matrix, mentions risk assessment, risk analysis, risk heat map, risk scoring, or asks "what are the risks?" for any architecture — even if they don't explicitly say "risk assessment." Also triggers when the user mentions unproven technology risk, scalability risk, availability concerns, security risk, data integrity risk, or wants to prioritize risks for stakeholder meetings.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/fundamentals-of-software-architecture/skills/architecture-risk-assessor
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: fundamentals-of-software-architecture
@@ -306,3 +308,12 @@ Output: Story risk matrix with all 12 stories scored, 3 flagged as high-risk wit
 ## References
 
 - For the detailed risk matrix layout with visual scoring guide, see [references/risk-matrix-template.md](references/risk-matrix-template.md)
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Fundamentals of Software Architecture by Mark Richards, Neal Ford.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

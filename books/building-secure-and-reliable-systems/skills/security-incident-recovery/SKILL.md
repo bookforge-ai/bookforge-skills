@@ -286,3 +286,12 @@ The RL uses investigation notes to build a checklist with four ordered workstrea
     - "Examples" (pp. 437–442): compromised cloud instances (Figure 18-2), large-scale phishing (Figure 18-3), targeted APT with parallel workstreams
   - Depends on: `security-incident-command` (IMAG process running, IC/OL/RL roles staffed)
   - Related: `recovery-mechanism-design` (design-time recovery architecture), `incident-response-team-setup` (IR team structure and postmortem process)
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Building Secure And Reliable Systems by Unknown.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

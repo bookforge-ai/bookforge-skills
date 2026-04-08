@@ -1,7 +1,9 @@
 ---
 name: guarantee-design-and-selection
 description: Design, select, and word a risk-reversal guarantee for a product or service offer. Use this skill when the user wants to add a guarantee to an offer, asks "what kind of guarantee should I offer," says prospects are hesitant or objecting to the price or risk, wants to reduce refund fear without killing conversion, asks how to guarantee results, wonders whether to offer a money-back guarantee, wants to switch from a retainer pricing model to a performance model, needs to improve offer conversion rate, asks "what happens if they don't get results," wants to stack multiple guarantees, or is designing a new high-ticket offer and needs a risk-reversal mechanism — even if they don't explicitly mention "guarantee" or "risk reversal." This skill produces a guarantee recommendation with type, wording, and ROI projection. For building the full offer stack see grand-slam-offer-creation. For auditing perceived value before writing the guarantee see value-equation-offer-audit.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/100m-offers/skills/guarantee-design-and-selection
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: 100m-offers
@@ -366,3 +368,15 @@ Output:
 - For building the full offer before designing the guarantee: `grand-slam-offer-creation`
 - For auditing perceived value and the value equation (Dream Outcome × Perceived Likelihood ÷ Time Delay × Effort): `value-equation-offer-audit`
 - For stacking bonuses alongside the guarantee to complete the offer: `bonus-stacking-system`
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — $100M Offers by Alex Hormozi.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-value-equation-offer-audit`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

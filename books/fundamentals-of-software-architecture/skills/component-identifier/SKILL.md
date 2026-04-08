@@ -1,7 +1,9 @@
 ---
 name: component-identifier
 description: Decompose a system into well-defined components using structured discovery techniques. Use this skill whenever the user is designing a new system from requirements, breaking down a monolith into modules, deciding how to organize code into packages/services, asking "what components should this system have?", or struggling with component granularity — even if they don't use the word "component."
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/fundamentals-of-software-architecture/skills/component-identifier
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on:
   - architecture-characteristics-identifier
@@ -260,3 +262,15 @@ Output: 5 components with input gathering process documented, showing how asking
 ## References
 
 - For component discovery techniques in detail, see [references/discovery-techniques.md](references/discovery-techniques.md)
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Fundamentals of Software Architecture by Mark Richards, Neal Ford.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-architecture-characteristics-identifier`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

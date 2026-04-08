@@ -14,7 +14,6 @@ execution:
   tools-optional: [Write]
   environment: "Works from any context; content can be pasted inline or read from file"
 tags: [persuasion]
-
 ---
 
 # Persuasion Content Auditor
@@ -289,3 +288,12 @@ Output: Score 13/18. Strongest proposal areas are authority, liking, and commitm
 ## References
 
 - For detailed per-principle scoring rubric with amplifier conditions, counterproductive patterns, and evidence checklist, see [references/audit-rubric.md](references/audit-rubric.md)
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Influence Psychology Of Persuasion by Unknown.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

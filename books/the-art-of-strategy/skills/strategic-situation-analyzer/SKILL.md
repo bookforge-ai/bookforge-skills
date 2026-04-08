@@ -1,7 +1,9 @@
 ---
 name: strategic-situation-analyzer
 description: "Classify any strategic situation and route to the right game-theory skill. Use this skill whenever a user describes any situation involving multiple decision-makers whose outcomes depend on each other's choices. Triggers include: user says 'I'm not sure how to think about this strategically'; user faces a competitive or cooperative decision and doesn't know where to start; user asks which game theory concept applies to their situation; user describes a negotiation, competition, auction, vote, or incentive design problem and wants to know the right framework; user asks 'is this a prisoners' dilemma?'; user wants to understand whether their situation calls for cooperation or competition; user has a business, political, or personal strategic dilemma and needs a diagnostic before diving into analysis; user says 'what kind of game am I playing?'; user describes any interaction where their best action depends on what others will do; user is unsure whether to look for dominant strategies, equilibria, or use backward reasoning; user needs to decide whether to move first or second; user wonders whether they should cooperate, compete, randomize, commit, signal, or negotiate. This is the ENTRY POINT skill for the entire Art of Strategy skill set. It diagnoses the game type and routes to the specialized skill best suited to the situation. It does NOT replace the specialized skills — it prepares the user to use them effectively."
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/the-art-of-strategy/skills/strategic-situation-analyzer
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: the-art-of-strategy
@@ -259,3 +261,16 @@ Chapter 1 illustrates the breadth of strategic situations. Each tale maps to a g
 - `references/game-type-field-guide.md` — Detailed criteria and worked examples for each named game type; disambiguation rules for borderline cases
 - `references/five-rules-quick-reference.md` — One-page summary of the five rules from the Part I Epilogue with decision flow and tool mapping
 - `references/situation-to-skill-routing-guide.md` — Extended routing logic including multi-skill combinations and common situational patterns
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — The Art of Strategy by Avinash K. Dixit, Barry J. Nalebuff.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-backward-reasoning-game-solver`
+- `clawhub install bookforge-nash-equilibrium-analyzer`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

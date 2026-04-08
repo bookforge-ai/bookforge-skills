@@ -2,7 +2,9 @@
 name: server-side-injection-testing
 description: |
   Test web application back-end components for non-SQL server-side injection vulnerabilities. Use this skill when: testing for OS command injection via shell metacharacters (pipe, ampersand, semicolon, backtick) or dynamic execution functions (eval/exec/Execute); detecting blind command injection using time-delay technique (ping -i 30 loopback) when output is not reflected; probing for path traversal vulnerabilities including filter bypass via URL encoding, double encoding, 16-bit Unicode, overlong UTF-8, null byte injection, or non-recursive strip bypass; testing for Local File Inclusion or Remote File Inclusion; identifying XML External Entity (XXE) injection for local file read or Server-Side Request Forgery (SSRF); detecting SOAP injection via XML metacharacter probing; testing for HTTP Parameter Injection (HPI) and HTTP Parameter Pollution (HPP) in back-end HTTP requests; identifying SMTP injection through email header manipulation or SMTP command injection in mail submission forms. Covers detection procedures, filter bypass techniques, exploitation impact, and prevention countermeasures. Maps to CWE-78 (OS Command Injection), CWE-22 (Path Traversal), CWE-98 (File Inclusion), CWE-611 (XXE), CWE-91 (XML Injection), CWE-88 (Argument Injection), CWE-93 (SMTP Injection). For authorized security testing, security code review, and defensive hardening contexts.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/web-application-hackers-handbook/skills/server-side-injection-testing
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on: []
 source-books:
@@ -429,3 +431,12 @@ Output: 2 findings (Critical XXE+SSRF, High SOAP injection). Countermeasures: co
 - Countermeasure implementation: [server-side-injection-countermeasures.md](references/server-side-injection-countermeasures.md)
 - CWE and OWASP mapping: [injection-cwe-owasp-mapping.md](references/injection-cwe-owasp-mapping.md)
 - Source: Stuttard, D. & Pinto, M. (2011). *The Web Application Hacker's Handbook* (2nd ed.), Chapter 10: "Attacking Back-End Components," pp. 357-402. Wiley.
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — The Web Application Hacker's Handbook: Finding and Exploiting Security Flaws by Dafydd Stuttard, Marcus Pinto.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

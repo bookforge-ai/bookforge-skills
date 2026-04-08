@@ -1,7 +1,9 @@
 ---
 name: architecture-style-selector
 description: Guide the systematic selection of an architecture style by evaluating domain needs, architecture characteristics, quantum count, data constraints, and organizational factors against all major architecture styles (layered, pipeline, microkernel, service-based, event-driven, space-based, microservices). Use this skill whenever the user is choosing an architecture pattern, deciding between monolith and distributed, comparing architecture styles (e.g., "event-driven vs microservices"), asking "which architecture should we use?", starting a new system and considering options, or reconsidering their current architecture — even if they don't use the phrase "architecture style."
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/fundamentals-of-software-architecture/skills/architecture-style-selector
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on:
   - architecture-characteristics-identifier
@@ -316,3 +318,16 @@ Output: **Layered architecture** recommended. The high semantic coupling of mult
 - For quantum analysis, use `architecture-quantum-analyzer`
 - For distributed feasibility checking, use `distributed-feasibility-checker`
 - For documenting the final decision, use `architecture-decision-record-creator`
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Fundamentals of Software Architecture by Mark Richards, Neal Ford.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-architecture-characteristics-identifier`
+- `clawhub install bookforge-architecture-quantum-analyzer`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

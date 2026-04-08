@@ -2,7 +2,9 @@
 name: authentication-security-assessment
 description: |
   Systematically assess web application authentication mechanisms for design flaws and implementation vulnerabilities. Use this skill whenever: testing the login security of a web application; auditing authentication for unauthorized access risk; evaluating password policy strength or brute-force resistance; checking whether login failure messages leak usernames (user enumeration); testing credential transmission over HTTP vs HTTPS; reviewing password change or forgotten password flows for logic flaws; assessing "remember me" cookie security; testing multistage login mechanisms for stage-skipping or cross-stage credential mixing; reviewing source code or HTTP traffic for fail-open logic or insecure credential storage; performing a penetration test or security code review of any user authentication system. Covers HTML forms-based, HTTP Basic/Digest, and multifactor authentication. Maps to OWASP Testing Guide (OTG-AUTHN-*) and CWE-287 (Improper Authentication), CWE-521 (Weak Password Requirements), CWE-307 (Improper Restriction of Excessive Authentication Attempts), CWE-640 (Weak Password Recovery Mechanism), CWE-312 (Cleartext Storage of Sensitive Information), CWE-522 (Insufficiently Protected Credentials).
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/web-application-hackers-handbook/skills/authentication-security-assessment
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on: []
 source-books:
@@ -427,3 +429,12 @@ Output: 3 findings (2 High, 1 Medium), with countermeasures specifying cryptogra
 - For countermeasure implementation details, see [securing-authentication.md](references/securing-authentication.md)
 - For CWE and OWASP mapping per flaw category, see [authentication-cwe-mapping.md](references/authentication-cwe-mapping.md)
 - Source: Stuttard, D. & Pinto, M. (2011). *The Web Application Hacker's Handbook* (2nd ed.), Chapter 6: "Attacking Authentication," pp. 159-201. Wiley.
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — The Web Application Hacker's Handbook: Finding and Exploiting Security Flaws by Dafydd Stuttard, Marcus Pinto.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

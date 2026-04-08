@@ -1,7 +1,9 @@
 ---
 name: architecture-decision-record-creator
 description: Create structured Architecture Decision Records (ADRs) with 7 sections to document architecture decisions with full justification. Use this skill whenever the user has made or needs to make an architecture decision, wants to document why a technical choice was made, is choosing between technologies or patterns, needs to create an ADR, or is experiencing repeated debates about past decisions — even if they don't explicitly mention "ADR" or "architecture decision record."
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/fundamentals-of-software-architecture/skills/architecture-decision-record-creator
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on:
   - architecture-tradeoff-analyzer
@@ -282,3 +284,15 @@ Output: ADR in RFC status with deadline, ready for team review. After deadline, 
 ## References
 
 - For the ADR file template, see [assets/adr-template.md](assets/adr-template.md)
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Fundamentals of Software Architecture by Mark Richards, Neal Ford.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-architecture-tradeoff-analyzer`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

@@ -1,7 +1,9 @@
 ---
 name: customer-discovery-program
 description: "Design a customer discovery program to achieve product-market fit for a significant new product or market expansion. Use when launching a new product, entering a new market segment, redesigning a product for a different customer segment, or when someone asks 'how do we find product-market fit?', 'how do we get reference customers?', or 'are we stuck in a sales-driven fragmentation spiral?' Also use when the team is unsure if they have achieved product-market fit, when scaling sales feels premature, or when checking whether the Sean Ellis test applies. Produces a complete program plan: single target market definition, recruitment criteria for 6 reference customers, co-development relationship structure, and product-market fit definition by product type (B2B, platform/API, consumer, internal). Not for small features or minor improvements — use value-testing-technique-selection for those."
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/inspired-how-to-create-tech-products/skills/customer-discovery-program
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: published
 source-books:
   - id: inspired-how-to-create-tech-products
@@ -354,3 +356,15 @@ Recruit [6-8] prospective members to end with 6.
 - `references/recruitment-screening-guide.md` — Detailed interview questions and scoring rubric for screening prospective reference customer candidates
 - `references/pmf-definitions.md` — Complete product-market fit definitions per product type, Sean Ellis survey instrument, and B2B reference customer criteria checklist
 - `references/program-rules-rationale.md` — Detailed rationale for each program rule (payment, cap, release timing) and objection handling for sales pressure
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — INSPIRED: How to Create Tech Products Customers Love by Marty Cagan.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-product-discovery-risk-assessment`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

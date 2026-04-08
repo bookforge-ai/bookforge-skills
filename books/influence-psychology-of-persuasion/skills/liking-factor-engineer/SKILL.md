@@ -8,7 +8,9 @@ description: >
   Also use when the user suspects they are being manipulated by a compliance professional through manufactured rapport, flattery, or contrived similarity.
   Trigger keywords: liking, rapport, trust, relationship building, brand personality, personal brand, similarity, compliments, familiarity, association,
   endorsement, halo effect, attractive design, influence, persuasion, likability, warm, friendly, relatable, connection.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/influence-psychology-of-persuasion/skills/liking-factor-engineer
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: influence-psychology-of-persuasion
@@ -267,3 +269,12 @@ Output: Defense evaluation report. Car decision based on deal merits, not salesm
 - For research evidence behind all five factors with full statistics and study citations, see [references/liking-factors-evidence.md](references/liking-factors-evidence.md)
 - For commercial model case studies (Joe Girard, Tupperware, Shaklee, MCI Calling Circle), see [references/commercial-models.md](references/commercial-models.md)
 - For the Good Cop/Bad Cop mechanics as a multi-principle compliance model, see [references/good-cop-bad-cop.md](references/good-cop-bad-cop.md)
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Influence: The Psychology of Persuasion by Robert B. Cialdini.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

@@ -1,7 +1,9 @@
 ---
 name: argument-organization-reviser
 description: "Revise the structural organization of a research paper draft by applying a four-level top-down procedure — Frame (intro/conclusion alignment), Argument (section reasons + evidence ratios), Paper Organization (key-term threading + section signals), and Paragraphs (topic sentence placement + length). Use this skill whenever the user has a complete draft and asks to revise, reorganize, or strengthen its structure — not its prose style. Triggers include: user shares a draft paper and asks for structural feedback; user says sections feel disconnected or the argument is hard to follow; user's introduction and conclusion seem to contradict or not reinforce each other; user suspects their sections lack clear points or bury them in the middle; user cannot tell whether their evidence-to-reasoning ratio is balanced; user's paragraphs open with evidence rather than claims; user is preparing to submit and wants a final organizational pass. Also triggers on: \"revise my structure,\" \"does my argument hold together,\" \"my advisor said the organization is unclear,\" \"do my sections flow,\" \"I need to check the coherence.\" This skill applies structural revision only — it does NOT revise prose style or sentence clarity (use prose-clarity-reviser for that), and does NOT rebuild an argument from scratch (use research-argument-builder for that)."
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/the-craft-of-research/skills/argument-organization-reviser
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: the-craft-of-research
@@ -360,3 +362,15 @@ A section titled "Economic Conditions" contains three pages of statistics, table
 - `references/introduction-conclusion-revision.md` — Full procedure for revising the introduction and conclusion as polished final text (not just structural diagnosis)
 - `references/key-term-threading.md` — Step-by-step guide to identifying key concepts and tracing them through a multi-section paper
 - `references/abstract-patterns.md` — Annotated examples of all three abstract patterns across disciplines
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — The Craft of Research, 4th Edition by Wayne C. Booth, Gregory G. Colomb, Joseph M. Williams, Joseph Bizup, William T. FitzGerald.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-research-paper-planner`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

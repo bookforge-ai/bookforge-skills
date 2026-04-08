@@ -2,7 +2,9 @@
 name: visitor-pattern-implementor
 description: |
   Implement the Visitor pattern to define new operations on an object structure without changing the classes of the elements it operates on. Use when you have a stable class hierarchy but frequently add new operations, when many unrelated operations need to be performed on an object structure, or when you want to accumulate state across a traversal. Includes the critical stability decision rule, double-dispatch mechanism (Accept/Visit), Iterator integration for traversal, and the encapsulation trade-off warning.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/design-patterns-gof/skills/visitor-pattern-implementor
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on:
   - behavioral-pattern-selector
@@ -474,3 +476,15 @@ class Chassis(Equipment):
 | File | When to read |
 |------|-------------|
 | `references/visitor-implementation-guide.md` | Participants reference, full consequences catalog, language-specific notes (Java, TypeScript, Python), traversal placement decision tree, comparison with Interpreter pattern |
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Design Patterns: Elements of Reusable Object-Oriented Software by Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-behavioral-pattern-selector`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

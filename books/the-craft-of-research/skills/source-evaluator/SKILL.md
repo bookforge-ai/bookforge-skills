@@ -1,7 +1,9 @@
 ---
 name: source-evaluator
 description: Evaluate, triage, and actively read a set of research sources — books, articles, and online materials — by applying a dual-axis relevance-and-reliability screen, source-type skim protocols, and a two-pass active reading method that extracts data, arguments to respond to, and generative agreements and disagreements. Use this skill when you have a candidate source list and need to cut it to a workable set, when you need to verify that a source is credible before citing it, when you are reading sources to find a research problem or refine a hypothesis, when you need to take notes that accurately capture what a source argues without misrepresenting it, or when you must identify where sources agree and disagree so you can position your own argument within a field's conversation.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/the-craft-of-research/skills/source-evaluator
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: the-craft-of-research
@@ -307,3 +309,12 @@ Better note: "Jones argues the war was caused by X, Y, and Z (p. 123); he consid
 - [Reliability Rubric](references/reliability-rubric.md) — expanded 10-criterion rubric with field-specific guidance
 - [Active Reading Response Taxonomy](references/active-reading-response-taxonomy.md) — templates for 3 creative agreement types and 5 creative disagreement types
 - [Bibliographic Recording Checklist](references/bibliographic-recording-checklist.md) — field-specific bibliographic data requirements
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — The Craft of Research, 4th Edition by Wayne C. Booth, Gregory G. Colomb, Joseph M. Williams, Joseph Bizup, William T. FitzGerald.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

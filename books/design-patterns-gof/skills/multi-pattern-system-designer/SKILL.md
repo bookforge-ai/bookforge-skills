@@ -2,7 +2,9 @@
 name: multi-pattern-system-designer
 description: |
   Design a system using multiple coordinated design patterns, moving beyond single-pattern application to pattern composition. Use when facing a complex system with multiple design problems — object creation inflexibility, structural rigidity, and behavioral coupling occurring simultaneously. Guides through the Lexi document editor methodology: decompose the system into design problems, map each to a pattern, identify pattern interaction points (e.g., Abstract Factory configures Bridge, Command uses Composite for macros, Iterator enables Visitor), and verify the patterns work together coherently.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/design-patterns-gof/skills/multi-pattern-system-designer
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on:
   - design-pattern-selector
@@ -396,3 +398,19 @@ Key interaction:
 | File | Contents |
 |------|----------|
 | `references/lexi-case-study.md` | Full Lexi pattern map: 7 problems, 8 patterns, 3 interaction points, extension guide, summary from GoF Chapter 2 |
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Design Patterns: Elements of Reusable Object-Oriented Software by Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-design-pattern-selector`
+- `clawhub install bookforge-abstract-factory-implementor`
+- `clawhub install bookforge-composite-pattern-implementor`
+- `clawhub install bookforge-command-pattern-implementor`
+- `clawhub install bookforge-visitor-pattern-implementor`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

@@ -1,7 +1,9 @@
 ---
 name: service-based-architecture-designer
 description: Design a service-based architecture with 4-12 coarse-grained domain services, including service decomposition, database partitioning strategy (shared vs domain-partitioned vs per-service), API layer design, and ACID vs BASE transaction decisions. Use this skill whenever the user is designing a service-based system, decomposing a monolith into coarse-grained services, deciding how many services to create, choosing a database topology for distributed services, deciding between shared database and per-service databases, evaluating whether to add an API layer, determining ACID vs eventual consistency needs, or comparing service-based architecture against microservices — even if they don't use the exact phrase "service-based architecture."
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/fundamentals-of-software-architecture/skills/service-based-architecture-designer
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on:
   - architecture-characteristics-identifier
@@ -341,3 +343,15 @@ Output: **6 domain services, single shared database with logical partitioning, n
 - For architecture style comparison (service-based vs alternatives), use `architecture-style-selector`
 - For identifying driving quality attributes, use `architecture-characteristics-identifier`
 - For documenting the architecture decision, use `architecture-decision-record-creator`
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Fundamentals of Software Architecture by Mark Richards, Neal Ford.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-architecture-characteristics-identifier`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

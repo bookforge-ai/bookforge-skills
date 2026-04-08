@@ -1,7 +1,9 @@
 ---
 name: customer-segment-slicer
 description: Iteratively narrow broad customer segments into specific, findable sub-segments with who-where pairs. Use this skill whenever the user's target market is too broad, their customer definition is vague or generic ("small businesses," "students," "anyone who..."), they are getting mixed or inconsistent feedback from customer conversations that does not converge, they do not know who to talk to first, everyone seems like a potential customer, they need to decide which customer segment to pursue first, they are overwhelmed by too many potential customer types, they want to know who their ideal early customer is, they cannot figure out who to build for, they ask "who should I talk to" or "how do I narrow down my audience" — even if they don't explicitly say "segmentation" or "customer slicing." Do NOT use for finding or reaching customers (use conversation-sourcing-planner) or designing interview questions (use conversation-question-designer).
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/the-mom-test/skills/customer-segment-slicer
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: verified
 source-books:
   - id: the-mom-test
@@ -297,3 +299,12 @@ Save to `customer-segments.md` in the user's working directory (or the path they
 - **Cross-skill dependencies:** After slicing produces a starting segment, use `conversation-sourcing-planner` to find conversations with that segment, and `question-importance-prioritizer` to decide what to learn from them.
 - **Segment validation signal:** If after 3-5 focused conversations you are still getting inconsistent problems and goals, your segment is not specific enough yet — return to this skill and slice further. If feedback converges within 3-5 conversations, your segment is well-defined.
 - **Slicing questions quick reference:** See [references/slicing-questions.md](references/slicing-questions.md) for the complete question set formatted as a standalone reference card.
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — The Mom Test by Rob Fitzpatrick.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

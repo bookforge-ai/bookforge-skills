@@ -1,7 +1,9 @@
 ---
 name: prose-clarity-reviser
 description: "Revise dense, unclear prose into clear, readable sentences by applying four diagnostic principles — characters-as-subjects, actions-as-verbs, old-before-new information flow, and complexity-last sentence endings. Use this skill whenever the user shares a draft passage, paragraph, or document and asks you to make it clearer, more readable, easier to follow, less dense, less academic-sounding, or better written — even if they don't use those words. Also triggers on: \"can you revise this,\" \"this feels clunky,\" \"my advisor said this is unclear,\" \"make this flow better,\" \"my writing sounds stilted,\" or any request to improve prose style in research papers, reports, essays, grant proposals, or professional documents. Apply all four principles end-to-end; return a revised version with brief annotations showing what changed and why."
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/the-craft-of-research/skills/prose-clarity-reviser
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: the-craft-of-research
@@ -245,3 +247,12 @@ Apply in this order. Do not try to apply all four principles simultaneously.
 ---
 
 See `references/before-after-sentence-pairs.md` for 15+ additional before/after sentence pairs illustrating all four principles across different academic disciplines.
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — The Craft of Research, 4th Edition by Wayne C. Booth, Gregory G. Colomb, Joseph M. Williams, Joseph Bizup, William T. FitzGerald.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

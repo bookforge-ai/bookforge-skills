@@ -420,3 +420,12 @@ Mark Step 8 complete in TodoWrite.
 - For designing guarantees that improve Driver 2 (Perceived Likelihood of Achievement): `guarantee-design-and-selection`
 - For setting and justifying premium prices once all four drivers are strong: `premium-pricing-strategy`
 - Source: *$100M Offers*, Alex Hormozi, Chapter 6 "Value Offer: The Value Equation," pages 78–93
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — 100M Offers by Unknown.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

@@ -1,7 +1,9 @@
 ---
 name: practice-schedule-designer
 description: "Design a concrete practice schedule that will actually make learning stick — not just feel productive. Use this skill when the user is preparing for a test, building a new skill, training others, or planning a study program and needs to decide how to structure practice sessions over time. Triggers include: user is relying on marathon study sessions or cramming before a deadline; user practices one topic exhaustively before moving to the next; user feels they know material during practice but forgets it on tests or in real situations; user wants to know how often to review flashcards or revisit past material; user needs to design a training curriculum for a team or class; user is switching between topics during study and wants to know if that is helping or hurting; user is preparing for a performance context (exam, job, sport) and must choose between depth on one skill versus breadth across many. This skill does NOT address memorization technique or recall strategy — use retrieval-practice-study-system for those."
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/make-it-stick/skills/practice-schedule-designer
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: make-it-stick
@@ -334,3 +336,12 @@ Familiarity trap                 → Quiz before reviewing; never skip "known" i
 - `references/practice-type-comparison.md` — Full research evidence for each of the four practice types, including the geometry study (89% blocked vs. 63% interleaved during practice; 20% blocked vs. 63% interleaved on delayed test), the surgical resident spaced training study, and the beanbag motor learning experiment
 - `references/spacing-interval-guide.md` — Detailed interval tables by material type, cognitive load, and learner experience level; guidance for compressing or expanding schedules when time constraints change
 - `references/leitner-box-implementation.md` — Step-by-step Leitner box setup for flashcard-style material; digital and physical implementations; troubleshooting stalled items
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Make It Stick: The Science of Successful Learning by Peter C. Brown, Henry L. Roediger III, Mark A. McDaniel.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

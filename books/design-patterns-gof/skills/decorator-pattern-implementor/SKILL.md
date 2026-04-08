@@ -4,7 +4,9 @@ description: |
   Implement the Decorator pattern to attach additional responsibilities to objects dynamically, providing a flexible alternative to subclassing. Use when you need to add behaviors like logging, caching, validation, authentication, compression, or UI embellishments without creating a subclass for every combination. Addresses the subclass explosion problem through transparent enclosure — decorators conform to the component interface so clients cannot distinguish decorated from undecorated objects. Covers composition order effects and the lightweight-decorator optimization. Triggers when: adding optional behaviors to objects at runtime, wrapping streams or middleware, layering cross-cutting concerns, needing to mix and match responsibilities without combinatorial subclass growth.
 model: sonnet
 context: 1M
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/design-patterns-gof/skills/decorator-pattern-implementor
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on:
   - structural-pattern-selector
@@ -437,3 +439,15 @@ aStream->PutString("aString");
 | File | Contents |
 |------|----------|
 | `references/decorator-implementation-guide.md` | Full participants catalog, consequences analysis, language-specific implementation notes, transparent enclosure reasoning process, comparison with Strategy (skin vs. guts), and omitting the abstract Decorator class |
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Design Patterns: Elements of Reusable Object-Oriented Software by Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-structural-pattern-selector`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

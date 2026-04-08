@@ -2,7 +2,9 @@
 name: composite-pattern-implementor
 description: |
   Implement the Composite pattern to compose objects into tree structures representing part-whole hierarchies, letting clients treat individual objects and compositions uniformly. Use when building file systems, UI component trees, organization charts, document structures, or any recursive containment hierarchy. Addresses 9 implementation concerns including the safety-vs-transparency trade-off for child management, parent references, component sharing, caching, and child ordering.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/design-patterns-gof/skills/composite-pattern-implementor
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on:
   - structural-pattern-selector
@@ -486,3 +488,15 @@ Composite:  Column    — arranges Row children vertically
 | File | Contents |
 |------|----------|
 | `references/composite-implementation-guide.md` | All 9 implementation concerns with full rationale, language-specific notes, related patterns (Chain of Responsibility, Flyweight, Iterator, Visitor, Decorator), and the complete GoF consequences catalog |
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Design Patterns: Elements of Reusable Object-Oriented Software by Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-structural-pattern-selector`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

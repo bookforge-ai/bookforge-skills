@@ -2,7 +2,9 @@
 name: security-change-rollout-planning
 description: |
   Plan and execute a security change rollout across a service or fleet: classify the change into a time horizon (short / medium / long-term), triage affected systems by risk tier, select the appropriate rollout strategy with canarying and staged deployment, define communication strategy (internal and external), set rollback and success criteria, and produce a written rollout plan. Use when you need to respond to a zero-day vulnerability, roll out a security posture improvement, or drive an ecosystem or regulatory compliance change. Handles timeline disruption scenarios: accelerate when an exploit goes public, slow down when patch instability is detected, delay when embargo, external dependency, or limited blast radius dictates caution. Produces a rollout plan with timeline, per-tier risk triage, communication strategy, and explicit rollback criteria. Examples covered: Shellshock emergency patch, hardware security key (FIDO/WebAuthn) company-wide deployment, and Chrome HTTPS migration.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/building-secure-and-reliable-systems/skills/security-change-rollout-planning
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on: []
 source-books:
@@ -345,3 +347,12 @@ Status: [draft / approved / in-progress / complete]
 Cross-references:
 - `adversary-profiling-and-threat-modeling` — determine what you are defending against before designing the change
 - `resilience-and-blast-radius-design` — design system architecture to reduce the blast radius of any given change or compromise
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Building Secure and Reliable Systems by Heather Adkins, Betsy Beyer, Paul Blankinship, Piotr Lewandowski, Ana Oprea, Adam Stubblefield.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

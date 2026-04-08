@@ -2,7 +2,9 @@
 name: learning-calibration-audit
 description: |
   Diagnose and correct false confidence in learning mastery using cognitive science research. Use when you feel confident about a topic but keep failing tests, want to audit your metacognition for illusions of knowing, are preparing for a high-stakes assessment and need to verify actual mastery, or suspect your study method is producing Dunning-Kruger overconfidence. Also use for: identifying which of 7 specific cognitive distortions — fluency illusion, hindsight bias, Dunning-Kruger overconfidence, curse of knowledge, false consensus, imagination inflation, social memory contamination — is inflating your self-assessment accuracy; distinguishing reliable mastery indicators (delayed recall, novel problem transfer, peer explanation) from unreliable ones (rereading fluency, immediate recall, familiarity warmth); selecting calibration instruments (self-quizzing, cumulative quizzing, peer instruction) matched to the specific distortions detected; designing a dynamic testing cycle (assess → identify gaps → target practice → retest) as an iterative calibration protocol; and producing a calibration report with a retest schedule. Applies across all learning contexts — exam preparation, professional skill development, corporate training, language learning, technical certification. Works on document sets such as study plans, quiz results, self-assessment notes, and course materials.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/make-it-stick/skills/learning-calibration-audit
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on: []
 source-books:
@@ -343,3 +345,12 @@ For each instrument assigned:
 |------|----------|
 | `references/cognitive-distortions.md` | Complete 7-distortion taxonomy with detection criteria, mechanisms, real-world examples, and false positive guards |
 | `references/calibration-instruments.md` | Full instrument reference: self-quizzing, cumulative quizzing, peer instruction, peer teaching, confidence logging — with implementation steps and distortion coverage |
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Make It Stick: The Science of Successful Learning by Peter C. Brown, Henry L. Roediger III, Mark A. McDaniel.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

@@ -1,7 +1,9 @@
 ---
 name: architecture-quantum-analyzer
 description: Analyze a system's architecture quanta — independently deployable units with distinct quality attribute needs. Use this skill whenever the user needs to determine if their system should be monolith or distributed, is analyzing deployment boundaries, evaluating which parts of a system need different scalability/reliability/performance characteristics, decomposing a monolith, or asking "should this be one service or many?" — even if they don't use the term "quantum."
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/fundamentals-of-software-architecture/skills/architecture-quantum-analyzer
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on:
   - architecture-characteristics-identifier
@@ -203,3 +205,15 @@ Output: Full quantum analysis with communication map, quantum groupings, charact
 ## References
 
 - For connascence types and their implications, see [references/connascence-types.md](references/connascence-types.md)
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Fundamentals of Software Architecture by Mark Richards, Neal Ford.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-architecture-characteristics-identifier`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

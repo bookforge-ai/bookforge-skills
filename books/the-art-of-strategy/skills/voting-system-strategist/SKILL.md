@@ -1,7 +1,9 @@
 ---
 name: voting-system-strategist
 description: "Analyze, design, or defend against voting system manipulation. Use this skill when a user needs to evaluate how a voting or election procedure will behave strategically — including which candidate or option will actually win under a given system, how an agenda-setter can engineer an outcome, whether a preference cycle makes the 'true will' of the group unknowable, how to choose the voting rule best suited to a group's goals, or when a voter should vote strategically rather than sincerely. Triggers include: user is designing a committee, board, or organizational voting process and wants to know which system is fairest or hardest to manipulate; user suspects the order of votes or the choice of voting method is being used against them; user needs to predict who wins under plurality, runoff, Condorcet pairwise, Borda count, or approval voting; user wants to know whether their group's preferences form a cycle that makes any outcome unstable; user is a voter or participant wondering whether to vote sincerely or strategically; user is analyzing a legislative, judicial, or board vote where agenda control may be shaping the outcome; user needs to apply the median voter theorem to predict where competing positions will converge; user wants to evaluate the pivotal-voter principle to understand when a single vote actually changes outcomes. This skill covers social choice theory, Arrow's impossibility theorem, the Condorcet paradox, agenda control via sequential voting, strategic (insincere) voting, comparison of voting rules, the median voter theorem, approval voting, and pivotal voter analysis. It does NOT cover simultaneous-move strategic games (use nash-equilibrium-analyzer), sequential multi-player negotiation (use other negotiation skills), or auction design."
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/the-art-of-strategy/skills/voting-system-strategist
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: the-art-of-strategy
@@ -431,3 +433,12 @@ Structure your output as:
 - `references/agenda-control-backward-induction.md` — Applying backward induction to sequential vote sequences; all-outcomes-by-agenda table construction; legislative and judicial examples
 - `references/arrows-impossibility-theorem.md` — The five fairness criteria, formal statement of impossibility, and practical implications for voting system design
 - `references/median-voter-theorem.md` — One-dimensional convergence proof, strategic preference exaggeration under mean-based rules, multi-dimensional failure, constitutional supermajority insight
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — The Art of Strategy by Avinash K. Dixit, Barry J. Nalebuff.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

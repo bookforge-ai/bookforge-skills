@@ -2,7 +2,9 @@
 name: structural-pattern-selector
 description: |
   Choose the right structural design pattern (Adapter, Bridge, Composite, Decorator, Facade, Flyweight, or Proxy) for a structural design problem. Use when you need to adapt interfaces between incompatible classes, decouple an abstraction from its implementation so both can vary independently, build part-whole hierarchies where individual objects and compositions are treated uniformly, add responsibilities to objects dynamically without subclassing, simplify access to a complex subsystem, share large numbers of fine-grained objects efficiently, or control and mediate access to another object. Disambiguates commonly confused patterns: Adapter vs Bridge (timing — after design vs before design), Composite vs Decorator vs Proxy (intent — structure vs embellishment vs access control, recursion pattern). Also use when someone asks "should I use Adapter or Bridge?", "what's the difference between Decorator and Proxy?", "when should I use Facade vs Adapter?", or "do I need Flyweight here?"
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/design-patterns-gof/skills/structural-pattern-selector
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on:
   - design-pattern-selector
@@ -391,3 +393,15 @@ combination based on configuration)
 
 - For full applicability conditions and disambiguation detail for all seven patterns, see [structural-disambiguation.md](references/structural-disambiguation.md)
 - For the complete 23-pattern catalog (purpose, scope, intent), consult `design-pattern-selector/references/pattern-catalog.md`
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Design Patterns: Elements of Reusable Object-Oriented Software by Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-design-pattern-selector`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

@@ -2,7 +2,9 @@
 name: web-application-penetration-testing-methodology
 description: |
   Orchestrate a complete, structured web application penetration test through 13 testing areas during authorized security assessments. Use this skill when you are conducting a full web application security engagement and need a top-level methodology that sequences and delegates all testing phases — from initial reconnaissance through exploitation. Invoke it to plan and coordinate an engagement end-to-end: mapping application content, analyzing the attack surface, testing client-side controls, assessing authentication and session management, verifying access controls, probing all parameters for injection vulnerabilities, testing function-specific input flaws (SMTP, SOAP, LDAP, XPath, XXE), identifying logic flaws, checking shared hosting and server configuration, and conducting miscellaneous browser-security checks. Also invoke it as the master checklist for ensuring no test area has been missed, when delegating specific areas to domain-specific skills, or when producing a complete security assessment report. This is the hub skill — it calls twelve domain skills and provides the connective workflow between them. For white-box complement and source code analysis use alongside source-code-security-review.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/web-application-hackers-handbook/skills/web-application-penetration-testing-methodology
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: web-application-hackers-handbook
@@ -549,3 +551,12 @@ After completing all applicable areas, consolidate findings across testing phase
 - White-box complement: `source-code-security-review` SKILL.md
 - URL encoding quick reference: `references/url-encoding-reference.md`
 - Severity rating criteria and finding templates: `references/findings-templates.md`
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — The Web Application Hacker's Handbook: Finding and Exploiting Security Flaws by Dafydd Stuttard, Marcus Pinto.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

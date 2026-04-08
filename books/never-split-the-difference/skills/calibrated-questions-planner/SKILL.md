@@ -2,7 +2,9 @@
 name: calibrated-questions-planner
 description: |
   Generate a bank of open-ended strategic questions (how/what questions) for a negotiation, sales conversation, difficult discussion, or conflict situation. Use when someone asks "what questions should I ask in my negotiation?", "how do I get more information without seeming pushy?", "how do I find out who else is involved in this decision?", "what should I ask to understand their constraints?", or "how do I stop the other side from stonewalling me?" Also use for: designing interview questions that reveal unstated priorities, discovering hidden stakeholders who could kill a deal, identifying deal-breaking issues before they surface, uncovering the real decision-making process behind a stated position, or preparing questions for any high-stakes conversation where you need the other party to think and talk. Produces a situation-specific question bank organized by category (value-revealing, behind-the-table stakeholder, deal-killing issue), with follow-up label templates and deployment sequencing. Works for sales calls, job negotiations, vendor negotiations, partnership discussions, client discovery, conflict resolution, and any scenario where understanding the counterpart's full picture is critical. Pair with accusation-audit-generator (to defuse objections before asking) and commitment-verifier (to verify answers reveal real commitment).
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/never-split-the-difference/skills/calibrated-questions-planner
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on: []
 source-books:
@@ -355,3 +357,12 @@ After [Question]: "It seems like [paraphrase of what they said or implied]..."
 | File | Contents |
 |------|----------|
 | `references/question-bank.md` | Full library of 15+ ready-to-use calibrated questions across all three categories; anti-pattern reference table; "why" vs "how/what" rewrites for common questions; follow-up label templates; deployment sequencing guide; Harvard mock hostage case study breakdown |
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Never Split the Difference: Negotiating as if Your Life Depended on It by Chris Voss.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

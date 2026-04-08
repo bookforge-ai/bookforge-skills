@@ -2,7 +2,9 @@
 name: prisoners-dilemma-resolver
 description: |
   Diagnose whether a multi-player conflict is a prisoners' dilemma and design a cooperation mechanism to resolve it. Use when parties are locked in a mutually destructive pattern even though all would benefit from cooperation — price wars, overfishing, arms races, advertising spirals, commons depletion, collective action failures. Distinguishes prisoners' dilemmas (dominant strategy to defect) from coordination problems (no incentive to deviate once aligned) and tailors the remedy accordingly. Produces a structured cooperation design plan: diagnosis, payoff assessment, discount-rate threshold calculation, mechanism selection from a resolution menu (self-enforcement through repeated play, tit-for-two-tats, mutual promises with escrow, linkage, reputation systems, third-party enforcement, Ostrom commons governance), and implementation checklist. Use when someone says 'everyone would be better off if we all cooperated but no one does', 'we keep undercutting each other even though it hurts everyone', 'how do we stop a race to the bottom', 'we need a collective agreement that actually holds', 'our cartel keeps collapsing', 'how do I stop a defection spiral', 'we need to solve a commons problem', or 'is this a coordination problem or a cooperation problem'.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/the-art-of-strategy/skills/prisoners-dilemma-resolver
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: the-art-of-strategy
@@ -516,3 +518,12 @@ Key distinction that matters: if this were a genuine prisoners' dilemma, the agr
 - For the resolution menu with full specification of each mechanism level, see [resolution-menu.md](references/resolution-menu.md)
 - For the cooperation vs. coordination distinction with examples, see [cooperation-vs-coordination.md](references/cooperation-vs-coordination.md)
 - Source: *The Art of Strategy*, Dixit & Nalebuff, Chapter 3 (pp. 74–105) and Chapter 9 (pp. 254–280)
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — The Art of Strategy: A Game Theorist's Guide to Success in Business and Life by Avinash K. Dixit, Barry J. Nalebuff.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

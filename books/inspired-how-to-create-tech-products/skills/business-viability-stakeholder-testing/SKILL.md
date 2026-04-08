@@ -1,7 +1,9 @@
 ---
 name: business-viability-stakeholder-testing
 description: "Test whether a product solution is viable for the business before building. Use when business viability risk is Medium or High, when multiple internal functions (legal, sales, finance, marketing) may have constraints on a proposed solution, when someone asks 'will this work for our business?', 'do we have stakeholder buy-in?', or 'does legal/finance/sales need to review this?' Also use when a proposed solution would change pricing, go-to-market motion, or support model, or when you need documented cross-functional sign-off before committing engineering resources. Identifies all stakeholders who can veto launch across 8 domains, conducts 1:1 preview sessions with high-fidelity prototypes, and resolves disagreements with evidence rather than opinions. Produces a structured viability sign-off document. Not for customer value testing — use value-testing-technique-selection. Not for product-market fit — use customer-discovery-program."
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/inspired-how-to-create-tech-products/skills/business-viability-stakeholder-testing
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: published
 source-books:
   - id: inspired-how-to-create-tech-products
@@ -342,3 +344,15 @@ Stakeholder preview sessions are both a testing activity and an evangelism activ
 - `references/stakeholder-domain-concerns.md` — Detailed concern categories for all 8 stakeholder domains with specific questions to ask and signals to look for
 - `references/prototype-review-taxonomy.md` — Full comparison of user test vs. product demo vs. stakeholder walkthrough: who drives, what the purpose is, and when to use each
 - `references/pm-evangelism-practices.md` — Elaboration of all 10 evangelism practices with application guidance for stakeholder management contexts
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — INSPIRED: How to Create Tech Products Customers Love by Marty Cagan.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-product-discovery-risk-assessment`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

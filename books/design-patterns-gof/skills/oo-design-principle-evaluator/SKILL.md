@@ -349,3 +349,12 @@ Output: Report with High compliance rating; notes the design correctly uses abst
 
 - For detailed comparison of all reuse mechanisms with decision criteria, see [reuse-mechanisms.md](references/reuse-mechanisms.md)
 - Source: *Design Patterns: Elements of Reusable Object-Oriented Software*, GoF (Gang of Four), Chapter 1, pages 28-34
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Design Patterns Gof by Unknown.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

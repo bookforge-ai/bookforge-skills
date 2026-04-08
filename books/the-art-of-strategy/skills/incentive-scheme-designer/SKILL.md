@@ -1,7 +1,9 @@
 ---
 name: incentive-scheme-designer
 description: "Design and diagnose incentive contracts for situations where effort is unobservable (moral hazard). Use this skill when a user needs to motivate a contractor, employee, co-founder, or agent whose actions cannot be directly monitored; when a user is deciding between a fixed salary, piece-rate, equity share, bonus, or fine structure; when a user needs to set the bonus level so that high-quality effort is in the agent's self-interest; when a user must satisfy both the participation constraint (agent accepts the deal) and the incentive compatibility constraint (agent exerts the desired effort); when a user wants to diagnose why an existing incentive scheme is failing — through sandbagging, gaming, effort diversion, or lack of effort; when a user is deciding between carrots and sticks and needs to understand when each is preferred; when a user suspects financial incentives are crowding out intrinsic motivation (Gneezy/Rustichini effect); when a user manages people performing multiple tasks and needs to know whether to bundle or separate them based on complementarity vs. substitutability; when a user needs to understand efficiency wages and when above-market pay is the cheapest way to deter shirking. This skill covers the full principal-agent problem after a contract is signed. It does NOT cover pre-contract adverse selection (who to hire) — use the information-asymmetry-strategist skill for that."
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/the-art-of-strategy/skills/incentive-scheme-designer
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: the-art-of-strategy
@@ -423,3 +425,15 @@ Structure your output as:
 - `references/nonlinear-schemes-and-gaming.md` — Quota-bonus mechanics, sandbagging patterns, Enron-style manipulation, hybrid linear-nonlinear design, real estate commission analysis
 - `references/multi-task-incentive-design.md` — Substitute vs. complement taxonomy, Heathrow Airport organizational failure, research-teaching complementarity, multiple-owners incentive dilution formula
 - `references/efficiency-wages-and-intrinsic-motivation.md` — Efficiency wage formula derivation, Gneezy/Rustichini experiment results, intrinsic motivation crowding out, career concern substitution table
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — The Art of Strategy by Avinash K. Dixit, Barry J. Nalebuff.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-information-asymmetry-strategist`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

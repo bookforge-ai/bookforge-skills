@@ -1,7 +1,9 @@
 ---
 name: conversation-sourcing-planner
 description: Create a plan for finding and reaching people to have customer discovery conversations with, including channel selection, outreach messages, and warm intro strategies. Use this skill whenever the user does not know how to find people to talk to, does not know anyone in their target market, needs to reach potential customers but has no connections, wants to write a cold outreach email or LinkedIn message for customer conversations, needs help with warm introductions or getting introduced to prospects, is struggling to get meetings or conversations with target customers, wants to build a conversation pipeline or outreach cadence, asks "where do I find people to interview" or "how do I get customer meetings," needs to figure out the best channels to reach a specific customer segment, wants to plan cold or warm outreach for customer interviews, or wants to leverage events or communities or online forums to find conversation targets — even if they don't explicitly say "sourcing" or "outreach." This skill is about FINDING and REACHING people, not about who your target customer is (use customer-segment-slicer) or whether meetings should be casual or formal (use conversation-format-selector).
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/the-mom-test/skills/conversation-sourcing-planner
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: verified
 source-books:
   - id: the-mom-test
@@ -338,3 +340,15 @@ Save to `outreach-plan.md` in the user's working directory (or the path they spe
 - For the complete 7-channel breakdown with tactical details and additional examples, see [references/channel-guide.md](references/channel-guide.md)
 - For outreach message templates adapted to different contexts, see [references/outreach-templates.md](references/outreach-templates.md)
 - **Cross-skill dependencies:** This skill requires a defined customer segment from `customer-segment-slicer` as input. After creating the outreach plan, use `conversation-format-selector` to decide whether conversations should be casual or formal.
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — The Mom Test by Rob Fitzpatrick.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-customer-segment-slicer`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

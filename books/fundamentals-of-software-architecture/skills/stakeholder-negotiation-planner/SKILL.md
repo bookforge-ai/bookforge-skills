@@ -1,7 +1,9 @@
 ---
 name: stakeholder-negotiation-planner
 description: Prepare architecture negotiation strategies for conversations with business stakeholders, other architects, and developers using proven techniques. Use this skill whenever the user needs to push back on unrealistic requirements, defend an architecture decision to management, convince a skeptical developer or senior engineer, navigate disagreements about technology choices, negotiate trade-offs between features and technical debt, deal with stakeholders who demand conflicting quality attributes, handle situations where someone with more authority or experience disagrees with their technical recommendation, or any situation requiring persuasion around architecture decisions — even if they don't explicitly say "negotiation."
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/fundamentals-of-software-architecture/skills/stakeholder-negotiation-planner
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: fundamentals-of-software-architecture
@@ -248,3 +250,12 @@ Output: Negotiation brief with ROI calculation, delivery timeline comparison cha
 ## References
 
 - For detailed negotiation techniques by audience type, the 4 C's framework, and additional examples, see [references/negotiation-techniques.md](references/negotiation-techniques.md)
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Fundamentals of Software Architecture by Mark Richards, Neal Ford.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

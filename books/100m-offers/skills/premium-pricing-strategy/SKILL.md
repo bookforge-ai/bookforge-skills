@@ -258,3 +258,15 @@ Use this framework:
 - `grand-slam-offer-creation` — Build the differentiated offer structure that escapes the commodity trap diagnosed in Step 1; premium pricing requires a premium offer
 
 **Source:** $100M Offers, Alex Hormozi — Chapters 3 ("Pricing: The Commodity Problem"), 4 ("Pricing: Finding the Right Market — A Starving Crowd"), 5 ("Pricing: Charge What It's Worth"), pages 38–74
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — 100M Offers by Unknown.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-target-market-selection`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

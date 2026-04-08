@@ -2,7 +2,9 @@
 name: evidence-based-classroom-designer
 description: |
   Design or redesign any course, class, or training session using evidence-based instructional principles. Use this skill when a teacher, instructor, or instructional designer wants to improve student retention and achievement through classroom design, course design, quiz design, or active learning strategies — even if they don't mention "retrieval practice" or "spaced repetition." Triggers include: instructor wants to reduce failure rates in a gateway course; teacher finds students forget material within days of a lecture; instructor relies on midterm and final exams as the only assessment; teacher wants to move from passive lecturing to active learning without losing content coverage; instructor wants to close the achievement gap between well-prepared and under-prepared students; course designer wants to embed low-stakes quizzing into a curriculum; teacher wants to raise student performance on Bloom's higher-order thinking levels; instructor wants to redesign student engagement without adding complexity. Works for K-12 teachers, university professors, corporate trainers, and instructional designers. Do NOT use this skill to build a personal study system for a single learner (use retrieval-practice-study-system), to create a practice schedule alone (use practice-schedule-designer), or to audit a single learning activity for difficulty structure (use desirable-difficulty-classifier).
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/make-it-stick/skills/evidence-based-classroom-designer
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: make-it-stick
@@ -435,3 +437,17 @@ Sobel's cumulative quizzing approach allows any quiz to draw from any material c
 - `references/bloom-taxonomy-implementation.md` — Bloom's taxonomy levels with classroom examples, Wenderoth's answer key template, question classification guide for creating higher-order quiz items
 - `references/design-checklist.md` — Printable 6-criteria course design checklist with rating scale and redesign prompt for each criterion
 - `references/transparency-scripts.md` — Sample first-class transparency scripts for university (biology/sciences), high school (humanities), and corporate training contexts; student-facing language for syllabi
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Make It Stick: The Science of Successful Learning by Peter C. Brown, Henry L. Roediger III, Mark A. McDaniel.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-retrieval-practice-study-system`
+- `clawhub install bookforge-practice-schedule-designer`
+- `clawhub install bookforge-desirable-difficulty-classifier`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

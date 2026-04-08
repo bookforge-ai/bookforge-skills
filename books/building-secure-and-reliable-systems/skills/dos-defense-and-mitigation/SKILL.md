@@ -1,7 +1,9 @@
 ---
 name: dos-defense-and-mitigation
 description: Design DoS-resistant systems or respond to an active denial-of-service attack. Use this skill when designing a new service and want to evaluate its attack surface and build in layered defenses, assessing whether a production system's architecture is DoS-hardened, investigating a traffic spike to determine whether it is an attack or a self-inflicted surge, detecting a client retry storm and needing to apply backoff and jitter fixes, building or reviewing a DoS mitigation system (detection + response pipeline), or deciding how to respond strategically to an ongoing attack without leaking information about your defenses to the adversary.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/building-secure-and-reliable-systems/skills/dos-defense-and-mitigation
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: building-secure-and-reliable-systems
@@ -410,3 +412,15 @@ When blocking by IP, legitimate users behind the same NAT as an attacker are blo
 - *Site Reliability Engineering* book, Chapter 22: Addressing Cascading Failures (retry storms, load shedding)
 - Project Shield (Google): shared DoS defense infrastructure illustrating economy-of-scale defense
 - See `resilience-and-blast-radius-design` skill for load shedding and throttling implementation
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Building Secure and Reliable Systems by Heather Adkins, Betsy Beyer, Paul Blankinship, Piotr Lewandowski, Ana Oprea, Adam Stubblefield.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-resilience-and-blast-radius-design`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

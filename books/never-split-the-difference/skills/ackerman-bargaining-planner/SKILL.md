@@ -2,7 +2,9 @@
 name: ackerman-bargaining-planner
 description: |
   Build a complete price-negotiation offer schedule using the Ackerman bargaining model. Use when someone asks "how do I negotiate a lower price?", "what should my opening offer be?", "how do I avoid splitting the difference?", "how do I structure my counter-offers so I don't give too much away?", or "how do I make my final offer feel credible?" Also use for: designing a salary negotiation offer sequence, structuring a vendor price reduction campaign, planning a real estate purchase offer ladder, deciding how far to push on a freelance rate, or building an offer schedule for any purchase or contract negotiation where you are trying to reach a specific target price. Produces a situation-specific ackerman-plan.md with your 4-stage offer sequence showing actual dollar amounts computed from your target price, scripted phrases for each stage, fairness-challenge responses, a noncash item list for the final offer, and anti-patterns to avoid. Works for any negotiation where you are the buyer (or the party making offers). Pair with calibrated-questions-planner (to generate questions to use between offers) and counterpart-style-profiler (to adapt delivery pace and tone).
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/never-split-the-difference/skills/ackerman-bargaining-planner
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on: []
 source-books:
@@ -441,3 +443,12 @@ If at any point something I propose seems off to you, I want you to tell me."
 |------|----------|
 | `references/formula-reference.md` | Ackerman percentages table, increment psychology, non-round number examples across common negotiation contexts, noncash item library by situation type, deadline protection tactics, extreme anchoring examples |
 | `references/anti-patterns.md` | Full anti-pattern analysis: splitting the difference (why it rewards bad anchoring), BATNA-fixation (how walk-away point becomes psychological ceiling), equal-sized concessions (signaling infinite room), round numbers (padding signal), deadline disclosure (urgency transfer), over-scripting (rigidity trap) |
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Never Split the Difference: Negotiating as if Your Life Depended on It by Chris Voss.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

@@ -2,7 +2,9 @@
 name: stream-processing-designer
 description: |
   Design a stream processing system for unbounded, continuously arriving data. Use when choosing a message broker (Kafka vs RabbitMQ), implementing change data capture (CDC) from PostgreSQL, MySQL, or MongoDB via Debezium or Maxwell, selecting window types for aggregation (tumbling, hopping, sliding, session), joining event streams or enriching events from a table, or configuring exactly-once fault tolerance. Trigger phrases: "should I use Kafka or RabbitMQ?", "how do I sync my database to Elasticsearch in real time?", "how do I implement CDC for Postgres?", "how do I get exactly-once semantics in Flink or Kafka Streams?", "should I use Lambda or Kappa architecture?", "how do I keep derived data systems in sync without dual writes?", "how do I join two event streams?". Covers log-based vs. traditional broker selection, four window types, three join types (stream-stream, stream-table, table-table), CDC bootstrap strategy, and microbatching vs. checkpointing trade-offs. Does not apply to bounded offline datasets (see batch-pipeline-designer) or multi-store integration architecture (see data-integration-architect).
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/designing-data-intensive-applications/skills/stream-processing-designer
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on: [encoding-format-advisor]
 source-books:
@@ -351,3 +353,15 @@ Practically: if you send emails or charge payments from a stream processor, micr
 - `encoding-format-advisor` — Choose encoding format (Avro, Protobuf) for events on the broker (dependency)
 - `batch-pipeline-designer` — For bounded dataset processing; compare Lambda vs. Kappa decisions
 - `data-integration-architect` — Cross-system integration decisions when stream processing is one component of a larger data architecture
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Designing Data-Intensive Applications by Martin Kleppmann.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-encoding-format-advisor`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

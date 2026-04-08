@@ -2,7 +2,9 @@
 name: concurrency-anomaly-detector
 description: |
   Scan application code, SQL queries, or ORM code for exposure to the 6 database concurrency anomalies and produce a findings report with severity, affected locations, and fix recommendations. Use when: debugging a nondeterministic data corruption or race condition bug under concurrent load; auditing transaction code before deployment or after switching databases (isolation defaults differ across engines); a read-modify-write cycle or check-then-act pattern may be exposed to lost updates or write skew; an aggregate query (COUNT, SUM) guards an INSERT or UPDATE (phantom read exposure); or multiple tables are updated in one transaction without serializable isolation. Distinct from transaction-isolation-selector (which chooses the isolation level) — this skill scans code to find which anomalies existing code is already exposed to. Covers Python, Java, Go, JavaScript, Ruby; raw SQL; ORM code (SQLAlchemy, Hibernate, ActiveRecord, GORM); PostgreSQL, MySQL InnoDB, Oracle, SQL Server, and distributed databases. Maps code patterns (read-modify-write, SELECT/INSERT pairs, cross-table boundaries, snapshot boundary reads) to anomaly type, trigger conditions, and minimum fix (isolation upgrade vs. application-level mitigation).
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/designing-data-intensive-applications/skills/concurrency-anomaly-detector
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on:
   - transaction-isolation-selector
@@ -522,3 +524,15 @@ Finding #2
 | `references/severity-and-fix-matrix.md` | Full severity table per anomaly type per isolation level; fix decision tree (isolation upgrade vs FOR UPDATE vs atomic op vs unique constraint vs materializing conflicts); fix applicability conditions | Step 3 — classifying each finding and selecting a fix |
 
 **Cross-reference:** `transaction-isolation-selector` — use after this skill produces its findings report. That skill takes the anomaly exposure as input and produces the minimum safe isolation level recommendation with database-specific configuration.
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Designing Data-Intensive Applications by Martin Kleppmann.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-transaction-isolation-selector`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

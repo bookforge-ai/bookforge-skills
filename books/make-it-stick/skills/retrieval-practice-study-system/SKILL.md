@@ -1,7 +1,9 @@
 ---
 name: retrieval-practice-study-system
 description: Design a complete self-quizzing study system for any subject, course, or learning goal. Use this skill whenever the user wants to study more effectively, stop wasting time rereading notes, build a study schedule from learning material, prepare for exams, create flashcard decks with a spacing system, design a practice-quiz regimen, or turn any document into a retrieval-based learning plan — even if they don't mention "retrieval practice" or "spaced repetition." Works for students at any level, professionals upskilling, lifelong learners, and coaches designing training programs. Do NOT use this skill to evaluate whether a textbook or course is good (that is a different task), or to build automated quiz software (that requires a coding skill).
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/make-it-stick/skills/retrieval-practice-study-system
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: make-it-stick
@@ -354,3 +356,12 @@ Mixing study of different topics or problem types — rather than blocking one t
 - `references/leitner-system-guide.md` — Full Leitner box implementation guide including physical card setup and digital app equivalents
 - `references/mastery-signals.md` — Extended mastery criteria for different subject types (procedural, conceptual, declarative)
 - `references/anti-patterns.md` — Full comparison of 6 ineffective study strategies vs. retrieval practice alternatives
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Make It Stick: The Science of Successful Learning by Peter C. Brown, Henry L. Roediger III, Mark A. McDaniel.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

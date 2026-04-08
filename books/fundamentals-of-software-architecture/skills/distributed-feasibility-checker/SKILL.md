@@ -1,7 +1,9 @@
 ---
 name: distributed-feasibility-checker
 description: Evaluate whether a system should adopt distributed architecture by systematically checking against the 8 Fallacies of Distributed Computing and assessing team/operational readiness. Use this skill whenever the user is considering microservices, debating monolith vs distributed, hearing "let's use microservices," evaluating operational readiness for distribution, or experiencing growing pains with a monolith — even if they don't mention "distributed computing fallacies."
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/fundamentals-of-software-architecture/skills/distributed-feasibility-checker
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on: []
 source-books:
@@ -249,3 +251,12 @@ Output: Feasibility assessment showing the team wasn't ready. Recommended: conso
 ## References
 
 - For the full 8 Fallacies with detailed mitigations, see [references/eight-fallacies.md](references/eight-fallacies.md)
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Fundamentals of Software Architecture by Mark Richards, Neal Ford.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

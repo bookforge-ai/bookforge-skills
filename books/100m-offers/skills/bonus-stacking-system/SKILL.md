@@ -1,7 +1,9 @@
 ---
 name: bonus-stacking-system
 description: Build and present a bonus stack that makes your core offer feel irresistible by applying an 11-point bonus quality checklist, a before/after-objection deployment sequence for one-on-one sales, and a 3-step partner bonus system that sources free high-value bonuses from adjacent businesses. Use this skill when your grand slam offer is drafted and you need to increase perceived value without discounting the price; when prospects stall at close and you need a structured way to layer bonuses against their specific objections; when you want to source third-party bonuses at zero cost and turn them into affiliate revenue; or when you need a complete bonus stack document with named bonuses, assigned values, and a presentation sequence ready for use in sales conversations.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/100m-offers/skills/bonus-stacking-system
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: 100m-offers
@@ -273,3 +275,16 @@ Total affiliate commissions on a single client: ~$350 — nearly covering the $4
 - `value-equation-offer-audit` — Diagnose which elements of your offer feel high-effort or slow. These are the bonuses to prioritize: tools or shortcuts that address exactly those friction points score highest.
 - `offer-naming-magic-formula` — Apply benefit-driven naming to each bonus. The bonus name does as much selling as the bonus itself.
 - `guarantee-design-and-selection` — Guarantees and bonuses work together. A strong guarantee removes fear of loss; a strong bonus stack removes doubt about value. Pair them for maximum conversion impact.
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — $100M Offers: How To Make Offers So Good People Feel Stupid Saying No by Alex Hormozi.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-grand-slam-offer-creation`
+- `clawhub install bookforge-value-equation-offer-audit`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

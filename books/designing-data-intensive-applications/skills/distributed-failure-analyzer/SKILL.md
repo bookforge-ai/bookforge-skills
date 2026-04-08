@@ -2,7 +2,9 @@
 name: distributed-failure-analyzer
 description: |
   Diagnose distributed system failures caused by network faults, unreliable clocks, or process pauses — and map each to its correct mitigation. Use when: a node is intermittently timing out with no clear network outage; a lock-holder or leader keeps acting after being declared dead (zombie leader / split brain via distributed locking, not replication topology — use replication-failure-analyzer for replica split brain); stale reads persist beyond expected replication lag; wall-clock-based lease checks or last-write-wins conflict resolution is producing data loss under clock skew; or cascading node-death declarations are occurring under load. Also use proactively to audit timing assumptions in new system designs (absence of fencing tokens, NTP drift exposure, GC pause risk). Distinct from replication-failure-analyzer (replication lag anomalies, failover pitfalls, quorum edge cases). Produces a structured failure report: symptom → fault category → mechanism → mitigation. Covers: asynchronous network behavior, timeout tuning and cascade risk, NTP drift and clock jump mechanics, process pause causes (GC, VM migration, paging, SIGSTOP), fencing tokens with ZooKeeper zxid/cversion, Byzantine fault scoping, and system model selection (crash-stop vs. crash-recovery vs. Byzantine; synchronous vs. partially synchronous vs. asynchronous).
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/designing-data-intensive-applications/skills/distributed-failure-analyzer
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on:
   - replication-strategy-selector
@@ -371,3 +373,16 @@ In a datacenter where your organization controls all nodes, Byzantine fault tole
 - `references/fencing-token-pattern.md` — fencing token mechanics, ZooKeeper integration, implementation for storage services without native fencing support
 - `references/system-models.md` — timing models (synchronous, partially synchronous, asynchronous), node failure models (crash-stop, crash-recovery, Byzantine), safety vs. liveness properties
 - `references/clock-pitfalls.md` — NTP accuracy limits, LWW data loss mechanics, clock confidence intervals, Google Spanner TrueTime approach
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Designing Data-Intensive Applications by Martin Kleppmann.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-replication-strategy-selector`
+- `clawhub install bookforge-consistency-model-selector`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

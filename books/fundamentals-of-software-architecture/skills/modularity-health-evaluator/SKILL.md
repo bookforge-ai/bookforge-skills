@@ -1,7 +1,9 @@
 ---
 name: modularity-health-evaluator
 description: Assess code modularity health using quantitative metrics — cohesion (LCOM), coupling (afferent/efferent), abstractness, instability, distance from main sequence, and connascence taxonomy. Use this skill whenever the user asks about module quality, code coupling analysis, cohesion measurement, class decomposition, package dependency analysis, LCOM scores, afferent/efferent coupling, connascence, zone of pain, zone of uselessness, extracting microservices from a monolith, evaluating module boundaries, dependency analysis, or wants to know if a class or package is well-structured — even if they don't use the term "modularity."
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/fundamentals-of-software-architecture/skills/modularity-health-evaluator
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: fundamentals-of-software-architecture
@@ -335,3 +337,12 @@ Output: Ranked extraction readiness report with specific blockers and prerequisi
 ## References
 
 - For the complete modularity metrics reference with formulas, cohesion taxonomy, connascence types, and zone definitions, see [references/modularity-metrics-reference.md](references/modularity-metrics-reference.md)
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Fundamentals of Software Architecture by Mark Richards, Neal Ford.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

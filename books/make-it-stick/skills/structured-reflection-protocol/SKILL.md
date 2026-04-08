@@ -1,7 +1,9 @@
 ---
 name: structured-reflection-protocol
 description: Run a structured reflection or debrief after any learning experience, project, procedure, or performance to turn raw experience into durable skill. Use this skill whenever the user wants to do an after-action review, write a learning journal entry, debrief a session, run a post-mortem, reflect on what went well and what to improve, turn a recent experience into a lesson they will remember, create a reflection document after completing a course chapter or training, or consolidate learning from a recent event — even if they do not use the words "reflection" or "retrieval." Works for students, professionals, coaches, clinicians, writers, teachers, and anyone learning from experience. Do NOT use this skill to build a spaced repetition quiz system (use retrieval-practice-study-system) or to analyze an external document for content (use a different skill).
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/make-it-stick/skills/structured-reflection-protocol
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: make-it-stick
@@ -387,3 +389,12 @@ Process:
 - For spaced retrieval practice as a study system (recurring self-quizzing schedule), see the `retrieval-practice-study-system` skill
 - For the science behind retrieval, spacing, interleaving, and generation effects, see [references/cognitive-mechanisms.md](references/cognitive-mechanisms.md)
 - For domain-specific reflection templates (clinical, writing, coaching, law enforcement), see [references/domain-reflection-templates.md](references/domain-reflection-templates.md)
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Make It Stick: The Science of Successful Learning by Peter C. Brown, Henry L. Roediger III, Mark A. McDaniel.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

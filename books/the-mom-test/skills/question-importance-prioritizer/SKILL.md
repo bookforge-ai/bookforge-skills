@@ -1,7 +1,9 @@
 ---
 name: question-importance-prioritizer
 description: Prioritize which assumptions to validate first and produce focused learning goals before customer conversations — classifying risks as product risk versus market risk. Use this skill whenever the user has many assumptions or unknowns and needs to decide which to test first, wants to identify the 3 most important learning goals for their next conversation batch, needs to figure out what the riskiest parts of their business idea are, wants to separate must-validate assumptions from safe ones, is preparing strategic learning goals but not the specific interview questions, or suspects they are avoiding the scary questions that actually matter — even if they don't mention "prioritization" or "learning goals." Do NOT use this skill to write or rewrite the actual conversation questions (use conversation-question-designer) or to analyze notes from a completed conversation (use conversation-data-quality-analyzer).
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/the-mom-test/skills/question-importance-prioritizer
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: verified
 source-books:
   - id: the-mom-test
@@ -342,3 +344,12 @@ MUST ASK when:
 - For designing specific questions that pass customer conversation quality rules, use the `conversation-question-designer` skill
 - For narrowing broad customer segments into specific, findable who-where pairs, use the `customer-segment-slicer` skill
 - For the complete "does-this-problem-matter" diagnostic question set and risk classification details, see [risk-classification-guide.md](references/risk-classification-guide.md)
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — The Mom Test by Rob Fitzpatrick.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

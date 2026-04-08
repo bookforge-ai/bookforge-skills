@@ -2,7 +2,9 @@
 name: product-vision-strategy-assessment
 description: |
   Assess or create a product vision and product strategy. Use when someone asks 'is our product vision strong enough?', 'does our strategy make sense?', 'we keep pivoting — is that a vision problem or a strategy problem?', or 'how do I write a compelling product vision?' Also use when diagnosing why teams lack direction or feel like mercenaries, stress-testing a strategy for focus and market sequencing, checking whether product principles are resolving design debates, or auditing an existing vision statement for ambition and inspiration gaps. Scores vision against 10 principles and strategy against 5 principles, identifies top gaps with specific rewrite guidance, and evaluates whether product principles exist and are functioning as guardrails. Works on vision documents, strategy decks, product plans, or verbal descriptions. Not for OKR setting — use product-okr-implementation. Not for team health or process issues — use product-team-health-diagnostic or product-process-dysfunction-diagnosis.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/inspired-how-to-create-tech-products/skills/product-vision-strategy-assessment
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: published
 depends-on: []
 source-books:
@@ -397,3 +399,12 @@ that makes enterprise customers successful."
 | `references/vision-principles-detail.md` | Full activation criteria for all 10 vision principles; vision pivot vs. discovery pivot definition; missionary vs. mercenary diagnostic; common failure modes per principle; example visions scored against each principle |
 | `references/strategy-principles-detail.md` | Full activation criteria for all 5 strategy principles; market prioritization framework (total addressable market, go-to-market fit, time to market); competitor-reactive vs. customer-obsessed strategy patterns; product/market fit sequencing approaches |
 | `references/product-principles-guide.md` | What product principles are and are not; eBay buyer/seller case study; how to draft principles that resolve real conflicts; principles as public vs. internal tools; how principles complement vision and strategy |
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — INSPIRED: How to Create Tech Products Customers Love by Marty Cagan.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

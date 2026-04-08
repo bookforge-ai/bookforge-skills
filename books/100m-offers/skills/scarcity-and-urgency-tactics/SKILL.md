@@ -322,3 +322,15 @@ Authorities and celebrities charge extraordinary rates not because their work is
 - `premium-pricing-strategy` — scarcity is a precondition for premium pricing; read alongside this skill
 
 **Source:** $100M Offers, Alex Hormozi — Chapters 12 (Scarcity) and 13 (Urgency), pages 141-157
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — 100M Offers by Unknown.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-grand-slam-offer-creation`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

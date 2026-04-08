@@ -1,7 +1,9 @@
 ---
 name: conversation-question-designer
 description: Write, rewrite, or audit customer interview questions so they extract honest behavioral data instead of false validation. Use this skill whenever the user needs to prepare a conversation script for customer discovery, draft questions for an upcoming interview, fix questions that keep producing useless or vague answers, rewrite biased or leading questions into past-focused behavior-revealing ones, check whether their interview questions will trigger compliments instead of facts, or build a question list from learning goals — even if they don't mention "question design" or "The Mom Test." Do NOT use this skill to analyze conversation notes after a meeting (use conversation-data-quality-analyzer) or to decide which questions matter most strategically (use question-importance-prioritizer).
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/the-mom-test/skills/conversation-question-designer
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: verified
 source-books:
   - id: the-mom-test
@@ -345,3 +347,12 @@ to a hypothetical.
 - For the complete 14-question good/bad rubric with fix patterns, see [question-quality-rubric.md](references/question-quality-rubric.md)
 - For analyzing conversation quality after conversations happen, use the `conversation-data-quality-analyzer` skill
 - For prioritizing which questions matter most given business risk, use the `question-importance-prioritizer` skill
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — The Mom Test by Rob Fitzpatrick.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

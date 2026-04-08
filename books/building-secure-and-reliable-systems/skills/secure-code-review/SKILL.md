@@ -2,7 +2,9 @@
 name: secure-code-review
 description: |
   Review code for security vulnerabilities and reliability anti-patterns: scan for SQL injection risks (raw string concatenation into queries), XSS exposure (untyped HTML construction), authorization bypass from multilevel nesting, primitive type obsession, YAGNI-inflated attack surface, and missing framework enforcement for authentication/authorization/rate-limiting. Use when conducting a security code review, auditing a codebase for injection vulnerabilities, checking whether auth logic could be bypassed by nesting errors, evaluating whether RPC backends use hardened interceptor frameworks, or assessing whether type-safety patterns (TrustedSqlString, SafeHtml, SafeUrl) are applied to user-controlled inputs. Produces a categorized security findings report with severity, anti-pattern class, affected locations, and fix recommendations grounded in hardened-by-construction design.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/building-secure-and-reliable-systems/skills/secure-code-review
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on: []
 source-books:
@@ -481,3 +483,12 @@ If the application receives HTML fragments from an external (untrusted) source, 
 Cross-references:
 - `adversary-profiling-and-threat-modeling` — identify which threat actors make injection and XSS vulnerabilities most consequential
 - `least-privilege-access-design` — authorization framework design and access control policy complement the inline auth review in Step 5
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Building Secure and Reliable Systems by Heather Adkins, Betsy Beyer, Paul Blankinship, Piotr Lewandowski, Ana Oprea, Adam Stubblefield.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

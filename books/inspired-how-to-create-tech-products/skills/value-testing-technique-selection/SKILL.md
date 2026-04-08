@@ -1,7 +1,9 @@
 ---
 name: value-testing-technique-selection
 description: "Select and execute the right value testing technique for product discovery. Use when you have a prototype and need to know if customers will actually choose or buy the product, when deciding between a fake door test, usability test, A/B test, or invite-only program, when someone asks 'how do we test if users want this?' or 'should we run an A/B test?', or when setting up analytics instrumentation before launch. Also use when validating demand before building anything, when choosing between qualitative vs. quantitative value testing, or when the team is unsure whether 'people said they liked it' is enough evidence. Covers the 3-level value testing hierarchy (demand / qualitative / quantitative), the usability-then-value session protocol, and the analytics instrumentation checklist. For prototype selection, use discovery-prototype-selection. For finding product-market fit with reference customers, use customer-discovery-program. For stakeholder viability sign-off, use business-viability-stakeholder-testing."
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/inspired-how-to-create-tech-products/skills/value-testing-technique-selection
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: published
 source-books:
   - id: inspired-how-to-create-tech-products
@@ -270,3 +272,16 @@ Rationale: [why this level]
 - `references/usability-test-protocol.md` — Complete four-phase usability test protocol (recruit, prepare, test, summarize) with the parrot technique and use-mode guidance
 - `references/qualitative-value-test-protocol.md` — Full qualitative value session structure including interview-first approach, all four specific value tests, and iteration cadence
 - `references/analytics-strategy.md` — Five uses of analytics in product teams, seven analytics categories, flying blind anti-pattern detail, and instrumentation implementation guidance
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — INSPIRED: How to Create Tech Products Customers Love by Marty Cagan.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-product-discovery-risk-assessment`
+- `clawhub install bookforge-discovery-prototype-selection`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

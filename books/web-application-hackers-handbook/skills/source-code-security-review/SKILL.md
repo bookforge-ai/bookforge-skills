@@ -2,7 +2,9 @@
 name: source-code-security-review
 description: |
   Perform a systematic white-box security review of web application source code to find exploitable vulnerabilities. Use this skill when: you have authorized access to an application's source code and need to identify security flaws faster or more thoroughly than black-box testing alone; auditing a codebase prior to launch or after a security incident; reviewing open-source or purchased software for embedded vulnerabilities; complementing an active penetration test with source-level analysis. Applies a three-phase methodology: (1) identify all user-input entry points via platform-specific source APIs — Java HttpServletRequest, ASP.NET Request.Params/Form/QueryString, PHP $_GET/$_POST/$_COOKIE/$_REQUEST, Perl CGI param(), JavaScript document.location/URL; (2) trace data flow forward to dangerous sink APIs — Runtime.exec()/Process.Start() for OS command injection, Statement.execute()/mysql_query() for SQL injection, FileInputStream/include() for path traversal, sendRedirect()/header() for open redirect, eval() for script injection; (3) line-by-line close review of authentication, session management, access control, and native code components. Covers 8 vulnerability signature categories: cross-site scripting, SQL injection, path traversal, arbitrary redirection, OS command injection, backdoor passwords, native software bugs (buffer overflow, integer flaw, format string), and incriminating source code comments. Also covers database code components (stored procedures with dynamic SQL) and environment configuration checks (web.xml, Web.config, php.ini). Produces a prioritized findings report with evidence and countermeasures. Maps to CWE-79 (XSS), CWE-89 (SQL Injection), CWE-22 (Path Traversal), CWE-601 (Open Redirect), CWE-78 (OS Command Injection), CWE-798 (Hardcoded Credentials), CWE-120/121/122 (Buffer Overflow), CWE-134 (Format String). For authorized security review engagements, appsec engineers, and security-minded developers.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/web-application-hackers-handbook/skills/source-code-security-review
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on: []
 source-books:
@@ -479,3 +481,12 @@ Output: 3 High findings — DOM-based XSS/redirect, stored procedure SQL injecti
 - Environment configuration security settings: [environment-config-reference.md](references/environment-config-reference.md)
 - CWE and OWASP mapping for findings: [vuln-cwe-owasp-mapping.md](references/vuln-cwe-owasp-mapping.md)
 - Source: Stuttard, D. & Pinto, M. (2011). *The Web Application Hacker's Handbook* (2nd ed.), Chapter 19: "Finding Vulnerabilities in Source Code," pp. 701-745. Wiley.
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — The Web Application Hacker's Handbook: Finding and Exploiting Security Flaws by Dafydd Stuttard, Marcus Pinto.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

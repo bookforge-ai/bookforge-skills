@@ -1,7 +1,9 @@
 ---
 name: research-question-formulator
 description: Transform a broad topic into a focused, answerable research question with built-in significance using the 3-step sentence-completion formula (topic → direct question → So What?). Use this skill when the user has a subject or area of interest but no specific question, has a vague topic like "climate change" or "leadership" and needs to narrow it to something researchable, says they don't know what their paper is really about, is collecting too many notes without a clear direction, wants to know if their research question is worth asking, needs to test whether their topic is too broad (4-5 words = too broad), has a yes/no question that won't drive analysis, is asking a settled-fact question that doesn't open inquiry, wants to move from aimless reading to targeted evidence gathering, has a draft thesis but lost track of what question it answers, or is stuck at the beginning of a research project and doesn't know where to start — even if they never use the phrase "research question formulation." This skill handles question generation and significance testing; it does NOT write the thesis statement (use a separate skill) or plan the full argument structure.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/the-craft-of-research/skills/research-question-formulator
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: the-craft-of-research
@@ -299,3 +301,12 @@ in order to help my reader understand which remote work policy features organiza
 
 - See `references/question-inventory-heuristics.md` for the full six-category question generation framework with worked examples across multiple disciplines
 - See `references/3-step-formula-templates.md` for fill-in-the-blank templates and discipline-specific variants of the significance formula
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — The Craft of Research, 4th Edition by Wayne C. Booth, Gregory G. Colomb, Joseph M. Williams, Joseph Bizup, William T. FitzGerald.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

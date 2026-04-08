@@ -1,7 +1,9 @@
 ---
 name: conversation-data-quality-analyzer
 description: Analyze customer conversation notes or transcripts after a meeting to classify every statement as fact, compliment, fluff, or idea — separating real signal from noise. Use this skill whenever the user wants to review interview notes, check whether a customer call produced reliable data, figure out if enthusiastic feedback was genuine interest or polite lies, identify bad data patterns in a transcript, audit whether a conversation that "went great" actually produced usable facts, or suspects they are collecting compliments instead of validated evidence — even if they don't mention "data quality" or "bad data." Do NOT use this skill to write or improve questions before a conversation (use conversation-question-designer) or to evaluate whether a meeting produced real commitment signals like time, reputation, or money (use commitment-signal-evaluator).
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/the-mom-test/skills/conversation-data-quality-analyzer
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: verified
 source-books:
   - id: the-mom-test
@@ -348,3 +350,15 @@ Note: This conversation produced too little data to draw conclusions. The emotio
 - For the complete bad data taxonomy with all fluff shapes, anti-pattern symptoms, and detection markers, see [bad-data-classification-guide.md](references/bad-data-classification-guide.md)
 - For designing better questions before the next conversation, use the `conversation-question-designer` skill
 - For evaluating whether a meeting produced real commitment signals (time, reputation, money), use the `commitment-signal-evaluator` skill
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — The Mom Test by Rob Fitzpatrick.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-conversation-question-designer`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

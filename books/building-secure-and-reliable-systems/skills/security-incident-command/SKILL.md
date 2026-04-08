@@ -2,7 +2,9 @@
 name: security-incident-command
 description: |
   Command and manage an active security incident from declaration through remediation handoff using the incident management framework (Google's IMAG, derived from ICS). Use when: you have a confirmed or suspected security incident and need to take command; someone says "we have a security incident" or "we may have been compromised"; you need to stand up an incident command structure with staffing roles; you are running forensic investigation and need to coordinate parallel tracks; an incident has grown large enough to require shift rotation and formal handovers; or you need to decide when investigation is complete enough to move to ejection and remediation. Distinct from incident response team setup (which designs the team and IR capability before incidents) — this skill executes the live response. Applies the seven-step incident command process: declare, staff, establish operational security, run forensic investigation loop, scale with rotation, apply the lead-rate decline signal to decide ejection timing, and hand off with a structured brief. Produces: incident state document, forensic timeline, communication plan, and remediation handoff package.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/building-secure-and-reliable-systems/skills/security-incident-command
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on:
   - incident-response-team-setup
@@ -278,3 +280,15 @@ The IC is responsible for the team's emotional state, not just technical progres
     - "Putting It All Together" (pp. 410–414): end-to-end worked example (cloud service account compromise)
   - Depends on: `incident-response-team-setup` (roles, severity/priority models, communications plan, playbooks assumed to exist before incident)
   - Feeds into: remediation execution (Chapter 18), postmortem writing
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Building Secure and Reliable Systems by Heather Adkins, Betsy Beyer, Paul Blankinship, Piotr Lewandowski, Ana Oprea, Adam Stubblefield.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-incident-response-team-setup`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

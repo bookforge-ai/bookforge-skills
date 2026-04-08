@@ -2,7 +2,9 @@
 name: web-application-fuzzing-automation
 description: |
   Build and execute customized automated attacks against web applications. Use this skill when: systematically enumerating valid identifiers (userids, document IDs, session tokens) by iterating through a parameter range and detecting hits via HTTP status code, response length, response time, Location header, Set-Cookie header, or grep expression; harvesting sensitive data at scale from access-control-flawed endpoints; fuzzing every request parameter with a universal payload kit covering SQL injection (`'`, `'--`, `'; waitfor delay '0:30:0'--`), XSS (`xsstest`, `"><script>alert('xss')</script>`), OS command injection (`|| ping -i 30 127.0.0.1 ; x || ping -n 30 127.0.0.1 &` and separator variants), path traversal (`../../../../../../etc/passwd`, `../../../../../../boot.ini`), script injection (`;echo 111111`, `response.write 111111`), and remote file inclusion (`http://<your-server>/`); selecting the correct Burp Intruder attack type: Sniper (one position cycled through all payloads), Battering Ram (same payload into all positions simultaneously), Pitchfork (parallel payload sets, one per position, advanced in lockstep), or Cluster Bomb (Cartesian product of multiple payload sets across multiple positions); maintaining valid sessions across automated runs using Burp Suite cookie jar, request macros (login, token fetch, multistep pre-requests), and session-handling rules (check session validity, run re-login macro, update token per request); bypassing automation barriers including per-request anti-CSRF tokens (macro extracts token from prior response, session-handling rule injects it), session expiry (validate-and-re-login rule), and CAPTCHA (solution exposed in source, solution replay, OCR, or human-solver integration); triaging results by clicking column headings to sort by status/length/time and Shift-clicking to reverse-sort. Covers JAttack custom Java scripting framework as a reference model for payload source design and response parsing. For authorized penetration testing and application security assessment only.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/web-application-hackers-handbook/skills/web-application-fuzzing-automation
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on: []
 source-books:
@@ -343,3 +345,12 @@ Output: Two candidates (SQL injection in login username, reflected input in uid 
 - Universal fuzzing payload kit (extended): [references/fuzzing-payload-kit.md](references/fuzzing-payload-kit.md)
 - Session-handling rule templates: [references/session-handling-rule-templates.md](references/session-handling-rule-templates.md)
 - Source: Stuttard, D. & Pinto, M. (2011). *The Web Application Hacker's Handbook* (2nd ed.), Chapter 14: "Automating Customized Attacks," pp. 571–613. Wiley.
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — The Web Application Hacker's Handbook: Finding and Exploiting Security Flaws by Dafydd Stuttard, Marcus Pinto.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

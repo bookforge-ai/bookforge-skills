@@ -2,7 +2,9 @@
 name: influence-principle-selector
 description: |
   Identify which of Cialdini's 6 influence principles to apply for a persuasion scenario. Use when someone asks "which persuasion tactic should I use?", "how do I make this more persuasive?", "what's the best influence strategy for this situation?", or "which Cialdini principle applies here?" Also use for: persuasion audit of marketing copy, sales email, or landing page; choosing between reciprocity vs scarcity vs social proof for a campaign; mapping a persuasion scenario to compliance psychology; diagnosing why content isn't converting; identifying influence tactics being used against you in a negotiation; evaluating ethical boundaries of a persuasion approach. Applies Cialdini's master taxonomy of 6 principles (reciprocity, commitment, consistency, social proof, liking, authority, scarcity) plus contrast principle and cross-principle interaction rules to produce a scored, rationale-backed recommendation. Classifies practitioners as ethical (real evidence) vs exploitative (manufactured triggers). Works on marketing strategy, sales psychology, copywriting, product onboarding, negotiation briefs, and any compliance scenario.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/influence-psychology-of-persuasion/skills/influence-principle-selector
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on: []
 source-books:
@@ -377,3 +379,12 @@ This creates obligation before the purchase decision and demonstrates quality.
 | File | Contents |
 |------|----------|
 | `references/principle-comparison-matrix.md` | Full 6-principle activation condition checklists; scoring rubric; cross-principle interaction map; scenario-to-principle routing guide; ethical boundary checklist; case study breakdowns (Tupperware, Good Cop/Bad Cop, Christmas toy tactic) |
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Influence: The Psychology of Persuasion by Robert B. Cialdini.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

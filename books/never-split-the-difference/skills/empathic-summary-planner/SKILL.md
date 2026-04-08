@@ -1,7 +1,9 @@
 ---
 name: empathic-summary-planner
 description: Build an active listening summary and emotional validation script before any negotiation, sales conversation, difficult conversation, conflict resolution, or persuasion attempt. Use this skill when you need to prepare a summary statement that triggers genuine agreement from a counterpart, create a listening script before a high-stakes conversation with an emotionally activated person, draft labels and paraphrasing language before a client call, build rapport with someone before making a request, prepare a stalled negotiation recovery plan using validation techniques, write an empathic opening before delivering difficult feedback, plan the listening sequence before a salary negotiation or sales discovery call, or generate a "that's right" trigger statement that signals real understanding — not just acknowledgment.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/never-split-the-difference/skills/empathic-summary-planner
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: never-split-the-difference
@@ -416,3 +418,12 @@ Note: Do not advance to labeling or summary until the mirroring phase has produc
 - [references/bcsm-influence-arc.md](references/bcsm-influence-arc.md) — Behavioral Change Stairway Model: 5 stages, gating conditions, failure modes at each stage
 - [references/three-voices-guide.md](references/three-voices-guide.md) — FM DJ voice, positive/playful, and assertive: selection rules, inflection guidance, when each fails
 - [references/thats-right-vs-youre-right.md](references/thats-right-vs-youre-right.md) — Detection criteria, recovery steps, case study examples
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Never Split the Difference: Negotiating as if Your Life Depended on It by Chris Voss.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

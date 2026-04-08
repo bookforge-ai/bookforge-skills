@@ -2,7 +2,9 @@
 name: recovery-mechanism-design
 description: |
   Design recovery mechanisms for a software system or component: select the right rollback control strategy from a three-mechanism decision framework (key rotation, deny list, and minimum acceptable security version number / downgrade prevention), set rate-of-change policy that decouples rollout velocity from rollout content, eliminate wall-clock time dependencies from recovery paths, design an explicit revocation mechanism with safe failure behavior (distributing cached revocation lists rather than failing open), and provision emergency access for use when normal access paths are completely unavailable. Use when designing a new system's update or rollback architecture, reviewing an existing release pipeline for security-reliability tradeoffs, defining rollback policy for self-updating firmware or system software, designing a revocation mechanism for credentials or certificates, or planning emergency access infrastructure before an incident occurs. Output: a recovery mechanism design document with rollback control strategy per component, rate-of-change policy, revocation mechanism design, and emergency access plan.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/building-secure-and-reliable-systems/skills/recovery-mechanism-design
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: building-secure-and-reliable-systems
@@ -398,3 +400,15 @@ To address this, offline credentials were provisioned and alternative authentica
 Cross-references:
 - `resilience-and-blast-radius-design` — failure domain design, compartmentalization axes, and low-dependency component patterns that emergency access must satisfy
 - `security-change-rollout-planning` — rate-of-change tradeoffs during security patch deployment and rollout acceleration triggers
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Building Secure and Reliable Systems by Heather Adkins, Betsy Beyer, Paul Blankinship, Piotr Lewandowski, Ana Oprea, Adam Stubblefield.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-resilience-and-blast-radius-design`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

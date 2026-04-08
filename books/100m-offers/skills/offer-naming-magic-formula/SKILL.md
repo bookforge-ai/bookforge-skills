@@ -256,3 +256,15 @@ The examples below demonstrate how the same five components combine differently 
 - `bonus-stacking-system` — Apply the naming formula to each bonus and sub-item in the stack
 - `scarcity-and-urgency-tactics` — Use seasonal anchors and limited availability as magnetic reason-why components
 - Source: $100M Offers, Alex Hormozi, Chapter 16 "Enhancing the Offer: Naming," pages 185-195
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — 100M Offers by Unknown.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-grand-slam-offer-creation`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

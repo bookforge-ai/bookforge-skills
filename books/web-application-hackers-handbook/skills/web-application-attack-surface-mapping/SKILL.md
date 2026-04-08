@@ -2,7 +2,9 @@
 name: web-application-attack-surface-mapping
 description: |
   Systematically map a web application's content, entry points, technologies, and attack surface during authorized security testing or security-focused code review. Use this skill whenever you are performing reconnaissance on a web application, need to enumerate application functionality and hidden content, want to identify all user-input entry points (URLs, query parameters, POST fields, cookies, HTTP headers), need to fingerprint server-side technologies from HTTP responses, or are building an attack surface inventory before vulnerability testing. Also invoke it when analyzing application behavior to infer server-side structure, looking for undiscovered directories and files through brute-force enumeration, using search engines or web archives to find historical content, probing for hidden debug parameters, mapping functional paths in parameter-driven applications, or producing a behavior-to-vulnerability mapping that prioritizes which areas to probe first. Produces a structured attack surface map: enumerated URLs and functional paths, identified entry points, technology fingerprint, and a prioritized vulnerability-class checklist. Does not perform active exploitation — use this before any active testing phase.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/web-application-hackers-handbook/skills/web-application-attack-surface-mapping
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: web-application-hackers-handbook
@@ -378,3 +380,12 @@ Output: Attack surface map covering 6 subdomains, 312 endpoints, 4 distinct user
 - For technology fingerprinting indicators (file extensions, directory names, session token names, HTTP header signatures), see [technology-fingerprinting-reference.md](references/technology-fingerprinting-reference.md)
 - For wordlist generation strategies and inference-based naming approaches, see [content-discovery-strategies.md](references/content-discovery-strategies.md)
 - For HTTP response code interpretation during brute-force enumeration, see [response-code-interpretation.md](references/response-code-interpretation.md)
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — The Web Application Hacker's Handbook: Finding and Exploiting Security Flaws by Dafydd Stuttard, Marcus Pinto.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

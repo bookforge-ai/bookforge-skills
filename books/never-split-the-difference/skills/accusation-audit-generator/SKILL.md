@@ -1,7 +1,9 @@
 ---
 name: accusation-audit-generator
 description: Generate a preemptive objection audit and emotion-label bank before any high-stakes negotiation, difficult conversation, salary discussion, sales pitch, or conflict resolution. Use this skill when you need to defuse anticipated resistance before speaking, prepare labels for counterpart objections before a job offer negotiation, neutralize defensive reactions before presenting bad news, write preemptive acknowledgments before a pitch to a skeptical audience, prepare for a difficult performance review or client escalation, anticipate accusations before a contract renegotiation, build a delivery script for labeling counterpart frustrations, or create an accusation audit for a negotiation one-sheet.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/never-split-the-difference/skills/accusation-audit-generator
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: never-split-the-difference
@@ -356,3 +358,12 @@ Transition: "I'm not going to pitch you today. I want to understand what actuall
 - [references/five-label-templates.md](references/five-label-templates.md) — All 5 fill-in-the-blank label templates with example completions
 - [references/tactical-empathy-vs-sympathy.md](references/tactical-empathy-vs-sympathy.md) — Distinction between validation and sympathy; why sympathy undermines negotiation
 - [references/three-voices-guide.md](references/three-voices-guide.md) — FM DJ voice vs positive/playful vs assertive: when to use each, inflection rules
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Never Split the Difference: Negotiating as if Your Life Depended on It by Chris Voss.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

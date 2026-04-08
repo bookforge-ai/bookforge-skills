@@ -2,7 +2,9 @@
 name: product-manager-competency-assessment
 description: |
   Evaluate product manager competency for hiring, coaching, or self-assessment. Use when interviewing a VP of Product or head of product candidate, assessing an existing product leader, evaluating an individual contributor PM, conducting a PM self-assessment to find development gaps, or debriefing an interview panel. Also use when someone asks 'is this PM candidate strong?', 'am I a good product manager?', 'what does a strong VP of Product look like?', or 'how do I evaluate PM interview performance?' Covers VP assessment (team development, vision and strategy, execution, culture) and IC PM assessment (customer, data, business, market knowledge plus smart/creative/persistent traits). Diagnoses which of 3 PM working modes the person operates in: backlog administrator, roadmap administrator, or empowered PM. Not for team or organizational assessment — use product-team-health-diagnostic or product-culture-assessment for those.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/inspired-how-to-create-tech-products/skills/product-manager-competency-assessment
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: published
 model: sonnet
 context: 200k
@@ -452,3 +454,12 @@ Manager commitment required: [specific]
 
 Detailed interview question banks and scoring rubrics:
 `references/competency-interview-guide.md`
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Inspired How To Create Tech Products by Unknown.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

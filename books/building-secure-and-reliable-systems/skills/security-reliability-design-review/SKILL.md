@@ -2,7 +2,9 @@
 name: security-reliability-design-review
 description: |
   Review a system design for security and reliability tradeoffs before implementation begins. Use when: evaluating an architecture proposal or design document and need to identify where security and reliability requirements conflict with feature or cost requirements; auditing a proposed design to determine whether security and reliability are designed in from the start or likely to require expensive retrofitting later; deciding whether to build payment processing or sensitive data handling in-house versus delegating to a third-party provider; assessing whether a microservices framework or platform incorporates security and reliability by construction rather than by convention; or producing a design review report for a security review, production readiness review, or architecture decision record. Applies the emergent property test (security and reliability cannot be bolted on — they must arise from the whole design), the initial-versus-sustained-velocity model (early neglect accelerates to later slowdown), and the Google design document evaluation checklist covering scalability, redundancy, dependency, data integrity, SLA, and security/privacy considerations. Produces: a design review report with identified tensions between feature, security, and reliability requirements; tradeoff recommendations; and prioritized security/reliability improvements. Distinct from threat modeling (which focuses on adversary scenarios) and code review (which audits existing implementation). Applicable at any stage where design decisions are still open.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/building-secure-and-reliable-systems/skills/security-reliability-design-review
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on: []
 source-books:
@@ -418,3 +420,12 @@ See `references/` for:
 - `tension-catalog.md` — Common security-vs-reliability tension patterns with worked analysis from the payment processing and microservices case studies
 - `build-vs-buy-assessment-template.md` — Blank template for third-party delegation tradeoff analysis, including vendor security evaluation criteria
 - `velocity-impact-assessment.md` — Guidance on assessing retrofitting complexity and incident risk for deferred requirements
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Building Secure and Reliable Systems by Heather Adkins, Betsy Beyer, Paul Blankinship, Piotr Lewandowski, Ana Oprea, Adam Stubblefield.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

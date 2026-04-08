@@ -1,7 +1,9 @@
 ---
 name: product-okr-implementation
 description: "Design and implement an OKR (Objectives and Key Results) system for product teams. Use when transitioning away from feature roadmaps to outcome-based planning, setting up OKRs for a product organization, replacing quarterly roadmaps with business objectives, aligning multiple teams to shared goals, or when someone asks 'how do we set up OKRs?' Also use when diagnosing OKR cascade failures, structuring high-integrity commitments to stakeholders, establishing OKR scoring standards, running quarterly OKR planning cycles, or scaling OKRs to 25+ teams. Covers the 12 OKR rules, scoring rubric, functional cascade anti-patterns, and a 6–12 month roadmap-to-outcomes transition plan. Not for diagnosing team health or culture — use product-team-health-diagnostic or product-culture-assessment instead."
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/inspired-how-to-create-tech-products/skills/product-okr-implementation
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: published
 source-books:
   - id: inspired-how-to-create-tech-products
@@ -237,3 +239,12 @@ High-integrity commitments: binary (delivered / not delivered)
 
 - `references/okr-12-rules.md` — Full text of all 12 OKR rules with implementation guidance
 - `references/functional-cascade-examples.md` — Before/after examples of functional vs. product team OKR structures
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — INSPIRED: How to Create Tech Products Customers Love by Marty Cagan.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

@@ -1,7 +1,9 @@
 ---
 name: customer-discovery-process
 description: Orchestrate the full customer discovery process — before, during, and after customer conversations — to systematically validate a business idea. This is the hub skill that sequences all other customer-discovery skills. Use this skill whenever the user wants to run customer discovery end-to-end, needs a step-by-step process for validating a product idea through customer conversations, wants to start customer discovery from scratch, wants to know what to do before and after customer meetings, needs a discovery status dashboard showing validation progress, suspects their discovery process is broken or unproductive, wants to diagnose whether they are just going through the motions, needs a customer development or lean validation framework, or asks "how do I validate my idea," "what's the full process for talking to customers," or "what should I do next in customer discovery" — even if they don't explicitly mention "discovery process." Do NOT use for writing specific interview questions (use conversation-question-designer), narrowing a customer segment (use customer-segment-slicer), or analyzing a single conversation transcript (use conversation-data-quality-analyzer).
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/the-mom-test/skills/customer-discovery-process
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: verified
 source-books:
   - id: the-mom-test
@@ -299,3 +301,22 @@ Output: Updated dashboard with 5 conversations logged, quality ratings, stronges
 - Analyze conversation notes for bad data -> `conversation-data-quality-analyzer`
 - Evaluate commitment signals and detect zombie leads -> `commitment-signal-evaluator`
 - Run team learning review and set next goals -> `conversation-learning-process`
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — The Mom Test by Rob Fitzpatrick.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-conversation-question-designer`
+- `clawhub install bookforge-conversation-data-quality-analyzer`
+- `clawhub install bookforge-commitment-signal-evaluator`
+- `clawhub install bookforge-customer-segment-slicer`
+- `clawhub install bookforge-conversation-learning-process`
+- `clawhub install bookforge-conversation-sourcing-planner`
+- `clawhub install bookforge-conversation-format-selector`
+- `clawhub install bookforge-question-importance-prioritizer`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

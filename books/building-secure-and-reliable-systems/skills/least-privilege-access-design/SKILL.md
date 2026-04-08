@@ -2,7 +2,9 @@
 name: least-privilege-access-design
 description: |
   Analyze a system's access patterns and design least-privilege controls: classify data and APIs by risk, select the narrowest API surface for each operation, define authorization policies with multi-party approval for sensitive actions, establish emergency access override procedures, and optionally introduce a controlled-access production proxy. Use when reviewing access controls for an existing system, designing authorization for a new service, auditing whether engineers have more permissions than their roles require, deciding whether to use a bastion or proxy for privileged operations, or hardening administrative API surfaces against insider mistakes and external compromise. Produces an access classification report, API surface recommendations, authorization policy decisions, and emergency override guidelines.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/building-secure-and-reliable-systems/skills/least-privilege-access-design
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on: []
 source-books:
@@ -350,3 +352,12 @@ config {
 
 Cross-references:
 - `adversary-profiling-and-threat-modeling` — identify which adversaries and attack paths make least-privilege controls most valuable
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Building Secure and Reliable Systems by Heather Adkins, Betsy Beyer, Paul Blankinship, Piotr Lewandowski, Ana Oprea, Adam Stubblefield.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

@@ -1,7 +1,9 @@
 ---
 name: source-incorporator
 description: Incorporate quoted, paraphrased, and summarized sources into research writing by applying a 3-branch selection decision tree, 3 integration methods for quotations, and a 5-mechanism inadvertent plagiarism prevention checklist. Use this skill when drafting or revising a paper that uses sources and you need to decide whether to quote, paraphrase, or summarize a passage; when you need to weave quotations into your prose grammatically and meaningfully; when you need to make explicit to readers why evidence is relevant; when you must choose a citation style; or when you want to audit a draft for the five most common forms of inadvertent plagiarism before submitting.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/the-craft-of-research/skills/source-incorporator
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: the-craft-of-research
@@ -280,3 +282,12 @@ If working on a full draft, deliver the audit log as an appendix to the revised 
 - Humanities → Chicago author-title or MLA
 - Sciences / social sciences → Chicago author-date or APA
 - When unsure → ask your target venue
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — The Craft of Research, 4th Edition by Wayne C. Booth, Gregory G. Colomb, Joseph M. Williams, Joseph Bizup, William T. FitzGerald.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

@@ -1,7 +1,9 @@
 ---
 name: product-discovery-risk-assessment
 description: "Assess product risks and decide whether to build. Use when starting product discovery, evaluating a new feature or product idea, deciding which risks to validate first, choosing between prototyping and testing approaches, or when someone asks 'should we build this?' Maps any idea to the 4-risk taxonomy (value risk, usability risk, feasibility risk, business viability risk) plus ethics risk, sequences discovery by priority, and selects the right technique category for each risk. Also use when a team is unsure what to validate next, when structuring a discovery sprint, or when planning pre-build validation activities. Hub skill for all downstream discovery technique selection — for specific techniques, use discovery-framing-technique-selection, discovery-prototype-selection, value-testing-technique-selection, customer-discovery-program, or business-viability-stakeholder-testing instead."
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/inspired-how-to-create-tech-products/skills/product-discovery-risk-assessment
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: published
 source-books:
   - id: inspired-how-to-create-tech-products
@@ -348,3 +350,12 @@ These 10 principles from structured pre-build validation (product discovery) gov
 - `references/technique-categories.md` — Descriptions of all 5 technique categories and their 4 testing sub-categories
 - `references/discovery-sequencing-logic.md` — Decision tree for sequencing discovery activities across risk combinations
 - `references/discovery-principles.md` — Full elaboration of all 10 pre-build validation principles
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — INSPIRED: How to Create Tech Products Customers Love by Marty Cagan.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

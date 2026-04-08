@@ -2,7 +2,9 @@
 name: behavioral-pattern-selector
 description: |
   Choose the right behavioral design pattern from the 11 GoF behavioral patterns. Use when someone asks "how do I make this algorithm swappable?", "should I use Strategy or State?", "how do I decouple senders from receivers?", "what's the difference between Observer and Mediator?", "how do I add undo/redo?", "how do I traverse a collection without exposing its internals?", or "how do I add operations to classes I can't modify?" Also use when you see switch statements selecting between algorithms, tightly coupled event handlers, objects that change behavior based on state, or request-handling logic that should be distributed across a chain. Analyzes via two taxonomies — what aspect to encapsulate as an object (algorithm, state, protocol, traversal) and how to decouple senders from receivers (Command, Observer, Mediator, Chain of Responsibility) — with explicit trade-offs for each choice.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/design-patterns-gof/skills/behavioral-pattern-selector
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on:
   - design-pattern-selector
@@ -385,3 +387,15 @@ computed — store a snapshot as part of the command's undo data)
 | File | Contents |
 |------|----------|
 | `references/behavioral-comparison.md` | All 11 patterns: applicability summary, encapsulation type, decoupling role, key trade-offs, and confusable pairs |
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Design Patterns: Elements of Reusable Object-Oriented Software by Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-design-pattern-selector`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

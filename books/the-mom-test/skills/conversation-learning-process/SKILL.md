@@ -1,7 +1,9 @@
 ---
 name: conversation-learning-process
 description: Structure the before-and-after process around customer conversations so learning actually reaches the whole team. Use this skill when the user needs to prepare a team for a batch of customer conversations, set up pre-conversation learning goals, create a note-taking system for customer interviews, review and categorize conversation notes using signal symbols, run a post-conversation team review, share customer insights across the team, diagnose whether conversations are producing real learning or just going through the motions, fix a learning bottleneck where one person hoards all customer insights, their team keeps having conversations but nothing changes or plans never update, or a co-founder or teammate is out of the loop on customer feedback — even if they don't explicitly say "learning process" or "team review." Do NOT use for analyzing a specific transcript for data quality (use conversation-data-quality-analyzer) or evaluating whether a prospect gave a real commitment (use commitment-signal-evaluator).
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/the-mom-test/skills/conversation-learning-process
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: verified
 source-books:
   - id: the-mom-test
@@ -475,3 +477,12 @@ Going-through-the-motions symptoms detected:
 - For the complete 12-symbol note-taking system with usage examples, see [note-taking-signal-symbols.md](references/note-taking-signal-symbols.md)
 - For analyzing whether conversation questions are producing good data, use the `conversation-data-quality-analyzer` skill
 - For evaluating whether meeting outcomes include real commitment signals, use the `commitment-signal-evaluator` skill
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — The Mom Test by Rob Fitzpatrick.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

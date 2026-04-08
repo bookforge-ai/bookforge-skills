@@ -2,7 +2,9 @@
 name: microservice-granularity-optimizer
 description: >
   Right-size microservice boundaries using granularity disintegrators (forces to split: service scope, code volatility, scalability, fault tolerance, security, extensibility) and integrators (forces to combine: database transactions, workflow/choreography coupling, shared code, data relationships). Includes choreography vs orchestration selection and the saga pattern for distributed transactions. Use this skill whenever the user is splitting a monolith into microservices, deciding how fine-grained services should be, experiencing too many inter-service calls or latency from over-splitting, dealing with distributed transaction problems across microservices, choosing between choreography and orchestration for service communication, implementing the saga pattern, debugging a distributed monolith, or evaluating whether services should be merged or split further -- even if they don't use the exact phrase "microservice granularity."
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/fundamentals-of-software-architecture/skills/microservice-granularity-optimizer
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on:
   - component-identifier
@@ -393,3 +395,15 @@ Output: **Orchestrated saga with 3 participants.** OrderService mediates. Each s
 - For identifying initial service candidates, use `component-identifier`
 - For choosing between microservices and service-based architecture, use `architecture-style-selector`
 - For documenting granularity decisions, use `architecture-decision-record-creator`
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Fundamentals of Software Architecture by Mark Richards, Neal Ford.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-component-identifier`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

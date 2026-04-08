@@ -2,7 +2,9 @@
 name: secure-deployment-pipeline
 description: |
   Secure a software deployment pipeline against supply chain attacks from benign insiders (mistakes), malicious insiders, and external attackers: map pipeline threats to mitigations using the three-adversary threat model, generate binary provenance requirements for each build stage, define provenance-based deployment policies with choke-point enforcement, design verifiable build architecture (trusted build service, rebuild service, or hybrid), and produce a staged hardening roadmap with breakglass controls. Use when assessing supply chain security for a CI/CD pipeline, implementing binary provenance to trace artifact origins, designing deployment policies that verify what is deployed rather than who initiated deployment, hardening build infrastructure against insider threats, or establishing breakglass procedures that remain auditable. Requires secure-code-review as a prerequisite control (code review is the first mitigation layer against malicious or accidental code changes before they enter the pipeline). Produces a deployment pipeline security assessment with threat-mitigation mapping, provenance schema, policy rules, and a phased hardening plan.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/building-secure-and-reliable-systems/skills/secure-deployment-pipeline
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on:
   - secure-code-review
@@ -233,3 +235,15 @@ Produce a deployment pipeline security assessment with these sections:
 5. **Verifiable build architecture recommendation** — which of the three architectures fits your organization, with rationale
 6. **Phased hardening roadmap** — which phase you are currently in, what changes Phase N+1 requires, and acceptance criteria for each phase
 7. **Breakglass policy** — who can invoke breakglass, what is logged, how quickly audits must occur, and what the expected rarity threshold is
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Building Secure and Reliable Systems by Heather Adkins, Betsy Beyer, Paul Blankinship, Piotr Lewandowski, Ana Oprea, Adam Stubblefield.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-secure-code-review`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

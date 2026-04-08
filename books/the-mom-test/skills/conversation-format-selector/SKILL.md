@@ -1,7 +1,9 @@
 ---
 name: conversation-format-selector
 description: Choose the right conversation format — casual chat, scheduled meeting, or phone/video call — for a customer discovery interaction. Use this skill whenever the user is deciding between a formal meeting and a casual conversation, wondering how long customer interviews should be, unsure whether to meet in person or do a phone or video call, preparing to talk to potential customers at a conference or event or meetup, asking how to approach someone at a networking event or industry gathering, spending too much time scheduling formal meetings and not getting enough conversations done (the meeting anti-pattern), defaulting to hour-long Zoom calls for every customer interaction, planning the logistics or setting or duration of a customer conversation, or wondering whether a conversation should be structured or informal — even if they don't explicitly mention "format" or "meeting type." This skill is about HOW to have the conversation (format, duration, setting, formality level), not about finding people to talk to (use conversation-sourcing-planner) or what questions to ask (use conversation-question-designer).
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/the-mom-test/skills/conversation-format-selector
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: verified
 source-books:
   - id: the-mom-test
@@ -376,3 +378,16 @@ have made it too formal.
 - For sourcing conversation opportunities and outreach framing, use the `conversation-sourcing-planner` skill
 - For designing specific questions to ask during the conversation, use the `conversation-question-designer` skill
 - For evaluating commitment signals after the conversation, use the `commitment-signal-evaluator` skill
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — The Mom Test by Rob Fitzpatrick.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-conversation-sourcing-planner`
+- `clawhub install bookforge-conversation-question-designer`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

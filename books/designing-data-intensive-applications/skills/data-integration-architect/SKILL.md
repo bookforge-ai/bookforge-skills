@@ -49,7 +49,9 @@ tags:
   - coordination-avoiding
   - timeliness
   - integrity
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/designing-data-intensive-applications/skills/data-integration-architect
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 ---
 
@@ -402,3 +404,18 @@ Document the ordering guarantees, idempotency mechanisms, and constraint enforce
 - `distributed-failure-analyzer` — diagnose correctness failures in the existing integration
 
 **Source:** Designing Data-Intensive Applications, Martin Kleppmann (O'Reilly, 2017), Chapter 12: The Future of Data Systems, pp. 489–544.
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Designing Data-Intensive Applications by Martin Kleppmann.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-batch-pipeline-designer`
+- `clawhub install bookforge-stream-processing-designer`
+- `clawhub install bookforge-consistency-model-selector`
+- `clawhub install bookforge-replication-strategy-selector`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

@@ -3,7 +3,9 @@ name: data-model-selector
 description: |
   Choose between relational, document, and graph data models for an application by analyzing data shape, relationship complexity, and query patterns. Use when asked "should I use MongoDB or PostgreSQL?", "when does a graph database make sense?", "how do I choose between SQL and NoSQL?", or "what data model fits my access patterns?" Also use for: evaluating impedance mismatch between data model and application code; deciding schema-on-read vs. schema-on-write for heterogeneous data; diagnosing whether many-to-many relationships call for relational or graph model; choosing between property graphs and triple-stores; deciding when polyglot persistence is appropriate. Produces a concrete recommendation with trade-off analysis — not "it depends." Covers relational (PostgreSQL, MySQL), document (MongoDB, CouchDB), and graph (Neo4j, Datomic) models including schema enforcement strategies and data locality trade-offs.
   For storage engine internals (LSM-tree vs B-tree), use storage-engine-selector instead. For OLTP vs. analytics routing, use oltp-olap-workload-classifier instead.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/designing-data-intensive-applications/skills/data-model-selector
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on: []
 source-books:
@@ -578,3 +580,12 @@ re-evaluate whether SQL joins are sufficient.
 | File | Contents |
 |------|----------|
 | `references/decision-matrix.md` | Pre-filled scoring guide with 8 common system types (e-commerce, social network, IoT time-series, CMS, fraud detection, recommendation engine, ERP, analytics pipeline) showing typical scores per model and decision rationale; cross-reference table mapping query patterns to model fit |
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Designing Data-Intensive Applications by Martin Kleppmann.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

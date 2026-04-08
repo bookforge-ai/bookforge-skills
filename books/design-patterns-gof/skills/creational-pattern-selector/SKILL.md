@@ -2,7 +2,9 @@
 name: creational-pattern-selector
 description: |
   Choose the right creational design pattern (Abstract Factory, Builder, Factory Method, Prototype, or Singleton) for an object creation problem. Use when someone asks "which factory pattern should I use?", "should I use Abstract Factory or Factory Method?", "how do I create objects without specifying the concrete class?", "I need a factory but don't know which one", or "how do I make object creation flexible?" Also use when you see hard-coded `new ConcreteClass()` calls scattered throughout code, when product families must be swapped at runtime, when object construction is too complex for a single constructor, or when objects should be created by cloning a prototype. Compares patterns using two parameterization strategies — subclassing vs object composition — with trade-offs and an evolution path from Factory Method to more flexible alternatives.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/design-patterns-gof/skills/creational-pattern-selector
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on:
   - design-pattern-selector
@@ -359,3 +361,15 @@ factory object hierarchy from the start; over-engineered if compile-time subclas
 | File | Contents |
 |------|----------|
 | `references/creational-comparison.md` | Full applicability, consequences, and trade-off table for all 5 creational patterns; maze game comparison; GraphicTool example |
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Design Patterns: Elements of Reusable Object-Oriented Software by Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-design-pattern-selector`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

@@ -2,7 +2,9 @@
 name: commitment-verifier
 description: |
   Verify whether a counterpart's agreement is a real commitment or a polite escape. Use when someone asks "how do I know if they really mean yes?", "they agreed but I'm not sure they'll follow through", "my counterpart said yes but something feels off", "how do I tell if someone is stringing me along?", or "they said you're right — is that agreement?" Also use for: detecting when a verbal commitment won't survive contact with implementation, distinguishing genuine alignment from social pressure compliance, spotting deception signals in a counterpart's language or delivery, checking whether the decision-maker in the room actually has authority to commit, or preparing verification questions before a closing conversation. Analyzes an agreement interaction — conversation transcript, notes, or recalled exchange — and classifies each yes-type, flags verbal deception indicators, surfaces channel mismatches (words vs. tone vs. body language), and generates Rule of Three follow-up questions to confirm genuine commitment. Works for sales closes, contract negotiations, vendor agreements, hiring decisions, partnership deals, project sign-offs, and any high-stakes conversation where the difference between a real yes and a polite yes determines whether effort is wasted. Pair with calibrated-questions-planner (to design verification questions) and empathic-summary-planner (to build the rapport that makes genuine commitment possible).
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/never-split-the-difference/skills/commitment-verifier
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on: []
 source-books:
@@ -387,3 +389,12 @@ If you have the agreement statements and a basic description of how the conversa
 | `references/yes-type-guide.md` | Diagnostic signal checklist for all three yes types; common statement patterns with classifications; edge cases and ambiguous examples; escalation criteria |
 | `references/deception-signal-reference.md` | Full Pinocchio Effect signal library with examples; 7-38-55 channel weight rationale and application; baseline deviation detection method; pronoun analysis guide; "you're right" vs "that's right" full case breakdown |
 | `references/rule-of-three-library.md` | 15+ ready-to-use verification questions across all three confirmation types; sequencing guide for different contexts (sales, internal, vendor, partnership); timing recommendations for distributed confirmation |
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Never Split the Difference: Negotiating as if Your Life Depended on It by Chris Voss.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

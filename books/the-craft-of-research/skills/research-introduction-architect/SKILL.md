@@ -1,7 +1,9 @@
 ---
 name: research-introduction-architect
 description: Draft a complete research introduction and matching conclusion using the Context→Problem→Response architecture. Use this skill when the user has a framed research problem (condition + consequence) and needs to write or revise the opening and closing sections of a research paper; when an introduction exists but reads as a flat topic announcement instead of a problem-driven argument; when the user cannot decide whether to state the main point in the introduction (point-first) or withhold it for the conclusion (point-last) and needs to understand the trade-offs; when the first sentence of the introduction is a dictionary definition, a grand universal claim ("Throughout history…"), or a repetition of the assignment prompt; when the conclusion merely restates the introduction without adding new significance or calling for further research; when the user needs guidance on how much context to provide — neither too sketchy nor encyclopedic — based on the audience's prior knowledge; when the pacing of an introduction (fast vs. slow context setup) needs to match audience expertise level; or when the user wants a checked draft that correctly omits the context element (problem well-known) or consequence element (widely understood) rather than including them by default. This skill outputs a draft introduction and conclusion. It does NOT frame the research problem from scratch — use research-problem-framer for that.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/the-craft-of-research/skills/research-introduction-architect
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: the-craft-of-research
@@ -319,3 +321,15 @@ If any item fails, revise before delivering the draft.
 
 - See `references/introduction-configurations.md` for full worked examples of all structural configurations (omit context, omit consequence, point-first vs. point-last) across three disciplines
 - See `references/conclusion-patterns.md` for worked conclusion drafts with and without calls for further research
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — The Craft of Research, 4th Edition by Wayne C. Booth, Gregory G. Colomb, Joseph M. Williams, Joseph Bizup, William T. FitzGerald.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-research-problem-framer`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

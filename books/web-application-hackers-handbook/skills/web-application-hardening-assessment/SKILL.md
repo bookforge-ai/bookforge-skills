@@ -2,7 +2,9 @@
 name: web-application-hardening-assessment
 description: |
   Systematically assess a web application's defensive security posture across input validation, information disclosure, application architecture, and server configuration. Use this skill whenever: evaluating the quality of an application's input handling strategy and whether it correctly applies whitelist vs blacklist vs sanitization approaches; assessing whether boundary validation is implemented at each trust boundary (not only the perimeter); checking whether multistep validation and canonicalization ordering are implemented safely; auditing error handling to determine whether verbose error messages, stack traces, debug output, or database banners are exposed to clients; assessing whether server and service banners are suppressed and whether HTML source comments have been removed; evaluating tiered application architecture for trust-boundary segregation weaknesses, dangerous inter-tier trust relationships, and least-privilege violations; assessing shared hosting or cloud environments for customer isolation deficiencies; auditing application server configuration for default credentials, default content, directory listing exposure, dangerous HTTP methods (WebDAV PUT/DELETE), misconfigured proxy functionality, virtual hosting security gaps, and web application firewall effectiveness; performing a pre-deployment security hardening review; conducting a security architecture review or threat modeling session; reviewing a web application penetration test scope for defensive control gaps. Covers core defense mechanisms (Ch2), information leakage prevention (Ch15), architecture security (Ch17), and application server hardening (Ch18). Maps to CWE-20 (Improper Input Validation), CWE-209 (Information Exposure Through Error Message), CWE-16 (Configuration), CWE-284 (Improper Access Control), CWE-693 (Protection Mechanism Failure).
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/web-application-hackers-handbook/skills/web-application-hardening-assessment
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on: []
 source-books:
@@ -518,3 +520,12 @@ Output: 5 information disclosure findings (1 Critical for session key exposure, 
 - For server hardening checklists per platform (Apache, IIS, Tomcat, Nginx), see [server-hardening-checklists.md](references/server-hardening-checklists.md)
 - For architecture security countermeasures (tier segregation, least-privilege, defense-in-depth), see [architecture-security-countermeasures.md](references/architecture-security-countermeasures.md)
 - Source: Stuttard, D. & Pinto, M. (2011). *The Web Application Hacker's Handbook* (2nd ed.), Chapters 2, 15, 17, 18, pp. 53-72, 615-630, 647-666, 669-699. Wiley.
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — The Web Application Hacker's Handbook: Finding and Exploiting Security Flaws by Dafydd Stuttard, Marcus Pinto.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

@@ -1,7 +1,9 @@
 ---
 name: backward-reasoning-game-solver
 description: "Solve sequential-move strategic games using backward induction. Use this skill when a user faces a multi-stage decision or negotiation where players alternate moves and each person's best action depends on what others will do later. Triggers include: user needs to determine the optimal opening move in a turn-based game or negotiation; user wants to know whether they can guarantee a win or favorable outcome before the game starts; user must sequence two risky actions and does not know which to attempt first; user is analyzing a multi-stage political, business, or competitive scenario where one party moves, the other responds, and so on; user has a finite-horizon sequential game with known player preferences and needs the game-theoretic solution; user suspects their opponent can anticipate their moves and wants to reason from end-states backward to their first action; user is building a game tree and needs to prune it to find dominant paths; user has a combinatorial takeaway game (like Nim variants) and wants the winning-position formula; user needs to understand why more flexibility or options can paradoxically hurt a player in a sequential game. This skill handles perfect-information, finite, sequential-move games. It does NOT cover simultaneous-move games (use a separate Nash equilibrium skill), incomplete-information games, or infinite-horizon repeated games."
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/the-art-of-strategy/skills/backward-reasoning-game-solver
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: the-art-of-strategy
@@ -329,3 +331,12 @@ Charlie
 - `references/combinatorial-game-formulas.md` — k+1 formula derivations, hot-potato variants, multi-pile Nim, worked tables for games up to 100 objects
 - `references/applicability-checklist.md` — Diagnostic questions for classifying a game (sequential vs. simultaneous, perfect vs. imperfect information, finite vs. infinite)
 - `references/risk-sequencing-patterns.md` — Generalization of the Orange Bowl principle to business, negotiation, and career scenarios; worked examples with probability trees
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — The Art of Strategy by Avinash K. Dixit, Barry J. Nalebuff.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

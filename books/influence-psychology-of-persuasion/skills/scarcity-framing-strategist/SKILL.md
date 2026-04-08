@@ -10,7 +10,9 @@ description: >
   pressure they may be experiencing — to distinguish genuine scarcity from manufactured urgency.
   Covers both application (designing effective scarcity) and defense (recognizing when scarcity
   is being weaponized against you).
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/influence-psychology-of-persuasion/skills/scarcity-framing-strategist
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: influence-psychology-of-persuasion
@@ -47,7 +49,6 @@ execution:
   mcps-required: []
   environment: "Any agent environment. Works with document context (pricing pages, ad copy, promotional materials) or direct user description."
 tags: [marketing-psychology]
-
 ---
 
 # Scarcity Framing Strategist
@@ -297,3 +298,12 @@ Output: Recommendation to pause, request written details, and evaluate the consu
 - For optimal conditions evidence and message templates by condition combination, see [references/optimal-conditions-evidence.md](references/optimal-conditions-evidence.md)
 - For the reactance mechanism and case studies (Kennesaw firearms, Dade County phosphates, jury study), see [references/reactance-mechanism.md](references/reactance-mechanism.md)
 - For the competition amplifier case studies (Poseidon auction, Richard's car technique, feeding frenzy pattern), see [references/competition-amplifier-cases.md](references/competition-amplifier-cases.md)
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Influence: The Psychology of Persuasion by Robert B. Cialdini.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

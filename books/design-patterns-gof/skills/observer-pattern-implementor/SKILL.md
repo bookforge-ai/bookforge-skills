@@ -2,7 +2,9 @@
 name: observer-pattern-implementor
 description: |
   Implement the Observer pattern to establish one-to-many dependencies where changing one object automatically notifies and updates all dependents. Use when a spreadsheet model needs to update multiple chart views, when UI components must react to data changes, when event systems need publish-subscribe, or when you need to decouple a subject from an unknown number of observers. Handles 10 implementation concerns including push vs pull models, dangling reference prevention, update cascade avoidance, and the ChangeManager compound pattern.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/design-patterns-gof/skills/observer-pattern-implementor
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on:
   - design-pattern-selector
@@ -497,3 +499,16 @@ void DigitalClock::Draw() {
 | File | Contents |
 |------|----------|
 | `references/observer-implementation-guide.md` | All 10 implementation concerns in full detail, ChangeManager class diagrams, push/pull protocol variants, aspect-based registration patterns, and language-specific notes |
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Design Patterns: Elements of Reusable Object-Oriented Software by Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-design-pattern-selector`
+- `clawhub install bookforge-behavioral-pattern-selector`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

@@ -1,7 +1,9 @@
 ---
 name: research-paper-planner
 description: "Build a storyboard-based plan for a research paper and turn it into a first draft. Use this skill when the user has assembled a research argument — a main claim with supporting reasons, evidence, and acknowledgments — and now needs to organize it into a coherent, reader-ready structure before writing. Triggers include: user has a thesis and evidence but does not know how to order the sections; user suspects their draft is organized as a research narrative (what they found first) rather than as an argument (what readers need); user's draft summary-hops across sources without asserting their own claim (patchwork writing); user wants a working introduction sketch to start drafting; user is staring at a blank page and cannot begin; user needs to decide where to state their main point — end of introduction or end of paper; user wants to know whether to order reasons by importance, complexity, familiarity, or contestability. This skill does NOT build the underlying argument from scratch — use research-argument-builder for claim, reason, evidence, acknowledgment, and warrant assembly before using this skill."
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/the-craft-of-research/skills/research-paper-planner
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: the-craft-of-research
@@ -369,3 +371,15 @@ For deeper detail on the final polished introduction and conclusion structure, s
 - `references/working-introduction-conclusion.md` — Full structure for final (not working) introductions and conclusions
 - `references/body-ordering-heuristics.md` — Extended guidance on each of the eight ordering principles with field-specific examples
 - `references/storyboard-anti-patterns.md` — Diagnostic checklist and correction exercises for all three flawed-plan patterns
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — The Craft of Research, 4th Edition by Wayne C. Booth, Gregory G. Colomb, Joseph M. Williams, Joseph Bizup, William T. FitzGerald.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-research-argument-builder`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

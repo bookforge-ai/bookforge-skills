@@ -1,7 +1,9 @@
 ---
 name: event-driven-topology-selector
 description: Choose between broker and mediator event-driven topologies based on workflow control needs, error handling requirements, and performance trade-offs. Use this skill whenever the user is designing an event-driven system, choosing between choreography and orchestration, deciding how events should flow between processors, debating broker vs mediator, building async workflows, evaluating event-driven error handling strategies, or comparing request-based vs event-based communication models — even if they don't use the terms "broker" or "mediator."
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/fundamentals-of-software-architecture/skills/event-driven-topology-selector
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on: []
 source-books:
@@ -292,3 +294,12 @@ Output: **Hybrid topology.** Trade execution path uses broker topology for maxim
 ## References
 
 - For the detailed broker vs mediator comparison table with full trade-off analysis, see [references/broker-vs-mediator-comparison.md](references/broker-vs-mediator-comparison.md)
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Fundamentals of Software Architecture by Mark Richards, Neal Ford.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

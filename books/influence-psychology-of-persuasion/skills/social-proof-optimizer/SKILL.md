@@ -1,7 +1,9 @@
 ---
 name: social-proof-optimizer
 description: Optimize social proof strategy using uncertainty and similarity conditions. Use this skill when designing testimonials, reviews, user counts, case studies, social validation signals, trust badges, FOMO messaging, herd behavior cues, peer influence copy, bystander effect awareness, landing page trust signals, customer stories, social media proof, community size claims, star ratings, product popularity indicators, referral social proof, expert endorsements, or any persuasion element that relies on others' behavior to guide decisions. Also use when auditing social proof for manufactured or fake signals, evaluating whether current testimonials are credible, detecting pluralistic ignorance in a group context, or designing a defense against manipulated social evidence.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/influence-psychology-of-persuasion/skills/social-proof-optimizer
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: influence-psychology-of-persuasion
@@ -351,3 +353,12 @@ Output: Social Proof Audit classifying each element; recommendation to evaluate 
 
 - For detailed case studies (bystander effect research, Werther effect data, Jonestown analysis, wallet return experiment): [references/case-studies.md](references/case-studies.md)
 - For the full authenticity scoring rubric and manufactured proof taxonomy: [references/proof-authenticity-rubric.md](references/proof-authenticity-rubric.md)
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Influence: The Psychology of Persuasion by Robert B. Cialdini.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

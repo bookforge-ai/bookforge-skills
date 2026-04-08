@@ -2,7 +2,9 @@
 name: product-process-dysfunction-diagnosis
 description: |
   Diagnose why product efforts fail despite using Scrum, Agile, or roadmaps. Use when a team ships on time but customers don't adopt features, when leadership asks why there's no innovation despite an Agile process, when a new product leader needs to identify root causes quickly, or when someone asks 'are we doing waterfall disguised as Agile?' Also use when someone says 'we follow the process but nothing lands', 'sales keeps driving our roadmap', 'design is always scrambling to catch up', 'our engineers just build what they're told', or 'customers never adopt what we build.' Scores 10 root causes of product failure across startup, growth, and enterprise stages and produces a prioritized dysfunction report. For culture-wide assessment (innovation vs. execution), use product-culture-assessment. For team-level behaviors and velocity, use product-team-health-diagnostic.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/inspired-how-to-create-tech-products/skills/product-process-dysfunction-diagnosis
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: published
 model: sonnet
 context: 200k
@@ -412,3 +414,12 @@ WHY: The most common failure of a dysfunction diagnosis is that it becomes a lau
 
 Full root cause detail with extended detection signals and remediation patterns:
 `references/root-cause-reference.md`
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Inspired How To Create Tech Products by Unknown.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

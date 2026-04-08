@@ -1,7 +1,9 @@
 ---
 name: target-market-selection
 description: Score and select a target market before building any offer. Use this skill when starting a new business, evaluating a niche, choosing between customer segments, questioning why an existing offer is underperforming despite good execution, or deciding how narrowly to specialize. Activates on phrases like "who should I sell to," "is this a good market," "should I niche down," "I'm not getting traction," "which audience should I focus on," or any request to validate, score, or compare potential target markets.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/100m-offers/skills/target-market-selection
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: 100m-offers
@@ -350,3 +352,12 @@ Next step: [If GO → proceed to premium-pricing-strategy or grand-slam-offer-cr
 - **Next step after market selection:** Use `premium-pricing-strategy` to set price points and avoid the commodity trap; use `grand-slam-offer-creation` to build an offer tailored to the selected niche.
 - **Offer evaluation:** Use `value-equation-offer-audit` to assess whether the offer delivers enough perceived value for the chosen market's price sensitivity.
 - For extended niche-depth examples and the full niche-pricing multiplier framework, see `references/niche-pricing-examples.md` (when available).
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — $100M Offers: How To Make Offers So Good People Feel Stupid Saying No by Alex Hormozi.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

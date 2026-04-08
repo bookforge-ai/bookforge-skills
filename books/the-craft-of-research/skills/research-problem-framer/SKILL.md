@@ -1,7 +1,9 @@
 ---
 name: research-problem-framer
 description: Transform a research question into a fully framed research problem that readers recognize as worth solving, using the condition+consequence structure and the So What? cascade test. Use this skill when the user has a research question but cannot explain why readers should care about the answer, has completed the 3-step significance formula but the Step 3 consequence still feels abstract or weak, is writing an introduction and the reader's "So what?" objection keeps coming back, cannot tell whether their project is pure or applied research and whether that matters for their introduction, wants to verify that solving their conceptual problem actually serves a practical one, has a research question that feels personally interesting but lacks community relevance, is being asked by an advisor or reviewer "why does this matter?", needs to state a research problem in formal proposal or introduction language, wants to understand the difference between a research question (condition) and a research problem (condition + consequence) and why the problem frame is what goes in the introduction, or is building a research argument but keeps getting feedback that readers don't feel the stakes. This skill handles problem framing and consequence articulation; it does NOT formulate the initial research question (use research-question-formulator for that) or write the claim/thesis statement.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/the-craft-of-research/skills/research-problem-framer
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: the-craft-of-research
@@ -299,3 +301,15 @@ Hybrid (four-step):
 
 - See `references/condition-consequence-structures.md` for worked condition+consequence pairs across disciplines (humanities, social sciences, natural sciences, professional research)
 - See `references/pure-vs-applied-framing.md` for the four-step hybrid formula and guidance on when to add a practical application step
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — The Craft of Research, 4th Edition by Wayne C. Booth, Gregory G. Colomb, Joseph M. Williams, Joseph Bizup, William T. FitzGerald.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-research-question-formulator`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

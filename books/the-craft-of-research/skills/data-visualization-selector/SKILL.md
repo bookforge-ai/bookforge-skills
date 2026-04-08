@@ -1,7 +1,9 @@
 ---
 name: data-visualization-selector
 description: "Select the correct graphic type (table, bar chart, line graph) for a dataset and rhetorical goal, then design and frame it to communicate evidence clearly and honestly. Use this skill whenever the user needs to present quantitative data in a research paper, report, thesis, presentation, or professional document and asks: which chart should I use, how should I visualize this data, how do I make this graphic clearer, is my chart misleading, how do I label or title a table or figure, or how do I introduce a graphic in text. Also triggers on: \"my advisor said the table is confusing,\" \"should I use a bar chart or line graph,\" \"how do I make readers see my point in this figure,\" \"is this graph ethical,\" \"my chart looks amateurish,\" \"the scale on my graph looks off,\" or any request to improve the visual communication of numerical evidence. Covers the full workflow: verbal-vs-visual decision → graphic type selection based on rhetorical effect → design simplification → framing with title, intro sentence, and labels → ethical integrity checks."
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/the-craft-of-research/skills/data-visualization-selector
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: the-craft-of-research
@@ -284,3 +286,12 @@ A graphic that is technically accurate can still mislead. Before finalizing, run
 See `references/graphic-type-rhetorical-effects.md` for an extended table of rhetorical uses for additional graphic types (scatter plots, frequency distributions, box plots) used in advanced research contexts.
 
 See `references/ethical-visualization-checklist.md` for a printable checklist of all five ethical integrity checks.
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — The Craft of Research, 4th Edition by Wayne C. Booth, Gregory G. Colomb, Joseph M. Williams, Joseph Bizup, William T. FitzGerald.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

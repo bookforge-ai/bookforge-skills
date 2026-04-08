@@ -477,3 +477,15 @@ Output: Architecture doc specifying GraphX Pregel implementation, 5-superstep ch
 - Cross-reference: for stream processing (unbounded input), see `stream-processing-designer`
 - Cross-reference: for workload classification (batch vs OLTP vs OLAP), see `oltp-olap-workload-classifier`
 - Source: *Designing Data-Intensive Applications*, Martin Kleppmann, Chapter 10 (pages 389-430)
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Designing Data Intensive Applications by Unknown.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-oltp-olap-workload-classifier`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

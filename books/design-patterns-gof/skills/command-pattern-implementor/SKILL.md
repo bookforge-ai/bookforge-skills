@@ -2,7 +2,9 @@
 name: command-pattern-implementor
 description: |
   Implement the Command pattern to encapsulate requests as objects, enabling parameterized operations, queuing, logging, and undo/redo. Use when you need to decouple UI elements from operations, implement multi-level undo with command history, support macro recording, queue or schedule requests, or log operations for crash recovery. Includes the complete undo/redo algorithm using a command history list with present-line pointer, MacroCommand for composite operations, and SimpleCommand template for eliminating subclasses.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/design-patterns-gof/skills/command-pattern-implementor
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on:
   - behavioral-pattern-selector
@@ -439,3 +441,15 @@ Clicked():
 | File | When to read |
 |------|-------------|
 | `references/command-implementation-guide.md` | For SimpleCommand template pattern, deep state management guidance, MacroCommand subcommand ownership, and language-specific implementation notes |
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Design Patterns: Elements of Reusable Object-Oriented Software by Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-behavioral-pattern-selector`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

@@ -1,7 +1,9 @@
 ---
 name: nash-equilibrium-analyzer
 description: Find Nash equilibria in simultaneous-move games by constructing payoff matrices, eliminating dominated strategies (Rules 2-3), mapping best responses (Rule 4), and calculating mixed strategy proportions using the indifference principle (Rule 5). Use this skill when two or more players choose actions simultaneously without seeing each other's moves — pricing decisions, product launches, competitive bids, penalty kicks, resource allocation conflicts — and you need to identify stable strategy configurations, calculate exact mixing proportions for zero-sum conflicts, or select among multiple equilibria using focal-point analysis.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/the-art-of-strategy/skills/nash-equilibrium-analyzer
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: the-art-of-strategy
@@ -318,3 +320,12 @@ Detailed worked calculations and additional examples are in:
 - `references/mixed-strategy-calculation.md` — Full algebraic and graphical walkthrough of 2×2 and 3×3 mixed strategy problems
 - `references/game-type-classifier.md` — How to distinguish zero-sum, coordination, and mixed-motive games
 - `references/focal-point-examples.md` — Schelling's classic examples and modern applications
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — The Art of Strategy: A Game Theorist's Guide to Success in Business and Life by Avinash K. Dixit, Barry J. Nalebuff.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

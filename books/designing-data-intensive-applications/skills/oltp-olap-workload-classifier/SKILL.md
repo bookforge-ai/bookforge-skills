@@ -3,7 +3,9 @@ name: oltp-olap-workload-classifier
 description: |
   Classify a data workload as OLTP, OLAP, or hybrid, then recommend the appropriate database architecture — transactional database, dedicated data warehouse, or both with an ETL pipeline. Use when asked "should I use a data warehouse?", "why are my analytics queries slow on my production database?", "should I use Redshift/BigQuery/Snowflake?", or "can one database handle both transactions and reporting?" Also use for: designing star or snowflake schemas for analytics; deciding when column-oriented storage is appropriate; planning ETL pipeline structure between operational and analytical systems; evaluating whether HTAP (hybrid) databases fit a workload.
   For choosing between relational/document/graph models, use data-model-selector instead. For storage engine internals (LSM-tree vs B-tree), use storage-engine-selector instead. For batch/stream pipeline design, use batch-pipeline-designer or stream-processing-designer instead.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/designing-data-intensive-applications/skills/oltp-olap-workload-classifier
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on: []
 source-books:
@@ -382,3 +384,12 @@ Output: Two-path architecture. Real-time: Kafka → Flink anomaly detection → 
 - For ETL and batch pipeline architecture, use `batch-pipeline-designer`
 - For detailed comparison table and schema templates, see [references/workload-comparison-table.md](references/workload-comparison-table.md)
 - Source: Designing Data-Intensive Applications, Ch. 3, "Transaction Processing or Analytics?" (pp. 90-103), Martin Kleppmann
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Designing Data-Intensive Applications by Martin Kleppmann.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

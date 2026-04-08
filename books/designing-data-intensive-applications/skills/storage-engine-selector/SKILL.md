@@ -3,7 +3,9 @@ name: storage-engine-selector
 description: |
   Select the right storage engine architecture (LSM-tree, B-tree, or in-memory) for a database workload using a 7-dimensional scored trade-off analysis. Use when evaluating RocksDB vs InnoDB vs LevelDB, diagnosing write amplification in production, choosing between write-optimized vs read-optimized storage, selecting a compaction strategy (size-tiered vs leveled), or deciding whether to skip disk with an in-memory database. Also use for: comparing Cassandra vs PostgreSQL storage internals; justifying an existing engine choice to a team; assessing whether compaction pauses are causing latency spikes. Covers LSM-tree family (LevelDB, RocksDB, Cassandra, HBase), B-tree family (PostgreSQL, MySQL InnoDB, SQLite), and in-memory stores (Redis, Memcached, VoltDB).
   For choosing between relational/document/graph models, use data-model-selector instead. For OLTP vs. analytics routing, use oltp-olap-workload-classifier instead. For replication topology, use replication-strategy-selector instead.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/designing-data-intensive-applications/skills/storage-engine-selector
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on: []
 source-books:
@@ -460,3 +462,12 @@ means serving reads from PostgreSQL until the cache warms.
 | `references/scoring-guide.md` | Per-dimension scoring rubrics (1-5 scale) with worked examples for write-heavy, read-heavy, and mixed workloads; compaction strategy selection decision tree; workload-to-product routing table | When scoring Step 2 or selecting compaction in Step 4 |
 | `references/engine-internals.md` | LSM-tree write path (memtable → WAL → SSTable → compaction), B-tree write path (WAL → page update → page split), in-memory durability patterns; Bloom filter mechanics; write amplification calculation method | When a deeper technical explanation is needed for a team discussion or ADR |
 | `references/compaction-monitoring.md` | Cassandra compaction metrics (nodetool tpstats, cfstats), RocksDB compaction stats, write stall conditions, disk space headroom rules, alert thresholds | When LSM-tree is selected and operational guidance is needed |
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Designing Data-Intensive Applications by Martin Kleppmann.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

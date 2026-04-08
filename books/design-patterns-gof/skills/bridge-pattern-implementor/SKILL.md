@@ -2,7 +2,9 @@
 name: bridge-pattern-implementor
 description: |
   Implement the Bridge pattern to decouple an abstraction from its implementation so both can vary independently. Use when you want to avoid a permanent binding between abstraction and implementation, when both abstractions and implementations should be extensible by subclassing, when implementation changes should not require recompiling clients, or when you need to share an implementation among multiple objects. Includes the evaluate-extremes design process (union vs intersection of functionality) and Abstract Factory integration for runtime implementation selection.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/design-patterns-gof/skills/bridge-pattern-implementor
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: design-patterns-gof
@@ -365,3 +367,12 @@ Checklist for a correct Bridge:
 ## References
 
 - For the evaluate-extremes worksheet and Implementor interface design process in detail, see [references/bridge-implementation-guide.md](references/bridge-implementation-guide.md)
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Design Patterns: Elements of Reusable Object-Oriented Software by Erich Gamma, Richard Helm, Ralph Johnson, John Vlissimos.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

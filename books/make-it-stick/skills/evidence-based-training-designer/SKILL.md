@@ -1,7 +1,9 @@
 ---
 name: evidence-based-training-designer
 description: "Redesign a corporate training program, employee training curriculum, employee onboarding, or in-service training so that learning actually sticks past the end of the session. Use this skill when a company's training is built on lecture-heavy workshops, single-topic day-long blocks, or passive e-learning modules that employees promptly forget; when an L&D team needs to convert a massed-practice curriculum into an evidence-based architecture; when a trainer or workshop design lead is building a new training program from scratch and wants to apply learning science from the start; when onboarding for a sales, technical, or certification role needs to produce durable competence rather than a test-passing event; when management asks why employees cannot apply training back on the job; when training program design needs to show measurable retention and transfer, not just satisfaction scores. This skill applies the corporate training models from Farmers Insurance (interleaved four-domain curriculum, FORE scaffolding, vision-poster goal anchoring, 5-4-3-2-1 sales system), Jiffy Lube (tell-show-do-review certification cycle, 80% threshold, biennial recertification), and Andersen Windows (2-hour job rotation, worker-led improvement, kaizen events) to redesign any training program. It does NOT design individual practice schedules for individual learners — use practice-schedule-designer for that."
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/make-it-stick/skills/evidence-based-training-designer
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: make-it-stick
@@ -360,3 +362,15 @@ Kaizen / redesign event                → When stretch goals require fundamenta
 - `references/three-architecture-templates.md` — Full specifications for each template including session timing tables, written standard format, and certification record design
 - `references/generation-exercise-library.md` — 12 generation exercise types (vision poster, FORE, role-reversal, calculate-backward, scenario simulation, etc.) with facilitation instructions and domain applicability
 - `references/spaced-retrieval-follow-up-protocol.md` — Exact quiz cadences by training duration, sample question formats, Qstream and mobile delivery options, and 30/60/90-day check-in question banks
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Make It Stick: The Science of Successful Learning by Peter C. Brown, Henry L. Roediger III, Mark A. McDaniel.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-practice-schedule-designer`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

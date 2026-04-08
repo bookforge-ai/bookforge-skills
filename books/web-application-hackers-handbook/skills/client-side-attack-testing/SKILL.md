@@ -2,7 +2,9 @@
 name: client-side-attack-testing
 description: |
   Test web applications for client-side security vulnerabilities spanning two major attack families: client-side trust anti-patterns and user-targeting attacks. Use this skill when: auditing hidden form fields, HTTP cookies, URL parameters, Referer headers, or ASP.NET ViewState for client-side data transmission vulnerabilities; bypassing HTML maxlength limits, JavaScript validation, or disabled form elements to probe server-side enforcement gaps; intercepting and analyzing browser extension traffic (Java applets, Flash, Silverlight) and handling serialized data; testing for cross-site request forgery (CSRF) by identifying cookie-only session tracking and constructing auto-submitting PoC forms; testing for clickjacking and UI redress attacks by checking X-Frame-Options headers and constructing iframe overlay proofs of concept; detecting cross-domain data capture vectors via HTML injection and CSS injection; auditing Flash crossdomain.xml and HTML5 CORS Access-Control-Allow-Origin configurations for overly permissive same-origin policy exceptions; finding HTTP header injection and response splitting vulnerabilities via CRLF injection; identifying open redirection vulnerabilities and testing filter bypass payloads; testing cookie injection and session fixation; assessing local privacy exposure through persistent cookies, cached content lacking no-cache directives, autocomplete on sensitive fields, and HTML5 local storage. Excludes XSS (covered by xss-detection-and-exploitation). Maps to OWASP Testing Guide (OTG-INPVAL-*, OTG-SESS-*, OTG-CLIENT-*), CWE-352 (CSRF), CWE-601 (Open Redirect), CWE-113 (HTTP Header Injection), CWE-565 (Reliance on Cookies), CWE-1021 (Improper Restriction of Rendered UI Layers), CWE-311 (Missing Encryption of Sensitive Data), and OWASP Top 10 A01:2021, A03:2021, A05:2021.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/web-application-hackers-handbook/skills/client-side-attack-testing
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on: []
 source-books:
@@ -406,3 +408,12 @@ Using browser developer tools, inspect `localStorage` and `sessionStorage` for s
 | Session fixation | Session token not rotated at login | Issue a new session token immediately after successful authentication |
 | Local privacy: cached content | Missing cache-control directives | Set `Cache-Control: no-cache`, `Pragma: no-cache`, `Expires: 0` on all sensitive pages |
 | Local privacy: autocomplete | Missing autocomplete=off | Set `autocomplete="off"` on all forms and fields capturing sensitive data |
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — The Web Application Hacker's Handbook: Finding and Exploiting Security Flaws by Dafydd Stuttard, Marcus Pinto.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

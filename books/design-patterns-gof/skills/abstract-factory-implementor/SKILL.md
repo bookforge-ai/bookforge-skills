@@ -2,7 +2,9 @@
 name: abstract-factory-implementor
 description: |
   Implement the Abstract Factory pattern to create families of related objects without specifying their concrete classes. Use when a system must be independent of how its products are created, when it must work with multiple product families, when products are designed to be used together and you need to enforce that constraint, or when providing a class library revealing only interfaces. Covers factory-as-singleton, prototype-based factories, and extensible factory interfaces.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/design-patterns-gof/skills/abstract-factory-implementor
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on:
   - creational-pattern-selector
@@ -491,3 +493,15 @@ repo = Repository(factory)
 | File | Contents |
 |------|----------|
 | `references/abstract-factory-implementation-guide.md` | Full participants catalog, consequences analysis, prototype-based factory deep dive, extensible factory trade-off analysis, known uses (InterViews, ET++) |
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Design Patterns: Elements of Reusable Object-Oriented Software by Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-creational-pattern-selector`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

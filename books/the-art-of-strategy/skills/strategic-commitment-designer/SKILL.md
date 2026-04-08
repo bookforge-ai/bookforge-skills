@@ -1,7 +1,9 @@
 ---
 name: strategic-commitment-designer
 description: "Design credible strategic moves — commitments, threats, and promises — to change the game in your favor before play begins. Use this skill when a user needs to lock in a position and prevent backtracking; deter an adversary from an unwanted action; compel a counterpart to take a desired action; make a negotiation stance, policy, or business pledge actually believable; or structure incentive mechanisms that hold even when renegotiation is tempting. Triggers include: user wants to commit to a course of action in a way that others will believe; user is setting a credible deterrent threat (e.g., retaliation policy, penalty clause, price floor); user must compel action by a deadline and needs the right move type and deadline design; user suspects their threat or promise will be dismissed as a bluff; user needs to choose between issuing a threat vs. a promise for deterrence or compellence; user wants to practice brinkmanship and needs to calibrate the risk level; user is designing a contract or commitment mechanism and needs to close renegotiation loopholes; user is countering an opponent's commitment or threat. This skill covers the full taxonomy of strategic moves (commitment / threat / promise, deterrence / compellence, warnings / assurances) and all eight credibility mechanisms. It does NOT perform the underlying game tree analysis — use backward-reasoning-game-solver for that before applying this skill."
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/the-art-of-strategy/skills/strategic-commitment-designer
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: the-art-of-strategy
@@ -212,3 +214,15 @@ For detailed reference material, see:
 - `references/eightfold-path-reference.md` — detailed mechanism descriptions and case studies
 - `references/renegotiation-failure-test.md` — test protocol with worked examples
 - `references/brinkmanship-calibration.md` — risk calibration guide and anti-patterns
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — The Art of Strategy by Avinash K. Dixit, Barry J. Nalebuff.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-backward-reasoning-game-solver`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

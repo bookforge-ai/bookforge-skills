@@ -1,7 +1,9 @@
 ---
 name: warrant-tester
 description: Test the warrants in a research argument — the general principles that connect reasons to claims. Use this skill when a reader might accept a reason as true but still deny it is relevant to the claim, the argument contains a logical leap between a reason and a claim that no stated principle explains, the user needs to decide whether to state a warrant explicitly or leave it implicit, the argument needs to identify which type of warrant is being used (experience-based, authority-based, system/definitional, cultural, methodological) so it can be challenged or defended appropriately, the user is writing for an audience outside their field who will ask "but why does that reason matter to your claim?", a warrant appears to be too broad and needs qualification before it can survive challenge, competing warrants exist and the argument must show why its warrant should prevail, or the user suspects their argument is flawed but cannot identify where — surfacing the implicit warrant often reveals the problem. This skill depends on research-argument-builder (which assembles the full argument structure) and is typically used after reasons and claims have been identified but before final drafting.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/the-craft-of-research/skills/warrant-tester
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: the-craft-of-research
@@ -351,3 +353,15 @@ If the argument has multiple reasons: process each separately, then note whether
 
 - `references/warrant-types-and-challenge-strategies.md` — Full taxonomy of warrant types with worked examples and type-specific challenge strategies
 - `references/five-test-battery-guide.md` — Detailed guidance on each of the five validation tests with cross-field examples and common failure modes
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — The Craft of Research, 4th Edition by Wayne C. Booth, Gregory G. Colomb, Joseph M. Williams, Joseph Bizup, William T. FitzGerald.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-research-argument-builder`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

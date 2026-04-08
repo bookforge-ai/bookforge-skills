@@ -2,7 +2,9 @@
 name: negotiation-one-sheet-generator
 description: |
   Build a complete Negotiation One Sheet — a five-section preparation document that covers your aspirational goal, a counterpart-validating situation summary, a preemptive accusation audit, a calibrated question bank, and a list of noncash offers — before any negotiation, sales conversation, contract discussion, salary negotiation, or difficult ask. Use when you need to prepare for a high-stakes conversation in a single document, when you want to stop improvising and start with a battle-tested preparation framework, when you keep leaving deals on the table by aiming at your bottom line instead of your aspirational target, when you need to combine emotional preparation with offer strategy into one coherent plan, or when you are coaching someone else through a complex negotiation. Also use before any negotiation where you have 20+ minutes to prepare and want to walk in with every major tool loaded: counterpart profile, labels, questions, offer sequence, and noncash options. Produces negotiation-one-sheet.md — a complete, ready-to-use preparation document with all five sections filled. Works standalone with simplified inline processes or in full-depth mode by invoking the seven supporting Level 0 skills. The hub of the Never Split the Difference skill set.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/never-split-the-difference/skills/negotiation-one-sheet-generator
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: never-split-the-difference
@@ -503,3 +505,21 @@ Label 3: "It seems like ___________."
 | `references/one-sheet-framework.md` | Extended one sheet guidelines: when to use standalone vs. integrated mode, how to time-box preparation, how to adapt the one sheet for remote vs. in-person conversations, one sheet anti-patterns |
 | `references/level0-skill-integration.md` | How to pass context between Level 0 skill artifacts and the one sheet: file naming conventions, copy-paste workflows, which sections each artifact feeds |
 | `references/system1-system2-prep.md` | Why emotional preparation beats rational scripting: the influence arc (Active Listening → Empathy → Rapport → Influence → Behavioral Change), System 1 / System 2 neuroscience, and the ordering logic behind the one sheet's five sections |
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Never Split the Difference: Negotiating as if Your Life Depended on It by Chris Voss.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-counterpart-style-profiler`
+- `clawhub install bookforge-accusation-audit-generator`
+- `clawhub install bookforge-calibrated-questions-planner`
+- `clawhub install bookforge-empathic-summary-planner`
+- `clawhub install bookforge-ackerman-bargaining-planner`
+- `clawhub install bookforge-black-swan-discovery`
+- `clawhub install bookforge-commitment-verifier`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

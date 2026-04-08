@@ -2,7 +2,9 @@
 name: learning-practice-auditor
 description: |
   Audit any set of study habits, training program, or course design for ineffective learning practices and replace them with evidence-based alternatives. Use this skill when someone wants a study habits audit, suspects they are making learning mistakes, reports that their studying is not working, relies on rereading, highlighting, or cramming, wonders whether their training design actually produces learning, or asks "what am I doing wrong?" Also triggers on: ineffective studying complaints, rereading concerns, learning styles assumptions, cramming before an exam, blocked practice schedules, highlighting as primary review method, "I study for hours but nothing sticks," or any study strategy review. Works for individual learners, teachers, corporate trainers, instructional designers, and coaches. Detects five named anti-patterns — rereading trap, massed practice delusion, illusions of knowing cluster, learning styles myth, errorless learning myth — with mechanism explanations, severity ratings, and direct routing to the corrective skill. Do NOT use this skill to build a study schedule (use retrieval-practice-study-system), to design a practice sequence (use desirable-difficulty-classifier), or to calibrate mastery confidence (use learning-calibration-audit) — this skill diagnoses the problem and routes to those solutions.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/make-it-stick/skills/learning-practice-auditor
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: make-it-stick
@@ -305,3 +307,17 @@ Full evidence profiles, all research citations, and detailed sub-pattern descrip
 
 For mechanism details on illusions of knowing, see also:
 → `learning-calibration-audit` references
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Make It Stick: The Science of Successful Learning by Peter C. Brown, Henry L. Roediger III, Mark A. McDaniel.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-retrieval-practice-study-system`
+- `clawhub install bookforge-desirable-difficulty-classifier`
+- `clawhub install bookforge-learning-calibration-audit`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

@@ -493,3 +493,16 @@ For "social situations":
 - For turning the working offer title into a compelling, memorable name: `offer-naming-magic-formula`
 - For setting and testing the right price for the completed offer: `premium-pricing-strategy`
 - Source: *$100M Offers*, Alex Hormozi, Chapters 8–10, pages 97–127 (offer creation process) and pages 43–47 (agency commodity vs. Grand Slam comparison)
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — 100M Offers by Unknown.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-value-equation-offer-audit`
+- `clawhub install bookforge-target-market-selection`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

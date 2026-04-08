@@ -1,7 +1,9 @@
 ---
 name: commitment-signal-evaluator
 description: Evaluate whether a customer meeting produced real interest or just polite enthusiasm by classifying commitment signals into time, reputation, and money currencies. Use this skill after any customer conversation, product demo, sales call, or pitch where the user wants to know if the meeting actually advanced the deal, asks "was that a good meeting" or "how did it go" or "did that go well," says a meeting "went great" but nothing happened afterward, received enthusiastic feedback and wants to know if it is real, wonders whether someone is actually interested or just being polite, heard "I would definitely buy that" and wants to know if it means anything, wants to distinguish real leads from false-positive prospects (zombie leads), needs to score a pipeline of prospects for conversion likelihood, wants to detect polite rejections disguised as enthusiasm (compliment-stall pattern), or wants to identify early evangelists in their prospect pool — even if they don't explicitly mention "commitment signals" or "meeting evaluation." This skill evaluates meeting OUTCOMES and prospect INTEREST, not conversation data quality (use conversation-data-quality-analyzer) or conversation logistics (use conversation-format-selector).
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/the-mom-test/skills/commitment-signal-evaluator
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: verified
 source-books:
   - id: the-mom-test
@@ -287,3 +289,12 @@ Output: STRONG SIGNAL (even though no commitment was asked for -- this is pre-pr
 - For cross-referencing data quality in the same conversation, see the `conversation-data-quality-analyzer` skill
 - For synthesizing learnings across multiple meetings into validated/invalidated assumptions, see the `conversation-learning-process` skill
 - For the commitment currency taxonomy and meeting outcome scoring rubric, see [references/commitment-currencies.md](references/commitment-currencies.md)
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — The Mom Test by Rob Fitzpatrick.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

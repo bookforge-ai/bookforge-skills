@@ -1,7 +1,9 @@
 ---
 name: architecture-characteristics-identifier
 description: Systematically identify, categorize, and prioritize architecture characteristics (quality attributes / -ilities) from requirements, domain concerns, and stakeholder input. Use this skill whenever the user is starting a new project, defining architecture requirements, translating business needs into technical characteristics, asking "what quality attributes matter?", figuring out nonfunctional requirements, or evaluating what -ilities to optimize for — even if they don't explicitly say "architecture characteristics."
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/fundamentals-of-software-architecture/skills/architecture-characteristics-identifier
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on: []  # Foundation skill — no dependencies
 source-books:
@@ -248,3 +250,12 @@ Output: Characteristics report that diplomatically resolves stakeholder disagree
 
 - For the full taxonomy of architecture characteristics with definitions, see [references/characteristics-taxonomy.md](references/characteristics-taxonomy.md)
 - For the domain-concern-to-characteristic translation table, see [references/domain-concern-mapping.md](references/domain-concern-mapping.md)
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Fundamentals of Software Architecture by Mark Richards, Neal Ford.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

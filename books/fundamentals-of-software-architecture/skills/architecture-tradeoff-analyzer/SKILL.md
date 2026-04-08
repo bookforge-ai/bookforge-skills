@@ -1,7 +1,9 @@
 ---
 name: architecture-tradeoff-analyzer
 description: Systematically analyze trade-offs across quality attribute dimensions for architecture decisions. Use this skill whenever the user is comparing architecture options, weighing competing quality attributes (performance vs scalability, simplicity vs flexibility), making any structural technology decision, evaluating monolith vs distributed, choosing communication patterns, or asking "what are the trade-offs?" — even if they don't explicitly say "trade-off analysis."
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/fundamentals-of-software-architecture/skills/architecture-tradeoff-analyzer
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: fundamentals-of-software-architecture
@@ -255,3 +257,12 @@ Output: Recommended mixed approach: synchronous by default (simpler), asynchrono
 ## References
 
 - For the full list of quality attributes and their definitions, see [references/quality-attributes.md](references/quality-attributes.md)
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Fundamentals of Software Architecture by Mark Richards, Neal Ford.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

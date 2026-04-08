@@ -1,7 +1,9 @@
 ---
 name: resilience-and-blast-radius-design
 description: Design or audit a system's resilience posture using a layered framework — defense in depth, controlled degradation (load shedding vs. throttling), blast radius compartmentalization (role/location/time), failure domains, 3-tier component reliability hierarchy, and continuous validation. Use this skill when designing a new system for failure, reviewing an existing architecture for single points of failure, limiting blast radius of a potential attack or outage, deciding fail-open vs. fail-closed behavior for a component, or building an incident-response-ready compartmentalization strategy.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/building-secure-and-reliable-systems/skills/resilience-and-blast-radius-design
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: building-secure-and-reliable-systems
@@ -363,3 +365,12 @@ On-call engineers are routed through low-dependency system paths as part of thei
 - *Site Reliability Engineering* book, Chapters 21 (throttling), 22 (load shedding), 20 (lame-duck mode)
 - See `references/component-tier-definitions.md` for detailed tier configuration parameters
 - See `references/compartmentalization-matrix.md` for a role/location/time decision matrix template
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Building Secure and Reliable Systems by Heather Adkins, Betsy Beyer, Paul Blankinship, Piotr Lewandowski, Ana Oprea, Adam Stubblefield.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

@@ -2,7 +2,9 @@
 name: transaction-isolation-selector
 description: |
   Choose the correct transaction isolation level and serializability implementation for an application's concurrency patterns. Use when: selecting an isolation level for a new system; evaluating whether read committed or snapshot isolation is safe for your access patterns; deciding whether to upgrade to serializable and choosing between two-phase locking (2PL) vs. serializable snapshot isolation (SSI); producing an architecture decision record for isolation level choice; or explaining to a team why the database default is insufficient. Distinct from concurrency-anomaly-detector (which scans code for exposed anomalies) — this skill selects the level, not the bugs. Covers PostgreSQL, MySQL InnoDB, Oracle, SQL Server, and distributed databases. Applies a 6-anomaly × 4-isolation-level mapping matrix (dirty read, dirty write, read skew, lost update, write skew, phantom read vs. read uncommitted, read committed, snapshot isolation, serializable) to produce a concrete recommendation with implementation trade-off analysis. Works on any codebase, schema, or workload description.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/designing-data-intensive-applications/skills/transaction-isolation-selector
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on: []
 source-books:
@@ -490,3 +492,12 @@ Monitor: SSI abort rate per booking endpoint; alert if retry rate > 5%
 | `references/anomaly-isolation-matrix.md` | Full 6×4 anomaly-to-isolation mapping matrix with per-cell explanations; database-specific implementation notes; examples for each anomaly type | When working through Step 3 or explaining anomaly coverage to a team |
 | `references/serializability-implementation-comparison.md` | Side-by-side comparison of serial execution, two-phase locking, and SSI across 8 dimensions (throughput, latency, abort rate, contention behavior, deadlock risk, implementation complexity, database support, operational overhead); decision tree for selecting among them | When Step 4 selection is needed or when justifying implementation choice to a team |
 | `references/write-skew-patterns.md` | Detailed catalog of 5 write skew patterns (at-least-one constraint, no-overlap, unique claim, budget enforcement, game state validity); detection checklist; SQL patterns for explicit locking mitigation per pattern | When diagnosing whether a specific transaction pattern is vulnerable to write skew |
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Designing Data-Intensive Applications by Martin Kleppmann.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

@@ -1,7 +1,9 @@
 ---
 name: negotiation-strategist
 description: "Apply the complete game-theoretic bargaining framework to any negotiation. Use this skill when a user needs to structure a negotiation, determine who has leverage, calculate the fair split, or decide whether to make a concession or walk away. Triggers include: user is preparing for a salary negotiation, contract renegotiation, partnership deal, M&A term sheet, or labor negotiation and wants to know what number to open with and why; user wants to determine the 'pie' — the true surplus that is actually at stake between the two parties, not the headline dollar figures; user needs to identify and quantify their Best Alternative to a Negotiated Agreement (BATNA) or the other side's BATNA before entering talks; user wants to know how to improve their bargaining position before the negotiation starts (raise your BATNA, lower theirs); user must decide whether to bundle multiple issues together or separate them; user is weighing whether to actually strike, walk out, or threaten to do so, and wants to understand the cost-benefit calculation; user wants to propose a virtual-strike or escrowed-revenue arrangement to eliminate collateral damage while preserving negotiating pressure; user is in an alternating-offer negotiation and wants to calculate the equilibrium split given relative patience levels; user suspects they are negotiating over the wrong number (confusing total value with incremental value above no-deal); user faces brinkmanship — escalating risk of breakdown — and wants to calibrate how far to push. This skill does NOT cover simultaneous-move games (use nash-equilibrium-analyzer), one-shot ultimatum games without iteration, or multi-party coalition bargaining beyond two principal parties."
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/the-art-of-strategy/skills/negotiation-strategist
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: the-art-of-strategy
@@ -245,3 +247,15 @@ Before finalizing any negotiation strategy, verify:
 - `references/batna-improvement-case-studies.md` — MLB 1980 exhibition season strike, hotel union/management 101-day season, detailed numbers
 - `references/virtual-strike-mechanics.md` — Meridiana 1999 case, Jenkins valve plant, Miami bus strike, proposal language for contingency clauses
 - `references/multi-issue-bundling-guide.md` — GATT/WTO bundling logic, Japan-US security/trade separation, health benefits vs. wages example
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — The Art of Strategy by Avinash K. Dixit, Barry J. Nalebuff.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-backward-reasoning-game-solver`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

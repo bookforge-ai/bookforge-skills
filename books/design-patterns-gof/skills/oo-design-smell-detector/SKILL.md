@@ -2,7 +2,9 @@
 name: oo-design-smell-detector
 description: |
   Detect common OO design smells in a codebase and recommend corrective design patterns. Use when reviewing code for design quality, investigating why changes are difficult, or auditing coupling and inheritance depth. Scans for 8 categories of design fragility — hardcoded object creation, operation dependencies, platform coupling, representation leaks, algorithm dependencies, tight coupling, subclass explosion, and inability to alter classes — each mapped to specific GoF patterns that fix them. Trigger when the user asks about design review, code smells, design anti-patterns, why a class is hard to change, why adding a feature requires modifying many files, class hierarchy review, inheritance overuse, why changes cascade, tight coupling, poor encapsulation, object creation rigidity, platform-dependent code, algorithmic coupling, or difficulty extending a third-party class.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/design-patterns-gof/skills/oo-design-smell-detector
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: design-patterns-gof
@@ -364,3 +366,12 @@ Output: Report for a single class showing 4 smells all rated Warning (isolated b
 ## References
 
 - For the complete 8-smell detection catalog with grep patterns, code examples in multiple languages, and full pattern mapping tables, see [references/design-smell-catalog.md](references/design-smell-catalog.md)
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Design Patterns: Elements of Reusable Object-Oriented Software by Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

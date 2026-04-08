@@ -1,7 +1,9 @@
 ---
 name: counterargument-handler
 description: Anticipate, acknowledge, and respond to reader objections and alternative views in a research argument. Use this skill when the user has a draft argument or storyboard and needs to identify which objections readers will predictably raise, wants to decide which objections to acknowledge and which to set aside, needs vocabulary and sentence templates for introducing and responding to counterarguments without weakening their position, has discovered a flaw in their argument and does not know how to handle it honestly, is building a cause-and-effect argument and needs to address competing causes, has made claims with counterexamples that readers will invoke, uses key terms that readers may define differently and needs to address definitional scope, or wants to avoid either ignoring objections (seeming ignorant) or acknowledging too many (losing argumentative focus). This skill is the detailed companion to research-argument-builder — use it after assembling the argument's core structure (claim, reasons, evidence) and before drafting, to map every acknowledgment slot with a calibrated response strategy.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/the-craft-of-research/skills/counterargument-handler
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: the-craft-of-research
@@ -377,3 +379,15 @@ If a fixable weakness was discovered in Step 1: flag it clearly before the ackno
 
 - `references/acknowledgment-response-vocabulary.md` — Complete vocabulary list for acknowledgments (5 levels) and responses (4 registers), with sentence templates
 - `references/three-predictable-disagreements.md` — Extended guidance on competing causes, counterexample, and definitional scope disputes with field-specific examples
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — The Craft of Research, 4th Edition by Wayne C. Booth, Gregory G. Colomb, Joseph M. Williams, Joseph Bizup, William T. FitzGerald.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-research-argument-builder`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

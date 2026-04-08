@@ -2,7 +2,9 @@
 name: counterpart-style-profiler
 description: |
   Profile a negotiation counterpart's communication style and generate a tailored adaptation strategy. Use when asking "how should I approach this person?", "what communication style does my counterpart prefer?", "why is this negotiation not working?", "how do I adapt to this person's personality in negotiation?", or "what type of negotiator am I dealing with?" Also use for: diagnosing why previous conversations stalled or backfired; identifying whether warmth, data, or directness will land better; assessing self-type to avoid projecting your preferences onto the counterpart; preparing counterpart profiles for a negotiation one-sheet. Classifies counterparts into one of three communication archetypes (Analyst, Accommodator, Assertive) using observable behavioral signals, then produces a specific adaptation strategy covering communication tempo, information delivery, relationship style, and risk areas. Works from conversation history, emails, meeting notes, colleague descriptions, or any observable behavior data.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/never-split-the-difference/skills/counterpart-style-profiler
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on: []
 source-books:
@@ -370,3 +372,12 @@ Assertive:     [1–5] — [one-sentence rationale citing specific signals]
 | File | Contents |
 |------|----------|
 | `references/type-profiles.md` | Full behavioral signal inventory per type; diagnostic question bank; cross-cultural considerations; blend profiles; adaptation scripts by context (email, phone, in-person, high-stakes vs. routine) |
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Never Split the Difference: Negotiating as if Your Life Depended on It by Chris Voss.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

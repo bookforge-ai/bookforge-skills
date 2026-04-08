@@ -2,7 +2,9 @@
 name: black-swan-discovery
 description: |
   Identify the hidden unknowns that will determine whether your negotiation succeeds or fails before you ever make an offer. Use when someone asks "why is my counterpart acting irrationally?", "why does this deal keep stalling for no apparent reason?", "what am I missing about this negotiation?", "how do I find out what the other side really wants?", or "why won't they just say yes when the deal is clearly good for them?" Also use for: diagnosing a stalled sales cycle where the prospect keeps deflecting, investigating why a candidate rejected an offer that seemed strong, uncovering hidden constraints before entering a high-stakes contract renegotiation, mapping leverage before a complex partnership discussion, or rebuilding a broken negotiation relationship. Produces a black-swan-report.md with a hypothesis map of unknown unknowns in all three categories (worldview mismatches, hidden constraints, hidden agendas), a leverage inventory across all three leverage types, and a prioritized bank of investigation questions to surface what you do not yet know. Pair with counterpart-style-profiler (to refine worldview hypotheses by type) and calibrated-questions-planner (to convert investigation questions into a deployment-ready set).
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/never-split-the-difference/skills/black-swan-discovery
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: never-split-the-difference
@@ -440,3 +442,12 @@ Produce `black-swan-report.md` with the following structure:
 - [references/loss-aversion-framing.md](references/loss-aversion-framing.md) — Prospect theory background, framing formulas, the 2x rule application in negotiation contexts
 - [references/face-time-tactics.md](references/face-time-tactics.md) — How to extract Black Swan information in live conversation: observation checklist, contradiction signals, emotional energy mapping
 - [references/investigation-question-templates.md](references/investigation-question-templates.md) — 20 ready-to-use investigation questions across all three categories with situation-specific variants
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Never Split the Difference: Negotiating as if Your Life Depended on It by Chris Voss.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

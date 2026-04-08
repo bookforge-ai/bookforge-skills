@@ -2,7 +2,9 @@
 name: security-testing-strategy
 description: |
   Select and implement a layered security testing strategy for a codebase: design unit tests for security properties (boundary conditions, negative inputs, access control invariants), set up integration testing with non-production seed data (avoiding the production data copy anti-pattern), choose and configure dynamic analysis sanitizers (AddressSanitizer for memory corruption, ThreadSanitizer for race conditions, MemorySanitizer for uninitialized reads — with their performance cost tradeoff accounted for in CI/CD scheduling), plan fuzz testing (write effective fuzz drivers using libFuzzer/AFL, apply dictionary inputs for structured formats like HTTP/SQL/JSON, build a seed corpus, integrate continuous fuzzing via ClusterFuzz or OSS-Fuzz), and integrate static analysis at the right depth for each development stage (linters in the IDE commit loop, abstract interpretation nightly, formal methods for safety-critical paths). Use when creating a security testing plan for a new service, setting up fuzz testing for a parser or protocol implementation, integrating static analysis into a CI/CD pipeline, adding sanitizer-enhanced nightly builds, or auditing coverage gaps found during secure-code-review. Produces a security testing strategy document with tool selection rationale, CI/CD integration plan, and coverage priorities derived from code review findings.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/building-secure-and-reliable-systems/skills/security-testing-strategy
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on:
   - secure-code-review
@@ -531,3 +533,15 @@ The developer sees the finding inline in their code review and can apply the one
 Cross-references:
 - `secure-code-review` — findings from code review drive the testing priorities in Step 1; anti-patterns found there determine which sanitizers and fuzz targets are highest value
 - `secure-deployment-pipeline` — testing strategy outputs (sanitizer builds, fuzz driver binaries) integrate with the deployment pipeline
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Building Secure and Reliable Systems by Heather Adkins, Betsy Beyer, Paul Blankinship, Piotr Lewandowski, Ana Oprea, Adam Stubblefield.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-secure-code-review`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

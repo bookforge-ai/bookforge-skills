@@ -2,7 +2,9 @@
 name: adversary-profiling-and-threat-modeling
 description: |
   Profile the likely adversaries targeting a system and produce a structured threat model with prioritized threat scenarios. Use when: designing a new system or service and need to identify who might attack it and how; evaluating whether existing security controls address the right threats; preparing a threat model document for a security review, compliance audit, or architecture decision record; assessing insider risk for a system that handles sensitive data or privileged operations; or mapping attack lifecycle stages to defensive controls. Applies the three adversary frameworks — attacker motivations, attacker profiles, and attack lifecycle stages — alongside a four-dimension actor-motive-action-target threat scenario matrix to produce ranked threat scenarios. Distinct from vulnerability assessment (which audits specific technical flaws) and penetration testing (which actively exploits weaknesses). Produces: adversary profile summary, insider risk matrix, threat scenario list ranked by likelihood and impact, and per-stage defensive control recommendations.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/building-secure-and-reliable-systems/skills/adversary-profiling-and-threat-modeling
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on: []
 source-books:
@@ -410,3 +412,12 @@ See `references/` for:
 - `insider-category-taxonomy.md` — Extended insider category taxonomy with worked examples of related-insider scenarios
 - `threat-scenario-matrix-template.md` — Blank actor-motive-action-target matrix for generating scenarios
 - `attack-lifecycle-defense-map.md` — Comprehensive per-stage defense catalog drawn from the book's chapters on access controls, logging, and incident response
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Building Secure and Reliable Systems by Heather Adkins, Betsy Beyer, Paul Blankinship, Piotr Lewandowski, Ana Oprea, Adam Stubblefield.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

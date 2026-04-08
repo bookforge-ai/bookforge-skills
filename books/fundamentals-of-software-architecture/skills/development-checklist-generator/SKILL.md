@@ -1,7 +1,9 @@
 ---
 name: development-checklist-generator
 description: Create effective development checklists (code completion, unit/functional testing, software release) that teams will actually follow. Use this skill whenever the user needs to create a checklist for code review, testing, deployment, or release processes, wants to improve team quality by catching recurring mistakes, has a team that ignores existing checklists because they're too long, needs to define "definition of done" for development tasks, wants to reduce production incidents caused by human error, or asks about checklist best practices for software teams — even if they don't explicitly say "checklist."
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/fundamentals-of-software-architecture/skills/development-checklist-generator
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: fundamentals-of-software-architecture
@@ -239,3 +241,12 @@ Output: Three focused checklists (6 items each) replacing the original 50-item c
 ## References
 
 - For ready-to-use checklist templates by type, with customization instructions, see [references/checklist-templates.md](references/checklist-templates.md)
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Fundamentals of Software Architecture by Mark Richards, Neal Ford.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

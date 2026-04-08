@@ -1,7 +1,9 @@
 ---
 name: research-argument-builder
 description: Build a complete, structured research argument from a framed problem — assembling all five elements (claim, reasons, evidence, acknowledgment/response, warrant) using the Claim→Reason→Evidence chain. Use this skill when the user has a research problem or framed question and needs to construct the supporting argument that justifies their answer, has a working thesis or claim but does not know how to assemble the reasons and evidence that make it hold, needs to identify which of the five claim types (fact, definition, cause, evaluation, policy) their main claim is and what kind of evidence each type demands, wants to evaluate whether their claim is specific and significant enough to anchor an argument, cannot tell whether a statement is a reason or evidence and keeps treating soft generalizations as hard data, has evidence but cannot determine whether it meets the quality standards (accurate, precise, sufficient, representative, authoritative) their readers will apply, needs to plan their argument visually using a storyboard (claim + reasons + evidence cards) before drafting, or wants to thicken a thin argument by identifying where acknowledgments and warrants are needed. This is the hub skill for research argumentation — use it before counterargument-handler (which handles detailed acknowledgment/response), warrant-tester (which tests whether reasons are genuinely relevant to claims), and research-paper-planner (which turns the completed argument structure into a paper outline).
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/the-craft-of-research/skills/research-argument-builder
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: the-craft-of-research
@@ -322,3 +324,15 @@ If critical evidence is missing: name exactly what data type would fill the gap 
 
 - `references/claim-types-and-evidence.md` — Five claim types with worked examples and corresponding evidence requirements per type
 - `references/evidence-quality-rubric.md` — Detailed guidance on all five evidence quality criteria with cross-field examples and failure modes
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — The Craft of Research, 4th Edition by Wayne C. Booth, Gregory G. Colomb, Joseph M. Williams, Joseph Bizup, William T. FitzGerald.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-research-problem-framer`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

@@ -2,7 +2,9 @@
 name: application-logic-flaw-testing
 description: |
   Test web application business logic for vulnerabilities that automated scanners cannot detect. Use this skill when: performing a penetration test or security assessment and automated tools have been run but logic-layer coverage is still needed; testing multistage workflows (checkout, account creation, approval flows, insurance applications) for stage-skipping or cross-stage parameter pollution; probing authentication and password-change functions for parameter-removal bypasses (deleting existingPassword to impersonate an admin); testing numeric business limits for negative-number bypass (submitting -$20,000 to avoid approval thresholds); probing discount or pricing logic for timing flaws (add items to qualify, remove before payment); investigating whether shared code components allow session object poisoning across unrelated application flows; hunting for encryption oracles where a low-value crypto context can be used to forge high-value tokens; probing search functions that return match counts as side-channel inference oracles; testing for defense interaction flaws where quote-doubling plus length truncation reconstructs an injection payload; checking whether debug error messages expose session tokens or credentials cross-user via static storage; testing race conditions in authentication that cause cross-user session assignment under concurrent login. Logic flaws arise from violated developer assumptions — assumptions that users will follow intended sequences, supply only requested parameters, omit parameters they were not asked for, and not cross-pollinate state between application flows. Each flaw is unique and application-specific, but the 12 attack patterns documented here provide a reusable taxonomy that transfers across application domains. Maps to OWASP Testing Guide (OTG-BUSLOGIC-*), CWE-840 (Business Logic Errors), CWE-841 (Improper Enforcement of Behavioral Workflow), CWE-362 (Race Condition), and OWASP Top 10 A04:2021 (Insecure Design).
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/web-application-hackers-handbook/skills/application-logic-flaw-testing
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on: []
 source-books:
@@ -394,3 +396,12 @@ These principles apply to developers building secure applications and to testers
 - CWE-841: Improper Enforcement of Behavioral Workflow
 - CWE-362: Concurrent Execution Using Shared Resource with Improper Synchronization (Race Condition)
 - OWASP Top 10 A04:2021: Insecure Design
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — The Web Application Hacker's Handbook: Finding and Exploiting Security Flaws by Dafydd Stuttard, Marcus Pinto.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

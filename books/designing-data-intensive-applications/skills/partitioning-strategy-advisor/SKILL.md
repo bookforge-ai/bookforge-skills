@@ -2,7 +2,9 @@
 name: partitioning-strategy-advisor
 description: |
   Select the right partitioning (sharding) strategy — range, hash, or compound key — and configure secondary indexes, rebalancing, and request routing for a distributed database. Use when: designing a partition key for a new system; diagnosing write hotspots on monotonically increasing keys (timestamps, auto-increment IDs); evaluating whether an existing sharding scheme supports required query patterns; choosing between document-partitioned (local) vs. term-partitioned (global) secondary indexes and weighing scatter/gather read costs against global index write amplification; or selecting a rebalancing approach (fixed partitions, dynamic partitions, proportional-to-nodes) and routing topology (gossip, ZooKeeper coordination, partition-aware client). Covers Cassandra compound primary key patterns for range queries within hash-distributed partitions, HBase/SSTables range partitioning, Riak consistent hashing, and MongoDB/Elasticsearch index partitioning. Distinct from replication-strategy-selector (topology and consistency) and data-model-selector (schema design). Produces a concrete recommendation: partition key, partitioning method, secondary index approach, rebalancing configuration, and routing topology. Depends on data-model-selector for schema and access pattern context.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/designing-data-intensive-applications/skills/partitioning-strategy-advisor
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on:
   - data-model-selector
@@ -384,3 +386,15 @@ See `references/` for:
 - `secondary-index-trade-offs.md` — Local vs. global index trade-off analysis with cost model
 - `hotspot-mitigation-patterns.md` — Patterns for monotonic key hotspots, celebrity key hotspots, and write skew mitigation
 - `request-routing-comparison.md` — Gossip vs. ZooKeeper vs. partition-aware client with operational trade-offs per database
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Designing Data-Intensive Applications by Martin Kleppmann.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-data-model-selector`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

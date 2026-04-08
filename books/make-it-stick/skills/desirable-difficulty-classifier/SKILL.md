@@ -1,7 +1,9 @@
 ---
 name: desirable-difficulty-classifier
 description: Classify any learning activity, practice structure, or instructional design element as a desirable difficulty (strengthens encoding) or undesirable difficulty (creates friction without learning benefit). Use this skill when an instructional designer, trainer, teacher, or learner wants to audit a course design, training session, study method, or practice regimen for evidence-based difficulty management — even if they don't use the phrase "desirable difficulty." Applies to onboarding programs, corporate training, academic course design, self-study plans, coaching sessions, and skill development programs. Identifies which of six proven difficulty strategies are present or absent (spacing, interleaving, variation, retrieval, generation, elaboration) and generates specific redesign recommendations. Do NOT use this skill to build a full study schedule (use retrieval-practice-study-system), to assess learner readiness or aptitude, or to evaluate content quality unrelated to difficulty structure.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/make-it-stick/skills/desirable-difficulty-classifier
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: make-it-stick
@@ -345,3 +347,12 @@ Learners who are given information passively develop superficial familiarity. Le
 
 - `references/six-strategy-taxonomy.md` — Full bilateral contrast table for all six strategies with definitions, mechanisms, evidence summary, and counterpart descriptions
 - `references/bjork-classification-criteria.md` — Detailed source notes on the Bjork framework for desirable vs. undesirable difficulty, with direct chapter citations
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Make It Stick: The Science of Successful Learning by Peter C. Brown, Henry L. Roediger III, Mark A. McDaniel.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

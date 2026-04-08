@@ -1,7 +1,9 @@
 ---
 name: discovery-prototype-selection
 description: "Select the right prototype type and fidelity level for any discovery risk. Use when deciding what kind of prototype to build, when choosing between a feasibility spike, user prototype, live-data prototype, or Wizard of Oz prototype, or when someone asks 'what prototype should we build?' Also use when prototyping for usability testing, when validating a technical approach before building, when building a simulation for stakeholder alignment, or when an AI/ML feature needs pre-model validation. Maps the active risk (feasibility/usability/value/viability) to one of four prototype types and determines fidelity. Includes anti-pattern warnings for ambush estimation and prototype-as-value-proof confusion. Best triggered after product-discovery-risk-assessment. For executing usability or value tests after the prototype, use value-testing-technique-selection."
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/inspired-how-to-create-tech-products/skills/discovery-prototype-selection
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: published
 source-books:
   - id: inspired-how-to-create-tech-products
@@ -228,3 +230,15 @@ Estimated time: [X days]
 - `references/prototype-type-details.md` — Full descriptions of all four prototype types, canonical use cases, limitations, and creation guidance
 - `references/fidelity-decision-guide.md` — Fidelity selection decision tree with examples across product types
 - `references/feasibility-testing-questions.md` — The 10 feasibility questions engineers answer in discovery (Ch55) and how to structure engineer-led investigation
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — INSPIRED: How to Create Tech Products Customers Love by Marty Cagan.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-product-discovery-risk-assessment`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

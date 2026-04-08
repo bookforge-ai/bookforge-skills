@@ -1,7 +1,9 @@
 ---
 name: architecture-fitness-function-designer
 description: Design automated governance mechanisms (fitness functions) that objectively measure and enforce architecture characteristics over time. Use this skill whenever the user asks about architecture governance, fitness functions, automated architecture testing, architecture compliance checks, preventing architecture erosion, enforcing layer dependencies, cyclomatic complexity thresholds, ArchUnit or NetArchTest rules, structural tests for architecture, CI/CD architecture gates, chaos engineering as governance, measuring architecture characteristics objectively, architecture drift detection, continuous architecture verification, or wants to ensure their codebase stays aligned with architecture decisions -- even if they don't use the term "fitness function."
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/fundamentals-of-software-architecture/skills/architecture-fitness-function-designer
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: fundamentals-of-software-architecture
@@ -310,3 +312,16 @@ Output: 5 fitness functions with phased rollout plan, ArchUnit configuration, CI
 ## References
 
 - For the complete fitness function classification taxonomy with examples per category, see [references/fitness-function-catalog.md](references/fitness-function-catalog.md)
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Fundamentals of Software Architecture by Mark Richards, Neal Ford.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-architecture-characteristics-identifier`
+- `clawhub install bookforge-modularity-health-evaluator`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

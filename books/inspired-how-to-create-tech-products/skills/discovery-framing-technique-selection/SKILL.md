@@ -1,7 +1,9 @@
 ---
 name: discovery-framing-technique-selection
 description: "Select and execute the right discovery framing technique before building. Use when value risk is High and the underlying problem is not yet clearly defined, when a team is about to start discovery without a shared problem statement, when someone asks 'how should we frame this discovery effort?', or when starting any non-trivial feature, redesign, or new product effort. Also use for: writing an opportunity assessment, writing a customer letter (press release alternative), completing a startup canvas for a new business, or constructing a story map to scope discovery. Determines effort size (typical/large/new-product), selects the matching technique, and produces the framing document. Best triggered after product-discovery-risk-assessment. For specific testing techniques, use value-testing-technique-selection. For prototype selection, use discovery-prototype-selection."
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/inspired-how-to-create-tech-products/skills/discovery-framing-technique-selection
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: published
 source-books:
   - id: inspired-how-to-create-tech-products
@@ -490,3 +492,15 @@ CEO response acknowledges: 41% improvement in onboarding completion, 23% increas
 - `references/customer-letter-guide.md` — Detailed guidance on writing the customer letter and CEO response, including common failure modes
 - `references/startup-canvas-guide.md` — Full startup canvas guidance with risk prioritization and the "biggest risk" warning
 - `references/story-map-guide.md` — Step-by-step story map construction, release line drawing, and backlog transition guidance
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — INSPIRED: How to Create Tech Products Customers Love by Marty Cagan.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-product-discovery-risk-assessment`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

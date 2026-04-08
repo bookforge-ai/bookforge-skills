@@ -4,7 +4,9 @@ description: |
   Select a data encoding format (JSON, Protobuf, Thrift, or Avro) and design a schema evolution strategy that preserves backward and forward compatibility through rolling upgrades. Use when asked "should I use Protobuf or JSON?", "how do I evolve my schema without breaking old clients?", "how does Avro schema evolution work?", "what's the difference between Thrift and Protocol Buffers?", or "how do I add/remove fields without breaking compatibility?" Also use for: choosing text vs. binary encoding for internal services; checking whether a schema change breaks compatibility; diagnosing unknown field loss bugs during rolling upgrades; planning per-dataflow encoding strategy (database storage vs. REST/RPC vs. message broker).
   Covers five encoding families: language-specific, JSON/XML/CSV, binary JSON, Thrift/Protobuf, and Avro — with writer/reader schema reconciliation and per-dataflow-mode analysis.
   For data model selection (relational/document/graph), use data-model-selector instead. For message broker or stream pipeline design, use stream-processing-designer instead.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/designing-data-intensive-applications/skills/encoding-format-advisor
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on: [data-model-selector]
 source-books:
@@ -579,3 +581,15 @@ toolchains; binary format is not curl-testable.
 |------|----------|
 | `references/format-comparison-table.md` | Full scoring matrix for all five encoding families; byte counts for the same example record in JSON (81 bytes), MessagePack (66 bytes), Thrift BinaryProtocol (59 bytes), Thrift CompactProtocol (34 bytes), Protocol Buffers (33 bytes), Avro (32 bytes); compatibility matrix comparing each format's handling of add/remove/rename/type-change operations |
 | `references/schema-evolution-rules.md` | Complete per-format compatibility rule reference: all Protobuf/Thrift field tag rules, all Avro writer/reader schema resolution rules, JSON convention guidelines, with explicit permitted/prohibited change classification for each change type |
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Designing Data-Intensive Applications by Martin Kleppmann.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-data-model-selector`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

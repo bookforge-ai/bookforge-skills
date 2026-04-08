@@ -197,3 +197,12 @@ After adding a backup ISP: Loss of internet connectivity drops from P=0.4 to P=0
   - Chapter 16 "Disaster Planning" — pp. 363–382: disaster type taxonomy (pp. 364), disaster risk analysis methodology (pp. 366), system criticality classification (pp. 366), dynamic response strategy phases (pp. 365)
   - Appendix A "A Disaster Risk Assessment Matrix" — pp. 499–500: Table A-1 with full probability scale, impact scale, pre-seeded scenario taxonomy, and Ranking = P×I formula
 - Next steps after completing the register: incident response team setup (Chapter 16, pp. 367–375), response plan development (pp. 371–373), disaster recovery test planning (pp. 376–382)
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Building Secure And Reliable Systems by Unknown.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

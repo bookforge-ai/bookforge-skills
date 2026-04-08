@@ -1,7 +1,9 @@
 ---
 name: commitment-escalation-architect
 description: Design commitment escalation sequences and detect when consistency pressure is being used against you. Use this skill when planning onboarding sequences, activation flows, user engagement funnels, conversion funnels, habit formation programs, behavioral change campaigns, sales sequences, negotiation strategies, written commitment campaigns, foot-in-the-door campaigns, progressive commitment ladders, lowball tactics, escalation ladders, self-image engineering, inner choice cultivation, consistency-based persuasion, commitment amplification, or defending against manufactured consistency pressure and commitment traps.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/influence-psychology-of-persuasion/skills/commitment-escalation-architect
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: influence-psychology-of-persuasion
@@ -369,3 +371,12 @@ For Defense mode, produce a **Consistency Trap Assessment:**
 
 - [references/commitment-amplifiers.md](references/commitment-amplifiers.md) — Full 4-amplifier scoring rubric with all quantified evidence
 - [references/technique-comparison.md](references/technique-comparison.md) — Detailed foot-in-the-door vs. lowball mechanics, POW sequence breakdown, compliance data
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Influence: The Psychology of Persuasion by Robert B. Cialdini.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

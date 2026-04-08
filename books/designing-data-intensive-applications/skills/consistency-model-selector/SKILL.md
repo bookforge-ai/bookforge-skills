@@ -2,7 +2,9 @@
 name: consistency-model-selector
 description: |
   Choose the correct consistency model (linearizability, causal consistency, or eventual consistency) for each operation in a distributed system, and select the matching implementation mechanism. Use when designing a new distributed data system, deciding whether ZooKeeper or etcd is needed for coordination, evaluating whether two-phase commit is appropriate for cross-node transactions, debugging correctness violations (stale reads, split-brain, uniqueness constraint failures), or distinguishing linearizability from serializability. Also use when applying the CAP theorem correctly (beyond the "pick 2 of 3" oversimplification), selecting total order broadcast as a consensus primitive, evaluating 2PC failure modes and lock-holding cost, or assessing whether causal consistency is sufficient in place of linearizability. Produces a per-operation consistency recommendation with replication mechanism, ordering guarantee, and — when consensus is needed — protocol selection (Raft, Zab, Paxos) with documented failure modes. Does not cover replication topology or failure recovery strategy (see replication-strategy-selector, distributed-failure-analyzer).
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/designing-data-intensive-applications/skills/consistency-model-selector
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 depends-on:
   - replication-strategy-selector
@@ -333,3 +335,16 @@ Cross-references:
 - `replication-strategy-selector` — replication topology must be compatible with the selected consistency model
 - `distributed-failure-analyzer` — for failure mode diagnosis when consistency violations appear in production
 - `transaction-isolation-selector` — for isolation level selection within a single-node or single-leader transaction context
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Designing Data-Intensive Applications by Martin Kleppmann.
+
+## Related BookForge Skills
+
+Install related skills from ClawhHub:
+- `clawhub install bookforge-replication-strategy-selector`
+- `clawhub install bookforge-distributed-failure-analyzer`
+
+Or install the full book set from GitHub: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

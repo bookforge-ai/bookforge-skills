@@ -1,7 +1,9 @@
 ---
 name: architect-control-calibrator
 description: Determine the appropriate level of architect control over a development team using a quantitative 5-factor scoring model (-100 to +100 scale). Use this skill whenever the user asks how much they should be involved in a team's decisions, how hands-on or hands-off to be as an architect, how to calibrate their leadership style, whether they are micromanaging developers, whether they should give the team more autonomy, or any question about architect involvement level, team oversight, or technical leadership balance — even if they don't explicitly say "control." Also triggers when the user describes team dysfunction symptoms like merge conflicts increasing, nobody speaking up in meetings, or tasks falling through cracks.
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/fundamentals-of-software-architecture/skills/architect-control-calibrator
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: fundamentals-of-software-architecture
@@ -279,3 +281,12 @@ Output: Control calibration report showing +45 (moderate-high) with urgent team 
 ## References
 
 - For detailed factor scoring with intermediate values and worked examples, see [references/control-scoring-guide.md](references/control-scoring-guide.md)
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Fundamentals of Software Architecture by Mark Richards, Neal Ford.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)

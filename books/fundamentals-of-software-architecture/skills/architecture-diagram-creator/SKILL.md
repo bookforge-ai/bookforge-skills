@@ -1,7 +1,9 @@
 ---
 name: architecture-diagram-creator
 description: Create effective architecture diagrams following established diagramming standards (UML, C4, ArchiMate) with proper visual elements and presentation techniques. Use this skill whenever the user needs to create, review, or improve architecture diagrams, wants guidance on which diagramming standard to use, needs help with diagram elements (titles, lines, shapes, labels, color, keys), is preparing architecture presentations with slides, wants to use incremental builds for presenting complex diagrams, is struggling with inconsistent notation across diagrams, or needs to maintain representational consistency across different zoom levels of their architecture — even if they don't explicitly say "diagram."
-version: 1
+version: 1.0.0
+homepage: https://github.com/bookforge-ai/bookforge-skills/tree/main/books/fundamentals-of-software-architecture/skills/architecture-diagram-creator
+metadata: {"openclaw":{"emoji":"📚","homepage":"https://github.com/bookforge-ai/bookforge-skills"}}
 status: draft
 source-books:
   - id: fundamentals-of-software-architecture
@@ -239,3 +241,12 @@ Output: Restructured 15-slide deck into 8 slides with incremental builds, 3 invi
 ## References
 
 - For detailed diagramming standards, element guidelines, C4 level descriptions, and notation conventions, see [references/diagram-standards.md](references/diagram-standards.md)
+
+## License
+
+This skill is licensed under [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Source: [BookForge](https://github.com/bookforge-ai/bookforge-skills) — Fundamentals of Software Architecture by Mark Richards, Neal Ford.
+
+## Related BookForge Skills
+
+This skill is standalone. Browse more BookForge skills: [bookforge-skills](https://github.com/bookforge-ai/bookforge-skills)
