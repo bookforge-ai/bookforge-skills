@@ -1,0 +1,16 @@
+{
+  "book_id": "the-1-page-marketing-plan",
+  "title": "The 1-Page Marketing Plan",
+  "subtitle": "Get New Customers, Make More Money, And Stand Out From The Crowd",
+  "author": "Allan Dib",
+  "authors": ["Allan Dib"],
+  "isbn": "9781989025017",
+  "year": 2016,
+  "pages": 279,
+  "domain": "marketing",
+  "domains": ["marketing", "small-business", "lead-generation", "sales", "customer-acquisition", "direct-response-marketing"],
+  "skill_count": 13,
+  "source_book": "The 1-Page Marketing Plan Get New Customers, Make More Money, and Stand Out from the Crowd (Allan Dib).pdf",
+  "pipeline_version": "1.0.0",
+  "tags": ["marketing", "small-business", "lead-generation", "sales", "customer-acquisition", "direct-response-marketing"]
+}

@@ -1,0 +1,295 @@
+{
+  "name": "the-1-page-marketing-plan",
+  "display_name": "The 1-Page Marketing Plan",
+  "version": "1.0.0",
+  "description": "Direct response marketing skills for small business owners — 13 skills covering target market selection, messaging, offers, advertising, lead capture, nurturing, sales conversion, customer experience, lifetime value, and referrals. Based on Allan Dib's 9-square canvas framework.",
+  "domain": "marketing",
+  "skill_count": 13,
+  "source_book": {
+    "title": "The 1-Page Marketing Plan",
+    "authors": ["Allan Dib"],
+    "isbn": "9781989025017",
+    "year": 2016,
+    "pages": 279
+  },
+  "skills": [
+    {
+      "name": "target-market-selection-pvp-index",
+      "path": "target-market-selection-pvp-index/SKILL.md",
+      "description": "Use this skill to select the ideal target market or customer segment for a small business using the PVP Index (Personal fulfillment, Value to marketplace, Profitability). Triggers when a user asks to define their niche, pick a target customer, score market segments, or answer who their product is for.",
+      "tier": 1,
+      "mode": "full",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 86,
+        "baseline": 7,
+        "delta": 79
+      }
+    },
+    {
+      "name": "marketing-metrics-dashboard",
+      "path": "marketing-metrics-dashboard/SKILL.md",
+      "description": "Build a marketing metrics dashboard tracking the 7 key numbers every small business must measure: Leads, Conversion Rate, Average Transaction Value (ATV), Break-Even Point, Gross Margin, Churn Rate, and Customer Lifetime Value (CLV).",
+      "tier": 1,
+      "mode": "full",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 92,
+        "baseline": 31,
+        "delta": 61
+      }
+    },
+    {
+      "name": "customer-experience-systems-design",
+      "path": "customer-experience-systems-design/SKILL.md",
+      "description": "Design and document the four core business systems (Marketing, Sales, Fulfillment, Administration) and create memorable customer experiences through experience design and innovation.",
+      "tier": 1,
+      "mode": "full",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 86,
+        "baseline": 14,
+        "delta": 71
+      }
+    },
+    {
+      "name": "customer-revenue-quality-audit",
+      "path": "customer-revenue-quality-audit/SKILL.md",
+      "description": "Classify every customer into one of four archetypes — Tribe, Churners, Vampires, or Snow Leopards — score your customer base using Net Promoter Score (NPS), and produce a segmentation report with a concrete fire/grow decision per customer.",
+      "tier": 1,
+      "mode": "full",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 100,
+        "baseline": 8,
+        "delta": 92
+      }
+    },
+    {
+      "name": "marketing-message-and-usp-crafting",
+      "path": "marketing-message-and-usp-crafting/SKILL.md",
+      "description": "Use this skill to craft a differentiated Unique Selling Proposition (USP), write a Problem/Solution/Proof elevator pitch, and engineer headlines that activate the 5 core emotional buying motivators.",
+      "tier": 1,
+      "mode": "full",
+      "build_level": 1,
+      "depends_on": ["target-market-selection-pvp-index"],
+      "quality": {
+        "with_skill": 100,
+        "baseline": 36,
+        "delta": 64
+      }
+    },
+    {
+      "name": "irresistible-offer-builder",
+      "path": "irresistible-offer-builder/SKILL.md",
+      "description": "Use this skill to construct a complete, irresistible offer using an 8-element checklist (Value, Language, Reason Why, Value Stack, Upsells, Payment Plan, Outrageous Guarantee, Scarcity).",
+      "tier": 1,
+      "mode": "full",
+      "build_level": 1,
+      "depends_on": ["target-market-selection-pvp-index"],
+      "quality": {
+        "with_skill": 100,
+        "baseline": 7.1,
+        "delta": 92.9
+      }
+    },
+    {
+      "name": "lead-capture-ethical-bribe-design",
+      "path": "lead-capture-ethical-bribe-design/SKILL.md",
+      "description": "Use this skill to design a lead-capture ad strategy using an ethical bribe — a high-value free offer that self-selects high-probability prospects.",
+      "tier": 1,
+      "mode": "full",
+      "build_level": 1,
+      "depends_on": ["target-market-selection-pvp-index"],
+      "quality": {
+        "with_skill": 92.9,
+        "baseline": 21.4,
+        "delta": 71.4
+      }
+    },
+    {
+      "name": "customer-lifetime-value-growth",
+      "path": "customer-lifetime-value-growth/SKILL.md",
+      "description": "Grow Customer Lifetime Value (CLV) using five proven levers — raise prices, upsell at point of purchase, move customers up an ascension ladder, increase purchase frequency through reminders and subscriptions, and win back lapsed customers with a reactivation campaign.",
+      "tier": 1,
+      "mode": "full",
+      "build_level": 1,
+      "depends_on": ["customer-experience-systems-design"],
+      "quality": {
+        "with_skill": 85.7,
+        "baseline": 28.6,
+        "delta": 57.1
+      }
+    },
+    {
+      "name": "referral-system-design",
+      "path": "referral-system-design/SKILL.md",
+      "description": "Design an active referral system for a small business — covering referral scripts, gift card mechanisms, joint venture partner profiles, and the bystander effect override for referral asks.",
+      "tier": 1,
+      "mode": "full",
+      "build_level": 1,
+      "depends_on": ["customer-experience-systems-design"],
+      "quality": {
+        "with_skill": 85.7,
+        "baseline": 14.3,
+        "delta": 71.4
+      }
+    },
+    {
+      "name": "advertising-media-roi-framework",
+      "path": "advertising-media-roi-framework/SKILL.md",
+      "description": "Use when selecting advertising media channels, calculating Customer Acquisition Cost (CAC) per channel, deciding whether to stop, measure, or scale each channel, and checking for dangerous single-point-of-failure concentration.",
+      "tier": 1,
+      "mode": "full",
+      "build_level": 2,
+      "depends_on": [
+        "target-market-selection-pvp-index",
+        "marketing-message-and-usp-crafting",
+        "lead-capture-ethical-bribe-design"
+      ],
+      "quality": {
+        "with_skill": 92.9,
+        "baseline": 7.1,
+        "delta": 85.7
+      }
+    },
+    {
+      "name": "lead-nurture-sequence-design",
+      "path": "lead-nurture-sequence-design/SKILL.md",
+      "description": "Use this skill to design a complete lead nurture system for a small business — covering shock-and-awe packages, drip email sequences, CRM setup, follow-up cadences, and positioning as a trusted advisor before the sale.",
+      "tier": 1,
+      "mode": "full",
+      "build_level": 2,
+      "depends_on": ["lead-capture-ethical-bribe-design"],
+      "quality": {
+        "with_skill": 100,
+        "baseline": 35.7,
+        "delta": 64.3
+      }
+    },
+    {
+      "name": "sales-conversion-trust-system",
+      "path": "sales-conversion-trust-system/SKILL.md",
+      "description": "Use when ready to convert nurtured leads into paying customers — covering outrageous guarantees, risk reversal, 3-tier pricing, closing scripts, and post-sale wow experiences.",
+      "tier": 1,
+      "mode": "full",
+      "build_level": 2,
+      "depends_on": [
+        "lead-nurture-sequence-design",
+        "irresistible-offer-builder"
+      ],
+      "quality": {
+        "with_skill": 92.9,
+        "baseline": 0,
+        "delta": 92.9
+      }
+    },
+    {
+      "name": "marketing-plan-canvas",
+      "path": "marketing-plan-canvas/SKILL.md",
+      "description": "Use this skill to build, assemble, or audit a complete 9-square 1-Page Marketing Plan canvas for any small or medium business — integrating all upstream skills into a single coherent strategy document.",
+      "tier": 1,
+      "mode": "full",
+      "build_level": 3,
+      "depends_on": [
+        "target-market-selection-pvp-index",
+        "marketing-message-and-usp-crafting",
+        "advertising-media-roi-framework",
+        "lead-capture-ethical-bribe-design",
+        "lead-nurture-sequence-design",
+        "sales-conversion-trust-system",
+        "customer-experience-systems-design",
+        "customer-lifetime-value-growth",
+        "referral-system-design",
+        "irresistible-offer-builder"
+      ],
+      "quality": {
+        "with_skill": 100,
+        "baseline": 21.4,
+        "delta": 78.6
+      }
+    }
+  ],
+  "dependency_graph": {
+    "levels": {
+      "0": [
+        "target-market-selection-pvp-index",
+        "marketing-metrics-dashboard",
+        "customer-experience-systems-design",
+        "customer-revenue-quality-audit"
+      ],
+      "1": [
+        "marketing-message-and-usp-crafting",
+        "irresistible-offer-builder",
+        "lead-capture-ethical-bribe-design",
+        "customer-lifetime-value-growth",
+        "referral-system-design"
+      ],
+      "2": [
+        "advertising-media-roi-framework",
+        "lead-nurture-sequence-design",
+        "sales-conversion-trust-system"
+      ],
+      "3": [
+        "marketing-plan-canvas"
+      ]
+    },
+    "hub": "target-market-selection-pvp-index",
+    "edges": [
+      { "from": "target-market-selection-pvp-index", "to": "marketing-message-and-usp-crafting", "type": "input" },
+      { "from": "target-market-selection-pvp-index", "to": "irresistible-offer-builder", "type": "input" },
+      { "from": "target-market-selection-pvp-index", "to": "lead-capture-ethical-bribe-design", "type": "input" },
+      { "from": "target-market-selection-pvp-index", "to": "advertising-media-roi-framework", "type": "input" },
+      { "from": "target-market-selection-pvp-index", "to": "marketing-plan-canvas", "type": "input" },
+      { "from": "marketing-message-and-usp-crafting", "to": "advertising-media-roi-framework", "type": "input" },
+      { "from": "marketing-message-and-usp-crafting", "to": "marketing-plan-canvas", "type": "input" },
+      { "from": "lead-capture-ethical-bribe-design", "to": "advertising-media-roi-framework", "type": "input" },
+      { "from": "lead-capture-ethical-bribe-design", "to": "lead-nurture-sequence-design", "type": "input" },
+      { "from": "lead-capture-ethical-bribe-design", "to": "marketing-plan-canvas", "type": "input" },
+      { "from": "customer-experience-systems-design", "to": "customer-lifetime-value-growth", "type": "input" },
+      { "from": "customer-experience-systems-design", "to": "referral-system-design", "type": "input" },
+      { "from": "customer-experience-systems-design", "to": "marketing-plan-canvas", "type": "input" },
+      { "from": "irresistible-offer-builder", "to": "sales-conversion-trust-system", "type": "input" },
+      { "from": "irresistible-offer-builder", "to": "marketing-plan-canvas", "type": "input" },
+      { "from": "lead-nurture-sequence-design", "to": "sales-conversion-trust-system", "type": "input" },
+      { "from": "lead-nurture-sequence-design", "to": "marketing-plan-canvas", "type": "input" },
+      { "from": "advertising-media-roi-framework", "to": "marketing-plan-canvas", "type": "input" },
+      { "from": "sales-conversion-trust-system", "to": "marketing-plan-canvas", "type": "input" },
+      { "from": "customer-lifetime-value-growth", "to": "marketing-plan-canvas", "type": "input" },
+      { "from": "referral-system-design", "to": "marketing-plan-canvas", "type": "input" }
+    ],
+    "is_dag": true,
+    "max_depth": 3
+  },
+  "quality_summary": {
+    "avg_with_skill": 93.4,
+    "avg_baseline": 17.8,
+    "avg_delta": 75.6,
+    "all_passed": true
+  },
+  "tags": ["marketing", "small-business", "lead-generation", "sales", "customer-acquisition", "direct-response-marketing"],
+  "install_profiles": {
+    "full": {
+      "description": "All 13 skills",
+      "skills": [
+        "target-market-selection-pvp-index",
+        "marketing-metrics-dashboard",
+        "customer-experience-systems-design",
+        "customer-revenue-quality-audit",
+        "marketing-message-and-usp-crafting",
+        "irresistible-offer-builder",
+        "lead-capture-ethical-bribe-design",
+        "customer-lifetime-value-growth",
+        "referral-system-design",
+        "advertising-media-roi-framework",
+        "lead-nurture-sequence-design",
+        "sales-conversion-trust-system",
+        "marketing-plan-canvas"
+      ]
+    }
+  }
+}
