@@ -16,7 +16,7 @@ If you are the author, publisher, or designated rights holder for a book that ap
 
 You do not need to cite a statute. You do not need a lawyer. You do not need to prove infringement. An opt-out request from a legitimate rights holder is honored on request. This is a commitment, not a negotiation.
 
-If you would prefer a formal DMCA notice, the full procedure is described in the [DMCA notice](#dmca-notice-17-usc-ยง512c3) section.
+If you would prefer a formal DMCA notice, the full procedure is described in the [DMCA notice](#dmca-notice-17-usc-512c3) section.
 
 ---
 

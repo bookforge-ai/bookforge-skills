@@ -67,7 +67,7 @@ None of these practices are trust-me claims. Each one is enforced either by a bu
 
 **You can opt out at any time, with one email.** We honor author opt-out requests within 48 hours of verification. No lawyers required, no statute citations needed, no argument. Send an email to the address in [TAKEDOWN.md](TAKEDOWN.md#contact) with the book title and your relationship to the work, and we will remove the content.
 
-**You can also file a formal DMCA notice** if you prefer a paper trail. The full §512(c)(3) procedure is documented in [TAKEDOWN.md](TAKEDOWN.md#dmca-notice-17-usc-ยง512c3).
+**You can also file a formal DMCA notice** if you prefer a paper trail. The full §512(c)(3) procedure is documented in [TAKEDOWN.md](TAKEDOWN.md#dmca-notice-17-usc-512c3).
 
 **You are welcome to participate instead of opt out.** BookForge offers an author-verified badge program for authors who review their book's skills and confirm accuracy. Participating authors receive prominent credit and a verified badge on their skill set. Details in [TAKEDOWN.md](TAKEDOWN.md#author-verified-badge-program-for-authors-who-want-to-participate).
 
