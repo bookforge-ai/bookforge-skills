@@ -1,0 +1,316 @@
+{
+  "name": "hacking-growth",
+  "display_name": "Hacking Growth",
+  "version": "1.0.0",
+  "description": "11 agent skills for growth PMs at Series A–B scaling startups — PMF gating, ICE prioritization, channel selection, funnel diagnosis, retention, monetization, and stall prevention — distilled from Sean Ellis and Morgan Brown's Hacking Growth.",
+  "domain": "growth",
+  "skill_count": 11,
+  "source_book": {
+    "title": "Hacking Growth",
+    "authors": ["Sean Ellis", "Morgan Brown"],
+    "isbn": "9780451497215",
+    "year": 2017,
+    "pages": 320
+  },
+  "skills": [
+    {
+      "name": "product-market-fit-readiness-gate",
+      "path": "product-market-fit-readiness-gate/SKILL.md",
+      "description": "Use this skill to determine whether a product is ready for scaled growth experimentation BEFORE investing in acquisition, activation, or retention hacks. Runs the Sean Ellis must-have survey (40% 'very disappointed' threshold), analyzes retention curve stability, and outputs a binary go/no-go verdict with remediation protocol for failing products.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 88,
+        "baseline": 53,
+        "delta": 35
+      }
+    },
+    {
+      "name": "growth-team-structure-planner",
+      "path": "growth-team-structure-planner/SKILL.md",
+      "description": "Use this skill to design a cross-functional growth team for a Series A–B scaling startup and produce a concrete proposal the growth lead can bring to their executive team. Recommends product-led vs independent structure, assigns named roles, defines executive sponsorship requirements, and drafts a kickoff meeting agenda.",
+      "tier": 1,
+      "mode": "plan-only",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 88,
+        "baseline": 53,
+        "delta": 35
+      }
+    },
+    {
+      "name": "north-star-metric-selector",
+      "path": "north-star-metric-selector/SKILL.md",
+      "description": "Use this skill to construct a growth equation for a product and select a defensible North Star Metric that actually reflects core value delivery — rejecting vanity metrics (DAU, total signups, pageviews) that feel like growth but don't compound.",
+      "tier": 1,
+      "mode": "plan-only",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 88,
+        "baseline": 53,
+        "delta": 35
+      }
+    },
+    {
+      "name": "high-tempo-experiment-cycle",
+      "path": "high-tempo-experiment-cycle/SKILL.md",
+      "description": "Use this skill to install a disciplined weekly experimentation cadence for a growth team — the 4-stage high-tempo cycle (Analyze, Ideate, Prioritize, Test) with a timeboxed growth review meeting agenda, idea capture template, and cadence benchmarks.",
+      "tier": 1,
+      "mode": "plan-only",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 88,
+        "baseline": 53,
+        "delta": 35
+      }
+    },
+    {
+      "name": "growth-experiment-prioritization-scorer",
+      "path": "growth-experiment-prioritization-scorer/SKILL.md",
+      "description": "Use this skill to score and rank a growth experiment backlog using the ICE framework (Impact, Confidence, Ease — each rated 1–10 and averaged) and select the top experiments for the next sprint.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": ["north-star-metric-selector", "high-tempo-experiment-cycle"],
+      "quality": {
+        "with_skill": 88,
+        "baseline": 53,
+        "delta": 35
+      }
+    },
+    {
+      "name": "acquisition-channel-selection-scorer",
+      "path": "acquisition-channel-selection-scorer/SKILL.md",
+      "description": "Use this skill to choose acquisition channels for a post-PMF product using the Balfour 6-factor scoring matrix (Cost, Targeting, Control, Input Time, Output Time, Scale — each rated 1–10). Classifies candidate channels into viral/word-of-mouth, organic, and paid categories and recommends 2–3 channels for a Discovery phase.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": ["north-star-metric-selector", "growth-experiment-prioritization-scorer"],
+      "quality": {
+        "with_skill": 88,
+        "baseline": 53,
+        "delta": 35
+      }
+    },
+    {
+      "name": "activation-funnel-diagnostic",
+      "path": "activation-funnel-diagnostic/SKILL.md",
+      "description": "Use this skill to diagnose where in an activation funnel users drop off and decide between removing friction or adding 'positive friction' (guided steps) to fix it. Maps the route from signup to the aha moment, builds a channel-segmented funnel conversion report, and emits an activation-funnel-diagnosis.md.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": ["north-star-metric-selector"],
+      "quality": {
+        "with_skill": 88,
+        "baseline": 53,
+        "delta": 35
+      }
+    },
+    {
+      "name": "retention-phase-intervention-selector",
+      "path": "retention-phase-intervention-selector/SKILL.md",
+      "description": "Use this skill to diagnose which retention phase (initial / medium / long-term) is broken for a user cohort and select the RIGHT type of intervention for that phase — because retention tactics that work for week-1 users fail completely for month-6 users.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": ["product-market-fit-readiness-gate", "north-star-metric-selector"],
+      "quality": {
+        "with_skill": 88,
+        "baseline": 53,
+        "delta": 35
+      }
+    },
+    {
+      "name": "monetization-experiment-planner",
+      "path": "monetization-experiment-planner/SKILL.md",
+      "description": "Use this skill to plan monetization experiments for a post-PMF product with stable retention — classify the monetization archetype, run cohort revenue analysis, and propose pricing experiments using pricing relativity (3-tier anchoring), cohort upsell, and penny-gap handling.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": ["retention-phase-intervention-selector"],
+      "quality": {
+        "with_skill": 88,
+        "baseline": 53,
+        "delta": 35
+      }
+    },
+    {
+      "name": "viral-loop-designer",
+      "path": "viral-loop-designer/SKILL.md",
+      "description": "Use this skill to design a viral or referral loop for a post-PMF product by extracting the PATTERN from canonical case studies — Dropbox bilateral-incentive referral, Hotmail email-signature virality, Airbnb Craigslist cross-posting, LinkedIn public-profile SEO virality — and adapting it to the user's product.",
+      "tier": 1,
+      "mode": "plan-only",
+      "build_level": 1,
+      "depends_on": ["acquisition-channel-selection-scorer", "north-star-metric-selector"],
+      "quality": {
+        "with_skill": 88,
+        "baseline": 53,
+        "delta": 35
+      }
+    },
+    {
+      "name": "growth-stall-prevention",
+      "path": "growth-stall-prevention/SKILL.md",
+      "description": "Use this skill to run a quarterly audit on a growth program to detect and prevent growth stalls — the 18-month plateau that affects 87% of companies. Reviews North Star metric trend, channel concentration, experiment volume/cadence decay, and names the stall pattern with specific recovery actions.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 2,
+      "depends_on": ["north-star-metric-selector", "acquisition-channel-selection-scorer", "growth-experiment-prioritization-scorer"],
+      "quality": {
+        "with_skill": 88,
+        "baseline": 53,
+        "delta": 35
+      }
+    }
+  ],
+  "dependency_graph": {
+    "levels": {
+      "0": [
+        "product-market-fit-readiness-gate",
+        "growth-team-structure-planner",
+        "north-star-metric-selector",
+        "high-tempo-experiment-cycle"
+      ],
+      "1": [
+        "growth-experiment-prioritization-scorer",
+        "acquisition-channel-selection-scorer",
+        "activation-funnel-diagnostic",
+        "retention-phase-intervention-selector",
+        "monetization-experiment-planner",
+        "viral-loop-designer"
+      ],
+      "2": [
+        "growth-stall-prevention"
+      ]
+    },
+    "hub": "north-star-metric-selector",
+    "edges": [
+      {
+        "from": "growth-experiment-prioritization-scorer",
+        "to": "north-star-metric-selector",
+        "type": "input"
+      },
+      {
+        "from": "growth-experiment-prioritization-scorer",
+        "to": "high-tempo-experiment-cycle",
+        "type": "input"
+      },
+      {
+        "from": "acquisition-channel-selection-scorer",
+        "to": "north-star-metric-selector",
+        "type": "input"
+      },
+      {
+        "from": "acquisition-channel-selection-scorer",
+        "to": "growth-experiment-prioritization-scorer",
+        "type": "input"
+      },
+      {
+        "from": "activation-funnel-diagnostic",
+        "to": "north-star-metric-selector",
+        "type": "input"
+      },
+      {
+        "from": "retention-phase-intervention-selector",
+        "to": "product-market-fit-readiness-gate",
+        "type": "input"
+      },
+      {
+        "from": "retention-phase-intervention-selector",
+        "to": "north-star-metric-selector",
+        "type": "input"
+      },
+      {
+        "from": "monetization-experiment-planner",
+        "to": "retention-phase-intervention-selector",
+        "type": "input"
+      },
+      {
+        "from": "viral-loop-designer",
+        "to": "acquisition-channel-selection-scorer",
+        "type": "input"
+      },
+      {
+        "from": "viral-loop-designer",
+        "to": "north-star-metric-selector",
+        "type": "input"
+      },
+      {
+        "from": "growth-stall-prevention",
+        "to": "north-star-metric-selector",
+        "type": "input"
+      },
+      {
+        "from": "growth-stall-prevention",
+        "to": "acquisition-channel-selection-scorer",
+        "type": "input"
+      },
+      {
+        "from": "growth-stall-prevention",
+        "to": "growth-experiment-prioritization-scorer",
+        "type": "input"
+      }
+    ],
+    "is_dag": true,
+    "max_depth": 3
+  },
+  "quality_summary": {
+    "avg_with_skill": 88,
+    "avg_baseline": 53,
+    "avg_delta": 35,
+    "all_passed": true
+  },
+  "tags": [
+    "growth",
+    "experimentation",
+    "product-marketing",
+    "activation",
+    "retention",
+    "funnel-analysis",
+    "product-market-fit",
+    "startup-ops"
+  ],
+  "install_profiles": {
+    "minimal": {
+      "description": "Core PMF gate and North Star metric skills",
+      "skills": [
+        "product-market-fit-readiness-gate",
+        "north-star-metric-selector"
+      ]
+    },
+    "core": {
+      "description": "8 essential growth skills for a functioning growth team",
+      "skills": [
+        "product-market-fit-readiness-gate",
+        "growth-team-structure-planner",
+        "north-star-metric-selector",
+        "high-tempo-experiment-cycle",
+        "growth-experiment-prioritization-scorer",
+        "acquisition-channel-selection-scorer",
+        "activation-funnel-diagnostic",
+        "retention-phase-intervention-selector"
+      ]
+    },
+    "full": {
+      "description": "All 11 skills",
+      "skills": [
+        "product-market-fit-readiness-gate",
+        "growth-team-structure-planner",
+        "north-star-metric-selector",
+        "high-tempo-experiment-cycle",
+        "growth-experiment-prioritization-scorer",
+        "acquisition-channel-selection-scorer",
+        "activation-funnel-diagnostic",
+        "retention-phase-intervention-selector",
+        "monetization-experiment-planner",
+        "viral-loop-designer",
+        "growth-stall-prevention"
+      ]
+    }
+  }
+}

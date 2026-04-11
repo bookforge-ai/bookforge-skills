@@ -1,0 +1,16 @@
+{
+  "book_id": "hacking-growth",
+  "title": "Hacking Growth",
+  "subtitle": "How Today's Fastest-Growing Companies Drive Breakout Success",
+  "author": "Sean Ellis, Morgan Brown",
+  "authors": ["Sean Ellis", "Morgan Brown"],
+  "isbn": "9780451497215",
+  "year": 2017,
+  "pages": 320,
+  "domain": "growth",
+  "domains": ["growth", "experimentation", "product-marketing", "activation", "retention", "funnel-analysis", "product-market-fit", "startup-ops"],
+  "skill_count": 11,
+  "source_book": "Hacking Growth How Today's Fastest-Growing Companies Drive Breakout Success (Sean Ellis, Morgan Brown) (z-library.sk, 1lib.sk, z-lib.sk).epub",
+  "pipeline_version": "2.0",
+  "tags": ["growth", "experimentation", "product-marketing", "activation", "retention", "funnel-analysis", "product-market-fit", "startup-ops"]
+}

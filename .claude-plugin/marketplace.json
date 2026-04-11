@@ -71,6 +71,15 @@
       "category": "marketing",
       "tags": ["marketing", "small-business", "lead-generation", "sales", "customer-acquisition", "direct-response-marketing"],
       "license": "CC-BY-SA-4.0"
+    },
+    {
+      "name": "hacking-growth",
+      "source": "./books/hacking-growth",
+      "description": "11 growth skills from Hacking Growth by Sean Ellis and Morgan Brown — PMF gating, ICE prioritization, channel selection, funnel diagnosis, retention, monetization, and stall prevention",
+      "version": "1.0.0",
+      "category": "growth",
+      "tags": ["growth", "experimentation", "product-marketing", "activation", "retention", "funnel-analysis", "product-market-fit", "startup-ops"],
+      "license": "CC-BY-SA-4.0"
     }
   ]
 }

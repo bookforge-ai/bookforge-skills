@@ -1,0 +1,13 @@
+{
+  "name": "hacking-growth",
+  "description": "11 agent skills for growth PMs at Series A–B scaling startups — PMF gating, ICE prioritization, channel selection, funnel diagnosis, retention, monetization, and stall prevention — distilled from Sean Ellis and Morgan Brown's Hacking Growth.",
+  "version": "1.0.0",
+  "author": {
+    "name": "BookForge",
+    "email": "bookforge-ai@users.noreply.github.com"
+  },
+  "homepage": "https://github.com/bookforge-ai/bookforge-skills",
+  "repository": "https://github.com/bookforge-ai/bookforge-skills",
+  "license": "CC-BY-SA-4.0",
+  "keywords": ["books", "skills", "agent-skills", "growth"]
+}
