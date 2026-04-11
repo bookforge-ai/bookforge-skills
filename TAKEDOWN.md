@@ -40,17 +40,14 @@ Under the Digital Millennium Copyright Act, §512, we have designated the follow
 
 **Designated agent**
 ```
-Name:            [FOUNDER FULL NAME]
-Role:            BookForge maintainer (sole maintainer as of 2026)
-Email:           [takedown@bookforgeai.dev]
-Postal address:  [PO BOX ADDRESS]
-                 [CITY, STATE, POSTAL CODE]
-                 [COUNTRY]
+Name:   Hung Quoc To
+Role:   BookForge maintainer (sole maintainer)
+Email:  takedown@bookforgeai.dev
 ```
 
-> **Before publishing this file:** replace the four bracketed placeholders with real values. The email should be a monitored mailbox (recommended: `takedown@bookforgeai.dev`). The postal address should be a PO box, not a personal residence. BookForge does not yet have a formed business entity, so the designated agent is currently the sole maintainer acting personally; this designation will be updated once a legal entity is formed.
+BookForge does not yet have a formed business entity. The designated agent is the sole maintainer acting personally. This designation will be updated when a legal entity is formed.
 
-If you are sending a formal DMCA notice, use the email address above. We prefer email for speed but will accept postal notices at the listed address.
+We operate as an email-only contact for takedown and opt-out. If you are sending a formal DMCA notice, use the email address above. We do not maintain a postal address for notices — email is the only accepted channel.
 
 ---
 
@@ -65,7 +62,7 @@ A formal DMCA notice must include all of the following elements. If any are miss
 5. **A statement under penalty of perjury** that you have a good-faith belief that the use is not authorized by the rights holder, their agent, or the law.
 6. **A statement under penalty of perjury** that the information in the notice is accurate and that you are authorized to act on behalf of the rights holder.
 
-Send the complete notice to the email address in the [designated agent](#designated-agent-for-dmca-notices) section above.
+Send the complete notice to `takedown@bookforgeai.dev`.
 
 ---
 
@@ -79,7 +76,7 @@ If your contribution was removed from this repository in response to a DMCA noti
 4. **Your contact information** — address, telephone number, and email address.
 5. **A statement consenting to the jurisdiction** of the federal district court for the judicial district in which your address is located (or, if outside the United States, any judicial district in which BookForge may be found) and that you will accept service of process from the original notifier.
 
-Send counter-notices to the email address in the [designated agent](#designated-agent-for-dmca-notices) section above.
+Send counter-notices to `takedown@bookforgeai.dev`.
 
 Upon receiving a valid counter-notice, we will forward it to the original notifier. If the notifier does not file a court action within 10 business days, we will restore the removed material.
 
@@ -89,7 +86,7 @@ Upon receiving a valid counter-notice, we will forward it to the original notifi
 
 Formal DMCA notices exist for situations where the rights holder wants a paper trail and legal protection. Most authors do not need this. If you are an author who would rather just have your book removed without filing formal paperwork, send us an email and we will honor the request.
 
-Send the email to the address in the [designated agent](#designated-agent-for-dmca-notices) section above. Include:
+Send the email to `takedown@bookforgeai.dev`. Include:
 
 - The book title.
 - Your relationship to the work (author, publisher, literary agent, estate representative).
@@ -133,15 +130,11 @@ We will reply to let you know what is missing or unclear. We will not ignore the
 
 ## Contact
 
-**For takedown, opt-out, and DMCA notices:**
-Email: `[takedown@bookforgeai.dev]`
-Postal: see [designated agent](#designated-agent-for-dmca-notices) section above.
-
-**For all other legal questions:**
-Email: `[legal@bookforgeai.dev]` (same mailbox as takedown, monitored by the maintainer)
+**For takedown, opt-out, DMCA notices, and all legal questions:**
+Email: `takedown@bookforgeai.dev`
 
 **For general project questions:**
-Email: `[hello@bookforgeai.dev]` or open an issue on this repository.
+Open an issue on this repository.
 
 ---
 
