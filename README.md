@@ -1,8 +1,8 @@
 # BookForge Skills
 
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC_BY--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
-[![Books: 14](https://img.shields.io/badge/Books-14-8B4513.svg)]()
-[![Skills: 167](https://img.shields.io/badge/Skills-167-2F855A.svg)]()
+[![Books: 15](https://img.shields.io/badge/Books-15-8B4513.svg)]()
+[![Skills: 178](https://img.shields.io/badge/Skills-178-2F855A.svg)]()
 [![Website](https://img.shields.io/badge/site-bookforgeai.dev-1a2332.svg)](https://bookforgeai.dev)
 
 > Every book is a skill waiting to be unlocked.
@@ -35,7 +35,7 @@ No more pasting chapters into context. No more "act as an expert in X". Just `cl
 
 ## What BookForge is (and isn't)
 
-BookForge is a **book knowledge engine for AI agents** — an automated pipeline that distills non-fiction books into tested, executable skills across every domain. The library today covers 14 books and 167 skills, with a roadmap targeting 29 domains and 60-100 books. Every skill is tested against a no-skill baseline and shipped only when it measurably changes agent behavior.
+BookForge is a **book knowledge engine for AI agents** — an automated pipeline that distills non-fiction books into tested, executable skills across every domain. The library today covers 15 books and 178 skills, with a roadmap targeting 29 domains and 60-100 books. Every skill is tested against a no-skill baseline and shipped only when it measurably changes agent behavior.
 
 **What BookForge isn't:**
 
@@ -131,7 +131,7 @@ Books get updated, fields evolve, and yesterday's best practice becomes today's 
 
 ## Library
 
-14 books, 167 skills, and counting.
+15 books, 178 skills, and counting.
 
 ### Software & Systems
 
@@ -165,6 +165,7 @@ Books get updated, fields evolve, and yesterday's best practice becomes today's 
 |---|---|---|
 | [The 1-Page Marketing Plan](books/the-1-page-marketing-plan) | Allan Dib | 13 |
 | [$100M Offers](books/100m-offers) | Alex Hormozi | 8 |
+| [Hacking Growth](books/hacking-growth) | Sean Ellis, Morgan Brown | 11 |
 
 ### Learning
 
@@ -196,7 +197,7 @@ These skills are original, generalized knowledge — decision frameworks and wor
 
 ---
 
-**Status:** v0.1 — 14 books, 167 skills, measurably tested. Roadmap: 29 domains and 60-100 books through 2026-Q3.
+**Status:** v0.1 — 15 books, 178 skills, measurably tested. Roadmap: 29 domains and 60-100 books through 2026-Q3.
 
 **Governance:** [Security policy](SECURITY.md) · [Code of conduct](CODE_OF_CONDUCT.md) · [Legal framework](COPYRIGHT.md) · [Takedown policy](TAKEDOWN.md)
 
