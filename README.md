@@ -7,13 +7,58 @@
 
 > Every book is a skill waiting to be unlocked.
 
-**You have 50 books on your shelf. Your agent can't read any of them.**
+<p align="center">
+  <img src="docs/images/sheldon-locked-books.webp" alt="Sheldon the robot standing before a bookshelf of books chained shut — BookForge's problem space" width="400" />
+</p>
 
-BookForge turns non-fiction books into agent skills — the decision frameworks, checklists, and workflows inside each book, extracted and rewritten as instructions your coding agent can actually execute. Install one, and your agent gains the playbook from a book it'll never read.
+**You have 50 books on your shelf. Your agent can't read any of them. And the existing agent-skills ecosystem can't help — because skills only exist where someone bothered to hand-write one, and that someone is almost always a programmer writing programming skills.**
+
+BookForge is a book knowledge engine for AI agents. It runs an automated pipeline that distills non-fiction books into tested agent skills — the decision frameworks, checklists, and workflows inside each book, extracted as instructions your agent can actually execute. Every book, every domain, no expert bottleneck.
+
+Install one, and your agent gains the playbook from a book it'll never read.
 
 No more pasting chapters into context. No more "act as an expert in X". Just `claude plugin install bookforge-never-split-the-difference` and your agent starts negotiating like Chris Voss.
 
 [**Browse the full catalog →**](https://bookforgeai.dev)
+
+## Contents
+
+- [What BookForge is (and isn't)](#what-bookforge-is-and-isnt)
+- [Install](#install)
+- [See it in action](#see-it-in-action)
+- [Quality: tested, not trusted](#quality-tested-not-trusted)
+- [FAQ](#faq)
+- [Library](#library)
+- [How skills are made](#how-skills-are-made)
+- [Contributing](#contributing)
+- [License](#license)
+
+## What BookForge is (and isn't)
+
+BookForge is a **book knowledge engine for AI agents** — an automated pipeline that distills non-fiction books into tested, executable skills across every domain. The library today covers 14 books and 167 skills, with a roadmap targeting 29 domains and 60-100 books. Every skill is tested against a no-skill baseline and shipped only when it measurably changes agent behavior.
+
+**What BookForge isn't:**
+
+- **Not a prompt library.** Prompts are strings you paste into a chat. Skills are triggerable modules your agent reaches for automatically when the context calls for them. No copy-paste, no context-window bloat.
+- **Not a RAG system.** RAG retrieves chunks of text at query time. BookForge pre-processes books into decision frameworks at build time, shipped as static files with zero runtime overhead.
+- **Not fine-tuning.** Fine-tuning modifies the model's weights. BookForge runs on any base model — swap the skill set, not the model.
+- **Not a replacement for reading the book.** If the stakes are high and the book is worth your time, read the book. BookForge skills are for when you want the framework without the prose.
+
+**BookForge is for** anyone using an agent for serious work — shipping code, writing marketing, running research, negotiating hard conversations, pricing offers, designing product strategy. If your daily workflow runs through Claude Code, Cursor, Codex, Gemini CLI, or a similar agent platform, and you've wanted your agent to have the playbook from a specific book without burning the context window, BookForge is for you.
+
+## Install
+
+The fastest path is the Claude Code marketplace:
+
+```bash
+# Add the BookForge marketplace once
+claude plugin marketplace add bookforge-ai/bookforge-skills
+
+# Install any book as a plugin
+claude plugin install bookforge-never-split-the-difference
+```
+
+Using Cursor, Codex, Gemini CLI, Windsurf, OpenCode, Cline, Aider, or ClawhHub? Every [book page on bookforgeai.dev](https://bookforgeai.dev/books) shows the exact install command for your agent. Or clone this repo and copy `books/<slug>/skills/` into your agent's skills folder — no tooling required.
 
 ## See it in action
 
@@ -48,17 +93,6 @@ Correct, but it's guideline-and-pray. The enforcement lives in developer discipl
 
 Different book, different domain, same mechanic: the skill carries *the specific engineering move* from the source text, not a summary of it.
 
-## What's a skill?
-
-A skill is a single `SKILL.md` file with structured, triggerable expertise — not a rewording of a chapter. Each one encodes:
-
-- **When to use it** — triggering conditions your agent recognizes automatically
-- **How to execute** — step-by-step instructions with the *why* behind each step
-- **What good looks like** — acceptance criteria and failure modes
-- **Supporting material** — references, templates, and scripts loaded on demand
-
-Skills follow the [open Agent Skills convention](https://code.claude.com/docs/en/skills) and work across Claude Code, Cursor, Codex, Gemini CLI, Windsurf, OpenCode, Cline, Aider, and ClawhHub.
-
 ## Quality: tested, not trusted
 
 Every skill in this repo is run through a value-contribution test: the same prompt, once with the skill loaded and once without, graded by an independent evaluator against a per-skill rubric. A skill ships only when the delta clears +30 points.
@@ -73,17 +107,27 @@ Every single skill in that book cleared the delta threshold. The `calibrated-que
 
 Every book ships with its grading summary in `.meta/test-results/grading-summary.md`. The test harness is open source and lives in the [BookForge pipeline](https://github.com/bookforge-ai/bookforge) — you can re-run it against any skill in this repo.
 
-## Install
+## FAQ
 
-```bash
-# Add the BookForge marketplace once
-claude plugin marketplace add bookforge-ai/bookforge-skills
+### Is this legal?
 
-# Install any book as a plugin
-claude plugin install bookforge-never-split-the-difference
-```
+BookForge's position: copyright protects expression, not ideas, procedures, or methods. Skills extract methods — decision frameworks, checklists, and workflows — not the prose around them. That's the idea/expression dichotomy (17 USC §102(b)), with fair use as a secondary backup. BookForge is non-commercial and open source, every skill has mandatory source attribution, and any author can opt out with one email — honored within 48 hours, no lawyers required. Read the full framework in [COPYRIGHT.md](COPYRIGHT.md) and the takedown path in [TAKEDOWN.md](TAKEDOWN.md).
 
-Using Cursor, Codex, Gemini CLI, Windsurf, OpenCode, Cline, Aider, or ClawhHub? Every [book page on bookforgeai.dev](https://bookforgeai.dev/books) shows the exact install command for your agent. Or clone this repo and copy `books/<slug>/skills/` into your agent's skills folder — no tooling required.
+### How is this different from RAG, fine-tuning, or prompting?
+
+RAG retrieves text chunks at query time. Fine-tuning modifies model weights. Prompting means pasting instructions into a chat. BookForge skills are something else: **pre-processed, tested, triggerable modules** that your agent reaches for automatically when the context calls for them. They ship as static files, they run on any base model, and they don't burn context window tokens on every turn. The comparison isn't philosophical — it's mechanical. Different layer, different tradeoffs.
+
+### How do I know skills aren't hallucinated or wrong?
+
+Every skill is run through a value-contribution test: the same prompt, once with the skill loaded and once without, graded by an independent evaluator against a per-skill rubric. A skill only ships when the delta clears +30 points. The grading summary for every book lives at `books/<slug>/.meta/test-results/grading-summary.md` and is public — you can re-run the test yourself against the open-source [pipeline](https://github.com/bookforge-ai/bookforge). For Never Split the Difference, 8 of 8 skills passed the test with an average +66.6 delta. Skills that fail the test are either rewritten or cut entirely. There's a handful of those in the archive.
+
+### What's BookForge's relationship with the authors?
+
+BookForge is not affiliated with any of the authors or publishers in the library, and the [COPYRIGHT.md](COPYRIGHT.md) and [TAKEDOWN.md](TAKEDOWN.md) files make that explicit. Every skill includes mandatory attribution to the source book and its authors. Any author or rights holder can request removal with one email, honored within 48 hours — or opt into the **author-verified badge program** instead, reviewing their book's skills and receiving a verified badge on their skill set. BookForge would rather have authors as collaborators than adversaries, and the program is the bridge. The goal is that every skill points readers *back to* the book, not away from it.
+
+### What happens when a book is wrong or outdated?
+
+Books get updated, fields evolve, and yesterday's best practice becomes today's legacy advice. BookForge skills are versioned, improvements ship as PRs, and the grading summary for each book documents what the skills were tested against. When a book is revised (new edition, errata, retraction), the corresponding skill set is updated or retired. If you're working in a fast-moving field or the stakes are high, read the book itself — BookForge is meant to complement book reading for the 90% case, not replace it for the 10% where the details matter.
 
 ## Library
 
@@ -134,17 +178,27 @@ Skills are generated by the [BookForge pipeline](https://github.com/bookforge-ai
 
 ## Contributing
 
-- **New skills from an existing book** — open an issue describing the gap, then a PR
-- **New books** — see [CONTRIBUTING.md](CONTRIBUTING.md) for the quality bar and proposal template
-- **Improvements to existing skills** — PRs welcome; include before/after test evidence where possible
+**BookForge has a novel contribution path.** Pick a book, run the pipeline, submit a PR. You're not just fixing typos — you're adding entire domains of expertise to the agent ecosystem. Each merged book is a new corner of human knowledge your agent can reach.
 
-Skill sets must earn their place in the library through measurable value contribution, not page count.
+Three ways in:
+
+- **Propose a new book.** See [CONTRIBUTING.md](CONTRIBUTING.md) for the book selection criteria, the scoring rubric, and the proposal template. Any domain with actionable frameworks is fair game.
+- **Add a skill to an existing book.** If you spot a gap in a book we've already processed, open an issue and draft a skill. Include the source chapter reference.
+- **Improve existing skills.** PRs welcome — include before/after test evidence showing the delta against baseline.
+
+Skill sets earn their place through measurable value contribution, not page count. Every skill is tested against a no-skill baseline before it ships.
 
 ## License
 
 Skills are licensed under [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/). Attribution should credit both BookForge and the original book's authors.
 
-These skills are original, generalized knowledge — decision frameworks and workflows — not reproductions of copyrighted book content. See [orchestration/legal/copyright-framework.md](https://github.com/bookforge-ai/bookforge) in the pipeline repo for the full framework.
+These skills are original, generalized knowledge — decision frameworks and workflows — not reproductions of copyrighted book content. See [COPYRIGHT.md](COPYRIGHT.md) for the full framework and [TAKEDOWN.md](TAKEDOWN.md) for the rights-holder takedown path.
+
+---
+
+**Status:** v0.1 — 14 books, 167 skills, measurably tested. Roadmap: 29 domains and 60-100 books through 2026-Q3.
+
+**Governance:** [Security policy](SECURITY.md) · [Code of conduct](CODE_OF_CONDUCT.md) · [Legal framework](COPYRIGHT.md) · [Takedown policy](TAKEDOWN.md)
 
 ---
 
