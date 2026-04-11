@@ -22,6 +22,13 @@ Skills follow the open [Agent Skills specification](https://agentskills.io/speci
 2. Follow the structure requirements below
 3. Submit a PR
 
+### Option C: Improve an Existing Skill
+
+1. Identify a skill that has a measurable gap — a missing step, a weak trigger, an outdated example, or a failure mode not covered
+2. Draft the improvement in a PR that shows the before/after
+3. Include test evidence where possible — a with-skill vs baseline comparison demonstrating the delta your change produces
+4. Reference the source chapter or page range from the book if your change is drawn from a specific passage
+
 ## Skill Structure
 
 Every skill must have a `SKILL.md` file with this structure:
