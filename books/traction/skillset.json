@@ -1,0 +1,189 @@
+{
+  "name": "traction",
+  "display_name": "Traction",
+  "version": "1.0.0",
+  "description": "13 agent skills for startup founders and growth marketers — channel selection via the Bullseye Framework, phase-appropriate growth strategy, cheap channel testing, critical path planning, and 9 deep-dive acquisition channels (viral, PR, SEM, SEO, content+email, engineering-as-marketing, sales, BD, existing platforms) — distilled from Gabriel Weinberg and Justin Mares's Traction.",
+  "domain": "startup-growth",
+  "tags": ["startup-growth", "customer-acquisition", "growth-marketing", "channel-selection", "marketing-strategy", "bullseye-framework", "viral-marketing", "sales-process", "business-development"],
+  "skill_count": 13,
+  "source_book": {
+    "title": "Traction: A Startup Guide to Getting Customers",
+    "authors": ["Gabriel Weinberg", "Justin Mares"],
+    "isbn": "9781591848363",
+    "year": 2014,
+    "pages": 240
+  },
+  "skills": [
+    {
+      "name": "bullseye-channel-selection",
+      "path": "bullseye-channel-selection/SKILL.md",
+      "description": "Guide systematic customer acquisition channel selection using the Bullseye Framework — brainstorm all 19 channels, rank into Inner Circle / Potential / Long-shot, test 3 in parallel, focus on the winner.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": null,
+        "baseline": null,
+        "delta": null
+      }
+    },
+    {
+      "name": "startup-traction-strategy-by-phase",
+      "path": "startup-traction-strategy-by-phase/SKILL.md",
+      "description": "Diagnose startup phase (I: making → II: marketing → III: scaling), apply the 50% Rule, match channels to phase, and detect the Product Trap.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {"with_skill": null, "baseline": null, "delta": null}
+    },
+    {
+      "name": "traction-channel-testing",
+      "path": "traction-channel-testing/SKILL.md",
+      "description": "Design cheap channel validation tests using the 4-question protocol (CAC, volume, quality, time-to-acquire), CAC/LTV spreadsheet, and A/B optimization cadence. Detects saturation via the Law of Shitty Click-Throughs.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {"with_skill": null, "baseline": null, "delta": null}
+    },
+    {
+      "name": "startup-critical-path-planning",
+      "path": "startup-critical-path-planning/SKILL.md",
+      "description": "Set one quantified traction goal, enumerate necessary milestones, order by dependency, apply a binary on-path/off-path filter, and cascade to departments and individuals.",
+      "tier": 1,
+      "mode": "plan-only",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {"with_skill": null, "baseline": null, "delta": null}
+    },
+    {
+      "name": "viral-growth-loop-design",
+      "path": "viral-growth-loop-design/SKILL.md",
+      "description": "Design viral growth loops using K = i × conversion%, the 7 viral loop types, cycle time optimization, and the 4 viral mistakes check.",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": ["bullseye-channel-selection"],
+      "quality": {"with_skill": null, "baseline": null, "delta": null}
+    },
+    {
+      "name": "startup-pr-outreach",
+      "path": "startup-pr-outreach/SKILL.md",
+      "description": "Plan PR campaigns using the media chain (small → top), HARO, two pitch templates, emotional angle criteria, and the 6 PR pitching mistakes check. Covers conventional and unconventional PR (stunts, customer appreciation).",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": ["bullseye-channel-selection"],
+      "quality": {"with_skill": null, "baseline": null, "delta": null}
+    },
+    {
+      "name": "sem-performance-optimization",
+      "path": "sem-performance-optimization/SKILL.md",
+      "description": "Optimize Google Ads / SEM using CTR/CPC/CPA formulas, Quality Score benchmarks (avg 2.0%, low 1.5%), keyword profitability filtering (CPA vs LTV margin), and tight ad group restructuring.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": ["bullseye-channel-selection"],
+      "quality": {"with_skill": null, "baseline": null, "delta": null}
+    },
+    {
+      "name": "seo-channel-strategy",
+      "path": "seo-channel-strategy/SKILL.md",
+      "description": "Select fat-head vs long-tail SEO strategy using the page-1 feasibility check, 10% capture test, and SEM pre-validation. Plan long-tail content production pipelines and avoid black-hat tactics.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": ["bullseye-channel-selection"],
+      "quality": {"with_skill": null, "baseline": null, "delta": null}
+    },
+    {
+      "name": "content-and-email-marketing",
+      "path": "content-and-email-marketing/SKILL.md",
+      "description": "Design integrated content + email lifecycle programs across the 4 stages (Acquisition → Activation → Retention → Revenue). Includes activation threshold definition, behavioral triggers, CEO email pattern, and spam trap avoidance.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": ["bullseye-channel-selection"],
+      "quality": {"with_skill": null, "baseline": null, "delta": null}
+    },
+    {
+      "name": "engineering-as-marketing",
+      "path": "engineering-as-marketing/SKILL.md",
+      "description": "Design free tools (calculators, graders, widgets) that acquire customers through engineering effort. Single-input-field pattern, value-first-then-capture flow, HubSpot Marketing Grader reference pattern.",
+      "tier": 2,
+      "mode": "full",
+      "build_level": 1,
+      "depends_on": ["bullseye-channel-selection"],
+      "quality": {"with_skill": null, "baseline": null, "delta": null}
+    },
+    {
+      "name": "startup-sales-process",
+      "path": "startup-sales-process/SKILL.md",
+      "description": "Build a sales process using SPIN Selling (Situation, Problem, Implication, Need-payoff), A/B/C lead tiering (66-75% on A deals), PNAME qualification, and detection of Technology Tourist and False Change Agent traps.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": ["bullseye-channel-selection"],
+      "quality": {"with_skill": null, "baseline": null, "delta": null}
+    },
+    {
+      "name": "business-development-pipeline",
+      "path": "business-development-pipeline/SKILL.md",
+      "description": "Build a BD pipeline using the 5 partnership types (standard, JV, licensing, distribution, supply), attribute-based partner selection, warm introductions, 1-page term sheets, and Low-touch BD 2.0 transition.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": ["bullseye-channel-selection"],
+      "quality": {"with_skill": null, "baseline": null, "delta": null}
+    },
+    {
+      "name": "existing-platform-leverage",
+      "path": "existing-platform-leverage/SKILL.md",
+      "description": "Leverage existing platforms (App Stores, browser extensions, social networks) via parasitic growth — identify platform gaps, design minimal bridge solutions, Day-1 launch strategies, and dependency risk mitigation.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": ["bullseye-channel-selection"],
+      "quality": {"with_skill": null, "baseline": null, "delta": null}
+    }
+  ],
+  "dependency_graph": {
+    "levels": 2,
+    "hub": "bullseye-channel-selection",
+    "edges": [
+      {"from": "bullseye-channel-selection", "to": "viral-growth-loop-design", "type": "knowledge"},
+      {"from": "bullseye-channel-selection", "to": "startup-pr-outreach", "type": "knowledge"},
+      {"from": "bullseye-channel-selection", "to": "sem-performance-optimization", "type": "knowledge"},
+      {"from": "bullseye-channel-selection", "to": "seo-channel-strategy", "type": "knowledge"},
+      {"from": "bullseye-channel-selection", "to": "content-and-email-marketing", "type": "knowledge"},
+      {"from": "bullseye-channel-selection", "to": "engineering-as-marketing", "type": "knowledge"},
+      {"from": "bullseye-channel-selection", "to": "startup-sales-process", "type": "knowledge"},
+      {"from": "bullseye-channel-selection", "to": "business-development-pipeline", "type": "knowledge"},
+      {"from": "bullseye-channel-selection", "to": "existing-platform-leverage", "type": "knowledge"}
+    ],
+    "is_dag": true,
+    "max_depth": 1
+  },
+  "quality_summary": {
+    "avg_with_skill": null,
+    "avg_baseline": null,
+    "avg_delta": null,
+    "all_passed": null
+  },
+  "install_profiles": {
+    "foundation": {
+      "description": "4 foundation skills — Bullseye Framework, Phase Strategy, Testing, Critical Path",
+      "skills": ["bullseye-channel-selection", "startup-traction-strategy-by-phase", "traction-channel-testing", "startup-critical-path-planning"]
+    },
+    "core": {
+      "description": "Foundation + top-performing channels (viral, sales, engineering-as-marketing)",
+      "skills": ["bullseye-channel-selection", "startup-traction-strategy-by-phase", "traction-channel-testing", "startup-critical-path-planning", "viral-growth-loop-design", "startup-sales-process", "engineering-as-marketing"]
+    },
+    "full": {
+      "description": "All 13 skills",
+      "skills": ["bullseye-channel-selection", "startup-traction-strategy-by-phase", "traction-channel-testing", "startup-critical-path-planning", "viral-growth-loop-design", "startup-pr-outreach", "sem-performance-optimization", "seo-channel-strategy", "content-and-email-marketing", "engineering-as-marketing", "startup-sales-process", "business-development-pipeline", "existing-platform-leverage"]
+    }
+  }
+}

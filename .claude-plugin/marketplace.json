@@ -80,6 +80,15 @@
       "category": "growth",
       "tags": ["growth", "experimentation", "product-marketing", "activation", "retention", "funnel-analysis", "product-market-fit", "startup-ops"],
       "license": "CC-BY-SA-4.0"
+    },
+    {
+      "name": "traction",
+      "source": "./books/traction",
+      "description": "13 startup growth skills from Traction by Gabriel Weinberg and Justin Mares — Bullseye channel selection, phase strategy, channel testing, critical path planning, and 9 deep-dive acquisition channels (viral, PR, SEM, SEO, content+email, engineering-as-marketing, sales, BD, existing platforms)",
+      "version": "1.0.0",
+      "category": "startup-growth",
+      "tags": ["startup-growth", "customer-acquisition", "growth-marketing", "channel-selection", "marketing-strategy", "bullseye-framework", "viral-marketing", "sales-process", "business-development"],
+      "license": "CC-BY-SA-4.0"
     }
   ]
 }

@@ -1,0 +1,16 @@
+{
+  "book_id": "traction",
+  "title": "Traction",
+  "subtitle": "A Startup Guide to Getting Customers",
+  "author": "Gabriel Weinberg, Justin Mares",
+  "authors": ["Gabriel Weinberg", "Justin Mares"],
+  "isbn": "9781591848363",
+  "year": 2014,
+  "pages": 240,
+  "domain": "startup-growth",
+  "domains": ["startup-growth", "customer-acquisition", "growth-marketing", "channel-selection", "marketing-strategy"],
+  "skill_count": 13,
+  "source_book": "Traction a startup guide to getting customers (Gabriel Weinberg, Justin Mares) (z-library.sk, 1lib.sk, z-lib.sk).epub",
+  "pipeline_version": "2.0",
+  "tags": ["startup-growth", "customer-acquisition", "growth-marketing", "channel-selection", "marketing-strategy", "bullseye-framework", "viral-marketing", "sales-process", "business-development"]
+}
