@@ -1,0 +1,11 @@
+{
+  "name": "spin-selling",
+  "version": "1.0.0",
+  "description": "11 B2B sales skills from SPIN Selling by Neil Rackham. Plan SPIN questions, classify needs, audit FAB statements, and replace closing pressure with structured commitment progression.",
+  "author": {
+    "name": "BookForge",
+    "email": "bookforge-ai@users.noreply.github.com"
+  },
+  "repository": "https://github.com/bookforge-ai/bookforge-skills",
+  "license": "CC-BY-SA-4.0"
+}

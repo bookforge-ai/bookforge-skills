@@ -89,6 +89,15 @@
       "category": "startup-growth",
       "tags": ["startup-growth", "customer-acquisition", "growth-marketing", "channel-selection", "marketing-strategy", "bullseye-framework", "viral-marketing", "sales-process", "business-development"],
       "license": "CC-BY-SA-4.0"
+    },
+    {
+      "name": "spin-selling",
+      "source": "./books/spin-selling",
+      "description": "11 B2B sales skills from SPIN Selling by Neil Rackham — plan SPIN question sequences, classify implied vs explicit needs, audit FAB statements, and replace closing pressure with structured commitment-advance progression",
+      "version": "1.0.0",
+      "category": "sales",
+      "tags": ["sales", "b2b-sales", "enterprise-sales", "complex-sales", "discovery", "questioning-techniques", "customer-research", "negotiation"],
+      "license": "CC-BY-SA-4.0"
     }
   ]
 }

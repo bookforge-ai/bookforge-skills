@@ -1,0 +1,14 @@
+{
+  "book_id": "spin-selling",
+  "title": "SPIN Selling",
+  "subtitle": "The Best-Validated Sales Method Available Today",
+  "author": "Neil Rackham",
+  "authors": ["Neil Rackham"],
+  "isbn": "978-0070511132",
+  "year": 1988,
+  "pages": 216,
+  "tags": ["sales", "b2b-sales", "enterprise-sales", "complex-sales", "discovery", "questioning-techniques", "customer-research", "negotiation"],
+  "skill_count": 11,
+  "source_book": "SPIN Selling The Best Validated Sales Method Available Today (Neil Rackham).epub",
+  "pipeline_version": "0.4.0"
+}

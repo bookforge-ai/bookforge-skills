@@ -1,0 +1,13 @@
+{
+  "name": "spin-selling",
+  "description": "Empirically-backed B2B sales skills from Neil Rackham's analysis of 35,000+ sales calls. Plan SPIN questions, classify needs, audit FAB statements, and replace closing pressure with structured commitment progression.",
+  "version": "1.0.0",
+  "author": {
+    "name": "BookForge",
+    "email": "bookforge-ai@users.noreply.github.com"
+  },
+  "homepage": "https://github.com/bookforge-ai/bookforge-skills",
+  "repository": "https://github.com/bookforge-ai/bookforge-skills",
+  "license": "CC-BY-SA-4.0",
+  "keywords": ["books", "skills", "agent-skills", "sales"]
+}

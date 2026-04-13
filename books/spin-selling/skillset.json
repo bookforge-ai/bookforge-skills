@@ -1,0 +1,156 @@
+{
+  "name": "spin-selling",
+  "display_name": "SPIN Selling",
+  "version": "1.0.0",
+  "description": "Empirically-backed B2B sales skills from Neil Rackham's analysis of 35,000+ sales calls. Plan SPIN questions, classify needs, audit FAB statements, and replace closing pressure with structured commitment progression.",
+  "domain": "sales",
+  "tags": ["sales", "b2b-sales", "enterprise-sales", "complex-sales", "discovery", "questioning-techniques", "customer-research", "negotiation"],
+  "skill_count": 11,
+  "source_book": {
+    "title": "SPIN Selling",
+    "authors": ["Neil Rackham"],
+    "isbn": "978-0070511132",
+    "year": 1988,
+    "pages": 216
+  },
+  "skills": [
+    {
+      "name": "need-type-classifier",
+      "path": "skills/need-type-classifier/SKILL.md",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": []
+    },
+    {
+      "name": "call-outcome-classifier",
+      "path": "skills/call-outcome-classifier/SKILL.md",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": []
+    },
+    {
+      "name": "closing-attitude-self-assessment",
+      "path": "skills/closing-attitude-self-assessment/SKILL.md",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": []
+    },
+    {
+      "name": "discovery-call-opening-planner",
+      "path": "skills/discovery-call-opening-planner/SKILL.md",
+      "tier": 1,
+      "mode": "plan-only",
+      "build_level": 0,
+      "depends_on": []
+    },
+    {
+      "name": "spin-discovery-question-planner",
+      "path": "skills/spin-discovery-question-planner/SKILL.md",
+      "tier": 1,
+      "mode": "plan-only",
+      "build_level": 1,
+      "depends_on": ["need-type-classifier"]
+    },
+    {
+      "name": "fab-statement-classifier",
+      "path": "skills/fab-statement-classifier/SKILL.md",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": ["need-type-classifier"]
+    },
+    {
+      "name": "commitment-and-advance-planner",
+      "path": "skills/commitment-and-advance-planner/SKILL.md",
+      "tier": 1,
+      "mode": "plan-only",
+      "build_level": 1,
+      "depends_on": ["call-outcome-classifier"]
+    },
+    {
+      "name": "benefit-statement-drafter",
+      "path": "skills/benefit-statement-drafter/SKILL.md",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 2,
+      "depends_on": ["fab-statement-classifier", "spin-discovery-question-planner"]
+    },
+    {
+      "name": "objection-source-diagnoser",
+      "path": "skills/objection-source-diagnoser/SKILL.md",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 2,
+      "depends_on": ["fab-statement-classifier"]
+    },
+    {
+      "name": "sales-call-plan-do-review-coach",
+      "path": "skills/sales-call-plan-do-review-coach/SKILL.md",
+      "tier": 1,
+      "mode": "plan-only",
+      "build_level": 2,
+      "depends_on": ["spin-discovery-question-planner", "call-outcome-classifier"]
+    },
+    {
+      "name": "spin-skill-practice-coach",
+      "path": "skills/spin-skill-practice-coach/SKILL.md",
+      "tier": 1,
+      "mode": "plan-only",
+      "build_level": 2,
+      "depends_on": ["spin-discovery-question-planner"]
+    }
+  ],
+  "dependency_graph": {
+    "levels": [
+      {
+        "level": 0,
+        "skills": ["need-type-classifier", "call-outcome-classifier", "closing-attitude-self-assessment", "discovery-call-opening-planner"]
+      },
+      {
+        "level": 1,
+        "skills": ["spin-discovery-question-planner", "fab-statement-classifier", "commitment-and-advance-planner"]
+      },
+      {
+        "level": 2,
+        "skills": ["benefit-statement-drafter", "objection-source-diagnoser", "sales-call-plan-do-review-coach", "spin-skill-practice-coach"]
+      }
+    ],
+    "hub": "spin-discovery-question-planner",
+    "edges": [
+      {"from": "need-type-classifier", "to": "spin-discovery-question-planner"},
+      {"from": "need-type-classifier", "to": "fab-statement-classifier"},
+      {"from": "call-outcome-classifier", "to": "commitment-and-advance-planner"},
+      {"from": "fab-statement-classifier", "to": "benefit-statement-drafter"},
+      {"from": "spin-discovery-question-planner", "to": "benefit-statement-drafter"},
+      {"from": "fab-statement-classifier", "to": "objection-source-diagnoser"},
+      {"from": "spin-discovery-question-planner", "to": "sales-call-plan-do-review-coach"},
+      {"from": "call-outcome-classifier", "to": "sales-call-plan-do-review-coach"},
+      {"from": "spin-discovery-question-planner", "to": "spin-skill-practice-coach"}
+    ],
+    "is_dag": true,
+    "max_depth": 3
+  },
+  "quality_summary": {
+    "avg_with_skill": 96,
+    "avg_baseline": 68,
+    "avg_delta": 28,
+    "all_passed": true
+  },
+  "install_profiles": {
+    "minimal": {
+      "description": "4 foundation classifiers and planners — independent diagnostics you can use before any call",
+      "skills": ["need-type-classifier", "call-outcome-classifier", "closing-attitude-self-assessment", "discovery-call-opening-planner"]
+    },
+    "core": {
+      "description": "7 skills — minimal + SPIN question planning, FAB auditing, and commitment-advance planning",
+      "skills": ["need-type-classifier", "call-outcome-classifier", "closing-attitude-self-assessment", "discovery-call-opening-planner", "spin-discovery-question-planner", "fab-statement-classifier", "commitment-and-advance-planner"]
+    },
+    "full": {
+      "description": "All 11 skills — complete SPIN Selling methodology toolkit",
+      "skills": ["need-type-classifier", "call-outcome-classifier", "closing-attitude-self-assessment", "discovery-call-opening-planner", "spin-discovery-question-planner", "fab-statement-classifier", "commitment-and-advance-planner", "benefit-statement-drafter", "objection-source-diagnoser", "sales-call-plan-do-review-coach", "spin-skill-practice-coach"]
+    }
+  }
+}
