@@ -107,6 +107,15 @@
       "category": "communication",
       "tags": ["communication", "marketing", "messaging", "persuasion", "storytelling", "copywriting", "public-speaking", "instructional-design"],
       "license": "CC-BY-SA-4.0"
+    },
+    {
+      "name": "the-challenger-sale",
+      "source": "./books/the-challenger-sale",
+      "description": "10 B2B sales skills from The Challenger Sale by Matthew Dixon and Brent Adamson — classify rep profiles, author commercial teaching pitches, tailor by stakeholder role, take control of negotiations, and coach reps for behavior change using CEB's 6,000-rep empirical study",
+      "version": "1.0.0",
+      "category": "sales",
+      "tags": ["sales", "b2b-sales", "sales-methodology", "commercial-insight", "sales-management", "sales-enablement", "challenger-sale"],
+      "license": "CC-BY-SA-4.0"
     }
   ]
 }

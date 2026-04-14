@@ -1,0 +1,12 @@
+{
+  "name": "the-challenger-sale",
+  "displayName": "the-challenger-sale",
+  "description": "Empirical B2B sales methodology from CEB's 6,000-rep study — author insight-led pitches, tailor by stakeholder role, take control of the buying conversation, and coach reps for behavior change.",
+  "version": "1.0.0",
+  "author": { "name": "BookForge", "email": "bookforge-ai@users.noreply.github.com" },
+  "homepage": "https://github.com/bookforge-ai/bookforge-skills",
+  "repository": "https://github.com/bookforge-ai/bookforge-skills",
+  "license": "CC-BY-SA-4.0",
+  "skills": "./skills/",
+  "hooks": "./hooks/hooks-cursor.json"
+}

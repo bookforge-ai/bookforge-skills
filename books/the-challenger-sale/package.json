@@ -1,0 +1,11 @@
+{
+  "name": "the-challenger-sale",
+  "version": "1.0.0",
+  "description": "10 B2B sales skills from The Challenger Sale by Matthew Dixon and Brent Adamson. Classify rep profiles, author commercial teaching pitches, tailor by stakeholder, take control of negotiations, and coach reps for behavior change.",
+  "author": {
+    "name": "BookForge",
+    "email": "bookforge-ai@users.noreply.github.com"
+  },
+  "repository": "https://github.com/bookforge-ai/bookforge-skills",
+  "license": "CC-BY-SA-4.0"
+}

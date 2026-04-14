@@ -1,0 +1,137 @@
+{
+  "name": "the-challenger-sale",
+  "display_name": "The Challenger Sale",
+  "version": "1.0.0",
+  "description": "Empirical B2B sales methodology from CEB's 6,000-rep study — author insight-led pitches, tailor by stakeholder role, take control of the buying conversation, and coach reps for behavior change.",
+  "domain": "sales",
+  "tags": ["sales", "b2b-sales", "sales-methodology", "commercial-insight", "sales-management", "sales-enablement", "challenger-sale"],
+  "skill_count": 10,
+  "source_book": {
+    "title": "The Challenger Sale",
+    "authors": ["Matthew Dixon", "Brent Adamson"],
+    "isbn": null,
+    "year": 2011,
+    "pages": null
+  },
+  "skills": [
+    {
+      "name": "classify-rep-profile",
+      "path": "skills/classify-rep-profile/SKILL.md",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": []
+    },
+    {
+      "name": "build-commercial-insight",
+      "path": "skills/build-commercial-insight/SKILL.md",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": []
+    },
+    {
+      "name": "diagnose-pitch-for-commercial-teaching-fit",
+      "path": "skills/diagnose-pitch-for-commercial-teaching-fit/SKILL.md",
+      "tier": 1,
+      "mode": "full",
+      "build_level": 0,
+      "depends_on": []
+    },
+    {
+      "name": "diagnose-taking-control-gaps",
+      "path": "skills/diagnose-taking-control-gaps/SKILL.md",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": []
+    },
+    {
+      "name": "diagnose-manager-effectiveness",
+      "path": "skills/diagnose-manager-effectiveness/SKILL.md",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": []
+    },
+    {
+      "name": "author-commercial-teaching-pitch",
+      "path": "skills/author-commercial-teaching-pitch/SKILL.md",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": ["build-commercial-insight"]
+    },
+    {
+      "name": "plan-negotiation-with-constructive-tension",
+      "path": "skills/plan-negotiation-with-constructive-tension/SKILL.md",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": ["diagnose-taking-control-gaps"]
+    },
+    {
+      "name": "coach-rep-with-pause-framework",
+      "path": "skills/coach-rep-with-pause-framework/SKILL.md",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": ["classify-rep-profile"]
+    },
+    {
+      "name": "tailor-pitch-by-stakeholder",
+      "path": "skills/tailor-pitch-by-stakeholder/SKILL.md",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 2,
+      "depends_on": ["author-commercial-teaching-pitch"]
+    },
+    {
+      "name": "plan-challenger-model-rollout",
+      "path": "skills/plan-challenger-model-rollout/SKILL.md",
+      "tier": 1,
+      "mode": "plan-only",
+      "build_level": 2,
+      "depends_on": ["classify-rep-profile", "diagnose-manager-effectiveness"]
+    }
+  ],
+  "dependency_graph": {
+    "levels": [
+      {
+        "level": 0,
+        "skills": ["classify-rep-profile", "build-commercial-insight", "diagnose-pitch-for-commercial-teaching-fit", "diagnose-taking-control-gaps", "diagnose-manager-effectiveness"]
+      },
+      {
+        "level": 1,
+        "skills": ["author-commercial-teaching-pitch", "plan-negotiation-with-constructive-tension", "coach-rep-with-pause-framework"]
+      },
+      {
+        "level": 2,
+        "skills": ["tailor-pitch-by-stakeholder", "plan-challenger-model-rollout"]
+      }
+    ],
+    "hub": "classify-rep-profile",
+    "edges": [
+      {"from": "build-commercial-insight", "to": "author-commercial-teaching-pitch"},
+      {"from": "diagnose-taking-control-gaps", "to": "plan-negotiation-with-constructive-tension"},
+      {"from": "classify-rep-profile", "to": "coach-rep-with-pause-framework"},
+      {"from": "author-commercial-teaching-pitch", "to": "tailor-pitch-by-stakeholder"},
+      {"from": "classify-rep-profile", "to": "plan-challenger-model-rollout"},
+      {"from": "diagnose-manager-effectiveness", "to": "plan-challenger-model-rollout"}
+    ],
+    "is_dag": true,
+    "max_depth": 3
+  },
+  "quality_summary": {
+    "avg_with_skill": 99.3,
+    "avg_baseline": 33.9,
+    "avg_delta": 65.4,
+    "all_passed": true
+  },
+  "install_profiles": {
+    "full": {
+      "description": "All 10 skills — complete Challenger Sale methodology toolkit",
+      "skills": ["classify-rep-profile", "build-commercial-insight", "diagnose-pitch-for-commercial-teaching-fit", "diagnose-taking-control-gaps", "diagnose-manager-effectiveness", "author-commercial-teaching-pitch", "plan-negotiation-with-constructive-tension", "coach-rep-with-pause-framework", "tailor-pitch-by-stakeholder", "plan-challenger-model-rollout"]
+    }
+  }
+}
