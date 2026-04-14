@@ -8,7 +8,7 @@
 > Every book is a skill waiting to be unlocked.
 
 <p align="center">
-  <img src="docs/images/sheldon-locked-books.webp" alt="Sheldon the robot standing before a bookshelf of books chained shut" width="100%" />
+  <img src="docs/images/sheldon-reading-bookforge.webp" alt="Sheldon the robot reading a BookForge book" width="100%" />
 </p>
 
 **You have 50 books on your shelf. Your agent can't read any of them. And the existing agent-skills ecosystem can't help, because skills only exist where someone bothered to hand-write one, and that someone is almost always a programmer writing programming skills.**
