@@ -1,0 +1,14 @@
+{
+  "book_id": "made-to-stick",
+  "title": "Made to Stick",
+  "subtitle": "Why Some Ideas Survive and Others Die",
+  "author": "Chip Heath, Dan Heath",
+  "authors": ["Chip Heath", "Dan Heath"],
+  "isbn": "978-1400064281",
+  "year": 2007,
+  "pages": 291,
+  "tags": ["communication", "marketing", "messaging", "persuasion", "storytelling", "copywriting", "public-speaking", "instructional-design"],
+  "skill_count": 10,
+  "source_book": "Made to Stick.epub",
+  "pipeline_version": "0.4.0"
+}

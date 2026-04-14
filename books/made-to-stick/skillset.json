@@ -1,0 +1,208 @@
+{
+  "name": "made-to-stick",
+  "display_name": "Made to Stick",
+  "version": "1.0.0",
+  "description": "10 sticky messaging skills from Chip and Dan Heath's Made to Stick. Audit drafts against the SUCCESs framework (Simple, Unexpected, Concrete, Credible, Emotional, Stories), diagnose the Curse of Knowledge, extract Commander's Intent core messages, build curiosity-gap hooks, rewrite abstract language into sensory copy, pick Sinatra-test credibility evidence, select identity-based emotional appeals, structure Challenge/Connection/Creativity story plots, and orchestrate end-to-end message clinics.",
+  "domain": "communication",
+  "tags": ["communication", "marketing", "messaging", "persuasion", "storytelling", "copywriting", "public-speaking", "instructional-design"],
+  "skill_count": 10,
+  "source_book": {
+    "title": "Made to Stick: Why Some Ideas Survive and Others Die",
+    "authors": ["Chip Heath", "Dan Heath"],
+    "isbn": "978-1400064281",
+    "year": 2007,
+    "pages": 291
+  },
+  "skills": [
+    {
+      "name": "curse-of-knowledge-detector",
+      "path": "skills/curse-of-knowledge-detector/SKILL.md",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": []
+    },
+    {
+      "name": "core-message-extractor",
+      "path": "skills/core-message-extractor/SKILL.md",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": []
+    },
+    {
+      "name": "curiosity-gap-architect",
+      "path": "skills/curiosity-gap-architect/SKILL.md",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": []
+    },
+    {
+      "name": "concrete-language-rewriter",
+      "path": "skills/concrete-language-rewriter/SKILL.md",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": []
+    },
+    {
+      "name": "credibility-evidence-selector",
+      "path": "skills/credibility-evidence-selector/SKILL.md",
+      "tier": 1,
+      "mode": "plan-only",
+      "build_level": 0,
+      "depends_on": []
+    },
+    {
+      "name": "emotional-appeal-selector",
+      "path": "skills/emotional-appeal-selector/SKILL.md",
+      "tier": 1,
+      "mode": "plan-only",
+      "build_level": 0,
+      "depends_on": []
+    },
+    {
+      "name": "story-plot-selector",
+      "path": "skills/story-plot-selector/SKILL.md",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": []
+    },
+    {
+      "name": "sticky-message-antipattern-detector",
+      "path": "skills/sticky-message-antipattern-detector/SKILL.md",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": []
+    },
+    {
+      "name": "stickiness-audit",
+      "path": "skills/stickiness-audit/SKILL.md",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": [
+        "curse-of-knowledge-detector",
+        "core-message-extractor",
+        "curiosity-gap-architect",
+        "concrete-language-rewriter",
+        "credibility-evidence-selector",
+        "emotional-appeal-selector",
+        "story-plot-selector",
+        "sticky-message-antipattern-detector"
+      ]
+    },
+    {
+      "name": "message-clinic-runner",
+      "path": "skills/message-clinic-runner/SKILL.md",
+      "tier": 1,
+      "mode": "full",
+      "build_level": 2,
+      "depends_on": [
+        "stickiness-audit",
+        "curse-of-knowledge-detector",
+        "core-message-extractor",
+        "concrete-language-rewriter",
+        "curiosity-gap-architect",
+        "credibility-evidence-selector",
+        "emotional-appeal-selector",
+        "story-plot-selector"
+      ]
+    }
+  ],
+  "dependency_graph": {
+    "levels": [
+      {
+        "level": 0,
+        "skills": [
+          "curse-of-knowledge-detector",
+          "core-message-extractor",
+          "curiosity-gap-architect",
+          "concrete-language-rewriter",
+          "credibility-evidence-selector",
+          "emotional-appeal-selector",
+          "story-plot-selector",
+          "sticky-message-antipattern-detector"
+        ]
+      },
+      {
+        "level": 1,
+        "skills": ["stickiness-audit"]
+      },
+      {
+        "level": 2,
+        "skills": ["message-clinic-runner"]
+      }
+    ],
+    "hub": "stickiness-audit",
+    "edges": [
+      {"from": "curse-of-knowledge-detector", "to": "stickiness-audit"},
+      {"from": "core-message-extractor", "to": "stickiness-audit"},
+      {"from": "curiosity-gap-architect", "to": "stickiness-audit"},
+      {"from": "concrete-language-rewriter", "to": "stickiness-audit"},
+      {"from": "credibility-evidence-selector", "to": "stickiness-audit"},
+      {"from": "emotional-appeal-selector", "to": "stickiness-audit"},
+      {"from": "story-plot-selector", "to": "stickiness-audit"},
+      {"from": "sticky-message-antipattern-detector", "to": "stickiness-audit"},
+      {"from": "stickiness-audit", "to": "message-clinic-runner"},
+      {"from": "curse-of-knowledge-detector", "to": "message-clinic-runner"},
+      {"from": "core-message-extractor", "to": "message-clinic-runner"},
+      {"from": "concrete-language-rewriter", "to": "message-clinic-runner"},
+      {"from": "curiosity-gap-architect", "to": "message-clinic-runner"},
+      {"from": "credibility-evidence-selector", "to": "message-clinic-runner"},
+      {"from": "emotional-appeal-selector", "to": "message-clinic-runner"},
+      {"from": "story-plot-selector", "to": "message-clinic-runner"}
+    ],
+    "is_dag": true,
+    "max_depth": 2
+  },
+  "quality_summary": {
+    "avg_with_skill": 92,
+    "avg_baseline": 13,
+    "avg_delta": 79,
+    "all_passed": true
+  },
+  "install_profiles": {
+    "minimal": {
+      "description": "4 foundation diagnostics you can use on any draft independently — curse-of-knowledge detection, core message extraction, stickiness antipattern scan, and concrete-language rewriting",
+      "skills": [
+        "curse-of-knowledge-detector",
+        "core-message-extractor",
+        "sticky-message-antipattern-detector",
+        "concrete-language-rewriter"
+      ]
+    },
+    "core": {
+      "description": "8 foundation skills + stickiness-audit — the full SUCCESs diagnostic toolkit without the end-to-end rewrite orchestrator",
+      "skills": [
+        "curse-of-knowledge-detector",
+        "core-message-extractor",
+        "curiosity-gap-architect",
+        "concrete-language-rewriter",
+        "credibility-evidence-selector",
+        "emotional-appeal-selector",
+        "story-plot-selector",
+        "sticky-message-antipattern-detector",
+        "stickiness-audit"
+      ]
+    },
+    "full": {
+      "description": "All 10 skills — complete Made to Stick toolkit including the message-clinic-runner end-to-end rewrite orchestrator",
+      "skills": [
+        "curse-of-knowledge-detector",
+        "core-message-extractor",
+        "curiosity-gap-architect",
+        "concrete-language-rewriter",
+        "credibility-evidence-selector",
+        "emotional-appeal-selector",
+        "story-plot-selector",
+        "sticky-message-antipattern-detector",
+        "stickiness-audit",
+        "message-clinic-runner"
+      ]
+    }
+  }
+}

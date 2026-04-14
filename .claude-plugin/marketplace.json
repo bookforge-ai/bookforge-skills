@@ -98,6 +98,15 @@
       "category": "sales",
       "tags": ["sales", "b2b-sales", "enterprise-sales", "complex-sales", "discovery", "questioning-techniques", "customer-research", "negotiation"],
       "license": "CC-BY-SA-4.0"
+    },
+    {
+      "name": "made-to-stick",
+      "source": "./books/made-to-stick",
+      "description": "10 sticky messaging skills from Made to Stick by Chip Heath and Dan Heath — audit drafts against the SUCCESs framework, extract Commander's Intent core messages, build curiosity-gap hooks, rewrite abstract language into sensory copy, pick Sinatra-test credibility evidence, choose identity-based emotional appeals, and orchestrate end-to-end message clinics",
+      "version": "1.0.0",
+      "category": "communication",
+      "tags": ["communication", "marketing", "messaging", "persuasion", "storytelling", "copywriting", "public-speaking", "instructional-design"],
+      "license": "CC-BY-SA-4.0"
     }
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "name": "made-to-stick",
+  "description": "10 sticky messaging skills from Made to Stick by Chip Heath and Dan Heath — audit drafts against the SUCCESs framework, extract core messages, rewrite abstract language, choose credibility evidence, pick emotional appeals, structure stories, and orchestrate end-to-end message clinics.",
+  "version": "1.0.0",
+  "author": {
+    "name": "BookForge",
+    "email": "bookforge-ai@users.noreply.github.com"
+  },
+  "homepage": "https://github.com/bookforge-ai/bookforge-skills",
+  "repository": "https://github.com/bookforge-ai/bookforge-skills",
+  "license": "CC-BY-SA-4.0",
+  "keywords": ["books", "skills", "agent-skills", "communication"]
+}
