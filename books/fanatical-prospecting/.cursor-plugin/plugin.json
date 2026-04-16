@@ -1,0 +1,11 @@
+{
+  "name": "fanatical-prospecting",
+  "version": "1.0.0",
+  "description": "14 skills for outbound prospecting, pipeline filling, and sales conversation opening, extracted from Fanatical Prospecting by Jeb Blount",
+  "author": {
+    "name": "BookForge",
+    "email": "bookforge-ai@users.noreply.github.com"
+  },
+  "repository": "https://github.com/bookforge-ai/bookforge-skills",
+  "license": "CC-BY-SA-4.0"
+}

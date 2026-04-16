@@ -1,0 +1,23 @@
+{
+  "book_id": "fanatical-prospecting",
+  "title": "Fanatical Prospecting",
+  "subtitle": "The Ultimate Guide to Opening Sales Conversations and Filling the Pipeline by Leveraging Social Selling, Telephone, Email, Text, and Cold Calling",
+  "author": "Jeb Blount",
+  "authors": [
+    "Jeb Blount"
+  ],
+  "isbn": "978-1-119-14475-2",
+  "year": 2015,
+  "pages": 307,
+  "skill_count": 14,
+  "source_book": "fanatical-prospecting.pdf",
+  "pipeline_version": "0.1.0",
+  "tags": [
+    "sales",
+    "prospecting",
+    "cold-calling",
+    "pipeline",
+    "sdr",
+    "outbound"
+  ]
+}

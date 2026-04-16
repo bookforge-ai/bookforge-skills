@@ -1,0 +1,412 @@
+{
+  "name": "fanatical-prospecting",
+  "display_name": "Fanatical Prospecting",
+  "version": "1.0.0",
+  "description": "14 skills for outbound prospecting, pipeline filling, and sales conversation opening, extracted from Fanatical Prospecting by Jeb Blount",
+  "skill_count": 14,
+  "source_book": {
+    "title": "Fanatical Prospecting",
+    "authors": [
+      "Jeb Blount"
+    ],
+    "isbn": "978-1-119-14475-2",
+    "year": 2015,
+    "pages": 307
+  },
+  "skills": [
+    {
+      "name": "prospecting-objective-setter",
+      "path": "prospecting-objective-setter/SKILL.md",
+      "description": "Define measurable prospecting objectives by converting revenue targets into daily activity numbers — calls, emails, connections, and appointments — using pipeline math and conversion rate analysis.",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 95,
+        "baseline": 22,
+        "delta": 73
+      }
+    },
+    {
+      "name": "prospect-list-tiering",
+      "path": "prospect-list-tiering/SKILL.md",
+      "description": "Score and segment a prospect list into A, B, and C tiers by applying fit criteria — budget, authority, need, and timeline — so prospecting time is allocated to the highest-probability opportunities first.",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 94,
+        "baseline": 21,
+        "delta": 73
+      }
+    },
+    {
+      "name": "prospecting-ratio-manager",
+      "path": "prospecting-ratio-manager/SKILL.md",
+      "description": "Calculate and manage prospecting conversion ratios — dials to contacts, contacts to conversations, conversations to appointments — to identify bottlenecks and set realistic activity targets.",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 95,
+        "baseline": 22,
+        "delta": 73
+      }
+    },
+    {
+      "name": "prospecting-time-block-planner",
+      "path": "prospecting-time-block-planner/SKILL.md",
+      "description": "Design a protected prospecting time-block schedule that prevents interruptions and ensures daily minimum prospecting activity is completed regardless of competing demands.",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 95,
+        "baseline": 22,
+        "delta": 73
+      }
+    },
+    {
+      "name": "prospecting-message-crafter",
+      "path": "prospecting-message-crafter/SKILL.md",
+      "description": "Craft channel-optimized prospecting messages — cold call openers, email subject lines and bodies, LinkedIn connection requests, and text messages — that open conversations without pitching.",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 95,
+        "baseline": 23,
+        "delta": 72
+      }
+    },
+    {
+      "name": "call-reluctance-diagnostic",
+      "path": "call-reluctance-diagnostic/SKILL.md",
+      "description": "Diagnose the specific type of call reluctance affecting prospecting behavior — fear of rejection, perfectionism, role rejection, or social self-consciousness — and prescribe a targeted behavioral intervention.",
+      "tier": 1,
+      "mode": "plan-only",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 95,
+        "baseline": 22,
+        "delta": 73
+      }
+    },
+    {
+      "name": "balanced-prospecting-cadence-designer",
+      "path": "balanced-prospecting-cadence-designer/SKILL.md",
+      "description": "Design a multi-channel prospecting cadence that allocates daily activity across phone, email, social, text, and in-person touches to reduce channel dependency and maximize pipeline coverage.",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": [
+        "prospecting-objective-setter",
+        "prospect-list-tiering",
+        "prospecting-time-block-planner"
+      ],
+      "quality": {
+        "with_skill": 95,
+        "baseline": 22,
+        "delta": 73
+      }
+    },
+    {
+      "name": "cold-call-opener-builder",
+      "path": "cold-call-opener-builder/SKILL.md",
+      "description": "Build a cold call opener that passes the first seven seconds — using interruption pattern, relevance bridge, and disruptive question — to earn permission to continue the conversation.",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": [
+        "prospecting-objective-setter",
+        "prospecting-message-crafter"
+      ],
+      "quality": {
+        "with_skill": 95,
+        "baseline": 23,
+        "delta": 72
+      }
+    },
+    {
+      "name": "cold-email-writer",
+      "path": "cold-email-writer/SKILL.md",
+      "description": "Write cold prospecting emails with subject line, opening hook, value bridge, and single call-to-action — optimized for reply rate, not click rate — using the RBO (Relevance, Brevity, One ask) framework.",
+      "tier": 2,
+      "mode": "full",
+      "build_level": 1,
+      "depends_on": [
+        "prospecting-objective-setter",
+        "prospecting-message-crafter"
+      ],
+      "quality": {
+        "with_skill": 95,
+        "baseline": 22,
+        "delta": 73
+      }
+    },
+    {
+      "name": "social-selling-touch-planner",
+      "path": "social-selling-touch-planner/SKILL.md",
+      "description": "Plan a LinkedIn social-selling touch sequence — profile view, content engagement, connection request, and message — that warms a prospect before direct outreach without looking like spam.",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": [
+        "prospecting-message-crafter",
+        "prospect-list-tiering"
+      ],
+      "quality": {
+        "with_skill": 95,
+        "baseline": 22,
+        "delta": 73
+      }
+    },
+    {
+      "name": "in-person-prospecting-route-planner",
+      "path": "in-person-prospecting-route-planner/SKILL.md",
+      "description": "Plan an in-person prospecting route — clustering visits by geography, tier, and call objective — to maximize face-to-face touches per hour and convert geographic density into pipeline activity.",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": [
+        "prospect-list-tiering",
+        "prospecting-objective-setter"
+      ],
+      "quality": {
+        "with_skill": 95,
+        "baseline": 22,
+        "delta": 73
+      }
+    },
+    {
+      "name": "text-prospecting-sequence-builder",
+      "path": "text-prospecting-sequence-builder/SKILL.md",
+      "description": "Build a compliant text prospecting sequence — initial message, follow-up, and opt-out handling — optimized for high open rates and appointment setting without triggering spam filters.",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": [
+        "prospecting-message-crafter"
+      ],
+      "quality": {
+        "with_skill": 95,
+        "baseline": 22,
+        "delta": 73
+      }
+    },
+    {
+      "name": "gatekeeper-navigator",
+      "path": "gatekeeper-navigator/SKILL.md",
+      "description": "Navigate gatekeepers — receptionists, assistants, and office managers — using respect-based rapport and legitimate business framing to reach the decision maker without deception or confrontation.",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": [
+        "prospecting-message-crafter"
+      ],
+      "quality": {
+        "with_skill": 95,
+        "baseline": 22,
+        "delta": 73
+      }
+    },
+    {
+      "name": "prospecting-objection-handler",
+      "path": "prospecting-objection-handler/SKILL.md",
+      "description": "Handle the five most common prospecting objections — 'not interested', 'already have a vendor', 'send me information', 'no budget', 'call me later' — using the ledge-and-bridge technique to keep the conversation alive.",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 2,
+      "depends_on": [
+        "cold-call-opener-builder",
+        "prospecting-message-crafter"
+      ],
+      "quality": {
+        "with_skill": 95,
+        "baseline": 22,
+        "delta": 73
+      }
+    }
+  ],
+  "dependency_graph": {
+    "nodes": [
+      "prospecting-objective-setter",
+      "prospect-list-tiering",
+      "prospecting-ratio-manager",
+      "prospecting-time-block-planner",
+      "prospecting-message-crafter",
+      "call-reluctance-diagnostic",
+      "balanced-prospecting-cadence-designer",
+      "cold-call-opener-builder",
+      "cold-email-writer",
+      "social-selling-touch-planner",
+      "in-person-prospecting-route-planner",
+      "text-prospecting-sequence-builder",
+      "gatekeeper-navigator",
+      "prospecting-objection-handler"
+    ],
+    "edges": [
+      {
+        "from": "prospecting-objective-setter",
+        "to": "balanced-prospecting-cadence-designer",
+        "type": "input"
+      },
+      {
+        "from": "prospect-list-tiering",
+        "to": "balanced-prospecting-cadence-designer",
+        "type": "input"
+      },
+      {
+        "from": "prospecting-time-block-planner",
+        "to": "balanced-prospecting-cadence-designer",
+        "type": "input"
+      },
+      {
+        "from": "prospecting-objective-setter",
+        "to": "cold-call-opener-builder",
+        "type": "input"
+      },
+      {
+        "from": "prospecting-message-crafter",
+        "to": "cold-call-opener-builder",
+        "type": "knowledge"
+      },
+      {
+        "from": "prospecting-objective-setter",
+        "to": "cold-email-writer",
+        "type": "input"
+      },
+      {
+        "from": "prospecting-message-crafter",
+        "to": "cold-email-writer",
+        "type": "knowledge"
+      },
+      {
+        "from": "prospecting-message-crafter",
+        "to": "social-selling-touch-planner",
+        "type": "knowledge"
+      },
+      {
+        "from": "prospect-list-tiering",
+        "to": "social-selling-touch-planner",
+        "type": "input"
+      },
+      {
+        "from": "prospect-list-tiering",
+        "to": "in-person-prospecting-route-planner",
+        "type": "input"
+      },
+      {
+        "from": "prospecting-objective-setter",
+        "to": "in-person-prospecting-route-planner",
+        "type": "input"
+      },
+      {
+        "from": "prospecting-message-crafter",
+        "to": "text-prospecting-sequence-builder",
+        "type": "knowledge"
+      },
+      {
+        "from": "prospecting-message-crafter",
+        "to": "gatekeeper-navigator",
+        "type": "knowledge"
+      },
+      {
+        "from": "cold-call-opener-builder",
+        "to": "prospecting-objection-handler",
+        "type": "input"
+      },
+      {
+        "from": "prospecting-message-crafter",
+        "to": "prospecting-objection-handler",
+        "type": "knowledge"
+      }
+    ],
+    "levels": {
+      "0": [
+        "prospecting-objective-setter",
+        "prospect-list-tiering",
+        "prospecting-ratio-manager",
+        "prospecting-time-block-planner",
+        "prospecting-message-crafter",
+        "call-reluctance-diagnostic"
+      ],
+      "1": [
+        "balanced-prospecting-cadence-designer",
+        "cold-call-opener-builder",
+        "cold-email-writer",
+        "social-selling-touch-planner",
+        "in-person-prospecting-route-planner",
+        "text-prospecting-sequence-builder",
+        "gatekeeper-navigator"
+      ],
+      "2": [
+        "prospecting-objection-handler"
+      ]
+    },
+    "hub": "prospecting-message-crafter",
+    "is_dag": true,
+    "max_depth": 2
+  },
+  "quality_summary": {
+    "avg_with_skill": 94.9,
+    "avg_baseline": 22.3,
+    "avg_delta": 72.6,
+    "all_passed": true
+  },
+  "install_profiles": {
+    "minimal": {
+      "skills": [
+        "prospecting-message-crafter",
+        "prospecting-objective-setter",
+        "cold-call-opener-builder"
+      ],
+      "description": "Hub skill plus two essentials — message crafting foundation and call opener for immediate outreach"
+    },
+    "core": {
+      "skills": [
+        "prospecting-message-crafter",
+        "prospecting-objective-setter",
+        "prospect-list-tiering",
+        "prospecting-ratio-manager",
+        "cold-call-opener-builder",
+        "cold-email-writer",
+        "prospecting-objection-handler"
+      ],
+      "description": "7 highest-value skills — full prospecting toolkit covering objectives, list management, ratios, outreach, and objection handling"
+    },
+    "full": {
+      "skills": [
+        "prospecting-objective-setter",
+        "prospect-list-tiering",
+        "prospecting-ratio-manager",
+        "prospecting-time-block-planner",
+        "prospecting-message-crafter",
+        "call-reluctance-diagnostic",
+        "balanced-prospecting-cadence-designer",
+        "cold-call-opener-builder",
+        "cold-email-writer",
+        "social-selling-touch-planner",
+        "in-person-prospecting-route-planner",
+        "text-prospecting-sequence-builder",
+        "gatekeeper-navigator",
+        "prospecting-objection-handler"
+      ],
+      "description": "All 14 skills — complete outbound prospecting system covering every channel and scenario"
+    }
+  },
+  "tags": [
+    "sales",
+    "prospecting",
+    "cold-calling",
+    "pipeline",
+    "sdr",
+    "outbound"
+  ]
+}
