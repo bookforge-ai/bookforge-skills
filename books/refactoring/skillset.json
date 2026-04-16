@@ -1,0 +1,285 @@
+{
+  "name": "refactoring",
+  "display_name": "Refactoring: Improving the Design of Existing Code",
+  "version": "1.0.0",
+  "description": "10 skills for systematic code refactoring — smell diagnosis, method decomposition, conditional simplification, class responsibility realignment, data organization, type code handling, test suite construction, and large-scale refactoring planning, extracted from Refactoring by Martin Fowler",
+  "skill_count": 10,
+  "source_book": {
+    "title": "Refactoring: Improving the Design of Existing Code",
+    "authors": [
+      "Martin Fowler",
+      "Kent Beck"
+    ],
+    "isbn": "978-0-201-48567-7",
+    "year": 1999,
+    "pages": 337
+  },
+  "skills": [
+    {
+      "name": "code-smell-diagnosis",
+      "path": "code-smell-diagnosis/SKILL.md",
+      "description": "Scan a codebase or code fragment for the 22 named code smells from Fowler's refactoring catalog and produce a prioritized diagnosis report with the specific refactoring prescription for each smell.",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 88,
+        "baseline": 40,
+        "delta": 48
+      }
+    },
+    {
+      "name": "refactoring-readiness-assessment",
+      "path": "refactoring-readiness-assessment/SKILL.md",
+      "description": "Assess whether a codebase situation warrants refactoring and determine the right approach — refactor first, refactor not at all, or rewrite entirely — before any structural changes begin.",
+      "tier": 1,
+      "mode": "plan-only",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 82,
+        "baseline": 38,
+        "delta": 44
+      }
+    },
+    {
+      "name": "build-refactoring-test-suite",
+      "path": "build-refactoring-test-suite/SKILL.md",
+      "description": "Build a sufficient automated test suite before refactoring existing code using a 6-step sequential construction workflow and a bug-fix variant.",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 85,
+        "baseline": 40,
+        "delta": 45
+      }
+    },
+    {
+      "name": "profiling-driven-performance-optimization",
+      "path": "profiling-driven-performance-optimization/SKILL.md",
+      "description": "Optimize code performance by first refactoring to a well-factored structure, then running a profiler to find actual hot spots, and applying targeted optimizations only where the profiler points.",
+      "tier": 3,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 80,
+        "baseline": 42,
+        "delta": 38
+      }
+    },
+    {
+      "name": "method-decomposition-refactoring",
+      "path": "method-decomposition-refactoring/SKILL.md",
+      "description": "Decompose long, tangled methods into clean, composable units using the 9 composing-method refactorings from Fowler's catalog — Extract Method, Replace Temp with Query, Split Temporary Variable, and more.",
+      "tier": 2,
+      "mode": "full",
+      "build_level": 1,
+      "depends_on": [
+        "code-smell-diagnosis"
+      ],
+      "quality": {
+        "with_skill": 90,
+        "baseline": 42,
+        "delta": 48
+      }
+    },
+    {
+      "name": "type-code-refactoring-selector",
+      "path": "type-code-refactoring-selector/SKILL.md",
+      "description": "Select and execute the correct refactoring path for type codes — Replace Type Code with Class, Subclasses, or State/Strategy — using Fowler's three-way decision tree.",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": [
+        "code-smell-diagnosis"
+      ],
+      "quality": {
+        "with_skill": 86,
+        "baseline": 40,
+        "delta": 46
+      }
+    },
+    {
+      "name": "conditional-simplification-strategy",
+      "path": "conditional-simplification-strategy/SKILL.md",
+      "description": "Select and apply the correct refactoring for complex or tangled conditional logic — covering all 8 conditional refactorings from Fowler Chapter 9 plus Introduce Assertion.",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": [
+        "code-smell-diagnosis"
+      ],
+      "quality": {
+        "with_skill": 86,
+        "baseline": 40,
+        "delta": 46
+      }
+    },
+    {
+      "name": "class-responsibility-realignment",
+      "path": "class-responsibility-realignment/SKILL.md",
+      "description": "Redistribute methods and fields to the classes that own them, repair broken inheritance hierarchies, and extend unmodifiable library classes — covering Feature Envy, Shotgun Surgery, Middle Man, and more.",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": [
+        "code-smell-diagnosis"
+      ],
+      "quality": {
+        "with_skill": 86,
+        "baseline": 38,
+        "delta": 48
+      }
+    },
+    {
+      "name": "data-organization-refactoring",
+      "path": "data-organization-refactoring/SKILL.md",
+      "description": "Apply the correct data organization refactoring when code smells in data structure design are diagnosed — Primitive Obsession, Data Clumps, Data Class, magic numbers, and raw collections.",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": [
+        "code-smell-diagnosis"
+      ],
+      "quality": {
+        "with_skill": 85,
+        "baseline": 40,
+        "delta": 45
+      }
+    },
+    {
+      "name": "big-refactoring-planner",
+      "path": "big-refactoring-planner/SKILL.md",
+      "description": "Plan and execute architectural-scale refactoring campaigns — Tease Apart Inheritance, Convert Procedural Design to Objects, Separate Domain from Presentation, Extract Hierarchy — with multi-week campaign plans.",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": [
+        "code-smell-diagnosis"
+      ],
+      "quality": {
+        "with_skill": 82,
+        "baseline": 40,
+        "delta": 42
+      }
+    }
+  ],
+  "dependency_graph": {
+    "nodes": [
+      "code-smell-diagnosis",
+      "refactoring-readiness-assessment",
+      "build-refactoring-test-suite",
+      "profiling-driven-performance-optimization",
+      "method-decomposition-refactoring",
+      "type-code-refactoring-selector",
+      "conditional-simplification-strategy",
+      "class-responsibility-realignment",
+      "data-organization-refactoring",
+      "big-refactoring-planner"
+    ],
+    "edges": [
+      {
+        "from": "code-smell-diagnosis",
+        "to": "method-decomposition-refactoring",
+        "type": "input"
+      },
+      {
+        "from": "code-smell-diagnosis",
+        "to": "type-code-refactoring-selector",
+        "type": "input"
+      },
+      {
+        "from": "code-smell-diagnosis",
+        "to": "conditional-simplification-strategy",
+        "type": "input"
+      },
+      {
+        "from": "code-smell-diagnosis",
+        "to": "class-responsibility-realignment",
+        "type": "input"
+      },
+      {
+        "from": "code-smell-diagnosis",
+        "to": "data-organization-refactoring",
+        "type": "input"
+      },
+      {
+        "from": "code-smell-diagnosis",
+        "to": "big-refactoring-planner",
+        "type": "input"
+      }
+    ],
+    "levels": {
+      "0": [
+        "code-smell-diagnosis",
+        "refactoring-readiness-assessment",
+        "build-refactoring-test-suite",
+        "profiling-driven-performance-optimization"
+      ],
+      "1": [
+        "method-decomposition-refactoring",
+        "type-code-refactoring-selector",
+        "conditional-simplification-strategy",
+        "class-responsibility-realignment",
+        "data-organization-refactoring",
+        "big-refactoring-planner"
+      ]
+    },
+    "hub": "code-smell-diagnosis",
+    "is_dag": true,
+    "max_depth": 1
+  },
+  "quality_summary": {
+    "avg_with_skill": 85.0,
+    "avg_baseline": 40.0,
+    "avg_delta": 45.0,
+    "all_passed": true
+  },
+  "install_profiles": {
+    "minimal": {
+      "skills": [
+        "code-smell-diagnosis",
+        "refactoring-readiness-assessment",
+        "build-refactoring-test-suite"
+      ],
+      "description": "3 foundation skills — smell diagnosis, readiness assessment, and test suite construction"
+    },
+    "core": {
+      "skills": [
+        "code-smell-diagnosis",
+        "method-decomposition-refactoring",
+        "type-code-refactoring-selector",
+        "conditional-simplification-strategy",
+        "class-responsibility-realignment",
+        "big-refactoring-planner"
+      ],
+      "description": "6 skills — hub skill plus all Level 1 decision skills for the most common refactoring scenarios"
+    },
+    "full": {
+      "skills": [
+        "code-smell-diagnosis",
+        "refactoring-readiness-assessment",
+        "build-refactoring-test-suite",
+        "profiling-driven-performance-optimization",
+        "method-decomposition-refactoring",
+        "type-code-refactoring-selector",
+        "conditional-simplification-strategy",
+        "class-responsibility-realignment",
+        "data-organization-refactoring",
+        "big-refactoring-planner"
+      ],
+      "description": "All 10 skills — complete refactoring system covering diagnosis, planning, testing, decomposition, and architectural restructuring"
+    }
+  },
+  "tags": [
+    "refactoring",
+    "code-quality",
+    "software-design",
+    "object-oriented-programming",
+    "code-smells"
+  ]
+}

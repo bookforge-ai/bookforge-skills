@@ -1,0 +1,12 @@
+{
+  "name": "refactoring",
+  "displayName": "refactoring",
+  "description": "10 refactoring skills from Refactoring: Improving the Design of Existing Code by Martin Fowler — code smell diagnosis, method decomposition, conditional simplification, class responsibility realignment, data organization, type code refactoring, test suite construction, performance optimization, readiness assessment, and big refactoring planning.",
+  "version": "1.0.0",
+  "author": { "name": "BookForge", "email": "bookforge-ai@users.noreply.github.com" },
+  "homepage": "https://github.com/bookforge-ai/bookforge-skills",
+  "repository": "https://github.com/bookforge-ai/bookforge-skills",
+  "license": "CC-BY-SA-4.0",
+  "skills": "./skills/",
+  "hooks": "./hooks/hooks-cursor.json"
+}

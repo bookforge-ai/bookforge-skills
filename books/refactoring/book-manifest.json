@@ -1,0 +1,14 @@
+{
+  "book_id": "refactoring",
+  "title": "Refactoring: Improving the Design of Existing Code",
+  "subtitle": "Improving the Design of Existing Code",
+  "author": "Martin Fowler",
+  "authors": ["Martin Fowler", "Kent Beck"],
+  "isbn": "978-0-201-48567-7",
+  "year": 1999,
+  "pages": 337,
+  "tags": ["refactoring", "code-quality", "software-design", "object-oriented-programming", "code-smells"],
+  "skill_count": 10,
+  "source_book": "refactoring.pdf",
+  "pipeline_version": "0.1.0"
+}

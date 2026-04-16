@@ -1,0 +1,12 @@
+{
+  "name": "@bookforge/refactoring",
+  "version": "1.0.0",
+  "description": "10 refactoring skills from Refactoring: Improving the Design of Existing Code (Martin Fowler)",
+  "author": {
+    "name": "BookForge",
+    "email": "bookforge-ai@users.noreply.github.com"
+  },
+  "repository": "https://github.com/bookforge-ai/bookforge-skills",
+  "license": "CC-BY-SA-4.0",
+  "skills": "skills/*/SKILL.md"
+}
