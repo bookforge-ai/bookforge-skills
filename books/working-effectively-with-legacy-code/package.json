@@ -1,0 +1,12 @@
+{
+  "name": "@bookforge/working-effectively-with-legacy-code",
+  "version": "1.0.0",
+  "description": "16 legacy code skills from Working Effectively with Legacy Code (Michael C. Feathers)",
+  "author": {
+    "name": "BookForge",
+    "email": "bookforge-ai@users.noreply.github.com"
+  },
+  "repository": "https://github.com/bookforge-ai/bookforge-skills",
+  "license": "CC-BY-SA-4.0",
+  "skills": "skills/*/SKILL.md"
+}

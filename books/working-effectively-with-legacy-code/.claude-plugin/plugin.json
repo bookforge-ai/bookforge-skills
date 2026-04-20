@@ -1,0 +1,13 @@
+{
+  "name": "working-effectively-with-legacy-code",
+  "description": "16 legacy code skills from Working Effectively with Legacy Code by Michael C. Feathers — the Legacy Code Change Algorithm, seam type selection, characterization test writing, dependency-breaking technique execution, monster method decomposition, big class responsibility extraction, test harness diagnostics, change effect analysis, and more.",
+  "version": "1.0.0",
+  "author": {
+    "name": "BookForge",
+    "email": "bookforge-ai@users.noreply.github.com"
+  },
+  "homepage": "https://github.com/bookforge-ai/bookforge-skills",
+  "repository": "https://github.com/bookforge-ai/bookforge-skills",
+  "license": "CC-BY-SA-4.0",
+  "keywords": ["legacy-code", "refactoring", "testing", "software-engineering", "technical-debt", "dependency-injection"]
+}

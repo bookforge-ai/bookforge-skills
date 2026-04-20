@@ -116,6 +116,15 @@
       "category": "sales",
       "tags": ["sales", "b2b-sales", "sales-methodology", "commercial-insight", "sales-management", "sales-enablement", "challenger-sale"],
       "license": "CC-BY-SA-4.0"
+    },
+    {
+      "name": "working-effectively-with-legacy-code",
+      "source": "./books/working-effectively-with-legacy-code",
+      "description": "16 legacy code skills from Working Effectively with Legacy Code by Michael C. Feathers — the Legacy Code Change Algorithm, seam type selection, characterization test writing, dependency-breaking techniques, monster method decomposition, big class extraction, and more",
+      "version": "1.0.0",
+      "category": "software-engineering",
+      "tags": ["legacy-code", "refactoring", "testing", "software-engineering", "technical-debt", "dependency-injection"],
+      "license": "CC-BY-SA-4.0"
     }
   ]
 }

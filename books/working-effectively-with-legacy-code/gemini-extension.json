@@ -1,0 +1,6 @@
+{
+  "name": "working-effectively-with-legacy-code",
+  "description": "16 legacy code skills from Working Effectively with Legacy Code by Michael C. Feathers — the Legacy Code Change Algorithm, seam type selection, characterization test writing, dependency-breaking technique execution, monster method decomposition, big class responsibility extraction, test harness diagnostics, change effect analysis, and more.",
+  "version": "1.0.0",
+  "contextFileName": "GEMINI.md"
+}

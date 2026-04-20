@@ -1,0 +1,356 @@
+{
+  "name": "working-effectively-with-legacy-code",
+  "display_name": "Working Effectively with Legacy Code",
+  "version": "1.0.0",
+  "description": "16 skills for safely changing untested legacy code — the Legacy Code Change Algorithm, seam type selection, characterization test writing, dependency-breaking techniques, monster method decomposition, big class extraction, and more, extracted from Working Effectively with Legacy Code by Michael C. Feathers",
+  "domain": "software-engineering",
+  "skill_count": 16,
+  "source_book": {
+    "title": "Working Effectively with Legacy Code",
+    "authors": ["Michael C. Feathers"],
+    "isbn": "978-0-13-117705-5",
+    "year": 2004,
+    "pages": 456
+  },
+  "skills": [
+    {
+      "name": "legacy-code-change-algorithm",
+      "path": "legacy-code-change-algorithm/SKILL.md",
+      "description": "Guide safe modification of legacy code using Feathers' 5-step Legacy Code Change Algorithm — the master procedure for cover-then-modify.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 93,
+        "baseline": 7,
+        "delta": 86
+      }
+    },
+    {
+      "name": "seam-type-selector",
+      "path": "seam-type-selector/SKILL.md",
+      "description": "Select the right seam type (Preprocessor / Link / Object) for breaking a dependency in legacy code without editing in place.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 100,
+        "baseline": 60,
+        "delta": 40
+      }
+    },
+    {
+      "name": "unit-test-quality-checker",
+      "path": "unit-test-quality-checker/SKILL.md",
+      "description": "Evaluate a test suite against rigorous unit-test criteria, classify test types, and choose between fake and mock objects.",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 100,
+        "baseline": 36,
+        "delta": 64
+      }
+    },
+    {
+      "name": "scratch-refactoring-for-code-understanding",
+      "path": "scratch-refactoring-for-code-understanding/SKILL.md",
+      "description": "Guide throwaway refactoring — restructure code freely without tests to understand it, then discard all changes.",
+      "tier": 1,
+      "mode": "full",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 100,
+        "baseline": 0,
+        "delta": 100
+      }
+    },
+    {
+      "name": "safe-legacy-editing-discipline",
+      "path": "safe-legacy-editing-discipline/SKILL.md",
+      "description": "Apply 4 editing disciplines when modifying legacy code: Hyperaware Editing, Single-Goal Editing, Preserve Signatures, Lean on the Compiler.",
+      "tier": 1,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 54,
+        "baseline": 0,
+        "delta": 54
+      }
+    },
+    {
+      "name": "legacy-code-symptom-router",
+      "path": "legacy-code-symptom-router/SKILL.md",
+      "description": "Diagnose any legacy-code situation in plain language and route to the right technique from 19 symptom-based chapters.",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 36,
+        "baseline": 0,
+        "delta": 36
+      }
+    },
+    {
+      "name": "test-harness-entry-diagnostics",
+      "path": "test-harness-entry-diagnostics/SKILL.md",
+      "description": "Diagnose exactly why a class or method cannot be placed under test and route to the right dependency-breaking technique.",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 57,
+        "baseline": 7,
+        "delta": 50
+      }
+    },
+    {
+      "name": "change-effect-analysis",
+      "path": "change-effect-analysis/SKILL.md",
+      "description": "Trace the blast radius of a legacy code change and produce a test placement plan with pinch points.",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 71,
+        "baseline": 0,
+        "delta": 71
+      }
+    },
+    {
+      "name": "characterization-test-writing",
+      "path": "characterization-test-writing/SKILL.md",
+      "description": "Write tests that pin down the actual current behavior of untested legacy code as a regression safety net for change.",
+      "tier": 2,
+      "mode": "full",
+      "build_level": 1,
+      "depends_on": ["legacy-code-change-algorithm"],
+      "quality": {
+        "with_skill": 100,
+        "baseline": 28,
+        "delta": 72
+      }
+    },
+    {
+      "name": "library-seam-wrapper",
+      "path": "library-seam-wrapper/SKILL.md",
+      "description": "Isolate third-party library dependencies behind thin wrapper interfaces to break vendor lock-in and enable testing.",
+      "tier": 1,
+      "mode": "full",
+      "build_level": 1,
+      "depends_on": ["seam-type-selector"],
+      "quality": {
+        "with_skill": 100,
+        "baseline": 0,
+        "delta": 100
+      }
+    },
+    {
+      "name": "legacy-code-addition-techniques",
+      "path": "legacy-code-addition-techniques/SKILL.md",
+      "description": "Add new functionality to untested legacy code using Sprout Method, Sprout Class, Wrap Method, or Wrap Class.",
+      "tier": 1,
+      "mode": "full",
+      "build_level": 1,
+      "depends_on": ["legacy-code-change-algorithm"],
+      "quality": {
+        "with_skill": 78,
+        "baseline": 11,
+        "delta": 67
+      }
+    },
+    {
+      "name": "tdd-and-programming-by-difference",
+      "path": "tdd-and-programming-by-difference/SKILL.md",
+      "description": "Add features to tested code using TDD or Programming by Difference — red-green-refactor cycle and subclass-to-extend technique.",
+      "tier": 1,
+      "mode": "full",
+      "build_level": 1,
+      "depends_on": ["characterization-test-writing"],
+      "quality": {
+        "with_skill": 100,
+        "baseline": 0,
+        "delta": 100
+      }
+    },
+    {
+      "name": "dependency-breaking-technique-executor",
+      "path": "dependency-breaking-technique-executor/SKILL.md",
+      "description": "Select and execute the right dependency-breaking technique from Feathers' catalog of 24 named techniques for a specific testability obstacle.",
+      "tier": 1,
+      "mode": "full",
+      "build_level": 1,
+      "depends_on": ["seam-type-selector", "test-harness-entry-diagnostics"],
+      "quality": {
+        "with_skill": 88,
+        "baseline": 25,
+        "delta": 63
+      }
+    },
+    {
+      "name": "monster-method-decomposition",
+      "path": "monster-method-decomposition/SKILL.md",
+      "description": "Decompose a very large method (100+ lines) safely using automated refactoring and Feathers' Bulleted/Snarled classification.",
+      "tier": 1,
+      "mode": "full",
+      "build_level": 1,
+      "depends_on": ["characterization-test-writing"],
+      "quality": {
+        "with_skill": 100,
+        "baseline": 0,
+        "delta": 100
+      }
+    },
+    {
+      "name": "big-class-responsibility-extraction",
+      "path": "big-class-responsibility-extraction/SKILL.md",
+      "description": "Identify and extract responsibilities from an oversized class using Feathers' 7 heuristics and feature sketches.",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": ["characterization-test-writing"],
+      "quality": {
+        "with_skill": 92,
+        "baseline": 25,
+        "delta": 67
+      }
+    },
+    {
+      "name": "duplication-removal-via-extraction",
+      "path": "duplication-removal-via-extraction/SKILL.md",
+      "description": "Remove duplicated code across methods and classes by extracting small shared utilities first and letting structure emerge.",
+      "tier": 1,
+      "mode": "full",
+      "build_level": 1,
+      "depends_on": ["characterization-test-writing"],
+      "quality": {
+        "with_skill": 100,
+        "baseline": 0,
+        "delta": 100
+      }
+    }
+  ],
+  "dependency_graph": {
+    "nodes": [
+      "legacy-code-change-algorithm",
+      "seam-type-selector",
+      "unit-test-quality-checker",
+      "scratch-refactoring-for-code-understanding",
+      "safe-legacy-editing-discipline",
+      "legacy-code-symptom-router",
+      "test-harness-entry-diagnostics",
+      "change-effect-analysis",
+      "characterization-test-writing",
+      "library-seam-wrapper",
+      "legacy-code-addition-techniques",
+      "tdd-and-programming-by-difference",
+      "dependency-breaking-technique-executor",
+      "monster-method-decomposition",
+      "big-class-responsibility-extraction",
+      "duplication-removal-via-extraction"
+    ],
+    "edges": [
+      { "from": "legacy-code-change-algorithm", "to": "characterization-test-writing", "type": "input" },
+      { "from": "legacy-code-change-algorithm", "to": "legacy-code-addition-techniques", "type": "input" },
+      { "from": "seam-type-selector", "to": "library-seam-wrapper", "type": "input" },
+      { "from": "seam-type-selector", "to": "dependency-breaking-technique-executor", "type": "input" },
+      { "from": "test-harness-entry-diagnostics", "to": "dependency-breaking-technique-executor", "type": "input" },
+      { "from": "characterization-test-writing", "to": "tdd-and-programming-by-difference", "type": "input" },
+      { "from": "characterization-test-writing", "to": "monster-method-decomposition", "type": "input" },
+      { "from": "characterization-test-writing", "to": "big-class-responsibility-extraction", "type": "input" },
+      { "from": "characterization-test-writing", "to": "duplication-removal-via-extraction", "type": "input" }
+    ],
+    "levels": {
+      "0": [
+        "legacy-code-change-algorithm",
+        "seam-type-selector",
+        "unit-test-quality-checker",
+        "scratch-refactoring-for-code-understanding",
+        "safe-legacy-editing-discipline",
+        "legacy-code-symptom-router",
+        "test-harness-entry-diagnostics",
+        "change-effect-analysis"
+      ],
+      "1": [
+        "characterization-test-writing",
+        "library-seam-wrapper",
+        "legacy-code-addition-techniques",
+        "tdd-and-programming-by-difference",
+        "dependency-breaking-technique-executor",
+        "monster-method-decomposition",
+        "big-class-responsibility-extraction",
+        "duplication-removal-via-extraction"
+      ]
+    },
+    "hub": "legacy-code-change-algorithm",
+    "is_dag": true,
+    "max_depth": 2
+  },
+  "quality_summary": {
+    "avg_with_skill": 85.6,
+    "avg_baseline": 12.4,
+    "avg_delta": 73.1,
+    "all_passed": false
+  },
+  "install_profiles": {
+    "minimal": {
+      "skills": [
+        "legacy-code-change-algorithm",
+        "seam-type-selector",
+        "characterization-test-writing"
+      ],
+      "description": "3 foundation skills — the master change algorithm, seam selection, and characterization test writing"
+    },
+    "core": {
+      "skills": [
+        "legacy-code-change-algorithm",
+        "seam-type-selector",
+        "characterization-test-writing",
+        "dependency-breaking-technique-executor",
+        "legacy-code-symptom-router",
+        "monster-method-decomposition",
+        "big-class-responsibility-extraction"
+      ],
+      "description": "7 skills — foundation plus key technique execution and structural refactoring skills"
+    },
+    "full": {
+      "description": "All 16 skills",
+      "skills": [
+        "legacy-code-change-algorithm",
+        "seam-type-selector",
+        "unit-test-quality-checker",
+        "scratch-refactoring-for-code-understanding",
+        "safe-legacy-editing-discipline",
+        "legacy-code-symptom-router",
+        "test-harness-entry-diagnostics",
+        "change-effect-analysis",
+        "characterization-test-writing",
+        "library-seam-wrapper",
+        "legacy-code-addition-techniques",
+        "tdd-and-programming-by-difference",
+        "dependency-breaking-technique-executor",
+        "monster-method-decomposition",
+        "big-class-responsibility-extraction",
+        "duplication-removal-via-extraction"
+      ]
+    }
+  },
+  "tags": [
+    "legacy-code",
+    "refactoring",
+    "testing",
+    "software-engineering",
+    "code-quality",
+    "technical-debt",
+    "unit-testing",
+    "dependency-injection"
+  ]
+}

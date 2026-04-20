@@ -1,0 +1,14 @@
+{
+  "book_id": "working-effectively-with-legacy-code",
+  "title": "Working Effectively with Legacy Code",
+  "subtitle": "A Guide to Safely Changing Code Without Tests",
+  "author": "Michael C. Feathers",
+  "authors": ["Michael C. Feathers"],
+  "isbn": "978-0-13-117705-5",
+  "year": 2004,
+  "pages": 456,
+  "tags": ["legacy-code", "refactoring", "testing", "software-engineering", "code-quality", "technical-debt", "unit-testing", "dependency-injection"],
+  "skill_count": 16,
+  "source_book": "working-effectively-with-legacy-code.epub",
+  "pipeline_version": "1.0.0"
+}
