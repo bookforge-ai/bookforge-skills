@@ -1,0 +1,344 @@
+{
+  "name": "patterns-of-enterprise-application-architecture",
+  "display_name": "Patterns of Enterprise Application Architecture",
+  "version": "1.0.0",
+  "description": "16 skills for enterprise application architecture: pattern-family selectors (domain logic, data source, inheritance mapping, web presentation, concurrency, session state, distribution), pattern implementers, and audit skills \u2014 extracted from Patterns of Enterprise Application Architecture by Martin Fowler.",
+  "skill_count": 16,
+  "source_book": {
+    "title": "Patterns of Enterprise Application Architecture",
+    "authors": [
+      "Martin Fowler",
+      "David Rice",
+      "Matthew Foemmel",
+      "Edward Hieatt",
+      "Robert Mee",
+      "Randy Stafford"
+    ],
+    "isbn": "978-0-321-12742-6",
+    "year": 2002,
+    "pages": 560
+  },
+  "skills": [
+    {
+      "name": "enterprise-architecture-pattern-stack-selector",
+      "path": "enterprise-architecture-pattern-stack-selector/SKILL.md",
+      "description": "Select the right enterprise application architecture patterns for every layer of your system using Fowler's PEAA decision framework. Use this skill when designing or refactoring an enterprise app and asking: which domain-logic pattern should I use (Transaction Script, Domain Model, Table Module)? Which persistence pattern fits my stack (Active Record, Data Mapper, Table Data Gateway, Row Data Gateway)? Which web-presentation pattern applies (Front Controller, Page Controller, Template View)? How do I combine these into a coherent full-stack architecture? Triggers include: 'help me choose architecture patterns', 'which Fowler pattern for my app', 'enterprise application architecture', 'PEAA pattern selection', 'layer pattern selection', 'domain logic pattern vs persistence pattern', 'refactor enterprise app to patterns', 'how to structure a Spring/Django/Rails/ASP.NET app', 'what persistence pattern should I use', 'enterprise architecture decision', 'full-stack pattern stack', 'patterns of enterprise application architecture'. This is the hub skill \u2014 it maps your subsystem context to per-layer family selector skills and produces a consolidated Pattern Stack Decision Record.",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 93,
+        "baseline": 50,
+        "delta": 43
+      }
+    },
+    {
+      "name": "domain-logic-pattern-selector",
+      "path": "domain-logic-pattern-selector/SKILL.md",
+      "description": "Choose domain logic pattern for enterprise application subsystems: Transaction Script vs Domain Model vs Table Module, and decide Service Layer thickness. Use when organizing business logic, choosing between procedural service methods and rich domain models, selecting enterprise app architecture, routing domain logic to the right pattern, deciding anemic domain model vs rich domain model, applying Fowler's complexity-vs-effort curve, determining when to use Domain Model, when to use Transaction Script for simple CRUD, when Table Module fits .NET RecordSet environments, deciding Service Layer facade vs operation script vs controller-entity, avoiding transaction-script-sprawl, avoiding anemic-domain-model anti-pattern, preventing stored-procedure logic leakage, structuring enterprise app business logic, domain logic organization, choose domain pattern, enterprise app business logic design.",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 92,
+        "baseline": 38,
+        "delta": 54
+      }
+    },
+    {
+      "name": "data-source-pattern-selector",
+      "path": "data-source-pattern-selector/SKILL.md",
+      "description": "|",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 93,
+        "baseline": 29,
+        "delta": 64
+      }
+    },
+    {
+      "name": "inheritance-mapping-selector",
+      "path": "inheritance-mapping-selector/SKILL.md",
+      "description": "|",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 92,
+        "baseline": 54,
+        "delta": 38
+      }
+    },
+    {
+      "name": "object-relational-structural-mapping-guide",
+      "path": "object-relational-structural-mapping-guide/SKILL.md",
+      "description": "Object-relational mapping structural patterns guide. Use when designing or auditing how domain objects map to relational tables \u2014 identity fields, foreign key mapping, association table mapping for many-to-many relationships, dependent mapping for child objects with cascade delete, embedded value for value object mapping, and serialized LOB for JSON column or blob storage. Applies when choosing ORM associations (Hibernate, SQLAlchemy, EF Core, ActiveRecord, Django ORM), deciding between a join table and nested foreign keys, mapping address or money value objects as inline columns, or detecting serialized LOB overuse on queryable data. Covers the six PEAA structural patterns: Identity Field (surrogate key vs meaningful key), Foreign Key Mapping (single-valued reference), Association Table Mapping (many-to-many via join table), Dependent Mapping (child lifecycle owned by parent), Embedded Value (value object as columns), Serialized LOB (graph serialized to JSON/BLOB column).",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 100,
+        "baseline": 54,
+        "delta": 46
+      }
+    },
+    {
+      "name": "web-presentation-pattern-selector",
+      "path": "web-presentation-pattern-selector/SKILL.md",
+      "description": "Select the right web presentation pattern combination for any server-side web layer under design or refactor. Covers MVC (Model View Controller) decomposition, all three view patterns (Template View, Transform View, Two Step View), all three controller patterns (Page Controller, Front Controller, Application Controller), and when to layer Application Controller above the others for wizard or state-machine flows. Use when designing a new web layer, refactoring a tangled web controller, diagnosing fat controller or Template View scriptlet anti-patterns, mapping legacy JSP/ERB/ASP patterns to modern equivalents (Spring DispatcherServlet = Front Controller, Rails Router = Front Controller, JSP/ERB/Jinja = Template View), or deciding whether a wizard flow needs an Application Controller above a Front Controller. Applies to any language/framework: Java Spring MVC, Ruby on Rails, Python Django/Flask, ASP.NET Core, Node.js Express, PHP Laravel. Produces a web presentation design record with pattern selections, anti-pattern audit, and framework-specific implementation notes. Relevant keywords: web controller pattern, MVC, Model View Controller, Page Controller, Front Controller, Application Controller, Template View, Transform View, Two Step View, web presentation pattern, web framework architecture, refactor controllers, fat controller, server-side rendering, server-side MVC.",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 92,
+        "baseline": 54,
+        "delta": 38
+      }
+    },
+    {
+      "name": "offline-concurrency-strategy-selector",
+      "path": "offline-concurrency-strategy-selector/SKILL.md",
+      "description": "Use when designing concurrency control for long-running edits where a business transaction spans multiple system transactions \u2014 user opens a record, edits for minutes or hours, then saves. Selects between optimistic locking (version column, collision detection at commit) vs pessimistic locking (record check-out, conflict prevention at load time) and decides whether to add Coarse-Grained Lock (aggregate-root lock for multi-object edits) and Implicit Lock (framework-enforced locking to prevent gaps). Handles: lost update prevention, concurrent edit collision detection, offline lock strategy, long-running transaction concurrency, version column design, lock table design, lock timeout policy, aggregate lock, editing concurrency, lock type selection (exclusive-read vs exclusive-write vs read-write). Diagnoses mis-configurations: DB-level locks held across user think-time, implicit-lock gaps, optimistic/pessimistic mixing on overlapping data, timestamp-based versioning pitfalls.",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 100,
+        "baseline": 46,
+        "delta": 54
+      }
+    },
+    {
+      "name": "session-state-location-selector",
+      "path": "session-state-location-selector/SKILL.md",
+      "description": "Route session state storage to the right location \u2014 Client Session State (cookies, JWT, hidden fields, URL parameters), Server Session State (in-memory or Redis session store), or Database Session State (SQL/NoSQL session table) \u2014 based on six dimensions: bandwidth cost, security sensitivity, clustering and failover needs, responsiveness, cancellation requirements, and development effort. Use when designing session management for a new web application, debugging sticky-session or node-pinning scaling problems, deciding between JWT vs server session vs database session, choosing a shared session store for a clustered or elastic deployment, handling shopping carts, multi-step forms, auth context, or edit-in-progress across HTTP requests, or auditing for session bloat or unsigned client session state. Applies to stateless session design, distributed session architecture, and HTTP session management in any language or framework. Relevant keywords: session state, session storage, session location, sticky sessions, JWT vs session, shared session store, stateless session, session management, HTTP session, distributed session, session cookie, server session, database session, Redis session, node-pinning, session scaling, client-side session, server-side session, session bloat.",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 93,
+        "baseline": 50,
+        "delta": 43
+      }
+    },
+    {
+      "name": "distribution-boundary-designer",
+      "path": "distribution-boundary-designer/SKILL.md",
+      "description": "Distribution design for enterprise systems: decide whether to distribute, where to draw the service boundary, and how to implement it with Remote Facade and Data Transfer Object (DTO). Use when deciding microservices vs monolith, evaluating process boundaries, extracting services, designing remote APIs, choosing coarse-grained API shape, preventing distribution-by-class anti-pattern, applying Fowler's First Law of Distributed Object Design, designing service extraction strategy, determining when distribution is warranted vs cargo-culting microservices, implementing Remote Facade pattern, designing DTOs independent from domain objects, choosing between gRPC vs REST vs message queue vs GraphQL for service boundary, monolith decomposition, service boundary design, remote API design, distribution strategy, when to distribute, process boundary decision, coarse-grained interface design.",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 100,
+        "baseline": 23,
+        "delta": 77
+      }
+    },
+    {
+      "name": "enterprise-base-pattern-catalog",
+      "path": "enterprise-base-pattern-catalog/SKILL.md",
+      "description": "Reference catalog for Fowler's 11 enterprise base patterns from Chapter 18 of PEAA. Use when another skill or user says 'we need a Gateway here', 'this should be a Value Object', 'replace nulls with a Special Case', 'use a Service Stub for testing', or 'separate this interface from its implementation'. Covers all 11 base patterns: Gateway pattern (wrapping external systems), Mapper pattern (decoupling subsystems), Layer Supertype (shared base class per layer), Separated Interface (dependency inversion packaging), Registry (service locator), Value Object (value-identity immutable objects), Money pattern (monetary arithmetic, no floats, allocate-by-ratio), Special Case / Null Object (replace null checks), Plugin pattern (runtime-bound implementation), Service Stub (test double for external services), Record Set (generic tabular data structure). Identifies which pattern fits a described problem, provides canonical definition and modern language parallels, distinguishes Gateway (generic external-access wrapper) from Table Data Gateway (data-access pattern), flags Registry vs DI container tradeoff, and produces a short design note with implementation sketch. Also routes to the appropriate family selector when the problem is not a base pattern.",
+      "tier": 1,
+      "mode": "plan-only",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 77,
+        "baseline": 8,
+        "delta": 69
+      }
+    },
+    {
+      "name": "transaction-isolation-level-auditor",
+      "path": "transaction-isolation-level-auditor/SKILL.md",
+      "description": "Use when auditing database transaction configuration for concurrency safety \u2014 checking isolation level settings, diagnosing lost update bugs, non-repeatable read vulnerabilities, phantom read risks, or ACID compliance gaps. Applies Fowler's Table 5.1 (the explicit isolation-level \u00d7 anomaly matrix from Patterns of Enterprise Application Architecture Chapter 5) to map READ UNCOMMITTED / READ COMMITTED / REPEATABLE READ / SERIALIZABLE to permitted anomaly classes: dirty read, non-repeatable read (inconsistent read), phantom read, and lost update. Produces a structured isolation audit report covering: current isolation level, permitted anomalies, code locations with read-modify-write without optimistic check (lost update vulnerability), SELECT FOR UPDATE correctness, long-transaction risks, ACID compliance at system-transaction level, and ACID gaps at business-transaction level across multiple requests. Covers: transaction isolation, database concurrency, optimistic locking, pessimistic locking, version column, READ COMMITTED default risks, REPEATABLE READ upgrade decisions, SERIALIZABLE overhead, immutability as concurrency escape hatch, Spring @Transactional isolation settings, Hibernate session isolation, SQLAlchemy transaction config, EF Core transaction isolation, business transaction ACID, saga atomicity, offline lock isolation. Triggers: 'we have a lost update bug', 'two users editing the same record', 'is our isolation level correct', 'should we use SERIALIZABLE', 'transaction audit', 'ACID compliance review'.",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 92,
+        "baseline": 38,
+        "delta": 54
+      }
+    },
+    {
+      "name": "data-access-anti-pattern-auditor",
+      "path": "data-access-anti-pattern-auditor/SKILL.md",
+      "description": "Audit a persistence layer and schema for data access anti-patterns: N+1 query",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 0,
+      "depends_on": [],
+      "quality": {
+        "with_skill": 86,
+        "baseline": 29,
+        "delta": 57
+      }
+    },
+    {
+      "name": "unit-of-work-implementer",
+      "path": "unit-of-work-implementer/SKILL.md",
+      "description": "|",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": [
+        "data-source-pattern-selector"
+      ],
+      "quality": {
+        "with_skill": 100,
+        "baseline": 21,
+        "delta": 79
+      }
+    },
+    {
+      "name": "lazy-load-strategy-implementer",
+      "path": "lazy-load-strategy-implementer/SKILL.md",
+      "description": "|",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": [
+        "data-source-pattern-selector"
+      ],
+      "quality": {
+        "with_skill": 77,
+        "baseline": 38,
+        "delta": 38
+      }
+    },
+    {
+      "name": "optimistic-offline-lock-implementer",
+      "path": "optimistic-offline-lock-implementer/SKILL.md",
+      "description": "Use when offline-concurrency-strategy-selector (or your team) has chosen Optimistic Offline Lock and you need to implement it correctly end-to-end. Handles: adding a version column (integer, not timestamp), version-conditioned UPDATE and DELETE SQL (WHERE id=? AND version=?), row-count-zero collision detection, ConcurrencyException with modifiedBy+modified context, stale-version prevention, version round-tripping from server to client and back, Unit of Work commit integration (checkConsistentReads \u2192 insertNew \u2192 deleteRemoved \u2192 updateDirty with rollback on exception), ORM-native version support (@Version annotation JPA/Hibernate, [ConcurrencyCheck] or [Timestamp] EF Core, version_id_col SQLAlchemy, lock_version Rails, django-concurrency), and collision UX design (merge / force-save / abandon \u2014 not just a 409 error). Also handles: optimistic locking, optimistic offline lock, concurrent edit collision detection, lost update prevention, conditional update, concurrency version check, OptimisticLockException, DbUpdateConcurrencyException, StaleObjectError, inconsistent read protection, checkCurrent early-failure, anti-pattern audit (missing WHERE clause, non-incremented version, stale in-memory object retry, timestamp versioning). Produces an implementation plan covering schema, ORM config, version round-trip path, collision UX spec, test plan, and anti-pattern checklist.",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": [
+        "offline-concurrency-strategy-selector"
+      ],
+      "quality": {
+        "with_skill": 100,
+        "baseline": 62,
+        "delta": 38
+      }
+    },
+    {
+      "name": "pessimistic-offline-lock-implementer",
+      "path": "pessimistic-offline-lock-implementer/SKILL.md",
+      "description": "Use when offline-concurrency-strategy-selector (or your team) has chosen Pessimistic Offline Lock and you need to implement it correctly end-to-end. Handles: pessimistic locking, pessimistic offline lock, record locking, exclusive lock, lock manager design, lock timeout policy, acquire and release lock, stale lock cleanup, force release of abandoned locks, editing session lock, concurrent edit lock, edit lock implementation, record check-out pattern, lock table schema, durable lock storage (database-backed vs Redis vs in-memory), lock owner identity (user+session), coarse-grained lock at aggregate root (shared-version token vs root lock), implicit lock via base-class mapper / LockingMapper decorator / ORM interceptor / AOP aspect. Three-phase implementation: (1) choose lock type (exclusive-write vs exclusive-read vs read-write), (2) build durable lock manager (acquire/release/releaseAll/timeout), (3) define lock protocol (when to acquire, scope, release triggers, force-release, deadlock avoidance). Anti-pattern audit: SELECT FOR UPDATE across user think-time, in-memory lock table in clustered deployment, missing timeout policy, no owner identity, implicit-lock gaps, mixing optimistic with pessimistic carelessly. Produces a Pessimistic Offline Lock implementation plan covering lock type, storage choice, manager API, protocol spec, Coarse-Grained Lock integration, Implicit Lock wiring, UX spec (who holds lock + force-release), and test plan.",
+      "tier": 2,
+      "mode": "hybrid",
+      "build_level": 1,
+      "depends_on": [
+        "offline-concurrency-strategy-selector"
+      ],
+      "quality": {
+        "with_skill": 94,
+        "baseline": 6,
+        "delta": 88
+      }
+    }
+  ],
+  "dependency_graph": {
+    "levels": 2,
+    "hub": "enterprise-architecture-pattern-stack-selector",
+    "edges": [
+      {
+        "from": "data-source-pattern-selector",
+        "to": "unit-of-work-implementer",
+        "type": "input"
+      },
+      {
+        "from": "data-source-pattern-selector",
+        "to": "lazy-load-strategy-implementer",
+        "type": "input"
+      },
+      {
+        "from": "offline-concurrency-strategy-selector",
+        "to": "optimistic-offline-lock-implementer",
+        "type": "input"
+      },
+      {
+        "from": "offline-concurrency-strategy-selector",
+        "to": "pessimistic-offline-lock-implementer",
+        "type": "input"
+      }
+    ],
+    "is_dag": true,
+    "max_depth": 1
+  },
+  "quality_summary": {
+    "avg_with_skill": 92.6,
+    "avg_baseline": 37.5,
+    "avg_delta": 55.1,
+    "all_passed": true
+  },
+  "install_profiles": {
+    "minimal": {
+      "skills": [
+        "enterprise-architecture-pattern-stack-selector",
+        "domain-logic-pattern-selector",
+        "data-source-pattern-selector"
+      ],
+      "description": "3 entry-point skills \u2014 the hub selector plus the two foundational layer decisions (domain logic + data source)"
+    },
+    "core": {
+      "skills": [
+        "enterprise-architecture-pattern-stack-selector",
+        "domain-logic-pattern-selector",
+        "data-source-pattern-selector",
+        "inheritance-mapping-selector",
+        "object-relational-structural-mapping-guide",
+        "web-presentation-pattern-selector",
+        "offline-concurrency-strategy-selector",
+        "session-state-location-selector",
+        "distribution-boundary-designer"
+      ],
+      "description": "9 family-level selectors \u2014 the hub plus all per-layer pattern decisions"
+    },
+    "full": {
+      "skills": [
+        "enterprise-architecture-pattern-stack-selector",
+        "domain-logic-pattern-selector",
+        "data-source-pattern-selector",
+        "inheritance-mapping-selector",
+        "object-relational-structural-mapping-guide",
+        "web-presentation-pattern-selector",
+        "offline-concurrency-strategy-selector",
+        "session-state-location-selector",
+        "distribution-boundary-designer",
+        "enterprise-base-pattern-catalog",
+        "transaction-isolation-level-auditor",
+        "data-access-anti-pattern-auditor",
+        "unit-of-work-implementer",
+        "lazy-load-strategy-implementer",
+        "optimistic-offline-lock-implementer",
+        "pessimistic-offline-lock-implementer"
+      ],
+      "description": "All 16 skills \u2014 complete enterprise architecture pattern toolkit covering selection, implementation, and audit"
+    }
+  },
+  "tags": [
+    "enterprise-architecture",
+    "software-architecture",
+    "design-patterns",
+    "persistence",
+    "orm",
+    "web-application",
+    "fowler",
+    "peaa"
+  ]
+}

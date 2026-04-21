@@ -1,0 +1,12 @@
+{
+  "name": "patterns-of-enterprise-application-architecture",
+  "displayName": "patterns-of-enterprise-application-architecture",
+  "description": "16 skills for enterprise application architecture: pattern-family selectors (domain logic, data source, inheritance mapping, web presentation, concurrency, session state, distribution), pattern implementers, and audit skills — extracted from Patterns of Enterprise Application Architecture by Martin Fowler.",
+  "version": "1.0.0",
+  "author": { "name": "BookForge", "email": "bookforge-ai@users.noreply.github.com" },
+  "homepage": "https://github.com/bookforge-ai/bookforge-skills",
+  "repository": "https://github.com/bookforge-ai/bookforge-skills",
+  "license": "CC-BY-SA-4.0",
+  "skills": "./skills/",
+  "hooks": "./hooks/hooks-cursor.json"
+}

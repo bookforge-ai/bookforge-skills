@@ -1,0 +1,6 @@
+{
+  "name": "patterns-of-enterprise-application-architecture",
+  "description": "16 skills for enterprise application architecture: pattern-family selectors (domain logic, data source, inheritance mapping, web presentation, concurrency, session state, distribution), pattern implementers, and audit skills — extracted from Patterns of Enterprise Application Architecture by Martin Fowler.",
+  "version": "1.0.0",
+  "contextFileName": "GEMINI.md"
+}

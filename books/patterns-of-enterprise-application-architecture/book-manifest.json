@@ -1,0 +1,30 @@
+{
+  "book_id": "patterns-of-enterprise-application-architecture",
+  "title": "Patterns of Enterprise Application Architecture",
+  "subtitle": "",
+  "author": "Martin Fowler, David Rice, Matthew Foemmel, Edward Hieatt, Robert Mee, Randy Stafford",
+  "authors": [
+    "Martin Fowler",
+    "David Rice",
+    "Matthew Foemmel",
+    "Edward Hieatt",
+    "Robert Mee",
+    "Randy Stafford"
+  ],
+  "isbn": "978-0-321-12742-6",
+  "year": 2002,
+  "pages": 560,
+  "skill_count": 16,
+  "source_book": "patterns-of-enterprise-application-architecture.epub",
+  "pipeline_version": "0.1.0",
+  "tags": [
+    "enterprise-architecture",
+    "software-architecture",
+    "design-patterns",
+    "persistence",
+    "orm",
+    "web-application",
+    "fowler",
+    "peaa"
+  ]
+}

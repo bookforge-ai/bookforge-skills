@@ -15,7 +15,11 @@
       "description": "19 architecture skills from Fundamentals of Software Architecture by Mark Richards & Neal Ford",
       "version": "1.0.0",
       "category": "software-architecture",
-      "tags": ["software-architecture", "system-design", "distributed-systems"],
+      "tags": [
+        "software-architecture",
+        "system-design",
+        "distributed-systems"
+      ],
       "license": "CC-BY-SA-4.0"
     },
     {
@@ -24,7 +28,11 @@
       "description": "15 design pattern skills from Design Patterns: Elements of Reusable Object-Oriented Software",
       "version": "1.0.0",
       "category": "software-engineering",
-      "tags": ["design-patterns", "object-oriented", "software-engineering"],
+      "tags": [
+        "design-patterns",
+        "object-oriented",
+        "software-engineering"
+      ],
       "license": "CC-BY-SA-4.0"
     },
     {
@@ -33,7 +41,11 @@
       "description": "9 customer discovery skills from The Mom Test by Rob Fitzpatrick",
       "version": "1.0.0",
       "category": "customer-discovery",
-      "tags": ["customer-discovery", "product-management", "startups"],
+      "tags": [
+        "customer-discovery",
+        "product-management",
+        "startups"
+      ],
       "license": "CC-BY-SA-4.0"
     },
     {
@@ -42,7 +54,14 @@
       "description": "10 persuasion skills from Influence: The Psychology of Persuasion by Robert B. Cialdini",
       "version": "1.0.0",
       "category": "persuasion",
-      "tags": ["persuasion", "influence", "cialdini", "marketing", "sales-psychology", "copywriting"],
+      "tags": [
+        "persuasion",
+        "influence",
+        "cialdini",
+        "marketing",
+        "sales-psychology",
+        "copywriting"
+      ],
       "license": "CC-BY-SA-4.0"
     },
     {
@@ -51,7 +70,15 @@
       "description": "14 data systems skills from Designing Data-Intensive Applications by Martin Kleppmann",
       "version": "1.0.0",
       "category": "data-systems",
-      "tags": ["data-systems", "distributed-systems", "databases", "replication", "transactions", "batch-processing", "stream-processing"],
+      "tags": [
+        "data-systems",
+        "distributed-systems",
+        "databases",
+        "replication",
+        "transactions",
+        "batch-processing",
+        "stream-processing"
+      ],
       "license": "CC-BY-SA-4.0"
     },
     {
@@ -60,7 +87,12 @@
       "description": "12 research methodology skills from The Craft of Research, Fourth Edition by Wayne C. Booth, Gregory G. Colomb, Joseph M. Williams, Joseph Bizup, and William T. FitzGerald",
       "version": "1.0.0",
       "category": "research-methodology",
-      "tags": ["research-methodology", "academic-writing", "argumentation", "critical-thinking"],
+      "tags": [
+        "research-methodology",
+        "academic-writing",
+        "argumentation",
+        "critical-thinking"
+      ],
       "license": "CC-BY-SA-4.0"
     },
     {
@@ -69,62 +101,138 @@
       "description": "13 direct response marketing skills from The 1-Page Marketing Plan by Allan Dib",
       "version": "1.0.0",
       "category": "marketing",
-      "tags": ["marketing", "small-business", "lead-generation", "sales", "customer-acquisition", "direct-response-marketing"],
+      "tags": [
+        "marketing",
+        "small-business",
+        "lead-generation",
+        "sales",
+        "customer-acquisition",
+        "direct-response-marketing"
+      ],
       "license": "CC-BY-SA-4.0"
     },
     {
       "name": "hacking-growth",
       "source": "./books/hacking-growth",
-      "description": "11 growth skills from Hacking Growth by Sean Ellis and Morgan Brown — PMF gating, ICE prioritization, channel selection, funnel diagnosis, retention, monetization, and stall prevention",
+      "description": "11 growth skills from Hacking Growth by Sean Ellis and Morgan Brown \u2014 PMF gating, ICE prioritization, channel selection, funnel diagnosis, retention, monetization, and stall prevention",
       "version": "1.0.0",
       "category": "growth",
-      "tags": ["growth", "experimentation", "product-marketing", "activation", "retention", "funnel-analysis", "product-market-fit", "startup-ops"],
+      "tags": [
+        "growth",
+        "experimentation",
+        "product-marketing",
+        "activation",
+        "retention",
+        "funnel-analysis",
+        "product-market-fit",
+        "startup-ops"
+      ],
       "license": "CC-BY-SA-4.0"
     },
     {
       "name": "traction",
       "source": "./books/traction",
-      "description": "13 startup growth skills from Traction by Gabriel Weinberg and Justin Mares — Bullseye channel selection, phase strategy, channel testing, critical path planning, and 9 deep-dive acquisition channels (viral, PR, SEM, SEO, content+email, engineering-as-marketing, sales, BD, existing platforms)",
+      "description": "13 startup growth skills from Traction by Gabriel Weinberg and Justin Mares \u2014 Bullseye channel selection, phase strategy, channel testing, critical path planning, and 9 deep-dive acquisition channels (viral, PR, SEM, SEO, content+email, engineering-as-marketing, sales, BD, existing platforms)",
       "version": "1.0.0",
       "category": "startup-growth",
-      "tags": ["startup-growth", "customer-acquisition", "growth-marketing", "channel-selection", "marketing-strategy", "bullseye-framework", "viral-marketing", "sales-process", "business-development"],
+      "tags": [
+        "startup-growth",
+        "customer-acquisition",
+        "growth-marketing",
+        "channel-selection",
+        "marketing-strategy",
+        "bullseye-framework",
+        "viral-marketing",
+        "sales-process",
+        "business-development"
+      ],
       "license": "CC-BY-SA-4.0"
     },
     {
       "name": "spin-selling",
       "source": "./books/spin-selling",
-      "description": "11 B2B sales skills from SPIN Selling by Neil Rackham — plan SPIN question sequences, classify implied vs explicit needs, audit FAB statements, and replace closing pressure with structured commitment-advance progression",
+      "description": "11 B2B sales skills from SPIN Selling by Neil Rackham \u2014 plan SPIN question sequences, classify implied vs explicit needs, audit FAB statements, and replace closing pressure with structured commitment-advance progression",
       "version": "1.0.0",
       "category": "sales",
-      "tags": ["sales", "b2b-sales", "enterprise-sales", "complex-sales", "discovery", "questioning-techniques", "customer-research", "negotiation"],
+      "tags": [
+        "sales",
+        "b2b-sales",
+        "enterprise-sales",
+        "complex-sales",
+        "discovery",
+        "questioning-techniques",
+        "customer-research",
+        "negotiation"
+      ],
       "license": "CC-BY-SA-4.0"
     },
     {
       "name": "made-to-stick",
       "source": "./books/made-to-stick",
-      "description": "10 sticky messaging skills from Made to Stick by Chip Heath and Dan Heath — audit drafts against the SUCCESs framework, extract Commander's Intent core messages, build curiosity-gap hooks, rewrite abstract language into sensory copy, pick Sinatra-test credibility evidence, choose identity-based emotional appeals, and orchestrate end-to-end message clinics",
+      "description": "10 sticky messaging skills from Made to Stick by Chip Heath and Dan Heath \u2014 audit drafts against the SUCCESs framework, extract Commander's Intent core messages, build curiosity-gap hooks, rewrite abstract language into sensory copy, pick Sinatra-test credibility evidence, choose identity-based emotional appeals, and orchestrate end-to-end message clinics",
       "version": "1.0.0",
       "category": "communication",
-      "tags": ["communication", "marketing", "messaging", "persuasion", "storytelling", "copywriting", "public-speaking", "instructional-design"],
+      "tags": [
+        "communication",
+        "marketing",
+        "messaging",
+        "persuasion",
+        "storytelling",
+        "copywriting",
+        "public-speaking",
+        "instructional-design"
+      ],
       "license": "CC-BY-SA-4.0"
     },
     {
       "name": "the-challenger-sale",
       "source": "./books/the-challenger-sale",
-      "description": "10 B2B sales skills from The Challenger Sale by Matthew Dixon and Brent Adamson — classify rep profiles, author commercial teaching pitches, tailor by stakeholder role, take control of negotiations, and coach reps for behavior change using CEB's 6,000-rep empirical study",
+      "description": "10 B2B sales skills from The Challenger Sale by Matthew Dixon and Brent Adamson \u2014 classify rep profiles, author commercial teaching pitches, tailor by stakeholder role, take control of negotiations, and coach reps for behavior change using CEB's 6,000-rep empirical study",
       "version": "1.0.0",
       "category": "sales",
-      "tags": ["sales", "b2b-sales", "sales-methodology", "commercial-insight", "sales-management", "sales-enablement", "challenger-sale"],
+      "tags": [
+        "sales",
+        "b2b-sales",
+        "sales-methodology",
+        "commercial-insight",
+        "sales-management",
+        "sales-enablement",
+        "challenger-sale"
+      ],
       "license": "CC-BY-SA-4.0"
     },
     {
       "name": "working-effectively-with-legacy-code",
       "source": "./books/working-effectively-with-legacy-code",
-      "description": "16 legacy code skills from Working Effectively with Legacy Code by Michael C. Feathers — the Legacy Code Change Algorithm, seam type selection, characterization test writing, dependency-breaking techniques, monster method decomposition, big class extraction, and more",
+      "description": "16 legacy code skills from Working Effectively with Legacy Code by Michael C. Feathers \u2014 the Legacy Code Change Algorithm, seam type selection, characterization test writing, dependency-breaking techniques, monster method decomposition, big class extraction, and more",
       "version": "1.0.0",
       "category": "software-engineering",
-      "tags": ["legacy-code", "refactoring", "testing", "software-engineering", "technical-debt", "dependency-injection"],
+      "tags": [
+        "legacy-code",
+        "refactoring",
+        "testing",
+        "software-engineering",
+        "technical-debt",
+        "dependency-injection"
+      ],
       "license": "CC-BY-SA-4.0"
+    },
+    {
+      "name": "patterns-of-enterprise-application-architecture",
+      "source": "./books/patterns-of-enterprise-application-architecture",
+      "description": "16 skills for enterprise application architecture: pattern-family selectors, pattern implementers, and audit skills \u2014 extracted from Patterns of Enterprise Application Architecture by Martin Fowler.",
+      "version": "1.0.0",
+      "category": "software-engineering",
+      "tags": [
+        "enterprise-architecture",
+        "software-architecture",
+        "design-patterns",
+        "persistence",
+        "orm",
+        "web-application",
+        "fowler",
+        "peaa"
+      ]
     }
   ]
 }
